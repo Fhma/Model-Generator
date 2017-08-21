@@ -1,12 +1,13 @@
 *.class
 
 .mtj.tmp/
-.metadata
 
 .DS
 *.jar
 *.war
 *.ear
+*.log
+*.ini
 
 .DS_Store
 
