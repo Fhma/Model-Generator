@@ -8,12 +8,6 @@
 *.war
 *.ear
 *.log
-*.ini
-*.tree
-*.index
-*.resources
-*.lock
-*.properties
 
 .DS_Store
 
