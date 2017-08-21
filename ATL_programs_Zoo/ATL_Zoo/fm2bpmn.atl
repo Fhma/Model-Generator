@@ -1,0 +1,533 @@
+---------------------------------------------------------------------------------------------------------------------
+-- @title: fm2bpmn.atl
+-- @author: Ildefonso Montero, Joaquin Pe�a, Antonio Ruiz-Cortes - monteroperez_AT_us_DOT_es
+--				    Dpt. Languages and Computer Systems
+--				    Avd. Reina Mercedes s/n, 41012, Seville
+--					University of Seville.
+-- @description: The FM to BPMN example describes a transformation from a feature model
+-- 						   created using FAMA (FeAture Model Analyzer) into a business process model 
+--						   diagram represented by means of BPMN metamodel provided by the 
+--						   Eclipse STP (SOA Tool Platform) project.
+---------------------------------------------------------------------------------------------------------------------
+module fm2bpmn;
+create OUT : bpmn from IN : fama;
+
+---------------------------------------------------------------------------------------------------------------------
+-- HELPERS
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature isChild(): Boolean
+-- @description: Returns a boolean value true is the feature is a child node of the feature model
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isChild() : Boolean =
+    if self.relations.isEmpty() then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature isRoot(): Boolean
+-- @description: Returns a boolean value true is the feature is a root node of the feature model
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isRoot(): Boolean =
+    if self.oclIsTypeOf(fama!Root) then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getGroupedChild(): Sequence(fama!Feature) 
+-- @description: Returns the grouped children of a feature
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getGroupedChild(): Sequence(fama!Feature) =
+    ((self.relations->select( e |
+        e.oclIsTypeOf(fama!SetRelation)))->collect(f | f.features))->asSequence();
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getSolitaryChild(): Sequence(fama!Feature) 
+-- @description: Returns the solitary children of a feature
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getSolitaryChild(): Sequence(fama!Feature) =
+    ((self.relations->select( e |
+        e.oclIsTypeOf(fama!BinaryRelation)))->collect(f | f.feature))->asSequence();
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getChild(): Sequence(fama!Feature) 
+-- @description: Returns the children of a feature
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getChild(): Sequence(fama!Feature) =
+    self.getSolitaryChild()->union(self.getGroupedChild());
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getBinaryRelation(): fama!BinaryRelation 
+-- @description: Returns the binary relation of a feature
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getBinaryRelation(): fama!BinaryRelation =
+    fama!BinaryRelation->allInstances()->select(r | r.feature = self )->first();
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getSetRelation(): fama!SetRelation 
+-- @description: Returns the set relation of a feature
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getSetRelation(): fama!SetRelation =
+    fama!SetRelation->allInstances()->select(r | r.features->includes(self))->first();
+  
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  mandatoryRelationship(): Sequence(fama!Feature) 
+-- @description: Returns a sequence of features that have a mandatory relationship with self.
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: mandatoryRelationship(): Sequence(fama!Feature) =
+    ((self.getGroupedChild()->flatten())->select( e |
+        e.getSetRelation().cardinalities.first().min = e.getSetRelation().cardinalities.first().max and
+        e.getSetRelation().cardinalities.first().max > 1))->union(
+            self.getSolitaryChild()->select( f |
+        f.getBinaryRelation().cardinalities.first().min = 1 and
+        f.getBinaryRelation().cardinalities.first().max = 1 ));
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  isMandatory(): Boolean 
+-- @description: Returns a boolean value true if the feature  is mandatory
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isMandatory(): Boolean =
+    if ((not self.isChild()) and (not self.mandatoryRelationship()->isEmpty())) then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  optionalRelationship(): Sequence(fama!Feature) 
+-- @description: Returns a sequence of features that have an optional relationship with self.
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: optionalRelationship(): Sequence(fama!Feature) =
+    ((self.getGroupedChild()->flatten())->select( e |
+        e.getSetRelation().cardinalities.first().min = 0))->union(
+            self.getSolitaryChild()->select( f |
+        f.getBinaryRelation().cardinalities.first().min = 0 ));
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  isOptional(): Boolean 
+-- @description: Returns a boolean value true if the feature  is optional
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isOptional(): Boolean =
+    if ((not self.isChild()) and (not self.optionalRelationship()->isEmpty())) then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  alternativeRelationship(): Sequence(fama!Feature) 
+-- @description: Returns a sequence of features that have an alternative relationship with self.
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: alternativeRelationship(): Sequence(fama!Feature) =
+    ((self.getGroupedChild())->flatten())->select( e |
+        (e.getSetRelation().cardinalities.first().min.oclIsUndefined() and
+         e.getSetRelation().cardinalities.first().max.oclIsUndefined()) or
+        (e.getSetRelation().cardinalities.first().min = 1 and
+          e.getSetRelation().cardinalities.first().max = 1));
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  isAlternative(): Boolean 
+-- @description: Returns a boolean value true if the feature  is alternative
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isAlternative(): Boolean =
+    if ((not self.isChild()) and (not self.alternativeRelationship()->isEmpty())) then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  orRelationship(): Sequence(fama!Feature) 
+-- @description: Returns a sequence of features that have an or relationship with self.
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: orRelationship(): Sequence(fama!Feature) =
+    ((self.getGroupedChild())->flatten())->select( e |
+        e.getSetRelation().cardinalities.first().min = 1 and
+        e.getSetRelation().cardinalities.first().max > 1);
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  isOr(): Boolean 
+-- @description: Returns a boolean value true if the feature  is or
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: isOr(): Boolean =
+    if ((not self.isChild()) and (not self.orRelationship()->isEmpty())) then
+        true
+    else
+        false
+    endif;
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper function fama!Feature  getPool(): bpmn!Pool
+-- @description: Returns the pool of the bpmn diagram, the context is not relevant.
+---------------------------------------------------------------------------------------------------------------------
+helper context fama!Feature def: getPool(): bpmn!Pool =
+    bpmn!Pool->allInstances()->first();
+
+---------------------------------------------------------------------------------------------------------------------
+-- helper def start/end 
+-- @description: Global vars that represents start and end bpmn activities for a sequence flow 
+---------------------------------------------------------------------------------------------------------------------
+helper def : start : bpmn!Activity = OclUndefined;
+helper def : end : bpmn!Activity = OclUndefined;
+
+---------------------------------------------------------------------------------------------------------------------
+-- RULES
+---------------------------------------------------------------------------------------------------------------------
+rule Main{
+    from
+        f: fama!FeatureModel
+    to
+        p: bpmn!Pool(
+        ),
+        bp: bpmn!BpmnDiagram(
+            pools <- p	
+        )
+}
+
+rule RootMandatory{
+	from
+		f: fama!Feature (f.isRoot() and f.isMandatory())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayParallel;
+        sta: bpmn!ActivityType = #EventStartEmpty;
+		eda: bpmn!ActivityType = #EventEndEmpty;
+	}
+	to
+		se: bpmn!Activity(
+			activityType <- sta
+		),
+		ee: bpmn!Activity(
+			activityType <- eda
+		),
+		s: bpmn!SequenceEdge(
+			source <- se,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+    	p.vertices <- g;
+    	p.vertices <- se;
+    	p.vertices <- ee;
+    	p.sequenceEdges <- s;
+   		thisModule.createTasks(f,se,g,ee, '#MANDATORY');
+    	thisModule.start <- g;
+    	thisModule.end <- ee;
+	}
+}
+
+rule RootOr{
+	from
+		f: fama!Feature (f.isRoot() and f.isOr())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayDataBasedInclusive;
+        sta: bpmn!ActivityType = #EventStartEmpty;
+		eda: bpmn!ActivityType = #EventEndEmpty;
+	}
+	to
+		se: bpmn!Activity(
+			activityType <- sta
+		),
+		ee: bpmn!Activity(
+			activityType <- eda
+		),
+		s: bpmn!SequenceEdge(
+			source <- se,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+    	p.vertices <- g;
+    	p.vertices <- se;
+    	p.vertices <- ee;
+    	p.sequenceEdges <- s;
+    	thisModule.createTasks(f,se,g,ee, '#OR');
+    	thisModule.start <- g;
+    	thisModule.end <- ee;
+	}
+}
+
+rule RootAlternative{
+	from
+		f: fama!Feature (f.isRoot() and f.isAlternative())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayDataBasedExclusive;
+        sta: bpmn!ActivityType = #EventStartEmpty;
+		eda: bpmn!ActivityType = #EventEndEmpty;
+	}
+	to
+		se: bpmn!Activity(
+			activityType <- sta
+		),
+		ee: bpmn!Activity(
+			activityType <- eda
+		),
+		s: bpmn!SequenceEdge(
+			source <- se,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+		p.vertices <- g;
+    	p.vertices <- se;
+    	p.vertices <- ee;
+    	p.sequenceEdges <- s;
+    	thisModule.createTasks(f,se,g,ee, '#ALTERNATIVE');
+    	thisModule.start <- g;
+    	thisModule.end <- ee;
+	}
+}
+
+rule RootOptional{
+	from
+		f: fama!Feature (f.isRoot() and f.isOptional())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+		a1: bpmn!ActivityType = #GatewayDataBasedExclusive;
+        a2: bpmn!ActivityType = #GatewayDataBasedInclusive;
+		sta: bpmn!ActivityType = #EventStartEmpty;
+		eda: bpmn!ActivityType = #EventEndEmpty;
+	}
+	to
+		se: bpmn!Activity(
+			activityType <- sta
+		),
+		ee: bpmn!Activity(
+			activityType <- eda
+		),	
+		s1: bpmn!SequenceEdge(
+			source <- se,
+			target <- g1
+		),
+		s2: bpmn!SequenceEdge(
+			source <- g1,
+			target <- g2
+		),
+		s3: bpmn!SequenceEdge(
+			source <- g1,
+			target <- g3
+		),
+		g1: bpmn!Activity(
+            activityType <- a1,
+			incomingEdges <- s1,
+			outgoingEdges <- s2,
+			outgoingEdges <- s3
+        ),
+		g2: bpmn!Activity(
+            activityType <- a2,
+			incomingEdges <- s2
+        ),
+		g3: bpmn!Activity(
+            activityType <- a1,
+			incomingEdges <- s3
+        )
+    do{
+    	p.vertices <- se;
+    	p.vertices <- ee;
+    	p.vertices <- g1;
+    	p.vertices <- g2;
+    	p.vertices <- g3;
+    	p.sequenceEdges <- s1;
+    	p.sequenceEdges <- s2;
+    	p.sequenceEdges <- s3;
+    	thisModule.end <- ee;
+        thisModule.createTasks(f,se,g2,g3, '#OPTIONAL');
+        thisModule.start <- g2;
+    	thisModule.end <- ee;
+	}
+}
+
+
+
+rule Mandatory{
+	from
+		f: fama!Feature (not f.isRoot() and not f.isChild() and f.isMandatory())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayParallel;
+	}
+	to
+		s: bpmn!SequenceEdge(
+			source <- thisModule.start,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+    	p.vertices <- g;
+    	p.sequenceEdges <- s;
+    	thisModule.createTasks(f,thisModule.start,g,thisModule.end, '#MANDATORY');
+        thisModule.start <- g;
+	}
+}
+
+rule Or{
+	from
+		f: fama!Feature (not f.isRoot() and not f.isChild() and f.isOr())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayDataBasedInclusive;
+	}
+	to
+		s: bpmn!SequenceEdge(
+			source <- thisModule.start,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+    	p.vertices <- g;
+    	p.sequenceEdges <- s;
+        thisModule.createTasks(f,thisModule.start,g,thisModule.end, '#OR');
+        thisModule.start <- g;
+	}
+}
+
+rule Optional{
+	from
+		f: fama!Feature (not f.isRoot() and not f.isChild() and f.isOptional())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+		a1: bpmn!ActivityType = #GatewayDataBasedExclusive;
+        a2: bpmn!ActivityType = #GatewayDataBasedInclusive;
+	}
+	to
+		s1: bpmn!SequenceEdge(
+			source <- thisModule.start,
+			target <- g1
+		),
+		s2: bpmn!SequenceEdge(
+			source <- g1,
+			target <- g2
+		),
+		s3: bpmn!SequenceEdge(
+			source <- g1,
+			target <- g3
+		),
+		g1: bpmn!Activity(
+            activityType <- a1,
+			incomingEdges <- s1,
+			outgoingEdges <- s2,
+			outgoingEdges <- s3
+        ),
+		g2: bpmn!Activity(
+            activityType <- a2,
+			incomingEdges <- s2
+        ),
+		g3: bpmn!Activity(
+            activityType <- a1,
+			incomingEdges <- s3
+        )
+    do{
+    	p.vertices <- g1;
+    	p.vertices <- g2;
+    	p.vertices <- g3;
+    	p.sequenceEdges <- s1;
+    	p.sequenceEdges <- s2;
+    	p.sequenceEdges <- s3;
+        thisModule.createTasks(f,thisModule.start,g2,g3, '#OPTIONAL');
+        thisModule.start <- g2;
+	}
+}
+
+
+rule Alternative{
+	from
+		f: fama!Feature (not f.isRoot() and not f.isChild() and f.isAlternative())
+	using{
+        p: bpmn!NamedBpmnObject = f.getPool();
+        a: bpmn!ActivityType = #GatewayDataBasedExclusive;
+	}
+	to
+		s: bpmn!SequenceEdge(
+			source <- thisModule.start,
+			target <- g
+		),
+		g: bpmn!Activity(
+            activityType <- a,
+			incomingEdges <- s
+        )
+    do{
+    	p.vertices <- g;
+    	p.sequenceEdges <- s;
+        thisModule.createTasks(f,thisModule.start,g,thisModule.end, '#ALTERNATIVE');
+        thisModule.start <- g;
+	}
+}
+
+rule createTasks(f: fama!Feature, start: bpmn!Activity, gateway: bpmn!Activity, end: bpmn!Activity, type: String){
+    using{
+    	childs: Sequence(fama!Feature) = f.getChild()->flatten()->select(c | c.isChild());
+    }  
+    to
+		g: bpmn!Activity(
+			activityType <- gateway.activityType
+		)
+    do{
+    	for ( c in childs ){
+    			thisModule.createTask(c,gateway,g,end);
+		}
+    	thisModule.closeTask(f,g,end);
+    	if ( type = '#OPTIONAL')
+    		thisModule.closeTask(f,end,thisModule.end);
+    } 
+}
+
+rule createTask(c: fama!Feature, gateway: bpmn!Activity, g: bpmn!Activity, end: bpmn!Activity){
+	using{
+		p: bpmn!Pool = c.getPool();
+	}
+	to
+		s1: bpmn!SequenceEdge (
+			source <- gateway,
+			target <- b
+		),
+		s2: bpmn!SequenceEdge (
+			source <- b,
+			target <- g
+		),
+		b: bpmn!Activity(
+			name <- c.name,
+			incomingEdges <- s1,
+			outgoingEdges <- s2
+		)
+	do{
+		s1.target <- b;
+		p.vertices <- b;
+		p.vertices <- g;
+		p.sequenceEdges <- s1;
+		p.sequenceEdges <- s2;
+	}
+}
+
+rule closeTask(f: fama!Feature, g: bpmn!Activity, end: bpmn!Activity){
+	using{
+		p: bpmn!Pool = f.getPool();
+	}
+	to
+		s: bpmn!SequenceEdge (
+			source <- g,
+			target <- end
+		)
+	do{
+		p.sequenceEdges <- s;
+	}
+}

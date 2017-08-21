@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.epsilon.emu.eclipse.dt.launching.EmuLaunchConfigurationDelegate">
+<listAttribute key="models">
+<listEntry value="isMetamodelFileBased=false&#10;name=Model&#10;readOnLoad=true&#10;storeOnDisposal=false&#10;aliases=Model&#10;cached=true&#10;fileBasedMetamodelUri=&#10;metamodelUri=http\://www.eclipse.org/gmt/2005/OCL,http\://www.eclipse.org/gmt/2005/ATL&#10;modelUri=platform\:/resource/org.eclipse.epsilon.emu.examples/transformations/Book2Publication-ATL15_OCL28/4_original_transformations/Book2Publication.xmi&#10;reuseUnmodifiedFileBasedMetamodels=true&#10;type=EMF&#10;modelFile=/org.eclipse.epsilon.emu.examples/transformations/Book2Publication-ATL15_OCL28/4_original_transformations/Book2Publication.xmi&#10;expand=true&#10;metamodelFile="/>
+</listAttribute>
+<listAttribute key="parameters"/>
+<stringAttribute key="source" value="/org.eclipse.epsilon.emu.examples/transformations/Book2Publication-ATL15_OCL28/5_mutation_programs/Unit_LibraryRef_libraries_add.emu"/>
+</launchConfiguration>

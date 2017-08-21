@@ -1,0 +1,19 @@
+var selection:Sequence;
+var allOperators = MutationOperator.all.select(e|e.isTypeOf(AddMutationOperator) and e.feature_type);
+
+("All addition mutation operators: "+allOperators.size()).println();
+
+for (op in allOperators)
+{
+	(""")
+}
+while(selection.size()<=10)
+{
+	var pick = allOperators.random();
+	if(not selection.includes(pick))
+	{
+		selection.add(pick.signature);
+	}	
+}
+
+("Selected operators: "+selection).println();

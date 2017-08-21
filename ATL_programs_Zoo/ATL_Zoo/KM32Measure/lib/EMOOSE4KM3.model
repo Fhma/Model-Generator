@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Library location="10:1-65:26" name="EMOOSE4KM3">
+    <commentsBefore>--@atlcompiler	atl2006</commentsBefore>
+    <commentsBefore>--@name			EMOOSE4KM3</commentsBefore>
+    <commentsBefore>--@version		1.0</commentsBefore>
+    <commentsBefore>--@domains		KM3, MOOSE, EMOOSE, metrics</commentsBefore>
+    <commentsBefore>--@authors		Eric Vepa (evepa &lt;at> sodius.com) for SODIUS (www.sodius.com)</commentsBefore>
+    <commentsBefore>--@date			2007/06/05</commentsBefore>
+    <commentsBefore>--@description	This library provides MOOSE (Metrics for Object-Oriented Software Engineering) and EMOOSE (Extended MOOSE) metrics suites on KM3 metamodels. Only the metrics that fit to KM3 metamodels have been implemented.</commentsBefore>
+    <commentsBefore>--@see			Baroni, A.L.: Formal Definition of Object-Oriented Design Metrics. Master Thesis, Vrije University, Brussel, Belgium, 2002.</commentsBefore>
+    <commentsAfter>--@end helper EMOOSE::SIZE2</commentsAfter>
+    <helpers location="21:1-23:29">
+      <commentsBefore>-- Library Template</commentsBefore>
+      <commentsBefore>-- ===============</commentsBefore>
+      <commentsBefore>-- MOOSE Metrics =</commentsBefore>
+      <commentsBefore>-- ===============</commentsBefore>
+      <commentsBefore>--@begin helper MOOSE::WRC</commentsBefore>
+      <commentsBefore>--@comments Weighted References per Class</commentsBefore>
+      <commentsBefore>--@comments The sum of complexities of the References in the current Class. If all method complexities are considered to be unique, WRC is equal to the number of References.</commentsBefore>
+      <commentsBefore>--@comments The authors do not propose any algorithm for calculating the complexities of methods.</commentsBefore>
+      <commentsBefore>--@comments As such, in the formalization above, the complexities were considered unitary.</commentsBefore>
+      <commentsAfter>--@end helper MOOSE::WRC</commentsAfter>
+      <commentsAfter>--@begin helper MOOSE::DIT</commentsAfter>
+      <commentsAfter>--@comments Depth of Inheritance Tree</commentsAfter>
+      <commentsAfter>--@comments The length of the longest path of inheritance from the current Class to the root of the tree.</commentsAfter>
+      <definition location="21:8-23:28">
+        <feature xsi:type="ocl:Operation" location="22:7-23:28" name="WRC">
+          <returnType xsi:type="ocl:IntegerType" location="22:15-22:22"/>
+          <body xsi:type="ocl:CollectionOperationCallExp" location="23:2-23:28" operationName="size">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="23:2-23:20" name="allReferences">
+              <source xsi:type="ocl:VariableExp" location="23:2-23:6" referredVariable="/2"/>
+            </source>
+          </body>
+        </feature>
+        <context_ location="21:8-21:30">
+          <context_ xsi:type="ocl:OclModelElement" location="21:16-21:30" name="Classifier" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="29:1-37:8">
+      <commentsBefore>--@end helper MOOSE::WRC</commentsBefore>
+      <commentsBefore>--@begin helper MOOSE::DIT</commentsBefore>
+      <commentsBefore>--@comments Depth of Inheritance Tree</commentsBefore>
+      <commentsBefore>--@comments The length of the longest path of inheritance from the current Class to the root of the tree.</commentsBefore>
+      <commentsAfter>--@end helper MOOSE::DIT</commentsAfter>
+      <commentsAfter>--@begin helper MOOSE::NOC</commentsAfter>
+      <commentsAfter>--@comments Number of Children</commentsAfter>
+      <commentsAfter>--@comments The number of classes that inherit directly from the current Class.</commentsAfter>
+      <definition location="29:8-37:7">
+        <feature xsi:type="ocl:Operation" location="30:7-37:7" name="DIT">
+          <returnType xsi:type="ocl:IntegerType" location="30:15-30:22"/>
+          <body xsi:type="ocl:IfExp" location="31:2-37:7">
+            <thenExpression xsi:type="ocl:IntegerExp" location="32:8-32:9"/>
+            <condition xsi:type="ocl:NavigationOrAttributeCallExp" location="31:5-31:16" name="isRoot">
+              <source xsi:type="ocl:VariableExp" location="31:5-31:9" referredVariable="/3"/>
+            </condition>
+            <elseExpression xsi:type="ocl:OperatorCallExp" location="33:8-36:69" operationName="+">
+              <source xsi:type="ocl:IfExp" location="33:8-36:9">
+                <thenExpression xsi:type="ocl:IntegerExp" location="34:10-34:11" integerSymbol="1"/>
+                <condition xsi:type="ocl:OperatorCallExp" location="33:11-33:26" operationName="=">
+                  <source xsi:type="ocl:OperationCallExp" location="33:11-33:22" operationName="PARN">
+                    <source xsi:type="ocl:VariableExp" location="33:11-33:15" referredVariable="/4"/>
+                  </source>
+                  <arguments xsi:type="ocl:IntegerExp" location="33:25-33:26" integerSymbol="1"/>
+                </condition>
+                <elseExpression xsi:type="ocl:IntegerExp" location="35:10-35:11"/>
+              </source>
+              <arguments xsi:type="ocl:IterateExp" location="36:12-36:69">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="36:12-36:24" name="parents">
+                  <source xsi:type="ocl:VariableExp" location="36:12-36:16" referredVariable="/5"/>
+                </source>
+                <body xsi:type="ocl:OperatorCallExp" location="36:55-36:68" operationName="+">
+                  <source xsi:type="ocl:VariableExp" location="36:55-36:58" referredVariable="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@arguments.0/@result"/>
+                  <arguments xsi:type="ocl:OperationCallExp" location="36:61-36:68" operationName="DIT">
+                    <source xsi:type="ocl:VariableExp" location="36:61-36:62" referredVariable="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@arguments.0/@iterators.0"/>
+                  </arguments>
+                </body>
+                <iterators location="36:34-36:35" varName="c" variableExp="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@arguments.0/@body/@arguments.0/@source"/>
+                <result location="36:37-36:54" varName="acc" variableExp="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@arguments.0/@body/@source">
+                  <type xsi:type="ocl:IntegerType" location="36:43-36:50"/>
+                  <initExpression xsi:type="ocl:IntegerExp" location="36:53-36:54"/>
+                </result>
+              </arguments>
+            </elseExpression>
+          </body>
+        </feature>
+        <context_ location="29:8-29:30">
+          <context_ xsi:type="ocl:OclModelElement" location="29:16-29:30" name="Classifier" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="43:1-45:14">
+      <commentsBefore>--@end helper MOOSE::DIT</commentsBefore>
+      <commentsBefore>--@begin helper MOOSE::NOC</commentsBefore>
+      <commentsBefore>--@comments Number of Children</commentsBefore>
+      <commentsBefore>--@comments The number of classes that inherit directly from the current Class.</commentsBefore>
+      <commentsAfter>--@end helper MOOSE::NOC</commentsAfter>
+      <commentsAfter>--@begin helper MOOSE::CBO</commentsAfter>
+      <commentsAfter>--@comments Coupling Between Objects</commentsAfter>
+      <commentsAfter>--@comments The number of other Classes that are coupled to the current one. Two Classes are coupled when methods declared in one Class use References or instance variables defined by the other Class.</commentsAfter>
+      <definition location="43:8-45:13">
+        <feature xsi:type="ocl:Operation" location="44:7-45:13" name="NOC">
+          <returnType xsi:type="ocl:IntegerType" location="44:15-44:22"/>
+          <body xsi:type="ocl:OperationCallExp" location="45:2-45:13" operationName="CHIN">
+            <source xsi:type="ocl:VariableExp" location="45:2-45:6" referredVariable="/6"/>
+          </body>
+        </feature>
+        <context_ location="43:8-43:30">
+          <context_ xsi:type="ocl:OclModelElement" location="43:16-43:30" name="Classifier" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="51:1-53:30">
+      <commentsBefore>--@end helper MOOSE::NOC</commentsBefore>
+      <commentsBefore>--@begin helper MOOSE::CBO</commentsBefore>
+      <commentsBefore>--@comments Coupling Between Objects</commentsBefore>
+      <commentsBefore>--@comments The number of other Classes that are coupled to the current one. Two Classes are coupled when methods declared in one Class use References or instance variables defined by the other Class.</commentsBefore>
+      <commentsAfter>--@end helper MOOSE::CBO</commentsAfter>
+      <commentsAfter>-- ================</commentsAfter>
+      <commentsAfter>-- EMOOSE Metrics =</commentsAfter>
+      <commentsAfter>-- ================</commentsAfter>
+      <commentsAfter>--@begin helper EMOOSE::SIZE2</commentsAfter>
+      <commentsAfter>--@comments Number of local Attributes and References (only the containment ones) defined in the Class.</commentsAfter>
+      <definition location="51:8-53:29">
+        <feature xsi:type="ocl:Operation" location="52:7-53:29" name="CBO">
+          <returnType xsi:type="ocl:IntegerType" location="52:15-52:22"/>
+          <body xsi:type="ocl:CollectionOperationCallExp" location="53:2-53:29" operationName="size">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="53:2-53:21" name="coupledClasses">
+              <source xsi:type="ocl:VariableExp" location="53:2-53:6" referredVariable="/7"/>
+            </source>
+          </body>
+        </feature>
+        <context_ location="51:8-51:30">
+          <context_ xsi:type="ocl:OclModelElement" location="51:16-51:30" name="Classifier" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="63:1-65:26">
+      <commentsBefore>--@end helper MOOSE::CBO</commentsBefore>
+      <commentsBefore>-- ================</commentsBefore>
+      <commentsBefore>-- EMOOSE Metrics =</commentsBefore>
+      <commentsBefore>-- ================</commentsBefore>
+      <commentsBefore>--@begin helper EMOOSE::SIZE2</commentsBefore>
+      <commentsBefore>--@comments Number of local Attributes and References (only the containment ones) defined in the Class.</commentsBefore>
+      <commentsAfter>--@end helper EMOOSE::SIZE2</commentsAfter>
+      <definition location="63:8-65:25">
+        <feature xsi:type="ocl:Operation" location="64:7-65:25" name="SIZE2">
+          <returnType xsi:type="ocl:IntegerType" location="64:17-64:24"/>
+          <body xsi:type="ocl:OperatorCallExp" location="65:2-65:25" operationName="+">
+            <source xsi:type="ocl:OperationCallExp" location="65:2-65:12" operationName="NRN">
+              <source xsi:type="ocl:VariableExp" location="65:2-65:6" referredVariable="/8"/>
+            </source>
+            <arguments xsi:type="ocl:OperationCallExp" location="65:15-65:25" operationName="NAN">
+              <source xsi:type="ocl:VariableExp" location="65:15-65:19" referredVariable="/9"/>
+            </arguments>
+          </body>
+        </feature>
+        <context_ location="63:8-63:30">
+          <context_ xsi:type="ocl:OclModelElement" location="63:16-63:30" name="Classifier" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+  </atl:Library>
+  <ocl:OclModel location="21:16-21:19" name="KM3" elements="/0/@helpers.0/@definition/@context_/@context_ /0/@helpers.1/@definition/@context_/@context_ /0/@helpers.2/@definition/@context_/@context_ /0/@helpers.3/@definition/@context_/@context_ /0/@helpers.4/@definition/@context_/@context_"/>
+  <ocl:VariableDeclaration location="23:2-23:6" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="31:5-31:9" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@condition/@source"/>
+  <ocl:VariableDeclaration location="33:11-33:15" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@source/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="36:12-36:16" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@elseExpression/@arguments.0/@source/@source"/>
+  <ocl:VariableDeclaration location="45:2-45:6" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@source"/>
+  <ocl:VariableDeclaration location="53:2-53:6" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="65:2-65:6" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="65:15-65:19" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@arguments.0/@source"/>
+</xmi:XMI>

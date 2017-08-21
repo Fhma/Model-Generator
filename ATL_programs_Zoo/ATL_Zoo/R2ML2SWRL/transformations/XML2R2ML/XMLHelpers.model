@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Library location="7:1-155:7" name="XMLHelpers">
+    <commentsBefore>-- ============================================================</commentsBefore>
+    <commentsBefore>-- Created as part of M.Sc. theses at GOOD OLD AI Laboratory</commentsBefore>
+    <commentsBefore>-- Author: Milan Milanovic (milan at milanovic.org)</commentsBefore>
+    <commentsBefore>-- Licence: GNU General Public License, version 2</commentsBefore>
+    <commentsBefore>-- ============================================================</commentsBefore>
+    <helpers location="18:1-19:40">
+      <commentsBefore>--------------------------------</commentsBefore>
+      <commentsBefore>-- General XML metamodel helpers</commentsBefore>
+      <commentsBefore>--------------------------------</commentsBefore>
+      <commentsBefore>-- HELPER:	getChildren</commentsBefore>
+      <commentsBefore>-- Returns a children nodes with name n for XML element</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Sequence(XML!Node)</commentsBefore>
+      <commentsAfter>-- HELPER:	getAttr</commentsAfter>
+      <commentsAfter>-- Returns an attribute with name n for XML element</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Sequence(XML!Attribute)</commentsAfter>
+      <definition location="18:8-19:39">
+        <feature xsi:type="ocl:Operation" location="18:33-19:39" name="getChildren">
+          <parameters location="18:45-18:55" varName="n" variableExp="/0/@helpers.0/@definition/@feature/@body/@body/@arguments.0">
+            <type xsi:type="ocl:StringType" location="18:49-18:55"/>
+          </parameters>
+          <returnType xsi:type="ocl:SequenceType" location="18:59-18:77">
+            <elementType xsi:type="ocl:OclModelElement" location="18:68-18:76" name="Node" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:IteratorExp" location="19:2-19:39" name="select">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="19:2-19:15" name="children">
+              <source xsi:type="ocl:VariableExp" location="19:2-19:6" referredVariable="/2"/>
+            </source>
+            <body xsi:type="ocl:OperatorCallExp" location="19:28-19:38" operationName="=">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="19:28-19:34" name="name">
+                <source xsi:type="ocl:VariableExp" location="19:28-19:29" referredVariable="/0/@helpers.0/@definition/@feature/@body/@iterators.0"/>
+              </source>
+              <arguments xsi:type="ocl:VariableExp" location="19:37-19:38" referredVariable="/0/@helpers.0/@definition/@feature/@parameters.0"/>
+            </body>
+            <iterators location="19:24-19:25" varName="e" variableExp="/0/@helpers.0/@definition/@feature/@body/@body/@source/@source"/>
+          </body>
+        </feature>
+        <context_ location="18:8-18:27">
+          <context_ xsi:type="ocl:OclModelElement" location="18:16-18:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="26:1-27:73">
+      <commentsBefore>-- HELPER:	getAttr</commentsBefore>
+      <commentsBefore>-- Returns an attribute with name n for XML element</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Sequence(XML!Attribute)</commentsBefore>
+      <commentsAfter>-- HELPER:	hasAttr</commentsAfter>
+      <commentsAfter>-- Returns true/false regarding XML element has attribute with name n or doesn't have</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Boolean</commentsAfter>
+      <definition location="26:8-27:72">
+        <feature xsi:type="ocl:Operation" location="26:33-27:72" name="getAttr">
+          <parameters location="26:41-26:51" varName="n" variableExp="/0/@helpers.1/@definition/@feature/@body/@source/@source/@arguments.0">
+            <type xsi:type="ocl:StringType" location="26:45-26:51"/>
+          </parameters>
+          <returnType xsi:type="ocl:SequenceType" location="26:55-26:78">
+            <elementType xsi:type="ocl:OclModelElement" location="26:64-26:77" name="Attribute" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:CollectionOperationCallExp" location="27:2-27:72" operationName="first">
+            <source xsi:type="ocl:IteratorExp" location="27:2-27:63" name="select">
+              <source xsi:type="ocl:OperationCallExp" location="27:2-27:21" operationName="getChildren">
+                <source xsi:type="ocl:VariableExp" location="27:2-27:6" referredVariable="/3"/>
+                <arguments xsi:type="ocl:VariableExp" location="27:19-27:20" referredVariable="/0/@helpers.1/@definition/@feature/@parameters.0"/>
+              </source>
+              <body xsi:type="ocl:OperationCallExp" location="27:34-27:62" operationName="oclIsKindOf">
+                <source xsi:type="ocl:VariableExp" location="27:34-27:35" referredVariable="/0/@helpers.1/@definition/@feature/@body/@source/@iterators.0"/>
+                <arguments xsi:type="ocl:OclModelElement" location="27:48-27:61" name="Attribute" model="/1"/>
+              </body>
+              <iterators location="27:30-27:31" varName="e" variableExp="/0/@helpers.1/@definition/@feature/@body/@source/@body/@source"/>
+            </source>
+          </body>
+        </feature>
+        <context_ location="26:8-26:27">
+          <context_ xsi:type="ocl:OclModelElement" location="26:16-26:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="34:1-40:8">
+      <commentsBefore>-- HELPER:	hasAttr</commentsBefore>
+      <commentsBefore>-- Returns true/false regarding XML element has attribute with name n or doesn't have</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Boolean</commentsBefore>
+      <commentsAfter>-- HELPER:	getAttrVal</commentsAfter>
+      <commentsAfter>-- Returns a string corresponding to the value of the attribute (identified by</commentsAfter>
+      <commentsAfter>-- the string passed as parameter) of the contextual XML!Element.</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		String</commentsAfter>
+      <definition location="34:8-40:7">
+        <feature xsi:type="ocl:Operation" location="34:33-40:7" name="hasAttr">
+          <parameters location="34:41-34:51" varName="n" variableExp="/0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@arguments.0">
+            <type xsi:type="ocl:StringType" location="34:45-34:51"/>
+          </parameters>
+          <returnType xsi:type="ocl:BooleanType" location="34:55-34:62"/>
+          <body xsi:type="ocl:LetExp" location="35:2-40:7">
+            <variable location="35:6-35:41" varName="d" variableExp="/0/@helpers.2/@definition/@feature/@body/@in_/@condition/@source">
+              <type xsi:type="ocl:OclModelElement" location="35:10-35:23" name="Attribute" model="/1"/>
+              <initExpression xsi:type="ocl:OperationCallExp" location="35:26-35:41" operationName="getAttr">
+                <source xsi:type="ocl:VariableExp" location="35:26-35:30" referredVariable="/4"/>
+                <arguments xsi:type="ocl:VariableExp" location="35:39-35:40" referredVariable="/0/@helpers.2/@definition/@feature/@parameters.0"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:IfExp" location="36:2-40:7">
+              <thenExpression xsi:type="ocl:BooleanExp" location="37:3-37:8"/>
+              <condition xsi:type="ocl:OperationCallExp" location="36:5-36:23" operationName="oclIsUndefined">
+                <source xsi:type="ocl:VariableExp" location="36:5-36:6" referredVariable="/0/@helpers.2/@definition/@feature/@body/@variable"/>
+              </condition>
+              <elseExpression xsi:type="ocl:BooleanExp" location="39:3-39:7" booleanSymbol="true"/>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="34:8-34:27">
+          <context_ xsi:type="ocl:OclModelElement" location="34:16-34:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="48:1-54:8">
+      <commentsBefore>-- HELPER:	getAttrVal</commentsBefore>
+      <commentsBefore>-- Returns a string corresponding to the value of the attribute (identified by</commentsBefore>
+      <commentsBefore>-- the string passed as parameter) of the contextual XML!Element.</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		String</commentsBefore>
+      <commentsAfter>-- HELPER:	getAttrVal</commentsAfter>
+      <commentsAfter>-- Returns a true/false value for Boolean attribute type of XML element</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Boolean</commentsAfter>
+      <definition location="48:8-54:7">
+        <feature xsi:type="ocl:Operation" location="48:33-54:7" name="getAttrVal">
+          <parameters location="48:44-48:54" varName="n" variableExp="/0/@helpers.3/@definition/@feature/@body/@variable/@initExpression/@arguments.0">
+            <type xsi:type="ocl:StringType" location="48:48-48:54"/>
+          </parameters>
+          <returnType xsi:type="ocl:StringType" location="48:58-48:64"/>
+          <body xsi:type="ocl:LetExp" location="49:2-54:7">
+            <variable location="49:6-49:41" varName="d" variableExp="/0/@helpers.3/@definition/@feature/@body/@in_/@condition/@source /0/@helpers.3/@definition/@feature/@body/@in_/@elseExpression/@source">
+              <type xsi:type="ocl:OclModelElement" location="49:10-49:23" name="Attribute" model="/1"/>
+              <initExpression xsi:type="ocl:OperationCallExp" location="49:26-49:41" operationName="getAttr">
+                <source xsi:type="ocl:VariableExp" location="49:26-49:30" referredVariable="/5"/>
+                <arguments xsi:type="ocl:VariableExp" location="49:39-49:40" referredVariable="/0/@helpers.3/@definition/@feature/@parameters.0"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:IfExp" location="50:2-54:7">
+              <thenExpression xsi:type="ocl:OclUndefinedExp" location="51:3-51:15"/>
+              <condition xsi:type="ocl:OperationCallExp" location="50:5-50:23" operationName="oclIsUndefined">
+                <source xsi:type="ocl:VariableExp" location="50:5-50:6" referredVariable="/0/@helpers.3/@definition/@feature/@body/@variable"/>
+              </condition>
+              <elseExpression xsi:type="ocl:NavigationOrAttributeCallExp" location="53:3-53:10" name="value">
+                <source xsi:type="ocl:VariableExp" location="53:3-53:4" referredVariable="/0/@helpers.3/@definition/@feature/@body/@variable"/>
+              </elseExpression>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="48:8-48:27">
+          <context_ xsi:type="ocl:OclModelElement" location="48:16-48:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="61:1-67:8">
+      <commentsBefore>-- HELPER:	getAttrVal</commentsBefore>
+      <commentsBefore>-- Returns a true/false value for Boolean attribute type of XML element</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Boolean</commentsBefore>
+      <commentsAfter>-- HELPER:	getIntegerAttrVal</commentsAfter>
+      <commentsAfter>-- Returns an integer value for Integer attribute type of XML element</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Boolean</commentsAfter>
+      <definition location="61:8-67:7">
+        <feature xsi:type="ocl:Operation" location="61:33-67:7" name="getBooleanAttrVal">
+          <parameters location="61:51-61:61" varName="n" variableExp="/0/@helpers.4/@definition/@feature/@body/@variable/@initExpression/@arguments.0">
+            <type xsi:type="ocl:StringType" location="61:55-61:61"/>
+          </parameters>
+          <returnType xsi:type="ocl:BooleanType" location="61:65-61:72"/>
+          <body xsi:type="ocl:LetExp" location="62:2-67:7">
+            <variable location="62:6-62:37" varName="v" variableExp="/0/@helpers.4/@definition/@feature/@body/@in_/@condition/@source /0/@helpers.4/@definition/@feature/@body/@in_/@elseExpression/@source">
+              <type xsi:type="ocl:StringType" location="62:10-62:16"/>
+              <initExpression xsi:type="ocl:OperationCallExp" location="62:19-62:37" operationName="getAttrVal">
+                <source xsi:type="ocl:VariableExp" location="62:19-62:23" referredVariable="/6"/>
+                <arguments xsi:type="ocl:VariableExp" location="62:35-62:36" referredVariable="/0/@helpers.4/@definition/@feature/@parameters.0"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:IfExp" location="63:2-67:7">
+              <thenExpression xsi:type="ocl:OclUndefinedExp" location="64:3-64:15"/>
+              <condition xsi:type="ocl:OperationCallExp" location="63:5-63:23" operationName="oclIsUndefined">
+                <source xsi:type="ocl:VariableExp" location="63:5-63:6" referredVariable="/0/@helpers.4/@definition/@feature/@body/@variable"/>
+              </condition>
+              <elseExpression xsi:type="ocl:OperatorCallExp" location="66:3-66:13" operationName="=">
+                <source xsi:type="ocl:VariableExp" location="66:3-66:4" referredVariable="/0/@helpers.4/@definition/@feature/@body/@variable"/>
+                <arguments xsi:type="ocl:StringExp" location="66:7-66:13" stringSymbol="true"/>
+              </elseExpression>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="61:8-61:27">
+          <context_ xsi:type="ocl:OclModelElement" location="61:16-61:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="74:1-80:8">
+      <commentsBefore>-- HELPER:	getIntegerAttrVal</commentsBefore>
+      <commentsBefore>-- Returns an integer value for Integer attribute type of XML element</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Boolean</commentsBefore>
+      <commentsAfter>-- HELPER:	rootElt</commentsAfter>
+      <commentsAfter>-- Returns the root Root element of the XML input model.</commentsAfter>
+      <commentsAfter>-- CONTEXT:	thisModule</commentsAfter>
+      <commentsAfter>-- OUT:		XML!Root</commentsAfter>
+      <definition location="74:8-80:7">
+        <feature xsi:type="ocl:Operation" location="74:33-80:7" name="getIntegerAttrVal">
+          <parameters location="74:51-74:61" varName="n" variableExp="/0/@helpers.5/@definition/@feature/@body/@variable/@initExpression/@arguments.0">
+            <type xsi:type="ocl:StringType" location="74:55-74:61"/>
+          </parameters>
+          <returnType xsi:type="ocl:IntegerType" location="74:65-74:72"/>
+          <body xsi:type="ocl:LetExp" location="75:2-80:7">
+            <variable location="75:6-75:37" varName="v" variableExp="/0/@helpers.5/@definition/@feature/@body/@in_/@condition/@source /0/@helpers.5/@definition/@feature/@body/@in_/@elseExpression/@source">
+              <type xsi:type="ocl:StringType" location="75:10-75:16"/>
+              <initExpression xsi:type="ocl:OperationCallExp" location="75:19-75:37" operationName="getAttrVal">
+                <source xsi:type="ocl:VariableExp" location="75:19-75:23" referredVariable="/7"/>
+                <arguments xsi:type="ocl:VariableExp" location="75:35-75:36" referredVariable="/0/@helpers.5/@definition/@feature/@parameters.0"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:IfExp" location="76:2-80:7">
+              <thenExpression xsi:type="ocl:OclUndefinedExp" location="77:3-77:15"/>
+              <condition xsi:type="ocl:OperationCallExp" location="76:5-76:23" operationName="oclIsUndefined">
+                <source xsi:type="ocl:VariableExp" location="76:5-76:6" referredVariable="/0/@helpers.5/@definition/@feature/@body/@variable"/>
+              </condition>
+              <elseExpression xsi:type="ocl:OperationCallExp" location="79:3-79:16" operationName="toInteger">
+                <source xsi:type="ocl:VariableExp" location="79:3-79:4" referredVariable="/0/@helpers.5/@definition/@feature/@body/@variable"/>
+              </elseExpression>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="74:8-74:27">
+          <context_ xsi:type="ocl:OclModelElement" location="74:16-74:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="86:1-87:49">
+      <commentsBefore>-- HELPER:	rootElt</commentsBefore>
+      <commentsBefore>-- Returns the root Root element of the XML input model.</commentsBefore>
+      <commentsBefore>-- CONTEXT:	thisModule</commentsBefore>
+      <commentsBefore>-- OUT:		XML!Root</commentsBefore>
+      <commentsAfter>-- HELPER:	toBoolean</commentsAfter>
+      <commentsAfter>-- Converts String value to Boolean value</commentsAfter>
+      <commentsAfter>-- CONTEXT:	String</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Boolean</commentsAfter>
+      <definition location="86:8-87:48">
+        <feature xsi:type="ocl:Attribute" location="86:13-87:48" name="rootElt">
+          <initExpression xsi:type="ocl:CollectionOperationCallExp" location="87:2-87:48" operationName="first">
+            <source xsi:type="ocl:CollectionOperationCallExp" location="87:2-87:39" operationName="asSequence">
+              <source xsi:type="ocl:OperationCallExp" location="87:2-87:25" operationName="allInstances">
+                <source xsi:type="ocl:OclModelElement" location="87:2-87:10" name="Root" model="/1"/>
+              </source>
+            </source>
+          </initExpression>
+          <type xsi:type="ocl:OclModelElement" location="86:23-86:31" name="Root" model="/1"/>
+        </feature>
+      </definition>
+    </helpers>
+    <helpers location="94:1-98:8">
+      <commentsBefore>-- HELPER:	toBoolean</commentsBefore>
+      <commentsBefore>-- Converts String value to Boolean value</commentsBefore>
+      <commentsBefore>-- CONTEXT:	String</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Boolean</commentsBefore>
+      <commentsAfter>-- HELPER:	getElementsByName</commentsAfter>
+      <commentsAfter>-- Returns the XML!Element corresponding to the children (identified by the</commentsAfter>
+      <commentsAfter>-- string passed as parameter) of the contextual XML!Element.</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		Set(XML!Element)</commentsAfter>
+      <definition location="94:8-98:7">
+        <feature xsi:type="ocl:Operation" location="94:28-98:7" name="toBoolean">
+          <returnType xsi:type="ocl:BooleanType" location="94:42-94:49"/>
+          <body xsi:type="ocl:IfExp" location="95:2-98:7">
+            <thenExpression xsi:type="ocl:BooleanExp" location="96:7-96:11" booleanSymbol="true"/>
+            <condition xsi:type="ocl:OperatorCallExp" location="95:5-95:18" operationName="=">
+              <source xsi:type="ocl:VariableExp" location="95:5-95:9" referredVariable="/8"/>
+              <arguments xsi:type="ocl:StringExp" location="95:12-95:18" stringSymbol="true"/>
+            </condition>
+            <elseExpression xsi:type="ocl:BooleanExp" location="97:7-97:12"/>
+          </body>
+        </feature>
+        <context_ location="94:8-94:22">
+          <context_ xsi:type="ocl:StringType" location="94:16-94:22"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="106:1-107:74">
+      <commentsBefore>-- HELPER:	getElementsByName</commentsBefore>
+      <commentsBefore>-- Returns the XML!Element corresponding to the children (identified by the</commentsBefore>
+      <commentsBefore>-- string passed as parameter) of the contextual XML!Element.</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		Set(XML!Element)</commentsBefore>
+      <commentsAfter>-- HELPER:	getFirstElementByName</commentsAfter>
+      <commentsAfter>-- Returns the XML!Element corresponding to the first child (identified by the</commentsAfter>
+      <commentsAfter>-- string passed as parameter) of the contextual XML!Element.</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- IN:		String</commentsAfter>
+      <commentsAfter>-- OUT:		XML!Element</commentsAfter>
+      <definition location="106:8-107:73">
+        <feature xsi:type="ocl:Operation" location="106:33-107:73" name="getElementsByName">
+          <parameters location="106:51-106:64" varName="name" variableExp="/0/@helpers.8/@definition/@feature/@body/@body/@arguments.0/@arguments.0">
+            <type xsi:type="ocl:StringType" location="106:58-106:64"/>
+          </parameters>
+          <returnType xsi:type="ocl:SetType" location="106:68-106:84">
+            <elementType xsi:type="ocl:OclModelElement" location="106:72-106:83" name="Element" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:IteratorExp" location="107:2-107:73" name="select">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="107:2-107:15" name="children">
+              <source xsi:type="ocl:VariableExp" location="107:2-107:6" referredVariable="/9"/>
+            </source>
+            <body xsi:type="ocl:OperatorCallExp" location="107:28-107:72" operationName="and">
+              <source xsi:type="ocl:OperationCallExp" location="107:28-107:54" operationName="oclIsKindOf">
+                <source xsi:type="ocl:VariableExp" location="107:28-107:29" referredVariable="/0/@helpers.8/@definition/@feature/@body/@iterators.0"/>
+                <arguments xsi:type="ocl:OclModelElement" location="107:42-107:53" name="Element" model="/1"/>
+              </source>
+              <arguments xsi:type="ocl:OperatorCallExp" location="107:59-107:72" operationName="=">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="107:59-107:65" name="name">
+                  <source xsi:type="ocl:VariableExp" location="107:59-107:60" referredVariable="/0/@helpers.8/@definition/@feature/@body/@iterators.0"/>
+                </source>
+                <arguments xsi:type="ocl:VariableExp" location="107:68-107:72" referredVariable="/0/@helpers.8/@definition/@feature/@parameters.0"/>
+              </arguments>
+            </body>
+            <iterators location="107:24-107:25" varName="c" variableExp="/0/@helpers.8/@definition/@feature/@body/@body/@source/@source /0/@helpers.8/@definition/@feature/@body/@body/@arguments.0/@source/@source"/>
+          </body>
+        </feature>
+        <context_ location="106:8-106:27">
+          <context_ xsi:type="ocl:OclModelElement" location="106:16-106:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="115:1-116:40">
+      <commentsBefore>-- HELPER:	getFirstElementByName</commentsBefore>
+      <commentsBefore>-- Returns the XML!Element corresponding to the first child (identified by the</commentsBefore>
+      <commentsBefore>-- string passed as parameter) of the contextual XML!Element.</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- IN:		String</commentsBefore>
+      <commentsBefore>-- OUT:		XML!Element</commentsBefore>
+      <commentsAfter>-- HELPER:	getTextValue()</commentsAfter>
+      <commentsAfter>-- Returns a string contraining the value of the Text which is the child of the</commentsAfter>
+      <commentsAfter>-- contextual XML!Element.</commentsAfter>
+      <commentsAfter>-- CONTEXT:	XML!Element</commentsAfter>
+      <commentsAfter>-- OUT:		String</commentsAfter>
+      <definition location="115:8-116:39">
+        <feature xsi:type="ocl:Operation" location="115:33-116:39" name="getFirstElementByName">
+          <parameters location="115:55-115:68" varName="name" variableExp="/0/@helpers.9/@definition/@feature/@body/@source/@arguments.0">
+            <type xsi:type="ocl:StringType" location="115:62-115:68"/>
+          </parameters>
+          <returnType xsi:type="ocl:OclModelElement" location="115:72-115:83" name="Element" model="/1"/>
+          <body xsi:type="ocl:CollectionOperationCallExp" location="116:2-116:39" operationName="first">
+            <source xsi:type="ocl:OperationCallExp" location="116:2-116:30" operationName="getElementsByName">
+              <source xsi:type="ocl:VariableExp" location="116:2-116:6" referredVariable="/10"/>
+              <arguments xsi:type="ocl:VariableExp" location="116:25-116:29" referredVariable="/0/@helpers.9/@definition/@feature/@parameters.0"/>
+            </source>
+          </body>
+        </feature>
+        <context_ location="115:8-115:27">
+          <context_ xsi:type="ocl:OclModelElement" location="115:16-115:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="123:1-134:8">
+      <commentsBefore>-- HELPER:	getTextValue()</commentsBefore>
+      <commentsBefore>-- Returns a string contraining the value of the Text which is the child of the</commentsBefore>
+      <commentsBefore>-- contextual XML!Element.</commentsBefore>
+      <commentsBefore>-- CONTEXT:	XML!Element</commentsBefore>
+      <commentsBefore>-- OUT:		String</commentsBefore>
+      <commentsAfter>-- This helper return a Sequence of XML!Element from a child name of a child names of self</commentsAfter>
+      <commentsAfter>-- CONTEXT: XML!Element</commentsAfter>
+      <commentsAfter>-- RETURN:  Sequence(XML!Element)</commentsAfter>
+      <definition location="123:8-134:7">
+        <feature xsi:type="ocl:Operation" location="123:33-134:7" name="getTextValue">
+          <returnType xsi:type="ocl:StringType" location="123:50-123:56"/>
+          <body xsi:type="ocl:IfExp" location="124:2-134:7">
+            <thenExpression xsi:type="ocl:StringExp" location="126:3-126:5" stringSymbol=""/>
+            <condition xsi:type="ocl:CollectionOperationCallExp" location="124:5-124:29" operationName="isEmpty">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="124:5-124:18" name="children">
+                <source xsi:type="ocl:VariableExp" location="124:5-124:9" referredVariable="/11"/>
+              </source>
+            </condition>
+            <elseExpression xsi:type="ocl:IfExp" location="128:3-133:8">
+              <thenExpression xsi:type="ocl:StringExp" location="130:4-130:6" stringSymbol=""/>
+              <condition xsi:type="ocl:OperationCallExp" location="128:6-128:45" operationName="oclIsUndefined">
+                <source xsi:type="ocl:CollectionOperationCallExp" location="128:6-128:28" operationName="first">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="128:6-128:19" name="children">
+                    <source xsi:type="ocl:VariableExp" location="128:6-128:10" referredVariable="/12"/>
+                  </source>
+                </source>
+              </condition>
+              <elseExpression xsi:type="ocl:NavigationOrAttributeCallExp" location="132:4-132:32" name="value">
+                <source xsi:type="ocl:CollectionOperationCallExp" location="132:4-132:26" operationName="first">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="132:4-132:17" name="children">
+                    <source xsi:type="ocl:VariableExp" location="132:4-132:8" referredVariable="/13"/>
+                  </source>
+                </source>
+              </elseExpression>
+            </elseExpression>
+          </body>
+        </feature>
+        <context_ location="123:8-123:27">
+          <context_ xsi:type="ocl:OclModelElement" location="123:16-123:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="139:1-141:100">
+      <commentsBefore>-- This helper return a Sequence of XML!Element from a child name of a child names of self</commentsBefore>
+      <commentsBefore>-- CONTEXT: XML!Element</commentsBefore>
+      <commentsBefore>-- RETURN:  Sequence(XML!Element)</commentsBefore>
+      <commentsAfter>-- This helper recognize the XML!Element who are children of e</commentsAfter>
+      <commentsAfter>-- CONTEXT: XML!Element</commentsAfter>
+      <commentsAfter>-- RETURN:  Boolean</commentsAfter>
+      <definition location="139:8-141:99">
+        <feature xsi:type="ocl:Operation" location="139:33-141:99" name="getSeq">
+          <parameters location="139:40-139:54" varName="names" variableExp="/0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@body/@arguments.0/@arguments.0">
+            <type xsi:type="ocl:StringType" location="139:48-139:54"/>
+          </parameters>
+          <parameters location="139:55-139:68" varName="name" variableExp="/0/@helpers.11/@definition/@feature/@body/@body/@arguments.0/@arguments.0">
+            <type xsi:type="ocl:StringType" location="139:62-139:68"/>
+          </parameters>
+          <returnType xsi:type="ocl:SequenceType" location="139:72-139:93">
+            <elementType xsi:type="ocl:OclModelElement" location="139:81-139:92" name="Element" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:IteratorExp" location="140:2-141:99" name="select">
+            <source xsi:type="ocl:CollectionOperationCallExp" location="140:2-141:40" operationName="flatten">
+              <source xsi:type="ocl:IteratorExp" location="140:2-141:29" name="collect">
+                <source xsi:type="ocl:IteratorExp" location="140:2-140:77" name="select">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="140:2-140:15" name="children">
+                    <source xsi:type="ocl:VariableExp" location="140:2-140:6" referredVariable="/14"/>
+                  </source>
+                  <body xsi:type="ocl:OperatorCallExp" location="140:30-140:75" operationName="and">
+                    <source xsi:type="ocl:OperationCallExp" location="140:30-140:56" operationName="oclIsTypeOf">
+                      <source xsi:type="ocl:VariableExp" location="140:30-140:31" referredVariable="/0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@iterators.0"/>
+                      <arguments xsi:type="ocl:OclModelElement" location="140:44-140:55" name="Element" model="/1"/>
+                    </source>
+                    <arguments xsi:type="ocl:OperatorCallExp" location="140:61-140:75" operationName="=">
+                      <source xsi:type="ocl:NavigationOrAttributeCallExp" location="140:61-140:67" name="name">
+                        <source xsi:type="ocl:VariableExp" location="140:61-140:62" referredVariable="/0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@iterators.0"/>
+                      </source>
+                      <arguments xsi:type="ocl:VariableExp" location="140:70-140:75" referredVariable="/0/@helpers.11/@definition/@feature/@parameters.0"/>
+                    </arguments>
+                  </body>
+                  <iterators location="140:26-140:27" varName="m" variableExp="/0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@body/@source/@source /0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@body/@arguments.0/@source/@source"/>
+                </source>
+                <body xsi:type="ocl:NavigationOrAttributeCallExp" location="141:17-141:27" name="children">
+                  <source xsi:type="ocl:VariableExp" location="141:17-141:18" referredVariable="/0/@helpers.11/@definition/@feature/@body/@source/@source/@iterators.0"/>
+                </body>
+                <iterators location="141:13-141:14" varName="d" variableExp="/0/@helpers.11/@definition/@feature/@body/@source/@source/@body/@source"/>
+              </source>
+            </source>
+            <body xsi:type="ocl:OperatorCallExp" location="141:53-141:97" operationName="and">
+              <source xsi:type="ocl:OperationCallExp" location="141:53-141:79" operationName="oclIsTypeOf">
+                <source xsi:type="ocl:VariableExp" location="141:53-141:54" referredVariable="/0/@helpers.11/@definition/@feature/@body/@iterators.0"/>
+                <arguments xsi:type="ocl:OclModelElement" location="141:67-141:78" name="Element" model="/1"/>
+              </source>
+              <arguments xsi:type="ocl:OperatorCallExp" location="141:84-141:97" operationName="=">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="141:84-141:90" name="name">
+                  <source xsi:type="ocl:VariableExp" location="141:84-141:85" referredVariable="/0/@helpers.11/@definition/@feature/@body/@iterators.0"/>
+                </source>
+                <arguments xsi:type="ocl:VariableExp" location="141:93-141:97" referredVariable="/0/@helpers.11/@definition/@feature/@parameters.1"/>
+              </arguments>
+            </body>
+            <iterators location="141:49-141:50" varName="m" variableExp="/0/@helpers.11/@definition/@feature/@body/@body/@source/@source /0/@helpers.11/@definition/@feature/@body/@body/@arguments.0/@source/@source"/>
+          </body>
+        </feature>
+        <context_ location="139:8-139:27">
+          <context_ xsi:type="ocl:OclModelElement" location="139:16-139:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="146:1-155:7">
+      <commentsBefore>-- This helper recognize the XML!Element who are children of e</commentsBefore>
+      <commentsBefore>-- CONTEXT: XML!Element</commentsBefore>
+      <commentsBefore>-- RETURN:  Boolean</commentsBefore>
+      <definition location="146:8-155:6">
+        <feature xsi:type="ocl:Operation" location="146:33-155:6" name="isChildrenOf">
+          <parameters location="146:46-146:61" varName="e" variableExp="/0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@thenExpression/@condition/@arguments.0 /0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@thenExpression/@elseExpression/@arguments.0">
+            <type xsi:type="ocl:OclModelElement" location="146:50-146:61" name="Element" model="/1"/>
+          </parameters>
+          <returnType xsi:type="ocl:BooleanType" location="146:65-146:72"/>
+          <body xsi:type="ocl:LetExp" location="147:2-155:6">
+            <variable location="147:6-154:8" varName="a" variableExp="/0/@helpers.12/@definition/@feature/@body/@in_">
+              <type xsi:type="ocl:BooleanType" location="147:10-147:17"/>
+              <initExpression xsi:type="ocl:IfExp" location="148:3-154:8">
+                <thenExpression xsi:type="ocl:IfExp" location="149:9-152:10">
+                  <thenExpression xsi:type="ocl:BooleanExp" location="150:11-150:15" booleanSymbol="true"/>
+                  <condition xsi:type="ocl:OperatorCallExp" location="149:12-149:27" operationName="=">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="149:12-149:23" name="parent">
+                      <source xsi:type="ocl:VariableExp" location="149:12-149:16" referredVariable="/16"/>
+                    </source>
+                    <arguments xsi:type="ocl:VariableExp" location="149:26-149:27" referredVariable="/0/@helpers.12/@definition/@feature/@parameters.0"/>
+                  </condition>
+                  <elseExpression xsi:type="ocl:OperationCallExp" location="151:11-151:38" operationName="isChildrenOf">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="151:11-151:22" name="parent">
+                      <source xsi:type="ocl:VariableExp" location="151:11-151:15" referredVariable="/17"/>
+                    </source>
+                    <arguments xsi:type="ocl:VariableExp" location="151:36-151:37" referredVariable="/0/@helpers.12/@definition/@feature/@parameters.0"/>
+                  </elseExpression>
+                </thenExpression>
+                <condition xsi:type="ocl:OperationCallExp" location="148:6-148:42" operationName="oclIsKindOf">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="148:6-148:17" name="parent">
+                    <source xsi:type="ocl:VariableExp" location="148:6-148:10" referredVariable="/15"/>
+                  </source>
+                  <arguments xsi:type="ocl:OclModelElement" location="148:30-148:41" name="Element" model="/1"/>
+                </condition>
+                <elseExpression xsi:type="ocl:BooleanExp" location="153:9-153:14"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:VariableExp" location="155:5-155:6" referredVariable="/0/@helpers.12/@definition/@feature/@body/@variable"/>
+          </body>
+        </feature>
+        <context_ location="146:8-146:27">
+          <context_ xsi:type="ocl:OclModelElement" location="146:16-146:27" name="Element" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+  </atl:Library>
+  <ocl:OclModel location="18:16-18:19" name="XML" elements="/0/@helpers.0/@definition/@context_/@context_ /0/@helpers.0/@definition/@feature/@returnType/@elementType /0/@helpers.1/@definition/@context_/@context_ /0/@helpers.1/@definition/@feature/@returnType/@elementType /0/@helpers.1/@definition/@feature/@body/@source/@body/@arguments.0 /0/@helpers.2/@definition/@context_/@context_ /0/@helpers.2/@definition/@feature/@body/@variable/@type /0/@helpers.3/@definition/@context_/@context_ /0/@helpers.3/@definition/@feature/@body/@variable/@type /0/@helpers.4/@definition/@context_/@context_ /0/@helpers.5/@definition/@context_/@context_ /0/@helpers.6/@definition/@feature/@type /0/@helpers.6/@definition/@feature/@initExpression/@source/@source/@source /0/@helpers.8/@definition/@context_/@context_ /0/@helpers.8/@definition/@feature/@returnType/@elementType /0/@helpers.8/@definition/@feature/@body/@body/@source/@arguments.0 /0/@helpers.9/@definition/@context_/@context_ /0/@helpers.9/@definition/@feature/@returnType /0/@helpers.10/@definition/@context_/@context_ /0/@helpers.11/@definition/@context_/@context_ /0/@helpers.11/@definition/@feature/@returnType/@elementType /0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@body/@source/@arguments.0 /0/@helpers.11/@definition/@feature/@body/@body/@source/@arguments.0 /0/@helpers.12/@definition/@context_/@context_ /0/@helpers.12/@definition/@feature/@parameters.0/@type /0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@condition/@arguments.0"/>
+  <ocl:VariableDeclaration location="19:2-19:6" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="27:2-27:6" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="35:26-35:30" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@source"/>
+  <ocl:VariableDeclaration location="49:26-49:30" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@variable/@initExpression/@source"/>
+  <ocl:VariableDeclaration location="62:19-62:23" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@variable/@initExpression/@source"/>
+  <ocl:VariableDeclaration location="75:19-75:23" varName="self" variableExp="/0/@helpers.5/@definition/@feature/@body/@variable/@initExpression/@source"/>
+  <ocl:VariableDeclaration location="95:5-95:9" varName="self" variableExp="/0/@helpers.7/@definition/@feature/@body/@condition/@source"/>
+  <ocl:VariableDeclaration location="107:2-107:6" varName="self" variableExp="/0/@helpers.8/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="116:2-116:6" varName="self" variableExp="/0/@helpers.9/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="124:5-124:9" varName="self" variableExp="/0/@helpers.10/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="128:6-128:10" varName="self" variableExp="/0/@helpers.10/@definition/@feature/@body/@elseExpression/@condition/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="132:4-132:8" varName="self" variableExp="/0/@helpers.10/@definition/@feature/@body/@elseExpression/@elseExpression/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="140:2-140:6" varName="self" variableExp="/0/@helpers.11/@definition/@feature/@body/@source/@source/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="148:6-148:10" varName="self" variableExp="/0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="149:12-149:16" varName="self" variableExp="/0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@thenExpression/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="151:11-151:15" varName="self" variableExp="/0/@helpers.12/@definition/@feature/@body/@variable/@initExpression/@thenExpression/@elseExpression/@source/@source"/>
+</xmi:XMI>

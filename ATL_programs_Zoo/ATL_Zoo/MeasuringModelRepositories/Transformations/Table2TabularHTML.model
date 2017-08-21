@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Module location="8:1-110:2" name="Table2HTML">
+    <commentsBefore>--@name Table2HTML</commentsBefore>
+    <commentsBefore>--@version 1.0</commentsBefore>
+    <commentsBefore>--@domains Table, HTML</commentsBefore>
+    <commentsBefore>--@authors Eric Vepa (eric.vepa &lt;at> gmail.com)</commentsBefore>
+    <commentsBefore>--@date 2006/08/04</commentsBefore>
+    <commentsBefore>--@description This transformation is used to transform generic tables into HTML model with tables.</commentsBefore>
+    <commentsAfter>--@end lazy rule Cell2TD</commentsAfter>
+    <inModels location="9:24-9:34" name="IN" metamodel="/2"/>
+    <outModels location="9:8-9:18" name="OUT" metamodel="/1"/>
+    <elements xsi:type="atl:Helper" location="13:1-17:73">
+      <commentsBefore>--@begin attribute helper allValidTables</commentsBefore>
+      <commentsBefore>--@comments returns all valid sorted tables, ie tables which are not for bar or pie chart representations</commentsBefore>
+      <commentsAfter>--@end attribute helper allValidTables</commentsAfter>
+      <commentsAfter>--@begin helper roundValue</commentsAfter>
+      <commentsAfter>--@comments for String with a Real content (a dot exists), returns the String with only one decimal after the dot</commentsAfter>
+      <definition location="13:8-17:72">
+        <feature xsi:type="ocl:Attribute" location="13:14-17:72" name="allValidTables">
+          <initExpression xsi:type="ocl:IteratorExp" location="14:2-17:72" name="sortedBy">
+            <source xsi:type="ocl:CollectionOperationCallExp" location="14:2-17:12" operationName="asSet">
+              <source xsi:type="ocl:IteratorExp" location="14:2-16:75" name="select">
+                <source xsi:type="ocl:IteratorExp" location="14:2-15:74" name="select">
+                  <source xsi:type="ocl:OperationCallExp" location="14:2-14:28" operationName="allInstances">
+                    <source xsi:type="ocl:OclModelElement" location="14:2-14:13" name="Table" model="/2"/>
+                  </source>
+                  <body xsi:type="ocl:OperatorCallExp" location="15:16-15:73" operationName="&lt;>">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="15:16-15:58" name="content">
+                      <source xsi:type="ocl:CollectionOperationCallExp" location="15:16-15:50" operationName="first">
+                        <source xsi:type="ocl:NavigationOrAttributeCallExp" location="15:16-15:41" name="cells">
+                          <source xsi:type="ocl:CollectionOperationCallExp" location="15:16-15:35" operationName="first">
+                            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="15:16-15:26" name="rows">
+                              <source xsi:type="ocl:VariableExp" location="15:16-15:21" referredVariable="/0/@elements.0/@definition/@feature/@initExpression/@source/@source/@source/@iterators.0"/>
+                            </source>
+                          </source>
+                        </source>
+                      </source>
+                    </source>
+                    <arguments xsi:type="ocl:StringExp" location="15:62-15:73" stringSymbol="Bar Chart"/>
+                  </body>
+                  <iterators location="15:10-15:15" varName="table" variableExp="/0/@elements.0/@definition/@feature/@initExpression/@source/@source/@source/@body/@source/@source/@source/@source/@source/@source"/>
+                </source>
+                <body xsi:type="ocl:OperatorCallExp" location="16:17-16:74" operationName="&lt;>">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="16:17-16:59" name="content">
+                    <source xsi:type="ocl:CollectionOperationCallExp" location="16:17-16:51" operationName="first">
+                      <source xsi:type="ocl:NavigationOrAttributeCallExp" location="16:17-16:42" name="cells">
+                        <source xsi:type="ocl:CollectionOperationCallExp" location="16:17-16:36" operationName="first">
+                          <source xsi:type="ocl:NavigationOrAttributeCallExp" location="16:17-16:27" name="rows">
+                            <source xsi:type="ocl:VariableExp" location="16:17-16:22" referredVariable="/0/@elements.0/@definition/@feature/@initExpression/@source/@source/@iterators.0"/>
+                          </source>
+                        </source>
+                      </source>
+                    </source>
+                  </source>
+                  <arguments xsi:type="ocl:StringExp" location="16:63-16:74" stringSymbol="Pie Chart"/>
+                </body>
+                <iterators location="16:11-16:16" varName="table" variableExp="/0/@elements.0/@definition/@feature/@initExpression/@source/@source/@body/@source/@source/@source/@source/@source/@source"/>
+              </source>
+            </source>
+            <body xsi:type="ocl:NavigationOrAttributeCallExp" location="17:29-17:71" name="content">
+              <source xsi:type="ocl:CollectionOperationCallExp" location="17:29-17:63" operationName="first">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="17:29-17:54" name="cells">
+                  <source xsi:type="ocl:CollectionOperationCallExp" location="17:29-17:48" operationName="first">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="17:29-17:39" name="rows">
+                      <source xsi:type="ocl:VariableExp" location="17:29-17:34" referredVariable="/0/@elements.0/@definition/@feature/@initExpression/@iterators.0"/>
+                    </source>
+                  </source>
+                </source>
+              </source>
+            </body>
+            <iterators location="17:23-17:28" varName="table" variableExp="/0/@elements.0/@definition/@feature/@initExpression/@body/@source/@source/@source/@source/@source"/>
+          </initExpression>
+          <type xsi:type="ocl:SequenceType" location="13:31-13:52">
+            <elementType xsi:type="ocl:OclModelElement" location="13:40-13:51" name="Table" model="/2"/>
+          </type>
+        </feature>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="22:1-27:9">
+      <commentsBefore>--@end attribute helper allValidTables</commentsBefore>
+      <commentsBefore>--@begin helper roundValue</commentsBefore>
+      <commentsBefore>--@comments for String with a Real content (a dot exists), returns the String with only one decimal after the dot</commentsBefore>
+      <commentsAfter>--@end helper roundValue</commentsAfter>
+      <commentsAfter>--@begin entrypoint rule HTML</commentsAfter>
+      <commentsAfter>--@comments only one HTML tag is created with one BODY tag</commentsAfter>
+      <definition location="22:8-27:8">
+        <feature xsi:type="ocl:Operation" location="22:33-27:8" name="roundValue">
+          <returnType xsi:type="ocl:StringType" location="22:48-22:54"/>
+          <body xsi:type="ocl:LetExp" location="23:2-27:8">
+            <variable location="23:6-23:50" varName="point" variableExp="/0/@elements.1/@definition/@feature/@body/@in_/@condition/@source /0/@elements.1/@definition/@feature/@body/@in_/@thenExpression/@arguments.1/@source">
+              <type xsi:type="ocl:IntegerType" location="23:14-23:21"/>
+              <initExpression xsi:type="ocl:CollectionOperationCallExp" location="23:24-23:50" operationName="indexOf">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="23:24-23:36" name="content">
+                  <source xsi:type="ocl:VariableExp" location="23:24-23:28" referredVariable="/3"/>
+                </source>
+                <arguments xsi:type="ocl:StringExp" location="23:46-23:49" stringSymbol="."/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:IfExp" location="24:3-27:8">
+              <thenExpression xsi:type="ocl:CollectionOperationCallExp" location="25:9-25:43" operationName="substring">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="25:9-25:21" name="content">
+                  <source xsi:type="ocl:VariableExp" location="25:9-25:13" referredVariable="/4"/>
+                </source>
+                <arguments xsi:type="ocl:IntegerExp" location="25:33-25:34" integerSymbol="1"/>
+                <arguments xsi:type="ocl:OperatorCallExp" location="25:35-25:42" operationName="+">
+                  <source xsi:type="ocl:VariableExp" location="25:35-25:40" referredVariable="/0/@elements.1/@definition/@feature/@body/@variable"/>
+                  <arguments xsi:type="ocl:IntegerExp" location="25:41-25:42" integerSymbol="2"/>
+                </arguments>
+              </thenExpression>
+              <condition xsi:type="ocl:OperatorCallExp" location="24:6-24:15" operationName=">">
+                <source xsi:type="ocl:VariableExp" location="24:6-24:11" referredVariable="/0/@elements.1/@definition/@feature/@body/@variable"/>
+                <arguments xsi:type="ocl:IntegerExp" location="24:14-24:15"/>
+              </condition>
+              <elseExpression xsi:type="ocl:NavigationOrAttributeCallExp" location="26:9-26:21" name="content">
+                <source xsi:type="ocl:VariableExp" location="26:9-26:13" referredVariable="/5"/>
+              </elseExpression>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="22:8-22:26">
+          <context_ xsi:type="ocl:OclModelElement" location="22:16-22:26" name="Cell" model="/2"/>
+        </context_>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:CalledRule" location="32:1-57:2" name="HTML" isEntrypoint="true">
+      <commentsBefore>--@end helper roundValue</commentsBefore>
+      <commentsBefore>--@begin entrypoint rule HTML</commentsBefore>
+      <commentsBefore>--@comments only one HTML tag is created with one BODY tag</commentsBefore>
+      <commentsAfter>--@end entrypoint rule HTML</commentsAfter>
+      <commentsAfter>--@begin lazy rule Table2TABLE</commentsAfter>
+      <commentsAfter>--@comments HTML TABLE are added in the BODY of the only HTML tag</commentsAfter>
+      <outPattern location="36:2-56:4">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="37:3-40:4" varName="h">
+          <type xsi:type="ocl:OclModelElement" location="37:5-37:14" name="HTML" model="/1"/>
+          <bindings location="38:4-38:16" propertyName="head">
+            <value xsi:type="ocl:VariableExp" location="38:12-38:16" referredVariable="/0/@elements.2/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings location="39:4-39:16" propertyName="body">
+            <value xsi:type="ocl:VariableExp" location="39:12-39:16" referredVariable="/0/@elements.2/@outPattern/@elements.3"/>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" location="41:3-43:4" varName="head" variableExp="/0/@elements.2/@outPattern/@elements.0/@bindings.0/@value">
+          <type xsi:type="ocl:OclModelElement" location="41:8-41:17" name="HEAD" model="/1"/>
+          <bindings location="42:4-42:25" propertyName="headElements">
+            <value xsi:type="ocl:VariableExp" location="42:20-42:25" referredVariable="/0/@elements.2/@outPattern/@elements.2"/>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" location="44:3-52:4" varName="title" variableExp="/0/@elements.2/@outPattern/@elements.1/@bindings.0/@value">
+          <type xsi:type="ocl:OclModelElement" location="44:9-44:19" name="TITLE" model="/1"/>
+          <bindings location="45:4-51:13" propertyName="value">
+            <value xsi:type="ocl:IfExp" location="45:13-51:13">
+              <thenExpression xsi:type="ocl:IfExp" location="46:14-49:17">
+                <thenExpression xsi:type="ocl:NavigationOrAttributeCallExp" location="47:18-47:77" name="content">
+                  <source xsi:type="ocl:CollectionOperationCallExp" location="47:18-47:69" operationName="first">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="47:18-47:60" name="cells">
+                      <source xsi:type="ocl:CollectionOperationCallExp" location="47:18-47:54" operationName="at">
+                        <source xsi:type="ocl:NavigationOrAttributeCallExp" location="47:18-47:47" name="rows">
+                          <source xsi:type="ocl:CollectionOperationCallExp" location="47:18-47:42" operationName="first">
+                            <source xsi:type="ocl:VariableExp" location="47:18-47:33" referredVariable="/0/@elements.2/@variables.0"/>
+                          </source>
+                        </source>
+                        <arguments xsi:type="ocl:IntegerExp" location="47:52-47:53" integerSymbol="2"/>
+                      </source>
+                    </source>
+                  </source>
+                </thenExpression>
+                <condition xsi:type="ocl:OperatorCallExp" location="46:17-46:58" operationName="=">
+                  <source xsi:type="ocl:CollectionOperationCallExp" location="46:17-46:54" operationName="size">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="46:17-46:46" name="rows">
+                      <source xsi:type="ocl:CollectionOperationCallExp" location="46:17-46:41" operationName="first">
+                        <source xsi:type="ocl:VariableExp" location="46:17-46:32" referredVariable="/0/@elements.2/@variables.0"/>
+                      </source>
+                    </source>
+                  </source>
+                  <arguments xsi:type="ocl:IntegerExp" location="46:57-46:58" integerSymbol="2"/>
+                </condition>
+                <elseExpression xsi:type="ocl:StringExp" location="48:18-48:23" stringSymbol="Zoo"/>
+              </thenExpression>
+              <condition xsi:type="ocl:CollectionOperationCallExp" location="45:16-45:43" operationName="notEmpty">
+                <source xsi:type="ocl:VariableExp" location="45:16-45:31" referredVariable="/0/@elements.2/@variables.0"/>
+              </condition>
+              <elseExpression xsi:type="ocl:StringExp" location="50:14-50:16" stringSymbol=""/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" location="53:3-56:4" varName="body" variableExp="/0/@elements.2/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" location="53:8-53:17" name="BODY" model="/1"/>
+          <bindings location="54:4-55:51" propertyName="bodyElements">
+            <value xsi:type="ocl:IterateExp" location="54:20-55:51">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="54:20-54:45" name="allValidTables">
+                <source xsi:type="ocl:VariableExp" location="54:20-54:30" referredVariable="/7"/>
+              </source>
+              <body xsi:type="ocl:CollectionOperationCallExp" location="55:5-55:50" operationName="including">
+                <source xsi:type="ocl:VariableExp" location="55:5-55:8" referredVariable="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@result"/>
+                <arguments xsi:type="ocl:OperationCallExp" location="55:20-55:49" operationName="Table2TABLE">
+                  <source xsi:type="ocl:VariableExp" location="55:20-55:30" referredVariable="/8"/>
+                  <arguments xsi:type="ocl:VariableExp" location="55:43-55:48" referredVariable="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@iterators.0"/>
+                </arguments>
+              </body>
+              <iterators location="54:55-54:60" varName="table" variableExp="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@body/@arguments.0/@arguments.0"/>
+              <result location="54:62-54:97" varName="acc" variableExp="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@body/@source">
+                <type xsi:type="ocl:SequenceType" location="54:66-54:86">
+                  <elementType xsi:type="ocl:OclModelElement" location="54:75-54:85" name="TABLE" model="/1"/>
+                </type>
+                <initExpression xsi:type="ocl:SequenceExp" location="54:87-54:97"/>
+              </result>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables location="34:3-34:143" varName="metamodelTables" variableExp="/0/@elements.2/@outPattern/@elements.2/@bindings.0/@value/@condition/@source /0/@elements.2/@outPattern/@elements.2/@bindings.0/@value/@thenExpression/@condition/@source/@source/@source/@source /0/@elements.2/@outPattern/@elements.2/@bindings.0/@value/@thenExpression/@thenExpression/@source/@source/@source/@source/@source/@source">
+        <type xsi:type="ocl:SequenceType" location="34:21-34:42">
+          <elementType xsi:type="ocl:OclModelElement" location="34:30-34:41" name="Table" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:IteratorExp" location="34:45-34:142" name="select">
+          <source xsi:type="ocl:NavigationOrAttributeCallExp" location="34:45-34:70" name="allValidTables">
+            <source xsi:type="ocl:VariableExp" location="34:45-34:55" referredVariable="/6"/>
+          </source>
+          <body xsi:type="ocl:OperatorCallExp" location="34:85-34:141" operationName="=">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="34:85-34:127" name="content">
+              <source xsi:type="ocl:CollectionOperationCallExp" location="34:85-34:119" operationName="first">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="34:85-34:110" name="cells">
+                  <source xsi:type="ocl:CollectionOperationCallExp" location="34:85-34:104" operationName="first">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="34:85-34:95" name="rows">
+                      <source xsi:type="ocl:VariableExp" location="34:85-34:90" referredVariable="/0/@elements.2/@variables.0/@initExpression/@iterators.0"/>
+                    </source>
+                  </source>
+                </source>
+              </source>
+            </source>
+            <arguments xsi:type="ocl:StringExp" location="34:130-34:141" stringSymbol="Metamodel"/>
+          </body>
+          <iterators location="34:79-34:84" varName="table" variableExp="/0/@elements.2/@variables.0/@initExpression/@body/@source/@source/@source/@source/@source/@source"/>
+        </initExpression>
+      </variables>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" location="62:1-76:2" name="Table2TABLE">
+      <commentsBefore>--@end entrypoint rule HTML</commentsBefore>
+      <commentsBefore>--@begin lazy rule Table2TABLE</commentsBefore>
+      <commentsBefore>--@comments HTML TABLE are added in the BODY of the only HTML tag</commentsBefore>
+      <commentsAfter>--@end lazy rule Table2TABLE</commentsAfter>
+      <commentsAfter>--@begin lazy rule Cell2TH</commentsAfter>
+      <outPattern location="65:2-75:4">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="66:3-71:4" varName="table">
+          <type xsi:type="ocl:OclModelElement" location="66:9-66:19" name="TABLE" model="/1"/>
+          <bindings location="67:4-67:17" propertyName="border">
+            <value xsi:type="ocl:StringExp" location="67:14-67:17" stringSymbol="1"/>
+          </bindings>
+          <bindings location="68:4-68:19" propertyName="trs">
+            <value xsi:type="ocl:VariableExp" location="68:11-68:19" referredVariable="/0/@elements.3/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings location="69:4-70:44" propertyName="trs">
+            <value xsi:type="ocl:IterateExp" location="69:11-70:44">
+              <source xsi:type="ocl:CollectionOperationCallExp" location="69:11-69:52" operationName="subSequence">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" location="69:11-69:19" name="rows">
+                  <source xsi:type="ocl:VariableExp" location="69:11-69:14" referredVariable="/0/@elements.3/@inPattern/@elements.0"/>
+                </source>
+                <arguments xsi:type="ocl:IntegerExp" location="69:33-69:34" integerSymbol="2"/>
+                <arguments xsi:type="ocl:CollectionOperationCallExp" location="69:35-69:51" operationName="size">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="69:35-69:43" name="rows">
+                    <source xsi:type="ocl:VariableExp" location="69:35-69:38" referredVariable="/0/@elements.3/@inPattern/@elements.0"/>
+                  </source>
+                </arguments>
+              </source>
+              <body xsi:type="ocl:CollectionOperationCallExp" location="70:5-70:43" operationName="including">
+                <source xsi:type="ocl:VariableExp" location="70:5-70:8" referredVariable="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@result"/>
+                <arguments xsi:type="ocl:OperationCallExp" location="70:20-70:42" operationName="Row2TR">
+                  <source xsi:type="ocl:VariableExp" location="70:20-70:30" referredVariable="/9"/>
+                  <arguments xsi:type="ocl:VariableExp" location="70:38-70:41" referredVariable="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@iterators.0"/>
+                </arguments>
+              </body>
+              <iterators location="69:62-69:65" varName="row" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@body/@arguments.0/@arguments.0"/>
+              <result location="69:67-69:99" varName="acc" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@body/@source">
+                <type xsi:type="ocl:SequenceType" location="69:71-69:88">
+                  <elementType xsi:type="ocl:OclModelElement" location="69:80-69:87" name="TR" model="/1"/>
+                </type>
+                <initExpression xsi:type="ocl:SequenceExp" location="69:89-69:99"/>
+              </result>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" location="72:3-75:4" varName="firstRow" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" location="72:12-72:19" name="TR" model="/1"/>
+          <bindings location="73:4-74:46" propertyName="tds">
+            <value xsi:type="ocl:IterateExp" location="73:11-74:46">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="73:11-73:34" name="cells">
+                <source xsi:type="ocl:CollectionOperationCallExp" location="73:11-73:28" operationName="first">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="73:11-73:19" name="rows">
+                    <source xsi:type="ocl:VariableExp" location="73:11-73:14" referredVariable="/0/@elements.3/@inPattern/@elements.0"/>
+                  </source>
+                </source>
+              </source>
+              <body xsi:type="ocl:CollectionOperationCallExp" location="74:5-74:45" operationName="including">
+                <source xsi:type="ocl:VariableExp" location="74:5-74:8" referredVariable="/0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@result"/>
+                <arguments xsi:type="ocl:OperationCallExp" location="74:20-74:44" operationName="Cell2TH">
+                  <source xsi:type="ocl:VariableExp" location="74:20-74:30" referredVariable="/10"/>
+                  <arguments xsi:type="ocl:VariableExp" location="74:39-74:43" referredVariable="/0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@iterators.0"/>
+                </arguments>
+              </body>
+              <iterators location="73:44-73:48" varName="cell" variableExp="/0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@body/@arguments.0/@arguments.0"/>
+              <result location="73:50-73:82" varName="acc" variableExp="/0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@body/@source">
+                <type xsi:type="ocl:SequenceType" location="73:54-73:71">
+                  <elementType xsi:type="ocl:OclModelElement" location="73:63-73:70" name="TH" model="/1"/>
+                </type>
+                <initExpression xsi:type="ocl:SequenceExp" location="73:72-73:82"/>
+              </result>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern location="63:2-64:18">
+        <elements xsi:type="atl:SimpleInPatternElement" location="64:3-64:18" varName="tab" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@source/@source/@source /0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@source/@arguments.1/@source/@source /0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@source/@source/@source/@source">
+          <type xsi:type="ocl:OclModelElement" location="64:7-64:18" name="Table" model="/2"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" location="80:1-87:2" name="Cell2TH">
+      <commentsBefore>--@end lazy rule Table2TABLE</commentsBefore>
+      <commentsBefore>--@begin lazy rule Cell2TH</commentsBefore>
+      <commentsAfter>--@end lazy rule Cell2TH</commentsAfter>
+      <commentsAfter>--@begin lazy rule Row2TR</commentsAfter>
+      <outPattern location="83:2-86:4">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="84:3-86:4" varName="th">
+          <type xsi:type="ocl:OclModelElement" location="84:6-84:13" name="TH" model="/1"/>
+          <bindings location="85:4-85:30" propertyName="value">
+            <value xsi:type="ocl:OperationCallExp" location="85:13-85:30" operationName="roundValue">
+              <source xsi:type="ocl:VariableExp" location="85:13-85:17" referredVariable="/0/@elements.4/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern location="81:2-82:18">
+        <elements xsi:type="atl:SimpleInPatternElement" location="82:3-82:18" varName="cell" variableExp="/0/@elements.4/@outPattern/@elements.0/@bindings.0/@value/@source">
+          <type xsi:type="ocl:OclModelElement" location="82:8-82:18" name="Cell" model="/2"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" location="91:1-99:2" name="Row2TR">
+      <commentsBefore>--@end lazy rule Cell2TH</commentsBefore>
+      <commentsBefore>--@begin lazy rule Row2TR</commentsBefore>
+      <commentsAfter>--@end lazy rule Row2TR</commentsAfter>
+      <commentsAfter>--@begin lazy rule Cell2TD</commentsAfter>
+      <outPattern location="94:2-98:4">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="95:3-98:4" varName="tr">
+          <type xsi:type="ocl:OclModelElement" location="95:6-95:13" name="TR" model="/1"/>
+          <bindings location="96:4-97:46" propertyName="tds">
+            <value xsi:type="ocl:IterateExp" location="96:11-97:46">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="96:11-96:20" name="cells">
+                <source xsi:type="ocl:VariableExp" location="96:11-96:14" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+              </source>
+              <body xsi:type="ocl:CollectionOperationCallExp" location="97:5-97:45" operationName="including">
+                <source xsi:type="ocl:VariableExp" location="97:5-97:8" referredVariable="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@result"/>
+                <arguments xsi:type="ocl:OperationCallExp" location="97:20-97:44" operationName="Cell2TD">
+                  <source xsi:type="ocl:VariableExp" location="97:20-97:30" referredVariable="/11"/>
+                  <arguments xsi:type="ocl:VariableExp" location="97:39-97:43" referredVariable="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@iterators.0"/>
+                </arguments>
+              </body>
+              <iterators location="96:30-96:34" varName="cell" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@body/@arguments.0/@arguments.0"/>
+              <result location="96:36-96:68" varName="acc" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@body/@source">
+                <type xsi:type="ocl:SequenceType" location="96:40-96:57">
+                  <elementType xsi:type="ocl:OclModelElement" location="96:49-96:56" name="TD" model="/1"/>
+                </type>
+                <initExpression xsi:type="ocl:SequenceExp" location="96:58-96:68"/>
+              </result>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern location="92:2-93:16">
+        <elements xsi:type="atl:SimpleInPatternElement" location="93:3-93:16" varName="row" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@source/@source">
+          <type xsi:type="ocl:OclModelElement" location="93:7-93:16" name="Row" model="/2"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" location="103:1-110:2" name="Cell2TD">
+      <commentsBefore>--@end lazy rule Row2TR</commentsBefore>
+      <commentsBefore>--@begin lazy rule Cell2TD</commentsBefore>
+      <commentsAfter>--@end lazy rule Cell2TD</commentsAfter>
+      <outPattern location="106:2-109:4">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="107:3-109:4" varName="td">
+          <type xsi:type="ocl:OclModelElement" location="107:6-107:13" name="TD" model="/1"/>
+          <bindings location="108:4-108:30" propertyName="value">
+            <value xsi:type="ocl:OperationCallExp" location="108:13-108:30" operationName="roundValue">
+              <source xsi:type="ocl:VariableExp" location="108:13-108:17" referredVariable="/0/@elements.6/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern location="104:2-105:18">
+        <elements xsi:type="atl:SimpleInPatternElement" location="105:3-105:18" varName="cell" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.0/@value/@source">
+          <type xsi:type="ocl:OclModelElement" location="105:8-105:18" name="Cell" model="/2"/>
+        </elements>
+      </inPattern>
+    </elements>
+  </atl:Module>
+  <ocl:OclModel location="9:14-9:18" name="HTML" elements="/0/@elements.2/@outPattern/@elements.0/@type /0/@elements.2/@outPattern/@elements.1/@type /0/@elements.2/@outPattern/@elements.2/@type /0/@elements.2/@outPattern/@elements.3/@type /0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@result/@type/@elementType /0/@elements.3/@outPattern/@elements.0/@type /0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@result/@type/@elementType /0/@elements.3/@outPattern/@elements.1/@type /0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@result/@type/@elementType /0/@elements.4/@outPattern/@elements.0/@type /0/@elements.5/@outPattern/@elements.0/@type /0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@result/@type/@elementType /0/@elements.6/@outPattern/@elements.0/@type" model="/0/@outModels.0"/>
+  <ocl:OclModel location="9:29-9:34" name="Table" elements="/0/@elements.0/@definition/@feature/@type/@elementType /0/@elements.0/@definition/@feature/@initExpression/@source/@source/@source/@source/@source /0/@elements.1/@definition/@context_/@context_ /0/@elements.2/@variables.0/@type/@elementType /0/@elements.3/@inPattern/@elements.0/@type /0/@elements.4/@inPattern/@elements.0/@type /0/@elements.5/@inPattern/@elements.0/@type /0/@elements.6/@inPattern/@elements.0/@type" model="/0/@inModels.0"/>
+  <ocl:VariableDeclaration location="23:24-23:28" varName="self" variableExp="/0/@elements.1/@definition/@feature/@body/@variable/@initExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="25:9-25:13" varName="self" variableExp="/0/@elements.1/@definition/@feature/@body/@in_/@thenExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="26:9-26:13" varName="self" variableExp="/0/@elements.1/@definition/@feature/@body/@in_/@elseExpression/@source"/>
+  <ocl:VariableDeclaration location="34:45-34:55" varName="thisModule" variableExp="/0/@elements.2/@variables.0/@initExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="54:20-54:30" varName="thisModule" variableExp="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@source/@source"/>
+  <ocl:VariableDeclaration location="55:20-55:30" varName="thisModule" variableExp="/0/@elements.2/@outPattern/@elements.3/@bindings.0/@value/@body/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="70:20-70:30" varName="thisModule" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.2/@value/@body/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="74:20-74:30" varName="thisModule" variableExp="/0/@elements.3/@outPattern/@elements.1/@bindings.0/@value/@body/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="97:20-97:30" varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@body/@arguments.0/@source"/>
+</xmi:XMI>

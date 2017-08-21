@@ -1,0 +1,9 @@
+@action replace
+@feature name
+pattern change_inpattern_source_type
+instance:OclType from: SimpleInPatternElement.all.select(e|e.inPattern.rule.name.equals("Book2Publication")).first().type
+{
+	do {
+		instance.name = instance.name.firstToLowerCase();
+	}
+}

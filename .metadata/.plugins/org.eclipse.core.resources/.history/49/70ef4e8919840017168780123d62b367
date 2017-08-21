@@ -1,0 +1,4 @@
+-- Desc: this mutation operator replaces the name of a rule with another string
+-- Goal: this mutation operators can be used to change the name of inherited rule. If the super rule is extended or inherited by another rule, this should raise an compile error.
+
+ 

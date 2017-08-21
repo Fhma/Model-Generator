@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;uk.ac.york.cs.operators.selection.random/code/atl_addition_random_selection.eol&apos; to &apos;atl_random_selection.eol&apos;" description="Rename resource &apos;atl_addition_random_selection.eol&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="code/atl_addition_random_selection.eol" name="atl_random_selection.eol" stamp="1502720549531" updateReferences="true"/>
+</session>

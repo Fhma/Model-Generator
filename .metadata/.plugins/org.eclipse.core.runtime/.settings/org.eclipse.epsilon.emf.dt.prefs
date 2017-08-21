@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+metamodels=/org.eclipse.epsilon.emu.examples/ATL.ecore;/org.eclipse.epsilon.emu.examples/transformations/Book2Publication/3_in_out_metamodels/Book.ecore;/org.eclipse.epsilon.emu.examples/transformations/Book2Publication/3_in_out_metamodels/Publication.ecore;/org.eclipse.epsilon.emu.examples/transformations/Table2TabularHTML/3_metamodels/Table.ecore;/org.eclipse.epsilon.emu.examples/transformations/HTML2XML/3_metamodels/HTML.ecore;/org.eclipse.epsilon.emu.examples/transformations/HTML2XML/3_metamodels/XML.ecore

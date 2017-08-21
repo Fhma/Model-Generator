@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Module location="3:1-42:18" name="UML2OWL">
+    <commentsBefore>-- @atlcompiler atl2006</commentsBefore>
+    <inModels location="4:23-4:31" name="IN" metamodel="/5"/>
+    <outModels location="4:8-4:17" name="OUT" metamodel="/4"/>
+    <elements xsi:type="atl:Helper" location="13:1-19:4">
+      <commentsBefore>-- =============================================================================</commentsBefore>
+      <commentsBefore>-- UML2OWL</commentsBefore>
+      <commentsBefore>-- Version 1.0</commentsBefore>
+      <commentsBefore>-- Release date : 20/02/2007</commentsBefore>
+      <commentsBefore>-- Author : Guillaume Hillairet (g.hillairet@gmail.com)</commentsBefore>
+      <commentsBefore>-- =============================================================================</commentsBefore>
+      <definition location="13:8-19:3">
+        <feature xsi:type="ocl:Attribute" location="13:13-19:3" name="primitiveTypeMap">
+          <initExpression xsi:type="ocl:MapExp" location="14:2-19:3">
+            <elements location="15:3-15:56">
+              <key xsi:type="ocl:StringExp" location="15:4-15:12" stringSymbol="String"/>
+              <value xsi:type="ocl:StringExp" location="15:14-15:55" stringSymbol="http://www.w3.org/2001/XMLSchema#string"/>
+            </elements>
+            <elements location="16:3-16:69">
+              <key xsi:type="ocl:StringExp" location="16:4-16:13" stringSymbol="Integer"/>
+              <value xsi:type="ocl:StringExp" location="16:15-16:68" stringSymbol="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </elements>
+            <elements location="17:3-17:58">
+              <key xsi:type="ocl:StringExp" location="17:4-17:13" stringSymbol="Boolean"/>
+              <value xsi:type="ocl:StringExp" location="17:15-17:57" stringSymbol="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </elements>
+            <elements location="18:3-18:68">
+              <key xsi:type="ocl:StringExp" location="18:4-18:22" stringSymbol="UnlimitedNatural"/>
+              <value xsi:type="ocl:StringExp" location="18:24-18:66" stringSymbol="http://www.w3.org/2001/XMLSchema#integer"/>
+            </elements>
+          </initExpression>
+          <type xsi:type="ocl:MapType" location="13:32-13:51">
+            <valueType xsi:type="ocl:StringType" location="13:44-13:50"/>
+            <keyType xsi:type="ocl:StringType" location="13:36-13:42"/>
+          </type>
+        </feature>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="21:1-21:78">
+      <definition location="21:8-21:76">
+        <feature xsi:type="ocl:Operation" location="21:13-21:76" name="addNamespace">
+          <parameters location="21:27-21:37" varName="s" variableExp="/0/@elements.1/@definition/@feature/@body/@arguments.0">
+            <type xsi:type="ocl:StringType" location="21:31-21:37"/>
+          </parameters>
+          <returnType xsi:type="ocl:StringType" location="21:42-21:48"/>
+          <body xsi:type="ocl:OperatorCallExp" location="21:51-21:76" operationName="+">
+            <source xsi:type="ocl:StringExp" location="21:51-21:72" stringSymbol="http://example.org/"/>
+            <arguments xsi:type="ocl:VariableExp" location="21:75-21:76" referredVariable="/0/@elements.1/@definition/@feature/@parameters.0"/>
+          </body>
+        </feature>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="23:1-24:41">
+      <definition location="23:8-24:40">
+        <context_ location="23:8-23:23">
+          <context_ xsi:type="ocl:OclModelElement" location="23:16-23:23" name="uml" model="/5"/>
+        </context_>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="26:1-29:62">
+      <definition location="26:8-29:61">
+        <context_ location="26:8-26:23">
+          <context_ xsi:type="ocl:OclModelElement" location="26:16-26:23" name="uml" model="/5"/>
+        </context_>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="31:1-36:66">
+      <definition location="31:8-36:65">
+        <context_ location="31:8-31:23">
+          <context_ xsi:type="ocl:OclModelElement" location="31:16-31:23" name="uml" model="/5"/>
+        </context_>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper" location="38:1-42:18">
+      <definition location="38:8-42:17">
+        <feature xsi:type="ocl:Attribute" location="38:13-42:17" name="sequenceOfUnionClass"/>
+      </definition>
+    </elements>
+  </atl:Module>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" location="38:46-38:53" name="uml" model="/5"/>
+  </ocl:SequenceType>
+  <ocl:LetExp>
+    <variable location="39:6-40:9" varName="s">
+      <initExpression xsi:type="ocl:OclModelElement" location="40:2-40:9" name="uml" model="/5"/>
+    </variable>
+  </ocl:LetExp>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" location="39:20-39:27" name="uml" model="/5"/>
+  </ocl:SequenceType>
+  <ocl:OclModel location="4:14-4:17" name="OWL" model="/0/@outModels.0"/>
+  <ocl:OclModel location="4:28-4:31" name="UML" elements="/0/@elements.2/@definition/@context_/@context_ /0/@elements.3/@definition/@context_/@context_ /0/@elements.4/@definition/@context_/@context_ /1/@elementType /3/@elementType /2/@variable/@initExpression" model="/0/@inModels.0"/>
+</xmi:XMI>

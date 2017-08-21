@@ -1,0 +1,6 @@
+package uk.ac.york.cs.operators.selection.random;
+
+public class MuOpRandomSel {
+
+	private final List<String>
+}

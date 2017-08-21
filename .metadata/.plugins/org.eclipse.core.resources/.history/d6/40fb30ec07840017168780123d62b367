@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<HTML:HTML xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HTML="HTML">
+  <head>
+    <headElements xsi:type="HTML:TITLE" value=""/>
+  </head>
+  <body>
+    <bodyElements xsi:type="HTML:TABLE" border="1">
+      <trs>
+        <tds xsi:type="HTML:TH" value="Package"/>
+        <tds xsi:type="HTML:TH" value="MOOD2::IIF"/>
+        <tds xsi:type="HTML:TH" value="MOOD::AIF"/>
+        <tds xsi:type="HTML:TH" value="MOOD::CCF"/>
+        <tds xsi:type="HTML:TH" value="MOOD::ICF"/>
+        <tds xsi:type="HTML:TH" value="MOOD::RIF"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::ADI"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::ANA"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::AWI"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::DSC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NAC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NIC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NLC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NMI"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NNC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NOH"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NSI"/>
+      </trs>
+      <trs>
+        <tds value="DTD"/>
+        <tds value="50%" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="12%" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="33.3%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0.3" align="right"/>
+        <tds value="1.4" align="right"/>
+        <tds value="19" align="right"/>
+        <tds value="6" align="right"/>
+        <tds value="13" align="right"/>
+        <tds value="13" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="15" align="right"/>
+        <tds value="15" align="right"/>
+        <tds value="15" align="right"/>
+      </trs>
+    </bodyElements>
+    <bodyElements xsi:type="HTML:TABLE" border="1">
+      <trs>
+        <tds xsi:type="HTML:TH" value="Class"/>
+        <tds xsi:type="HTML:TH" value="EMOOSE::SIZE2"/>
+        <tds xsi:type="HTML:TH" value="MOOSE::CBO"/>
+        <tds xsi:type="HTML:TH" value="MOOSE::DIT"/>
+        <tds xsi:type="HTML:TH" value="MOOSE::NOC"/>
+        <tds xsi:type="HTML:TH" value="MOOSE::WRC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::CCD"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::CSM"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::DAC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::DCC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::DRC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::MAA"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::MCC"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::MOA"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::MRA"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::MRM"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NAD"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NOA"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NOD"/>
+        <tds xsi:type="HTML:TH" value="QMOOD::NOR"/>
+      </trs>
+      <trs>
+        <tds value="DTD.AnyElement"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.AttributeDescription"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.AttributeList"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.AttributeType"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Children"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Choice"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.DefaultValue"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="5" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Element"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.ElementContent"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Entity"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="33.3%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Enumeration"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Leaf"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Mixed"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.NoDefaultValue"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="66.6%" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="4" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="3" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Notation"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.OtherAttributeType"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.RestrictedElement"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="50%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.Sequence"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="100%" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="2" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+      </trs>
+      <trs>
+        <tds value="DTD.TypeDescription"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="5" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0%" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="0" align="right"/>
+        <tds value="1" align="right"/>
+        <tds value="0" align="right"/>
+      </trs>
+    </bodyElements>
+  </body>
+</HTML:HTML>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Library location="10:1-81:8" name="MOOD4KM3">
+    <commentsBefore>--@atlcompiler	atl2006</commentsBefore>
+    <commentsBefore>--@name			MOOD4KM3</commentsBefore>
+    <commentsBefore>--@version		1.0</commentsBefore>
+    <commentsBefore>--@domains		KM3, MOOD, MOOD2, metrics</commentsBefore>
+    <commentsBefore>--@authors		Eric Vepa (evepa &lt;at> sodius.com) for SODIUS (www.sodius.com)</commentsBefore>
+    <commentsBefore>--@date			2007/06/05</commentsBefore>
+    <commentsBefore>--@description	This library provides MOOD (Metrics for Object-Oriented Design) and MOOD2 metrics suites on KM3 metamodels. Only the metrics that fit to KM3 metamodels have been implemented.</commentsBefore>
+    <commentsBefore>--@see			Baroni, A.L.: Formal Definition of Object-Oriented Design Metrics. Master Thesis, Vrije University, Brussel, Belgium, 2002.</commentsBefore>
+    <commentsAfter>--@end helper MOOD::ICF</commentsAfter>
+    <helpers location="21:1-26:8">
+      <commentsBefore>-- Library Template</commentsBefore>
+      <commentsBefore>-- ============================================================</commentsBefore>
+      <commentsBefore>-- MOOD and MOOD2 Metrics : Intra-Specification Level Metrics =</commentsBefore>
+      <commentsBefore>-- ============================================================</commentsBefore>
+      <commentsBefore>--@begin helper MOOD::AIF</commentsBefore>
+      <commentsBefore>--@comments Attributes Inheritance Factor</commentsBefore>
+      <commentsBefore>--@comments Quotient between the number of inherited Attributes in all Classes of the Package and the number of available Attributes (locally defined plus inherited) for all Classes of the current Package.</commentsBefore>
+      <commentsBefore>--@comments The pre-condition states that the package must have available Attributes.</commentsBefore>
+      <commentsBefore>--@comments AIF() = 0 means that there is no effective Attribute inheritance (either there are no inheritance hierarchies or all inherited Attributes are redefined).</commentsBefore>
+      <commentsAfter>--@end helper MOOD::AIF</commentsAfter>
+      <commentsAfter>--@begin helper MOOD::RIF</commentsAfter>
+      <commentsAfter>--@comments References Inheritance Factor</commentsAfter>
+      <commentsAfter>--@comments Quotient between the number of inherited References in all Classes of the Package and the number of available References (locally defined plus inherited) for all Classes of the current Package.</commentsAfter>
+      <commentsAfter>--@comments The pre-condition states that the package must have available References.</commentsAfter>
+      <commentsAfter>--@comments RIF() = 0 means that there is no effective Reference inheritance (either there are no inheritance hierarchies or all inherited References are redefined).</commentsAfter>
+      <definition location="21:8-26:7">
+        <feature xsi:type="ocl:Operation" location="22:7-26:7" name="AIF">
+          <returnType xsi:type="ocl:RealType" location="22:15-22:19"/>
+          <body xsi:type="ocl:IfExp" location="23:2-26:7">
+            <thenExpression xsi:type="ocl:OperatorCallExp" location="24:8-24:33" operationName="/">
+              <source xsi:type="ocl:OperationCallExp" location="24:8-24:19" operationName="PIAN">
+                <source xsi:type="ocl:VariableExp" location="24:8-24:12" referredVariable="/3"/>
+              </source>
+              <arguments xsi:type="ocl:OperationCallExp" location="24:22-24:33" operationName="PAAN">
+                <source xsi:type="ocl:VariableExp" location="24:22-24:26" referredVariable="/4"/>
+              </arguments>
+            </thenExpression>
+            <condition xsi:type="ocl:OperatorCallExp" location="23:5-23:20" operationName=">">
+              <source xsi:type="ocl:OperationCallExp" location="23:5-23:16" operationName="PAAN">
+                <source xsi:type="ocl:VariableExp" location="23:5-23:9" referredVariable="/2"/>
+              </source>
+              <arguments xsi:type="ocl:IntegerExp" location="23:19-23:20"/>
+            </condition>
+            <elseExpression xsi:type="ocl:IntegerExp" location="25:8-25:9"/>
+          </body>
+        </feature>
+        <context_ location="21:8-21:27">
+          <context_ xsi:type="ocl:OclModelElement" location="21:16-21:27" name="Package" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="34:1-39:8">
+      <commentsBefore>--@end helper MOOD::AIF</commentsBefore>
+      <commentsBefore>--@begin helper MOOD::RIF</commentsBefore>
+      <commentsBefore>--@comments References Inheritance Factor</commentsBefore>
+      <commentsBefore>--@comments Quotient between the number of inherited References in all Classes of the Package and the number of available References (locally defined plus inherited) for all Classes of the current Package.</commentsBefore>
+      <commentsBefore>--@comments The pre-condition states that the package must have available References.</commentsBefore>
+      <commentsBefore>--@comments RIF() = 0 means that there is no effective Reference inheritance (either there are no inheritance hierarchies or all inherited References are redefined).</commentsBefore>
+      <commentsAfter>--@end helper MOOD::RIF</commentsAfter>
+      <commentsAfter>--@begin helper MOOD2::IIF</commentsAfter>
+      <commentsAfter>--@comments Internal Inheritance Factor</commentsAfter>
+      <commentsAfter>--@comments Quotient between the number of inheritance links where both the base and derived Classes belong to the current Package and the total number of inheritance links originating in the current Package.</commentsAfter>
+      <commentsAfter>--@comments The pre-condition states that the package must have some inheritance links defined on it.</commentsAfter>
+      <commentsAfter>--@comments Inheritance links originating in the current package are those where the derived Class belongs to it.</commentsAfter>
+      <commentsAfter>--@comments The inheritance link is directed from the derived Class to the base one.</commentsAfter>
+      <definition location="34:8-39:7">
+        <feature xsi:type="ocl:Operation" location="35:7-39:7" name="RIF">
+          <returnType xsi:type="ocl:RealType" location="35:15-35:19"/>
+          <body xsi:type="ocl:IfExp" location="36:2-39:7">
+            <thenExpression xsi:type="ocl:OperatorCallExp" location="37:8-37:33" operationName="/">
+              <source xsi:type="ocl:OperationCallExp" location="37:8-37:19" operationName="PIRN">
+                <source xsi:type="ocl:VariableExp" location="37:8-37:12" referredVariable="/6"/>
+              </source>
+              <arguments xsi:type="ocl:OperationCallExp" location="37:22-37:33" operationName="PARN">
+                <source xsi:type="ocl:VariableExp" location="37:22-37:26" referredVariable="/7"/>
+              </arguments>
+            </thenExpression>
+            <condition xsi:type="ocl:OperatorCallExp" location="36:5-36:20" operationName=">">
+              <source xsi:type="ocl:OperationCallExp" location="36:5-36:16" operationName="PARN">
+                <source xsi:type="ocl:VariableExp" location="36:5-36:9" referredVariable="/5"/>
+              </source>
+              <arguments xsi:type="ocl:IntegerExp" location="36:19-36:20"/>
+            </condition>
+            <elseExpression xsi:type="ocl:IntegerExp" location="38:8-38:9"/>
+          </body>
+        </feature>
+        <context_ location="34:8-34:27">
+          <context_ xsi:type="ocl:OclModelElement" location="34:16-34:27" name="Package" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="48:1-53:8">
+      <commentsBefore>--@end helper MOOD::RIF</commentsBefore>
+      <commentsBefore>--@begin helper MOOD2::IIF</commentsBefore>
+      <commentsBefore>--@comments Internal Inheritance Factor</commentsBefore>
+      <commentsBefore>--@comments Quotient between the number of inheritance links where both the base and derived Classes belong to the current Package and the total number of inheritance links originating in the current Package.</commentsBefore>
+      <commentsBefore>--@comments The pre-condition states that the package must have some inheritance links defined on it.</commentsBefore>
+      <commentsBefore>--@comments Inheritance links originating in the current package are those where the derived Class belongs to it.</commentsBefore>
+      <commentsBefore>--@comments The inheritance link is directed from the derived Class to the base one.</commentsBefore>
+      <commentsAfter>--@end helper MOOD2::IIF</commentsAfter>
+      <commentsAfter>--@begin helper MOOD::CCF</commentsAfter>
+      <commentsAfter>--@comments Parametric Polymorphism Factor</commentsAfter>
+      <commentsAfter>--@comments Quotient between the actual number of coupled class-pairs within the Package and the maximum possible number of class-pair couplings in the Package. This coupling is the one not imputable to inheritance.</commentsAfter>
+      <commentsAfter>--@comments In a coupled class-pair one Class is the client and the other is the supplier.</commentsAfter>
+      <commentsAfter>--@comments These clientsupplier relations can have several shapes; see the function Classifier::CoupledClasses for details.</commentsAfter>
+      <commentsAfter>--@comments The pre-condition states that, with only one Class, there are no couplings within the package.</commentsAfter>
+      <commentsAfter>--@comments The square root counteracts for the fact that the couplings grow quadratically with the number of Classes.</commentsAfter>
+      <definition location="48:8-53:7">
+        <feature xsi:type="ocl:Operation" location="49:7-53:7" name="IIF">
+          <returnType xsi:type="ocl:RealType" location="49:15-49:19"/>
+          <body xsi:type="ocl:IfExp" location="50:2-53:7">
+            <thenExpression xsi:type="ocl:OperatorCallExp" location="51:8-51:35" operationName="/">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="51:8-51:17" name="IILN">
+                <source xsi:type="ocl:VariableExp" location="51:8-51:12" referredVariable="/9"/>
+              </source>
+              <arguments xsi:type="ocl:OperationCallExp" location="51:20-51:35" operationName="PILN">
+                <source xsi:type="ocl:VariableExp" location="51:20-51:24" referredVariable="/10"/>
+                <arguments xsi:type="ocl:VariableExp" location="51:30-51:34" referredVariable="/11"/>
+              </arguments>
+            </thenExpression>
+            <condition xsi:type="ocl:OperatorCallExp" location="50:5-50:18" operationName=">">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" location="50:5-50:14" name="IILN">
+                <source xsi:type="ocl:VariableExp" location="50:5-50:9" referredVariable="/8"/>
+              </source>
+              <arguments xsi:type="ocl:IntegerExp" location="50:17-50:18"/>
+            </condition>
+            <elseExpression xsi:type="ocl:IntegerExp" location="52:8-52:9"/>
+          </body>
+        </feature>
+        <context_ location="48:8-48:27">
+          <context_ xsi:type="ocl:OclModelElement" location="48:16-48:27" name="Package" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="63:1-68:8">
+      <commentsBefore>--@end helper MOOD2::IIF</commentsBefore>
+      <commentsBefore>--@begin helper MOOD::CCF</commentsBefore>
+      <commentsBefore>--@comments Parametric Polymorphism Factor</commentsBefore>
+      <commentsBefore>--@comments Quotient between the actual number of coupled class-pairs within the Package and the maximum possible number of class-pair couplings in the Package. This coupling is the one not imputable to inheritance.</commentsBefore>
+      <commentsBefore>--@comments In a coupled class-pair one Class is the client and the other is the supplier.</commentsBefore>
+      <commentsBefore>--@comments These clientsupplier relations can have several shapes; see the function Classifier::CoupledClasses for details.</commentsBefore>
+      <commentsBefore>--@comments The pre-condition states that, with only one Class, there are no couplings within the package.</commentsBefore>
+      <commentsBefore>--@comments The square root counteracts for the fact that the couplings grow quadratically with the number of Classes.</commentsBefore>
+      <commentsAfter>--@end helper MOOD::CCF</commentsAfter>
+      <commentsAfter>--@begin helper MOOD::ICF</commentsAfter>
+      <commentsAfter>--@comments Internal Coupling Factor</commentsAfter>
+      <commentsAfter>--@comments Quotient between the number of coupling links where both the client and supplier Classes belong to the current Package and the total number of coupling links originating in the current Package.</commentsAfter>
+      <commentsAfter>--@comments Coupling links originating in the current Package are those where the client Class belongs to it.</commentsAfter>
+      <commentsAfter>--@comments The coupling link is directed from the client Class to the supplier one.</commentsAfter>
+      <definition location="63:8-68:7">
+        <feature xsi:type="ocl:Operation" location="64:7-68:7" name="CCF">
+          <returnType xsi:type="ocl:RealType" location="64:15-64:19"/>
+          <body xsi:type="ocl:IfExp" location="65:2-68:7">
+            <thenExpression xsi:type="ocl:OperationCallExp" location="66:8-66:66" operationName="sqrt">
+              <source xsi:type="ocl:OperatorCallExp" location="66:9-66:58" operationName="/">
+                <source xsi:type="ocl:OperationCallExp" location="66:9-66:20" operationName="ICLN">
+                  <source xsi:type="ocl:VariableExp" location="66:9-66:13" referredVariable="/13"/>
+                </source>
+                <arguments xsi:type="ocl:OperatorCallExp" location="66:24-66:57" operationName="-">
+                  <source xsi:type="ocl:OperatorCallExp" location="66:24-66:45" operationName="*">
+                    <source xsi:type="ocl:OperationCallExp" location="66:24-66:33" operationName="CN">
+                      <source xsi:type="ocl:VariableExp" location="66:24-66:28" referredVariable="/14"/>
+                    </source>
+                    <arguments xsi:type="ocl:OperationCallExp" location="66:36-66:45" operationName="CN">
+                      <source xsi:type="ocl:VariableExp" location="66:36-66:40" referredVariable="/15"/>
+                    </arguments>
+                  </source>
+                  <arguments xsi:type="ocl:OperationCallExp" location="66:48-66:57" operationName="CN">
+                    <source xsi:type="ocl:VariableExp" location="66:48-66:52" referredVariable="/16"/>
+                  </arguments>
+                </arguments>
+              </source>
+            </thenExpression>
+            <condition xsi:type="ocl:OperatorCallExp" location="65:5-65:18" operationName=">">
+              <source xsi:type="ocl:OperationCallExp" location="65:5-65:14" operationName="CN">
+                <source xsi:type="ocl:VariableExp" location="65:5-65:9" referredVariable="/12"/>
+              </source>
+              <arguments xsi:type="ocl:IntegerExp" location="65:17-65:18" integerSymbol="1"/>
+            </condition>
+            <elseExpression xsi:type="ocl:IntegerExp" location="67:8-67:9"/>
+          </body>
+        </feature>
+        <context_ location="63:8-63:27">
+          <context_ xsi:type="ocl:OclModelElement" location="63:16-63:27" name="Package" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="76:1-81:8">
+      <commentsBefore>--@end helper MOOD::CCF</commentsBefore>
+      <commentsBefore>--@begin helper MOOD::ICF</commentsBefore>
+      <commentsBefore>--@comments Internal Coupling Factor</commentsBefore>
+      <commentsBefore>--@comments Quotient between the number of coupling links where both the client and supplier Classes belong to the current Package and the total number of coupling links originating in the current Package.</commentsBefore>
+      <commentsBefore>--@comments Coupling links originating in the current Package are those where the client Class belongs to it.</commentsBefore>
+      <commentsBefore>--@comments The coupling link is directed from the client Class to the supplier one.</commentsBefore>
+      <commentsAfter>--@end helper MOOD::ICF</commentsAfter>
+      <definition location="76:8-81:7">
+        <feature xsi:type="ocl:Operation" location="77:7-81:7" name="ICF">
+          <returnType xsi:type="ocl:RealType" location="77:15-77:19"/>
+          <body xsi:type="ocl:IfExp" location="78:2-81:7">
+            <thenExpression xsi:type="ocl:OperatorCallExp" location="79:8-79:37" operationName="/">
+              <source xsi:type="ocl:OperationCallExp" location="79:8-79:19" operationName="ICLN">
+                <source xsi:type="ocl:VariableExp" location="79:8-79:12" referredVariable="/18"/>
+              </source>
+              <arguments xsi:type="ocl:OperationCallExp" location="79:22-79:37" operationName="PCLN">
+                <source xsi:type="ocl:VariableExp" location="79:22-79:26" referredVariable="/19"/>
+                <arguments xsi:type="ocl:VariableExp" location="79:32-79:36" referredVariable="/20"/>
+              </arguments>
+            </thenExpression>
+            <condition xsi:type="ocl:OperatorCallExp" location="78:5-78:20" operationName=">">
+              <source xsi:type="ocl:OperationCallExp" location="78:5-78:16" operationName="ICLN">
+                <source xsi:type="ocl:VariableExp" location="78:5-78:9" referredVariable="/17"/>
+              </source>
+              <arguments xsi:type="ocl:IntegerExp" location="78:19-78:20"/>
+            </condition>
+            <elseExpression xsi:type="ocl:IntegerExp" location="80:8-80:9"/>
+          </body>
+        </feature>
+        <context_ location="76:8-76:27">
+          <context_ xsi:type="ocl:OclModelElement" location="76:16-76:27" name="Package" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+  </atl:Library>
+  <ocl:OclModel location="21:16-21:19" name="KM3" elements="/0/@helpers.0/@definition/@context_/@context_ /0/@helpers.1/@definition/@context_/@context_ /0/@helpers.2/@definition/@context_/@context_ /0/@helpers.3/@definition/@context_/@context_ /0/@helpers.4/@definition/@context_/@context_"/>
+  <ocl:VariableDeclaration location="23:5-23:9" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="24:8-24:12" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@thenExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="24:22-24:26" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@thenExpression/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="36:5-36:9" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="37:8-37:12" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@thenExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="37:22-37:26" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@thenExpression/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="50:5-50:9" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="51:8-51:12" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@thenExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="51:20-51:24" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@thenExpression/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="51:30-51:34" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@thenExpression/@arguments.0/@arguments.0"/>
+  <ocl:VariableDeclaration location="65:5-65:9" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="66:9-66:13" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@thenExpression/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="66:24-66:28" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@thenExpression/@source/@arguments.0/@source/@source/@source"/>
+  <ocl:VariableDeclaration location="66:36-66:40" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@thenExpression/@source/@arguments.0/@source/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="66:48-66:52" varName="self" variableExp="/0/@helpers.3/@definition/@feature/@body/@thenExpression/@source/@arguments.0/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="78:5-78:9" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@condition/@source/@source"/>
+  <ocl:VariableDeclaration location="79:8-79:12" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@thenExpression/@source/@source"/>
+  <ocl:VariableDeclaration location="79:22-79:26" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@thenExpression/@arguments.0/@source"/>
+  <ocl:VariableDeclaration location="79:32-79:36" varName="self" variableExp="/0/@helpers.4/@definition/@feature/@body/@thenExpression/@arguments.0/@arguments.0"/>
+</xmi:XMI>

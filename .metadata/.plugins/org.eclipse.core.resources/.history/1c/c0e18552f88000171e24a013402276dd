@@ -1,0 +1,15 @@
+
+-- Addition mutation
+-- This mutation just references a library file that is empty.
+@action add
+@feature libraries
+pattern Unit_LibraryRef_libraries_add
+instance:Unit
+guard: instance.isTypeOf(Module) and instance.name = "Book2Publication"
+{
+	do {
+		var lib = LibraryRef.createInstance();
+		lib.name = "EmptyHelpers";
+		instance.libraries.add(lib);
+	}
+}

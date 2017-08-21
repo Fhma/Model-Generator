@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Library location="9:1-38:3" name="Lib4MMTree">
+    <commentsBefore>-- @name Lib for MMTree</commentsBefore>
+    <commentsBefore>-- @version 1.0</commentsBefore>
+    <commentsBefore>-- @domains </commentsBefore>
+    <commentsBefore>-- @authors Cyril Faure</commentsBefore>
+    <commentsBefore>-- @date 01/06/2007</commentsBefore>
+    <commentsBefore>-- @description this lib contains helpers usefull for MMTree</commentsBefore>
+    <commentsBefore>-- @path MMTree=/Tree2List/metamodels/MMTree.ecore</commentsBefore>
+    <helpers location="12:1-13:48">
+      <commentsBefore>-- This helper returns true if the current tree element is the tree root</commentsBefore>
+      <commentsAfter>-- refImmediateComposite() is a reflective operation that returns the immediate composite (e.g. the immediate container) of self</commentsAfter>
+      <commentsAfter>-- So if there is no immediate composite then the current node is the root (we suppose in our example that there is only one root).</commentsAfter>
+      <commentsAfter>-- We retrieve all the tree elements via a DFS starting from a given node </commentsAfter>
+      <definition location="12:8-13:47">
+        <feature xsi:type="ocl:Operation" location="12:34-13:47" name="isTreeNodeRoot">
+          <returnType xsi:type="ocl:BooleanType" location="12:53-12:60"/>
+          <body xsi:type="ocl:OperationCallExp" location="13:2-13:47" operationName="oclIsUndefined">
+            <source xsi:type="ocl:OperationCallExp" location="13:2-13:30" operationName="refImmediateComposite">
+              <source xsi:type="ocl:VariableExp" location="13:2-13:6" referredVariable="/2"/>
+            </source>
+          </body>
+        </feature>
+        <context_ location="12:8-12:27">
+          <context_ xsi:type="ocl:OclModelElement" location="12:16-12:27" name="Node" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="18:1-27:3">
+      <commentsBefore>-- refImmediateComposite() is a reflective operation that returns the immediate composite (e.g. the immediate container) of self</commentsBefore>
+      <commentsBefore>-- So if there is no immediate composite then the current node is the root (we suppose in our example that there is only one root).</commentsBefore>
+      <commentsBefore>-- We retrieve all the tree elements via a DFS starting from a given node </commentsBefore>
+      <commentsAfter>-- This function sorts the leaves retrieved via the DFS </commentsAfter>
+      <commentsAfter>-- according to their size and to their position in the tree</commentsAfter>
+      <definition location="18:8-26:4">
+        <feature xsi:type="ocl:Operation" location="18:34-26:4" name="getAllChildren">
+          <returnType xsi:type="ocl:OrderedSetType" location="18:54-18:84">
+            <elementType xsi:type="ocl:OclModelElement" location="18:65-18:83" name="TreeElement" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:IterateExp" location="19:2-26:4">
+            <source xsi:type="ocl:NavigationOrAttributeCallExp" location="19:2-19:15" name="children">
+              <source xsi:type="ocl:VariableExp" location="19:2-19:6" referredVariable="/3"/>
+            </source>
+            <body xsi:type="ocl:IfExp" location="21:3-25:8">
+              <thenExpression xsi:type="ocl:OperationCallExp" location="22:4-22:42" operationName="union">
+                <commentsAfter>-- NODE : recursive call</commentsAfter>
+                <source xsi:type="ocl:VariableExp" location="22:4-22:12" referredVariable="/0/@helpers.1/@definition/@feature/@body/@result"/>
+                <arguments xsi:type="ocl:OperationCallExp" location="22:19-22:41" operationName="getAllChildren">
+                  <source xsi:type="ocl:VariableExp" location="22:19-22:24" referredVariable="/0/@helpers.1/@definition/@feature/@body/@iterators.0"/>
+                </arguments>
+              </thenExpression>
+              <condition xsi:type="ocl:OperationCallExp" location="21:6-21:36" operationName="oclIsTypeOf">
+                <source xsi:type="ocl:VariableExp" location="21:6-21:11" referredVariable="/0/@helpers.1/@definition/@feature/@body/@iterators.0"/>
+                <arguments xsi:type="ocl:OclModelElement" location="21:24-21:35" name="Node" model="/1"/>
+              </condition>
+              <elseExpression xsi:type="ocl:OperationCallExp" location="24:4-24:26" operationName="append">
+                <commentsAfter>-- LEAF</commentsAfter>
+                <source xsi:type="ocl:VariableExp" location="24:4-24:12" referredVariable="/0/@helpers.1/@definition/@feature/@body/@result"/>
+                <arguments xsi:type="ocl:VariableExp" location="24:20-24:25" referredVariable="/0/@helpers.1/@definition/@feature/@body/@iterators.0"/>
+              </elseExpression>
+            </body>
+            <iterators location="19:26-19:31" varName="child" variableExp="/0/@helpers.1/@definition/@feature/@body/@body/@condition/@source /0/@helpers.1/@definition/@feature/@body/@body/@thenExpression/@arguments.0/@source /0/@helpers.1/@definition/@feature/@body/@body/@elseExpression/@arguments.0"/>
+            <result location="19:34-20:15" varName="elements" variableExp="/0/@helpers.1/@definition/@feature/@body/@body/@thenExpression/@source /0/@helpers.1/@definition/@feature/@body/@body/@elseExpression/@source">
+              <type xsi:type="ocl:OrderedSetType" location="19:45-19:75">
+                <elementType xsi:type="ocl:OclModelElement" location="19:56-19:74" name="TreeElement" model="/1"/>
+              </type>
+              <initExpression xsi:type="ocl:OrderedSetExp" location="20:3-20:15"/>
+            </result>
+          </body>
+        </feature>
+        <context_ location="18:8-18:27">
+          <context_ xsi:type="ocl:OclModelElement" location="18:16-18:27" name="Node" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+    <helpers location="31:1-38:3">
+      <commentsBefore>-- This function sorts the leaves retrieved via the DFS </commentsBefore>
+      <commentsBefore>-- according to their size and to their position in the tree</commentsBefore>
+      <definition location="31:8-37:57">
+        <feature xsi:type="ocl:Operation" location="31:34-37:57" name="getLeavesInOrder">
+          <returnType xsi:type="ocl:OrderedSetType" location="31:55-31:79">
+            <elementType xsi:type="ocl:OclModelElement" location="31:67-31:78" name="Leaf" model="/1"/>
+          </returnType>
+          <body xsi:type="ocl:LetExp" location="32:2-37:57">
+            <variable location="32:6-33:81" varName="leavesList" variableExp="/0/@helpers.2/@definition/@feature/@body/@in_/@source/@source/@source /0/@helpers.2/@definition/@feature/@body/@in_/@source/@arguments.0/@source /0/@helpers.2/@definition/@feature/@body/@in_/@arguments.0/@source">
+              <type xsi:type="ocl:OrderedSetType" location="32:19-32:43">
+                <elementType xsi:type="ocl:OclModelElement" location="32:31-32:42" name="Leaf" model="/1"/>
+              </type>
+              <initExpression xsi:type="ocl:IteratorExp" location="33:3-33:81" name="select">
+                <source xsi:type="ocl:OperationCallExp" location="33:3-33:25" operationName="getAllChildren">
+                  <source xsi:type="ocl:VariableExp" location="33:3-33:7" referredVariable="/4"/>
+                </source>
+                <body xsi:type="ocl:OperationCallExp" location="33:46-33:80" operationName="oclIsTypeOf">
+                  <source xsi:type="ocl:VariableExp" location="33:46-33:55" referredVariable="/0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@iterators.0"/>
+                  <arguments xsi:type="ocl:OclModelElement" location="33:68-33:79" name="Leaf" model="/1"/>
+                </body>
+                <iterators location="33:34-33:43" varName="currChild" variableExp="/0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@body/@source"/>
+              </initExpression>
+            </variable>
+            <in_ xsi:type="ocl:CollectionOperationCallExp" location="35:3-37:57" operationName="union">
+              <source xsi:type="ocl:CollectionOperationCallExp" location="35:3-36:58" operationName="union">
+                <source xsi:type="ocl:IteratorExp" location="35:3-35:46" name="select">
+                  <source xsi:type="ocl:VariableExp" location="35:3-35:13" referredVariable="/0/@helpers.2/@definition/@feature/@body/@variable"/>
+                  <body xsi:type="ocl:OperatorCallExp" location="35:29-35:45" operationName="=">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="35:29-35:38" name="size">
+                      <source xsi:type="ocl:VariableExp" location="35:29-35:33" referredVariable="/0/@helpers.2/@definition/@feature/@body/@in_/@source/@source/@iterators.0"/>
+                    </source>
+                    <arguments xsi:type="ocl:EnumLiteralExp" location="35:41-35:45" name="big"/>
+                  </body>
+                  <iterators location="35:22-35:26" varName="leaf" variableExp="/0/@helpers.2/@definition/@feature/@body/@in_/@source/@source/@body/@source/@source"/>
+                </source>
+                <arguments xsi:type="ocl:IteratorExp" location="36:11-36:57" name="select">
+                  <source xsi:type="ocl:VariableExp" location="36:11-36:21" referredVariable="/0/@helpers.2/@definition/@feature/@body/@variable"/>
+                  <body xsi:type="ocl:OperatorCallExp" location="36:37-36:56" operationName="=">
+                    <source xsi:type="ocl:NavigationOrAttributeCallExp" location="36:37-36:46" name="size">
+                      <source xsi:type="ocl:VariableExp" location="36:37-36:41" referredVariable="/0/@helpers.2/@definition/@feature/@body/@in_/@source/@arguments.0/@iterators.0"/>
+                    </source>
+                    <arguments xsi:type="ocl:EnumLiteralExp" location="36:49-36:56" name="medium"/>
+                  </body>
+                  <iterators location="36:30-36:34" varName="leaf" variableExp="/0/@helpers.2/@definition/@feature/@body/@in_/@source/@arguments.0/@body/@source/@source"/>
+                </arguments>
+              </source>
+              <arguments xsi:type="ocl:IteratorExp" location="37:11-37:56" name="select">
+                <source xsi:type="ocl:VariableExp" location="37:11-37:21" referredVariable="/0/@helpers.2/@definition/@feature/@body/@variable"/>
+                <body xsi:type="ocl:OperatorCallExp" location="37:37-37:55" operationName="=">
+                  <source xsi:type="ocl:NavigationOrAttributeCallExp" location="37:37-37:46" name="size">
+                    <source xsi:type="ocl:VariableExp" location="37:37-37:41" referredVariable="/0/@helpers.2/@definition/@feature/@body/@in_/@arguments.0/@iterators.0"/>
+                  </source>
+                  <arguments xsi:type="ocl:EnumLiteralExp" location="37:49-37:55" name="small"/>
+                </body>
+                <iterators location="37:30-37:34" varName="leaf" variableExp="/0/@helpers.2/@definition/@feature/@body/@in_/@arguments.0/@body/@source/@source"/>
+              </arguments>
+            </in_>
+          </body>
+        </feature>
+        <context_ location="31:8-31:27">
+          <context_ xsi:type="ocl:OclModelElement" location="31:16-31:27" name="Node" model="/1"/>
+        </context_>
+      </definition>
+    </helpers>
+  </atl:Library>
+  <ocl:OclModel location="12:16-12:22" name="MMTree" elements="/0/@helpers.0/@definition/@context_/@context_ /0/@helpers.1/@definition/@context_/@context_ /0/@helpers.1/@definition/@feature/@returnType/@elementType /0/@helpers.1/@definition/@feature/@body/@result/@type/@elementType /0/@helpers.1/@definition/@feature/@body/@body/@condition/@arguments.0 /0/@helpers.2/@definition/@context_/@context_ /0/@helpers.2/@definition/@feature/@returnType/@elementType /0/@helpers.2/@definition/@feature/@body/@variable/@type/@elementType /0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@body/@arguments.0"/>
+  <ocl:VariableDeclaration location="13:2-13:6" varName="self" variableExp="/0/@helpers.0/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="19:2-19:6" varName="self" variableExp="/0/@helpers.1/@definition/@feature/@body/@source/@source"/>
+  <ocl:VariableDeclaration location="33:3-33:7" varName="self" variableExp="/0/@helpers.2/@definition/@feature/@body/@variable/@initExpression/@source/@source"/>
+</xmi:XMI>

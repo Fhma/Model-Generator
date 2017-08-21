@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.epsilon.eol.eclipse.dt.launching.EolLaunchConfigurationDelegate">
+<listAttribute key="models">
+<listEntry value="isMetamodelFileBased=false&#10;name=Model&#10;readOnLoad=true&#10;storeOnDisposal=false&#10;aliases=Model&#10;cached=true&#10;fileBasedMetamodelUri=&#10;metamodelUri=MutationOperatorMM&#10;modelUri=platform\:/resource/uk.ac.york.cs.operators.selection.random/models/ATL.ecore_mutation_operators.model&#10;reuseUnmodifiedFileBasedMetamodels=true&#10;type=EMF&#10;modelFile=/uk.ac.york.cs.operators.selection.random/models/ATL.ecore_mutation_operators.model&#10;expand=true&#10;metamodelFile="/>
+</listAttribute>
+<listAttribute key="parameters"/>
+<stringAttribute key="source" value="/uk.ac.york.cs.operators.selection.random/code/atl_random_selection.eol"/>
+</launchConfiguration>

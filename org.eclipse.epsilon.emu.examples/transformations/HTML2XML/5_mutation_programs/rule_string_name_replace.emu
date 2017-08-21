@@ -1,0 +1,9 @@
+-- Desc: this mutation operator replaces the name of a rule with another string
+
+-- Case 1: change the name of inherited rule
+-- Goal: if the super rule is extended or inherited by another rule, changing the parent rule would raise an compile error (Stillborn mutant)
+
+@action replace
+@feature  
+
+ 

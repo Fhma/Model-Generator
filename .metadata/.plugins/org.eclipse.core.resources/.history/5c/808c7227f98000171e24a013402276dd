@@ -1,0 +1,17 @@
+
+-- Addition mutation
+-- Desc: This mutation just references a library file that is empty.
+-- Mutant type: equivalant mutation. The only way to generate non-equivalant mutation
+-- is to include one/or more helpers in the file that can be tested their outputs. 
+@action add
+@feature libraries
+pattern Unit_LibraryRef_libraries_add
+instance:Unit
+guard: instance.isTypeOf(Module) and instance.name = "Book2Publication"
+{
+	do {
+		var lib = LibraryRef.createInstance();
+		lib.name = "EmptyHelpers";
+		instance.libraries.add(lib);
+	}
+}

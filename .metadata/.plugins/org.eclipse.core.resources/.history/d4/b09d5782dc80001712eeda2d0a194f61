@@ -1,0 +1,10 @@
+@action add
+@feature libraries
+pattern Unit_LibraryRef_libraries_add
+instance:Unit
+guard: instance.isTypeOf(Module) and instance.name = "Book2Publication"
+{
+	do {
+		var lib:
+	}
+}

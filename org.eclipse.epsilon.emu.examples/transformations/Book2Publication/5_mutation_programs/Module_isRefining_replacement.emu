@@ -1,0 +1,5 @@
+@action replace
+@feature isRefining
+pattern Module_isRefining_replacement
+instance:Module
+guard: instance.name = "Book2Publication"

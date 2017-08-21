@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Module location="1:1-15:2" name="Copy">
+    <inModels location="2:22-2:29" name="IN" metamodel="/1"/>
+    <outModels location="2:8-2:16" name="OUT" metamodel="/1"/>
+    <elements xsi:type="atl:MatchedRule" location="4:1-15:2" name="CopyTest">
+      <outPattern location="10:3-14:6">
+        <elements xsi:type="atl:SimpleOutPatternElement" location="11:5-14:6" varName="t">
+          <type xsi:type="ocl:OclModelElement" location="11:9-11:16" name="Test" model="/1"/>
+          <bindings location="12:7-12:21" propertyName="name">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" location="12:15-12:21" name="name">
+              <source xsi:type="ocl:VariableExp" location="12:15-12:16" referredVariable="/0/@elements.0/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings location="13:7-13:35" propertyName="description">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" location="13:22-13:35" name="description">
+              <source xsi:type="ocl:VariableExp" location="13:22-13:23" referredVariable="/0/@elements.0/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern location="5:3-9:6">
+        <elements xsi:type="atl:SimpleInPatternElement" location="6:5-6:16" varName="s" variableExp="/0/@elements.0/@inPattern/@filter/@source /0/@elements.0/@outPattern/@elements.0/@bindings.0/@value/@source /0/@elements.0/@outPattern/@elements.0/@bindings.1/@value/@source">
+          <type xsi:type="ocl:OclModelElement" location="6:9-6:16" name="Test" model="/1"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" location="8:7-8:29" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" location="8:7-8:8" referredVariable="/0/@elements.0/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" location="8:21-8:28" name="Test" model="/1"/>
+        </filter>
+      </inPattern>
+    </elements>
+  </atl:Module>
+  <ocl:OclModel location="2:14-2:16" name="MM" elements="/0/@elements.0/@inPattern/@elements.0/@type /0/@elements.0/@inPattern/@filter/@arguments.0 /0/@elements.0/@outPattern/@elements.0/@type" model="/0/@outModels.0 /0/@inModels.0"/>
+</xmi:XMI>

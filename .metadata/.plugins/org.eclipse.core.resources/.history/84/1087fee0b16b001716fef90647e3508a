@@ -1,0 +1,21 @@
+var selection:Sequence;
+var allOperators = MutationOperator.all.select(e|e.isTypeOf(AddMutationOperator) and e.op_set.containingClass.startsWith("ATL"));
+
+("All addition mutation operators: "+allOperators.size()).println();
+
+for (op in allOperators)
+{
+	("MO: "+op.signature + ", containing class: "+op.op_set.containingClass).println();
+}
+var sign:String;
+while(selection.size()<=10)
+{
+	var pick = allOperators.random();
+	if(not selection.includes(pick))
+	{
+		sign = pick.op_set.containingClass + ":" + pick.op_set.
+		selection.add(pick.signature);
+	}	
+}
+
+("Selected operators: "+selection).println();
