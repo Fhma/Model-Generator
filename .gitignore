@@ -1,7 +1,7 @@
 *.class
 
 .mtj.tmp/
-.metadata
+.metadata/
 
 .DS
 *.jar
