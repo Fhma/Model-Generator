@@ -1,0 +1,12 @@
+\select@language {UKenglish}
+\select@language {UKenglish}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Mutation Operators Implementation}{2}
+\contentsline {subsection}{\numberline {2.1}ATL Mutation Operators}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Replace Mutations}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Delete Mutations}{2}
+\contentsline {subsubsection}{\numberline {2.1.3}Addition Mutations}{2}
+\contentsline {subsection}{\numberline {2.2}ATL-OCL Mutation Operators}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Replace Mutations}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Delete Mutations}{3}
+\contentsline {subsubsection}{\numberline {2.2.3}Addition Mutations}{3}
