@@ -3666,3 +3666,40 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2017-08-21 11:30:35.562
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+!SESSION 2017-08-21 12:28:48.897 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /Users/AFADF_F/Git/Fhma/Emagine/../runtime-EclipseApplication -dev file:/Users/AFADF_F/Git/Fhma/Emagine/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os macosx -ws cocoa -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.ui 2 0 2017-08-21 12:28:50.605
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.605
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.custom.ui', id='org.eclipse.emf.facet.ui.loadCustomization', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.605
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.loadFacet', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.605
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.saveStructuralFeatureInstanceModel', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.606
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.setStructuralFeatureInstanceResource', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+
+!ENTRY org.eclipse.ui 2 0 2017-08-21 12:28:50.916
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.917
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.custom.ui', id='org.eclipse.emf.facet.ui.loadCustomization', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.917
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.loadFacet', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.917
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.saveStructuralFeatureInstanceModel', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-08-21 12:28:50.917
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.emf.facet.efacet.ui', id='org.eclipse.emf.facet.efacet.ui.setStructuralFeatureInstanceResource', categoryId='org.eclipse.emf.facet.widgets.table.command.category'
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-21 12:28:52.636
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2017-08-21 12:28:52.720
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2017-08-21 12:28:52.720
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
