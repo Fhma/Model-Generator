@@ -8,6 +8,10 @@
 *.ear
 *.log
 *.ini
+*.tree
+*.index
+*.resources
+*.lock
 
 .DS_Store
 
