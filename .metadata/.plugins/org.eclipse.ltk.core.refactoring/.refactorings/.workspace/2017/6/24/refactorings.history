@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Transformation_Execution&apos; to &apos;org.eclipse.epsilon.emu.examples&apos;" description="Rename resource &apos;Transformation_Execution&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Transformation_Execution" name="org.eclipse.epsilon.emu.examples" stamp="1497609333594" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 6 elements from project &apos;Transformation_Execution_old&apos;&#x0A;- Original project: &apos;Transformation_Execution_old&apos;&#x0A;- Original elements:&#x0A;     Book2Publication&#x0A;     Make2Ant&#x0A;     Measure2XHTML&#x0A;     SimpleClass2SimpleRDBMS&#x0A;     UML2OWL&#x0A;     UMLDI2SVG" description="Delete elements" element1="transformations/Measure2XHTML" element2="transformations/UML2OWL" element3="transformations/SimpleClass2SimpleRDBMS" element4="transformations/Book2Publication" element5="transformations/Make2Ant" element6="transformations/UMLDI2SVG" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1497555480767" subPackages="false" version="1.0"/>
-</session>
