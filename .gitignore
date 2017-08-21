@@ -9,9 +9,9 @@
 *.log
 *.ini
 *.tree
-*.index
-*.resources
-*.lock
+#*.index
+#*.resources
+#*.lock
 
 .DS_Store
 
