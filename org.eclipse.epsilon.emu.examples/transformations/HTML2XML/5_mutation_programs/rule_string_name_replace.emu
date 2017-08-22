@@ -1,9 +1,68 @@
--- Desc: this mutation operator replaces the name of a rule with another string
 
--- Case 1: change the name of inherited rule
--- Goal: if the super rule is extended or inherited by another rule, changing the parent rule would raise an compile error (Stillborn mutant)
-
+-- Case 1: changing the name of a rule to a new name
+-- Status: allowed by the EMU engine
+-- This will generate an equivalant mutation because the ATL transformation engine execute all rules regardless of their names
 @action replace
-@feature  
+@feature name
+pattern mutation_1
+instance:Rule
+guard:instance.name = "HTML"
+{
+	do {
+	 	instance.name = "NewHTML";
+	}
+}
 
- 
+-- Case 2: changing the name of inherited rule to a new name
+-- Status: allowed by the EMU engine
+-- This will generate equivalant mutation because one sub-rule that inherits the rule "TD" has a reference that points only to the instance of super-rule, and any new name for the super-rule will not matter as this will also reflect to sub-rules
+@action replace
+@feature name
+pattern mutation_2
+instance:Rule
+guard:instance.name = "TD"
+{
+	do {
+	 	instance.name = "NewTD";
+	}
+}
+
+-- Case 3: changing the name of inherited rule to a name copied from another rule name
+-- Status: allowed by the EMU engine
+-- This will generate a stillborn mutant because rules must have unique names
+@action replace
+@feature name
+pattern mutation_3
+instance:Rule
+guard:instance.name = "TD"
+{
+	do {
+	 	instance.name = Rule.all.random.name;
+	}
+}
+
+-- Case 4: changing the name of inherited rule to an empty string
+-- Status: not allowed
+@action replace
+@feature name
+pattern mutation_4
+instance:Rule
+guard:instance.name = "TD"
+{
+	do {
+	 	instance.name = "";
+	}
+}
+
+-- Case 5: changing the name of a rule to an empty string
+-- Status: not allowed
+@action replace
+@feature name
+pattern mutation_5
+instance:Rule
+guard:instance.name = "HTML"
+{
+	do {
+	 	instance.name = "";
+	}
+}

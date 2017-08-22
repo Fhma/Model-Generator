@@ -1,0 +1,12 @@
+Mutation Operator: Rule - name
+Implementation File: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/org.eclipse.epsilon.emu.examples/transformations/HTML2XML/5_mutation_programs/rule_string_name_replace.emu
+
+MatchedRule - InPattern
+OutPatternElement - OclModel
+Query - Helper
+ActionBlock - Statement
+Rule - OutPattern
+ActionBlock - Rule
+Binding - OclExpression
+Library - Helper
+ExpressionStat - OclExpression

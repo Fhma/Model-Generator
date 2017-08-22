@@ -1,0 +1,17 @@
+
+-- Case 1: Change an inpattern instance with a new one by copying over all values of original pattern except one. For example omitting a one filter of an inpattern
+-- This will generate a mutation
+@action replace
+@feature inPattern
+pattern mutation_1
+instance:MatchedRule
+guard: MatchedRule.all.first.name = "Book2Publication"
+{
+	do {
+		-- there is only one inpattern element
+		var targetInPattern = instance.inPattern;
+		var newInPattern = InPattern.createInstance();
+		newInPattern.elements.addAll(targetInPattern.elements);
+		instance.inPattern = newInPattern;
+	}
+}
