@@ -3,8 +3,12 @@ package uk.ac.york.eclipse.epsilon.emu.examples.atl.launcher;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+
 import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.core.runtime.Path;
 import org.eclipse.m2m.atl.core.ATLCoreException;
 import org.eclipse.m2m.atl.core.IExtractor;
 import org.eclipse.m2m.atl.core.IInjector;
@@ -18,12 +22,37 @@ import org.eclipse.m2m.atl.core.launch.ILauncher;
 import org.eclipse.m2m.atl.engine.emfvm.launch.EMFVMUILauncher;
 
 public class TransformationLauncher {
-	
+
 	protected IModel inModel;
 	protected IModel outModel;
 
+	/**
+	 * Executes a given ATL module programmatically
+	 * 
+	 * @param inMMPath
+	 *            path of input metamodel (*.ecore)
+	 * @param inMMName
+	 *            name alias to input metamodel
+	 * @param inMPath
+	 *            path of input model that conforms to input metamodel
+	 * @param outMMPath
+	 *            path of output metamodel (*.ecore)
+	 * @param outMMName
+	 *            name alias to output metamodel
+	 * @param outMPath
+	 *            path of output model that conforms to output metamodel
+	 * @param transDir
+	 *            path to the transformation directory that has ATL nature
+	 * @param transModule
+	 *            name of main transformation module
+	 * @param helpers
+	 *            list of names of helpers (seprated by commas) needed by the
+	 *            main transformation module
+	 * @throws ATLCoreException
+	 * @throws IOException
+	 */
 	public void run(String inMMPath, String inMMName, String inMPath, String outMMPath, String outMMName,
-			String outMPath, String transDir, String transModule) throws ATLCoreException, IOException {
+			String outMPath, String transDir, String transModule, String helpers) throws ATLCoreException, IOException {
 
 		// load models
 		ModelFactory factory = new EMFModelFactory();
@@ -38,11 +67,11 @@ public class TransformationLauncher {
 
 		// run transformation
 		ILauncher launcher = (ILauncher) new EMFVMUILauncher();
-		launcher.initialize(Collections.EMPTY_MAP);
+		launcher.initialize(Collections.emptyMap());
 		launcher.addInModel(inModel, "IN", inMMName);
 		launcher.addOutModel(outModel, "OUT", outMMName);
-		launcher.launch("run", new NullProgressMonitor(), Collections.EMPTY_MAP,
-				getModulesStream(transDir + transModule));
+		launcher.launch(ILauncher.RUN_MODE, new NullProgressMonitor(), Collections.emptyMap(),
+				(Object[]) getModulesStream(transDir, transModule, helpers));
 
 		// save models
 		IExtractor extractor = new EMFExtractor();
@@ -50,23 +79,46 @@ public class TransformationLauncher {
 	}
 
 	/**
-	 * Returns an Array of the module input streams, parameterized by the
-	 * property file.
+	 * Returns a list of InputStream that is needed to run this transformation
+	 * module
 	 * 
-	 * @return an Array of the module input streams
+	 * @param trans_dir
+	 *            path to transformation directory
+	 * @param module_name
+	 *            name of main transformation module
+	 * @param helpers
+	 *            list of helpers of main transformation module
+	 * 
+	 * @return an array list of InputStream needed by the ATL launcher
 	 * @throws IOException
 	 *             if a module cannot be read
-	 *
 	 */
-	protected InputStream getModulesStream(String modulePath) throws IOException {
-		InputStream module = null;
-		String asmModulePath = modulePath + ".asm";
-		module = getFileURL(asmModulePath).openStream();
-		return module;
+	private InputStream[] getModulesStream(String trans_dir, String module_name, String helpers) throws IOException {
+
+		List<InputStream> modules = new ArrayList<InputStream>();
+		// fetch the compiled file of main module
+		if (module_name != null) {
+			modules.add(getFileURL(new Path(trans_dir + module_name.trim()).addFileExtension("asm").toString())
+					.openStream());
+		}
+
+		// fetch compiled files of associated helpers
+		if (helpers != null) {
+			String helpers_list[] = helpers.split(",");
+			for (int i = 0; i < helpers_list.length; i++) {
+				modules.add(getFileURL(new Path(trans_dir + helpers_list[i].trim()).addFileExtension("asm").toString())
+						.openStream());
+			}
+		}
+		InputStream returned_streams[] = new InputStream[modules.size()];
+		for (int i = 0; i < returned_streams.length; i++) {
+			returned_streams[i] = modules.get(i);
+		}
+		return returned_streams;
 	}
 
 	/**
-	 * Finds the file in the plug-in. Returns the file URL.
+	 * Returns the file URL name representation of a given path
 	 * 
 	 * @param fileName
 	 *            the file name
@@ -74,7 +126,7 @@ public class TransformationLauncher {
 	 * @throws IOException
 	 *             if the file doesn't exist
 	 */
-	protected static URL getFileURL(String fileName) throws IOException {
+	private static URL getFileURL(String fileName) throws IOException {
 		final URL fileURL = new URL("file://" + fileName);
 		return fileURL;
 	}

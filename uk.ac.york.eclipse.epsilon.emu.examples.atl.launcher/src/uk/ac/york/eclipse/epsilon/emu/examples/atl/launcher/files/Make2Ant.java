@@ -4,19 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Configuration of the 'Book2Publication' transformation module.
+ * Configuration of the 'Make2Ant' transformation module.
  */
-public class Book2Publication {
+public class Make2Ant {
 
 	static private Map<String, String> properties;
 
 	public static Map<String, String> properties() {
 		properties = new HashMap<String, String>();
 		// meta-variables
-		String module_name = "Book2Publication";
+		String module_name = "Make2Ant";
 		String helpers_list = null;
-		String inMM_name = "Book";
-		String outMM_name = "Publication";
+		String inMM_name = "Make";
+		String outMM_name = "Ant";
 		String path = "/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/";
 		path += module_name + "/";
 
@@ -30,6 +30,6 @@ public class Book2Publication {
 		return properties;
 	}
 
-	private Book2Publication() {
+	private Make2Ant() {
 	}
 }

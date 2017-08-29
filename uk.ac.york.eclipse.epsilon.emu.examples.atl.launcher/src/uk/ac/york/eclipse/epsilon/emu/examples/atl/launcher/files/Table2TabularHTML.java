@@ -4,19 +4,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Configuration of the 'Book2Publication' transformation module.
+ * Configuration of the 'Table2TabularHTML' transformation module.
  */
-public class Book2Publication {
+public class Table2TabularHTML {
 
 	static private Map<String, String> properties;
 
 	public static Map<String, String> properties() {
 		properties = new HashMap<String, String>();
 		// meta-variables
-		String module_name = "Book2Publication";
-		String helpers_list = null;
-		String inMM_name = "Book";
-		String outMM_name = "Publication";
+		String module_name = "Table2TabularHTML";
+		// This to hold all helpers files separated with commas
+		String helpers_list = "TableHelpers";
+		String inMM_name = "Table";
+		String outMM_name = "HTML";
 		String path = "/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/";
 		path += module_name + "/";
 
@@ -30,6 +31,6 @@ public class Book2Publication {
 		return properties;
 	}
 
-	private Book2Publication() {
+	private Table2TabularHTML() {
 	}
 }

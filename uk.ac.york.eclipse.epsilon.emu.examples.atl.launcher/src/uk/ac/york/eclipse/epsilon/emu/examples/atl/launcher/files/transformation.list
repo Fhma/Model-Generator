@@ -1,0 +1,6 @@
+Book2Publication
+HTML2XML
+Make2Ant
+SimpleClass2SimpleRDBMS
+#Table2TabularHTML -> require helper file and ATL VM (emfVM) crashes when loading libraries and helpers defined in that helper file
+#Tree2List -> require helper file and ATL VM (emfVM) crashes when loading libraries and helpers defined in that helper file
