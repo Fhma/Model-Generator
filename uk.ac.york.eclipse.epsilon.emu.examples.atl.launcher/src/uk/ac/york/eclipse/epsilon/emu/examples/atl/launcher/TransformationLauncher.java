@@ -1,11 +1,16 @@
 package uk.ac.york.eclipse.epsilon.emu.examples.atl.launcher;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Path;
@@ -25,6 +30,67 @@ public class TransformationLauncher {
 
 	protected IModel inModel;
 	protected IModel outModel;
+
+	public static void main(String[] args) {
+		BufferedReader read = null;
+		String line;
+		List<String> transformations = new ArrayList<String>();
+		try {
+			read = new BufferedReader(
+					new FileReader(TransformationLauncher.class.getResource("files/transformation.list").getPath()));
+			while ((line = read.readLine()) != null) {
+				if (!line.startsWith("#"))
+					transformations.add(line);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return;
+		}
+
+		String inModelsFolder = "inModels/";
+		String outModelsFolder = "outModels/";
+		TransformationLauncher exe;
+		Class<?> clazz;
+		Method method;
+		File folder = null;
+		String _package = TransformationLauncher.class.getPackage().getName() + ".files";
+		Map<String, String> config;
+
+		System.out.println("Start of Modules Transformation Launcher:");
+		System.out.println("- - - - - - - - - - - - - -");
+		for (int i = 0; i < transformations.size(); i++) {
+			try {
+				clazz = Class.forName(_package + "." + transformations.get(i));
+				method = clazz.getMethod("properties");
+				config = (Map<String, String>) method.invoke(clazz);
+				folder = new File(inModelsFolder + transformations.get(i));
+				System.out.println("Module: " + transformations.get(i));
+				System.out.println("   |");
+			} catch (Exception e) {
+				e.printStackTrace();
+				break;
+			}
+
+			for (File entry : folder.listFiles()) {
+				System.out.println("   -----> " + entry);
+				String input_file = entry.getName();
+				String output_file = input_file.substring(0, input_file.length() - 4);
+				output_file = outModelsFolder + transformations.get(i) + "/" + output_file + "_result2"
+						+ config.get("OUT_METAMODEL_NAME") + ".xmi";
+				exe = new TransformationLauncher();
+				try {
+					new TransformationLauncher().run(config.get("IN_METAMODEL"), config.get("IN_METAMODEL_NAME"),
+							entry.getPath(), config.get("OUT_METAMODEL"), config.get("OUT_METAMODEL_NAME"), output_file,
+							config.get("TRANSFORMATION_DIR"), config.get("TRANSFORMATION_MODULE"),
+							config.get("TRANSFORMATION_HELPERS"));
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			System.out.println("   - - - - - - - - - - - - - -");
+		}
+		System.out.println("End of Modules Transformation Launcher.");
+	}
 
 	/**
 	 * Executes a given ATL module programmatically
