@@ -1,0 +1,10 @@
+@action replace
+@feature name
+pattern change_iteratorexp_name
+instance:IteratorExp	
+guard: instance.name = "collect"
+{
+	do {
+		instance.name = "select";
+	}
+}

@@ -3,7 +3,6 @@ package uk.ac.york.eclipse.epsilon.emu.examples.atl.mutation.executor;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URI;
 import java.util.ArrayList;
@@ -11,11 +10,9 @@ import java.util.List;
 import java.util.Map;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.emu.EmuModule;
-import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.epsilon.common.util.StringProperties;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
-import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
 import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 import java.net.URISyntaxException;
 
@@ -66,7 +63,7 @@ public class MutationExecutor {
 			final File mutation_programs[] = mutations_dir.listFiles();
 			for (File entry : mutation_programs) {
 				try {
-					if (!entry.isDirectory()) {
+					if (!entry.isDirectory()&&entry.getAbsolutePath().endsWith(".emu")) {
 						System.out.println("   -----> " + entry);
 						module = new EmuModule();
 						module.parse(entry);

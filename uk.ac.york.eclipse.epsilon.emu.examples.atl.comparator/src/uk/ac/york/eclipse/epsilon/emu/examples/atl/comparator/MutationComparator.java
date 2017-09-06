@@ -3,27 +3,28 @@ package uk.ac.york.eclipse.epsilon.emu.examples.atl.comparator;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.net.URI;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.emf.common.util.URI;
+import org.eclipse.epsilon.emc.emf.EmfModel;
+import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 import org.eclipse.emf.compare.Comparison;
 import org.eclipse.emf.compare.Diff;
-import org.eclipse.emf.compare.EMFCompare;
-import org.eclipse.emf.compare.scope.DefaultComparisonScope;
-import org.eclipse.emf.compare.scope.IComparisonScope;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.eclipse.epsilon.common.util.StringProperties;
+import org.eclipse.epsilon.eol.models.IModel;
+import org.eclipse.epsilon.eol.models.IRelativePathResolver;
+import org.eclipse.epsilon.eunit.dt.cmp.emf.v3.EMFModelComparator;
 
 public class MutationComparator {
 
+	@SuppressWarnings({ "resource", "unchecked" })
 	public static void main(String[] args) {
+		EMFModelComparator comparator = null;
 		BufferedReader read = null;
 		String line;
 		List<String> transformations = new ArrayList<String>();
@@ -45,7 +46,7 @@ public class MutationComparator {
 		String original_model = null;
 		File mutations_dir = null;
 		Map<String, String> config = null;
-		File diff = null;
+		File logger = null;
 		BufferedWriter wr;
 
 		System.out.println("Start of Modules Mutation Comparator:");
@@ -57,52 +58,77 @@ public class MutationComparator {
 				config = (Map<String, String>) method.invoke(clazz);
 				original_model = config.get("TRANSFORMATION_DIR") + config.get("TRANSFORMATION_MODULE") + ".xmi";
 				mutations_dir = new File(config.get("TRANSFORMATION_DIR") + "/mutation_programs/");
-				diff = new File(mutations_dir + "differences.txt");
-				wr = new BufferedWriter(new FileWriter(diff));
-				System.out.println("Module: " + transformations.get(i));
-				System.out.println("   |");
-			} catch (Exception e) {
-				e.printStackTrace();
-				break;
-			}
-			Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("xmi", new XMIResourceFactoryImpl());
-			ResourceSet resourceSet1 = new ResourceSetImpl();
-			resourceSet1.getResource(URI.createFileURI(original_model), true);
+				comparator = new EMFModelComparator();
 
-			final File mutations_dirs[] = mutations_dir.listFiles();
-			for (File entry : mutations_dirs) {
-				try {
+				String metamodel = "/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/ATL.ecore";
+				IModel model1 = createEmfModel(getModelName(original_model), original_model, metamodel, true, false);
+
+				System.out.println(
+						"Module: " + transformations.get(i) + ", original model: " + model1.getName() + "\n\t|");
+
+				final File mutations_folders[] = mutations_dir.listFiles();
+				IModel model2 = null;
+
+				logger = new File(mutations_dir + "/comparison_result.txt");
+				wr = new BufferedWriter(new FileWriter(logger));
+				String log = "Module: " + transformations.get(i) + "\n";
+				log += "Original Model: " + original_model + "\n";
+				log += "\t|" + "\n";
+				for (File entry : mutations_folders) {
 					if (entry.isDirectory()) {
-						File[] mutations = entry.listFiles();
-						for (int j = 0; j < mutations.length; j++) {
-							if (!mutations[j].isDirectory()) {
-								System.out.println("   -----> " + mutations[j]);
-								ResourceSet resourceSet2 = new ResourceSetImpl();
-								resourceSet2.getResource(URI.createFileURI(mutations[j].getAbsolutePath()), true);
 
-								IComparisonScope scope = new DefaultComparisonScope(resourceSet1, resourceSet2, null);
-								Comparison comparison = EMFCompare.builder().build().compare(scope);
-
-								List<Diff> differences = comparison.getDifferences();
-								System.out.println("          " + differences.size() + " differences exist");
-								wr.write("original: " + original_model + "\n");
-								wr.write("mutant: " + mutations[j] + "\n");
-								wr.write("differences: " + differences.toString() + "\n");
-								wr.write("- - - - - - - - - - - - - -\n");
+						// obtain all mutants outputs of one mutation program
+						File[] mutants = entry.listFiles();
+						for (int j = 0; j < mutants.length; j++) {
+							if (!mutants[j].isDirectory()) {
+								String path = mutants[j].getAbsolutePath();
+								model2 = createEmfModel(getModelName(path), path, metamodel, true, false);
+								Comparison result = null;
+								if (comparator.canCompare(model1, model2)) {
+									result = (Comparison) comparator.compare(model1, model2);
+									System.out.println("   -----> mutant : " + model2.getName() + ", differences = "
+											+ result.getDifferences().size());
+									log += "\t|----> mutant: " + path + "\n";
+									log += "\t|--------> differences (" + result.getDifferences().size() + "): \n";
+									log += "\t|\t\t " + result.getDifferences() + "\n\n";
+									// for(Diff diff:result.getDifferences())
+								}
 							}
 						}
 					}
-				} catch (Exception e) {
-					e.printStackTrace();
 				}
-			}
-			try {
+				wr.write(log + "\n");
+				wr.flush();
 				wr.close();
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
-				return;
 			}
+		} // end each transformation module
+
+	}// end main
+
+	private static String getModelName(String path) {
+		return path.substring(path.lastIndexOf("/") + 1, path.length());
+	}
+
+	private static EmfModel createEmfModel(String name, String model, String metamodel, boolean readOnLoad,
+			boolean storeOnDisposal) {
+		EmfModel emfModel = null;
+		try {
+			emfModel = new EmfModel();
+			StringProperties properties = new StringProperties();
+			properties.put(EmfModel.PROPERTY_NAME, name);
+			properties.put(EmfModel.PROPERTY_FILE_BASED_METAMODEL_URI, new URI(metamodel).toString());
+			properties.put(EmfModel.PROPERTY_MODEL_URI, new URI(model).toString());
+			properties.put(EmfModel.PROPERTY_READONLOAD, readOnLoad + "");
+			properties.put(EmfModel.PROPERTY_STOREONDISPOSAL, storeOnDisposal + "");
+			emfModel.load(properties, (IRelativePathResolver) null);
+
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		} catch (EolModelLoadingException e) {
+			e.printStackTrace();
 		}
-		System.out.println("End of Modules Mutation Executor:");
+		return emfModel;
 	}
 }
