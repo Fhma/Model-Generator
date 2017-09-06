@@ -18,7 +18,10 @@ import org.eclipse.emf.compare.Diff;
 import org.eclipse.epsilon.common.util.StringProperties;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
-import org.eclipse.epsilon.eunit.dt.cmp.emf.v3.EMFModelComparator;
+import org.eclipse.epsilon.eunit.*;
+import org.eclipse.epsilon.eunit.extensions.IModelComparator;
+import org.eclipse.epsilon.eunit.operations.*;
+import org.eclipse.epsilon.eunit.dt.diff.*;
 
 public class MutationComparator {
 

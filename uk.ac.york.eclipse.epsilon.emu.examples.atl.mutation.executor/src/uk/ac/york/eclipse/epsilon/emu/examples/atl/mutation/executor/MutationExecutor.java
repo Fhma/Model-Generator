@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.emu.EmuModule;
+import org.eclipse.epsilon.emu.emf.EmfModelEMU;
 import org.eclipse.epsilon.common.util.StringProperties;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
@@ -63,17 +64,17 @@ public class MutationExecutor {
 			final File mutation_programs[] = mutations_dir.listFiles();
 			for (File entry : mutation_programs) {
 				try {
-					if (!entry.isDirectory()&&entry.getAbsolutePath().endsWith(".emu")) {
+					if (!entry.isDirectory() && entry.getAbsolutePath().endsWith(".emu")) {
 						System.out.println("   -----> " + entry);
 						module = new EmuModule();
 						module.parse(entry);
+						if (module.getParseProblems().size() >= 1) {
+							System.out.println("   Parsing Problems: " + module.getParseProblems().toString());
+						}
 						emfModel = createEmfModel("Model", model, metamodel, true, false);
 						module.getContext().getModelRepository().addModel(emfModel);
 						module.setRepeatWhileMatches(false);
 						module.setMaxLoops(0);
-						if (module.getParseProblems().size() >= 1) {
-							System.out.println("   Parsing Problems: " + module.getParseProblems().toString());
-						}
 						module.execute();
 						module.getContext().getModelRepository().dispose();
 					}
@@ -88,7 +89,7 @@ public class MutationExecutor {
 
 	private static EmfModel createEmfModel(String name, String model, String metamodel, boolean readOnLoad,
 			boolean storeOnDisposal) throws EolModelLoadingException, URISyntaxException {
-		EmfModel emfModel = new EmfModel();
+		EmfModelEMU emfModel = new EmfModelEMU();
 		StringProperties properties = new StringProperties();
 		properties.put(EmfModel.PROPERTY_NAME, name);
 		properties.put(EmfModel.PROPERTY_FILE_BASED_METAMODEL_URI, new URI(metamodel).toString());
