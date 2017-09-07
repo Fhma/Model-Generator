@@ -13,15 +13,14 @@ import java.util.List;
 import java.util.Map;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
+import org.eclipse.emf.compare.AttributeChange;
 import org.eclipse.emf.compare.Comparison;
 import org.eclipse.emf.compare.Diff;
+import org.eclipse.emf.compare.ReferenceChange;
 import org.eclipse.epsilon.common.util.StringProperties;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
-import org.eclipse.epsilon.eunit.*;
-import org.eclipse.epsilon.eunit.extensions.IModelComparator;
-import org.eclipse.epsilon.eunit.operations.*;
-import org.eclipse.epsilon.eunit.dt.diff.*;
+import org.eclipse.epsilon.eunit.dt.cmp.emf.v3.EMFModelComparator;
 
 public class MutationComparator {
 
@@ -93,14 +92,18 @@ public class MutationComparator {
 											+ result.getDifferences().size());
 									log += "\t|----> mutant: " + path + "\n";
 									log += "\t|--------> differences (" + result.getDifferences().size() + "): \n";
-									log += "\t|\t\t " + result.getDifferences() + "\n\n";
-									// for(Diff diff:result.getDifferences())
+									for (Diff diff : result.getDifferences()) {
+										String str = diffToString(diff);
+										System.out.println("\t  " + str);
+										log += "\t|\t\t " + str + "\n";
+									}
 								}
 							}
 						}
 					}
 				}
-				wr.write(log + "\n");
+				log += "\t- - - - - - - - - - - - - - - - - - - - - -\n";
+				wr.write(log);
 				wr.flush();
 				wr.close();
 			} catch (Exception e) {
@@ -133,5 +136,19 @@ public class MutationComparator {
 			e.printStackTrace();
 		}
 		return emfModel;
+	}
+
+	private static String diffToString(Diff diff) {
+		if (diff instanceof AttributeChange) {
+			AttributeChange change = (AttributeChange) diff;
+			return "[Attribute Change {feature= " + change.getAttribute().getEContainingClass().getName() + "."
+					+ change.getAttribute().getName() + ", kind=" + diff.getKind().getName() + "}]";
+		}
+		if (diff instanceof ReferenceChange) {
+			ReferenceChange change = (ReferenceChange) diff;
+			return "[Reference Change {feature= " + change.getReference().getEContainingClass().getName() + "."
+					+ change.getReference().getName() + ", kind=" + diff.getKind().getName() + "}]";
+		}
+		return null;
 	}
 }

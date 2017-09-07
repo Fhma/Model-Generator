@@ -3,22 +3,24 @@ Original Model: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.ec
 	|
 	|----> mutant: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/Book2Publication/mutation_programs/change_type_in_pattern_mutations/OclModelElement_name_replace_1.xmi
 	|--------> differences (1): 
-	|		 [AttributeChangeSpec{attribute=OclType.name, value=Book, kind=CHANGE, source=LEFT, state=UNRESOLVED}]
-
+	|		 [Attribute Change {feature= OclType.name, kind=CHANGE}]
 	|----> mutant: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/Book2Publication/mutation_programs/iteratorexp_name_replacement_mutations/IteratorExp_name_replace_1.xmi
 	|--------> differences (1): 
-	|		 [AttributeChangeSpec{attribute=IteratorExp.name, value=collect, kind=CHANGE, source=LEFT, state=UNRESOLVED}]
-
+	|		 [Attribute Change {feature= IteratorExp.name, kind=CHANGE}]
 	|----> mutant: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/Book2Publication/mutation_programs/iteratorexp_name_replacement_mutations/IteratorExp_name_replace_2.xmi
 	|--------> differences (1): 
-	|		 [AttributeChangeSpec{attribute=IteratorExp.name, value=collect, kind=CHANGE, source=LEFT, state=UNRESOLVED}]
-
+	|		 [Attribute Change {feature= IteratorExp.name, kind=CHANGE}]
 	|----> mutant: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/Book2Publication/mutation_programs/matchedrule_Inpattern_inPattern_replace_mutations/MatchedRule_inPattern_replace_1.xmi
 	|--------> differences (8): 
-	|		 [UNRESOLVED LEFT CHANGE ReferenceChangeSpec{reference=VariableExp.referredVariable, value=SimpleInPatternElement@4c2bb6e0 20:8-20:21, parentMatch=MatchSpec{left=VariableExp@47c81abf 20:24-20:25, right=<null>, origin=<null>, #differences=1, #submatches=0}, match of value=MatchSpec{left=SimpleInPatternElement@4c2bb6e0 20:8-20:21, right=SimpleInPatternElement@3e62d773 20:8-20:21, origin=<null>, #differences=1, #submatches=1}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=PropertyCallExp.source, value=VariableExp@47c81abf 20:24-20:25, parentMatch=MatchSpec{left=OperationCallExp@3f1d2e23 20:24-20:39, right=<null>, origin=<null>, #differences=1, #submatches=1}, match of value=MatchSpec{left=VariableExp@47c81abf 20:24-20:25, right=<null>, origin=<null>, #differences=1, #submatches=0}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=PropertyCallExp.source, value=OperationCallExp@3f1d2e23 20:24-20:39, parentMatch=MatchSpec{left=OperatorCallExp@638ef7ed 20:24-20:43, right=<null>, origin=<null>, #differences=2, #submatches=2}, match of value=MatchSpec{left=OperationCallExp@3f1d2e23 20:24-20:39, right=<null>, origin=<null>, #differences=1, #submatches=1}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=OperationCallExp.arguments, value=IntegerExp@21d03963 20:42-20:43, parentMatch=MatchSpec{left=OperatorCallExp@638ef7ed 20:24-20:43, right=<null>, origin=<null>, #differences=2, #submatches=2}, match of value=MatchSpec{left=IntegerExp@21d03963 20:42-20:43, right=<null>, origin=<null>, #differences=0, #submatches=0}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=VariableDeclaration.variableExp, value=VariableExp@47c81abf 20:24-20:25, parentMatch=MatchSpec{left=SimpleInPatternElement@4c2bb6e0 20:8-20:21, right=SimpleInPatternElement@3e62d773 20:8-20:21, origin=<null>, #differences=1, #submatches=1}, match of value=MatchSpec{left=VariableExp@47c81abf 20:24-20:25, right=<null>, origin=<null>, #differences=1, #submatches=0}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=InPattern.filter, value=OperatorCallExp@638ef7ed 20:24-20:43, parentMatch=MatchSpec{left=InPattern@222a59e6 20:3-20:44, right=<null>, origin=<null>, #differences=1, #submatches=2}, match of value=MatchSpec{left=OperatorCallExp@638ef7ed 20:24-20:43, right=<null>, origin=<null>, #differences=2, #submatches=2}}, UNRESOLVED LEFT ADD ReferenceChangeSpec{reference=MatchedRule.inPattern, value=InPattern@222a59e6 20:3-20:44, parentMatch=MatchSpec{left=MatchedRule@41488b16 Book2Publication, right=MatchedRule@a8ef162 Book2Publication, origin=<null>, #differences=2, #submatches=3}, match of value=MatchSpec{left=InPattern@222a59e6 20:3-20:44, right=<null>, origin=<null>, #differences=1, #submatches=2}}, UNRESOLVED LEFT DELETE ReferenceChangeSpec{reference=MatchedRule.inPattern, value=InPattern@6c7a164b, parentMatch=MatchSpec{left=MatchedRule@41488b16 Book2Publication, right=MatchedRule@a8ef162 Book2Publication, origin=<null>, #differences=2, #submatches=3}, match of value=MatchSpec{left=<null>, right=InPattern@6c7a164b, origin=<null>, #differences=0, #submatches=0}}]
-
+	|		 [Reference Change {feature= VariableExp.referredVariable, kind=CHANGE}]
+	|		 [Reference Change {feature= PropertyCallExp.source, kind=ADD}]
+	|		 [Reference Change {feature= PropertyCallExp.source, kind=ADD}]
+	|		 [Reference Change {feature= OperationCallExp.arguments, kind=ADD}]
+	|		 [Reference Change {feature= VariableDeclaration.variableExp, kind=ADD}]
+	|		 [Reference Change {feature= InPattern.filter, kind=ADD}]
+	|		 [Reference Change {feature= MatchedRule.inPattern, kind=ADD}]
+	|		 [Reference Change {feature= MatchedRule.inPattern, kind=DELETE}]
 	|----> mutant: /Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/Book2Publication/mutation_programs/Module_isRefining_replacement_mutations/Module_isRefining_replace_1.xmi
 	|--------> differences (1): 
-	|		 [AttributeChangeSpec{attribute=Module.isRefining, value=false, kind=CHANGE, source=LEFT, state=UNRESOLVED}]
-
-
+	|		 [Attribute Change {feature= Module.isRefining, kind=CHANGE}]
+	- - - - - - - - - - - - - - - - - - - - - -

@@ -13,6 +13,7 @@ public class SimpleClass2SimpleRDBMS {
 		String path = "/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.eclipse.epsilon.emu.examples.atl/transformations/";
 		path += module_name + "/";
 
+		properties.put("TRANSFORMATION_MODULE", module_name);
 		properties.put("TRANSFORMATION_DIR", path);
 		return properties;
 	}
