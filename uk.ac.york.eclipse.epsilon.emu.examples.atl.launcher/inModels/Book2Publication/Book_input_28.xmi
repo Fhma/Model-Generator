@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Laughing dove">
+    <chapters title="Tadorna tadorna" nbPages="15" author="Bernadine Ferneley"/>
+  </Book>
+  <Book title="Badger, american">
+    <chapters title="Ciconia episcopus" nbPages="30" author="Madalena Toohey"/>
+  </Book>
+  <Book title="Gull, lava"/>
+  <Book title="Red-billed toucan">
+    <chapters title="Larus sp." nbPages="66" author="Nicolai Huguenet"/>
+    <chapters title="Varanus sp." nbPages="81" author="Nathaniel Bullingham"/>
+  </Book>
+  <Book title="Possum, western pygmy">
+    <chapters title="Canis lupus lycaon" nbPages="96" author="Ernestine Brosch"/>
+    <chapters title="Bassariscus astutus" nbPages="69" author="Janina Icom"/>
+  </Book>
+  <Book title="Tokay gecko">
+    <chapters title="Morelia spilotes variegata" nbPages="51" author="Jourdain Antony"/>
+    <chapters title="Oncorhynchus nerka" nbPages="8" author="Hadley Karlolak"/>
+  </Book>
+  <Book title="Chacma baboon">
+    <chapters title="Megaderma spasma" nbPages="78" author="Janenna Peaple"/>
+  </Book>
+  <Book title="White-winged black tern">
+    <chapters title="Fregata magnificans" nbPages="95" author="Roseline Folomkin"/>
+    <chapters title="Nyctereutes procyonoides" nbPages="87" author="Frannie Patty"/>
+    <chapters title="Pelecanus occidentalis" nbPages="62" author="Barnabas Ladloe"/>
+    <chapters title="Gopherus agassizii" nbPages="88" author="Hayley Lampard"/>
+    <chapters title="Helogale undulata" nbPages="13" author="Lewie Quodling"/>
+  </Book>
+  <Book title="Shrike, common boubou"/>
+  <Book title="Gazelle, grant's"/>
+  <Book title="Cape clawless otter"/>
+  <Book title="Greater flamingo">
+    <chapters title="Haematopus ater" nbPages="10" author="Agretha Winkell"/>
+    <chapters title="Connochaetus taurinus" nbPages="49" author="Kimberley Carefull"/>
+    <chapters title="Isoodon obesulus" nbPages="79" author="Maxie Brearley"/>
+  </Book>
+  <Book title="Trumpeter, green-winged"/>
+  <Book title="Capuchin, black-capped"/>
+  <Book title="Jackrabbit, white-tailed">
+    <chapters title="unavailable" nbPages="7" author="Brody Frape"/>
+    <chapters title="Lamprotornis superbus" nbPages="56" author="Pascale Boud"/>
+  </Book>
+  <Book title="Pale-throated three-toed sloth">
+    <chapters title="Graspus graspus" nbPages="39" author="Albertina Knightsbridge"/>
+    <chapters title="Tenrec ecaudatus" nbPages="47" author="Eldredge Birtles"/>
+  </Book>
+  <Book title="Pintail, white-cheeked">
+    <chapters title="Ursus maritimus" nbPages="88" author="Edi O'Hara"/>
+    <chapters title="Dasyurus maculatus" nbPages="54" author="Zabrina Worboys"/>
+    <chapters title="Bubo virginianus" nbPages="36" author="Rebekkah Brithman"/>
+  </Book>
+  <Book title="Beaver, north american">
+    <chapters title="Anastomus oscitans" nbPages="86" author="Gage Metcalf"/>
+    <chapters title="Crotalus cerastes" nbPages="20" author="Grant O'Hengerty"/>
+  </Book>
+  <Book title="Oriental white-backed vulture">
+    <chapters title="Butorides striatus" nbPages="28" author="Mord Murra"/>
+    <chapters title="Eubalaena australis" nbPages="63" author="Chris Hele"/>
+  </Book>
+  <Book title="Ox, musk">
+    <chapters title="unavailable" nbPages="82" author="Samuel Bigglestone"/>
+    <chapters title="Tockus erythrorhyncus" nbPages="82" author="Aggy Sedgeworth"/>
+  </Book>
+  <Book title="Monitor, water"/>
+  <Book title="Wallaby, euro">
+    <chapters title="Anastomus oscitans" nbPages="97" author="Murvyn Hooban"/>
+  </Book>
+  <Book title="Malachite kingfisher">
+    <chapters title="Tauraco porphyrelophus" nbPages="61" author="Darline Jaukovic"/>
+    <chapters title="Cacatua galerita" nbPages="62" author="Marwin Beatson"/>
+    <chapters title="Crocuta crocuta" nbPages="60" author="Dilan Shilvock"/>
+  </Book>
+  <Book title="Bison, american">
+    <chapters title="Coendou prehensilis" nbPages="19" author="Chen Lainge"/>
+    <chapters title="Colaptes campestroides" nbPages="97" author="Pietra Jinks"/>
+    <chapters title="Chlamydosaurus kingii" nbPages="68" author="Linnell Ludlom"/>
+  </Book>
+  <Book title="Gila monster">
+    <chapters title="Crotalus adamanteus" nbPages="33" author="Laurena Zavattero"/>
+    <chapters title="Boa caninus" nbPages="2" author="Donnie Bucknell"/>
+    <chapters title="Papio cynocephalus" nbPages="93" author="Winny Dronsfield"/>
+  </Book>
+  <Book title="Lizard, frilled"/>
+  <Book title="Turaco, violet-crested">
+    <chapters title="Phascogale calura" nbPages="10" author="Joni Byrne"/>
+    <chapters title="Alopex lagopus" nbPages="24" author="Berty Etheredge"/>
+  </Book>
+  <Book title="Gecko, bent-toed">
+    <chapters title="Isoodon obesulus" nbPages="88" author="Karla Badman"/>
+  </Book>
+  <Book title="Roadrunner, greater"/>
+  <Book title="Bonnet macaque">
+    <chapters title="Larus dominicanus" nbPages="78" author="Carmelia Cash"/>
+    <chapters title="Sauromalus obesus" nbPages="65" author="Ilyse Roullier"/>
+  </Book>
+</xmi:XMI>

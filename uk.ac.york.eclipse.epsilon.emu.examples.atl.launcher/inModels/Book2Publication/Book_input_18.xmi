@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Trumpeter swan">
+    <chapters title="Canis mesomelas" nbPages="21" author="Ferrell Vaggers"/>
+    <chapters title="Anas bahamensis" nbPages="58" author="Cal Elves"/>
+  </Book>
+  <Book title="Squirrel, pine">
+    <chapters title="Uraeginthus angolensis" nbPages="11" author="Sonya Walch"/>
+    <chapters title="Ninox superciliaris" nbPages="5" author="Bondy Conquer"/>
+    <chapters title="Tachyglossus aculeatus" nbPages="70" author="Shannon Courtese"/>
+    <chapters title="Zosterops pallidus" nbPages="29" author="Frederica Sally"/>
+  </Book>
+  <Book title="Jackal, indian">
+    <chapters title="Anser caerulescens" nbPages="51" author="Issiah Linturn"/>
+  </Book>
+  <Book title="Marabou stork">
+    <chapters title="Limnocorax flavirostra" nbPages="58" author="Chery Ruttgers"/>
+  </Book>
+  <Book title="Large-eared bushbaby">
+    <chapters title="Mellivora capensis" nbPages="4" author="Ingaborg Bordessa"/>
+    <chapters title="Castor fiber" nbPages="56" author="Karia Oswal"/>
+  </Book>
+  <Book title="House crow">
+    <chapters title="Psophia viridis" nbPages="42" author="Maxie Brearley"/>
+    <chapters title="Cebus apella" nbPages="97" author="Guss Minget"/>
+    <chapters title="unavailable" nbPages="22" author="Elmer Ketteman"/>
+  </Book>
+  <Book title="Vulture, white-rumped">
+    <chapters title="Phylurus milli" nbPages="55" author="Heloise Doerling"/>
+  </Book>
+  <Book title="American black bear">
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="1" author="Ernestine Brosch"/>
+  </Book>
+  <Book title="Crested screamer">
+    <chapters title="Numida meleagris" nbPages="6" author="Sibyl Imison"/>
+    <chapters title="Stenella coeruleoalba" nbPages="32" author="Gratiana Kieff"/>
+  </Book>
+  <Book title="Ground legaan">
+    <chapters title="Tachyglossus aculeatus" nbPages="26" author="Myrtle Beever"/>
+    <chapters title="Ara chloroptera" nbPages="99" author="Ramon Lyons"/>
+  </Book>
+  <Book title="Macaw, scarlet">
+    <chapters title="Uraeginthus angolensis" nbPages="21" author="Aguie Cambridge"/>
+    <chapters title="Eubalaena australis" nbPages="25" author="Katina Shirtliff"/>
+    <chapters title="Spizaetus coronatus" nbPages="48" author="Arleyne Witsey"/>
+  </Book>
+  <Book title="Black curlew">
+    <chapters title="Globicephala melas" nbPages="29" author="Archibaldo Ascough"/>
+  </Book>
+  <Book title="Savanna baboon"/>
+  <Book title="Cockatoo, red-tailed">
+    <chapters title="Hippotragus niger" nbPages="32" author="Lishe Newbegin"/>
+    <chapters title="Odocoileus hemionus" nbPages="24" author="Godwin Emilien"/>
+    <chapters title="Chlamydosaurus kingii" nbPages="84" author="Hughie Edworthy"/>
+    <chapters title="Boa caninus" nbPages="44" author="Halsey Bjerkan"/>
+  </Book>
+  <Book title="Buffalo, african">
+    <chapters title="Ploceus intermedius" nbPages="100" author="Marcel Carlisle"/>
+    <chapters title="Ctenophorus ornatus" nbPages="91" author="Claudina Kmicicki"/>
+    <chapters title="Acridotheres tristis" nbPages="83" author="Aprilette Fellnee"/>
+  </Book>
+  <Book title="Turtle, snake-necked">
+    <chapters title="Antilocapra americana" nbPages="61" author="Fanechka McBryde"/>
+    <chapters title="Ursus americanus" nbPages="23" author="Adriane Kix"/>
+  </Book>
+  <Book title="Raccoon dog">
+    <chapters title="Bison bison" nbPages="71" author="Derick Kibbey"/>
+  </Book>
+  <Book title="Boa, malagasy ground">
+    <chapters title="Eira barbata" nbPages="62" author="Kinsley Yitzovicz"/>
+  </Book>
+  <Book title="Jabiru stork">
+    <chapters title="Grus canadensis" nbPages="96" author="Jourdain Antony"/>
+  </Book>
+  <Book title="Black-tailed deer">
+    <chapters title="Laniarius ferrugineus" nbPages="52" author="Stace McDougall"/>
+  </Book>
+  <Book title="Bee-eater, white-fronted"/>
+  <Book title="Hyena, spotted">
+    <chapters title="Gyps fulvus" nbPages="84" author="Ky Craw"/>
+  </Book>
+  <Book title="Puku">
+    <chapters title="Hystrix cristata" nbPages="59" author="Sigrid Kentish"/>
+    <chapters title="Upupa epops" nbPages="78" author="Birgit Atty"/>
+  </Book>
+  <Book title="Black-winged stilt"/>
+  <Book title="Badger, honey"/>
+  <Book title="Crown of thorns starfish">
+    <chapters title="Fregata magnificans" nbPages="73" author="Eolande Bockin"/>
+    <chapters title="Balearica pavonina" nbPages="1" author="Blithe Jaslem"/>
+  </Book>
+  <Book title="Penguin, galapagos"/>
+</xmi:XMI>

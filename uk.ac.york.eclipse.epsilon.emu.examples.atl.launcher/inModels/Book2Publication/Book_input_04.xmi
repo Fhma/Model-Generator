@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Pelican, great white">
+    <chapters title="Spermophilus armatus" nbPages="54" author="Jerad MacCambridge"/>
+  </Book>
+  <Book title="Red deer">
+    <chapters title="Ramphastos tucanus" nbPages="20" author="Kimberly Matteotti"/>
+  </Book>
+  <Book title="Echidna, short-beaked">
+    <chapters title="Numida meleagris" nbPages="8" author="Desdemona Tambling"/>
+    <chapters title="Ctenophorus ornatus" nbPages="25" author="Georgeanna Sussams"/>
+  </Book>
+  <Book title="Pintail, bahama">
+    <chapters title="Scolopax minor" nbPages="41" author="Linnell Ludlom"/>
+    <chapters title="Dasypus novemcinctus" nbPages="77" author="Creighton Scuse"/>
+  </Book>
+</xmi:XMI>

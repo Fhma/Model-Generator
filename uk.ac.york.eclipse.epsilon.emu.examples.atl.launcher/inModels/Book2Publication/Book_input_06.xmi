@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="African clawless otter">
+    <chapters title="Falco peregrinus" nbPages="18" author="Sammie Gibson"/>
+    <chapters title="Graspus graspus" nbPages="49" author="Sharon Arsnell"/>
+    <chapters title="Ciconia ciconia" nbPages="75" author="Bethany Stirley"/>
+    <chapters title="Vicugna vicugna" nbPages="94" author="Issiah Linturn"/>
+    <chapters title="unavailable" nbPages="100" author="Karla Badman"/>
+    <chapters title="Hyaena hyaena" nbPages="60" author="Ashlen Neathway"/>
+  </Book>
+  <Book title="Goldeneye, common"/>
+  <Book title="Mule deer">
+    <chapters title="Isoodon obesulus" nbPages="92" author="Florinda Donett"/>
+  </Book>
+  <Book title="Emerald-spotted wood dove"/>
+  <Book title="Rhinoceros, white">
+    <chapters title="Felis concolor" nbPages="19" author="Kelley Janowicz"/>
+  </Book>
+  <Book title="Cape clawless otter">
+    <chapters title="Manouria emys" nbPages="28" author="Robert Robert"/>
+    <chapters title="Loris tardigratus" nbPages="63" author="Zorah Laffranconi"/>
+    <chapters title="Tadorna tadorna" nbPages="38" author="Nathaniel Bullingham"/>
+  </Book>
+  <Book title="Azara's zorro">
+    <chapters title="Naja sp." nbPages="81" author="Lezley Comins"/>
+  </Book>
+  <Book title="Marmot, yellow-bellied">
+    <chapters title="Spermophilus richardsonii" nbPages="31" author="Casar Skellon"/>
+    <chapters title="Tadorna tadorna" nbPages="1" author="Theda Guerriero"/>
+  </Book>
+  <Book title="Common langur">
+    <chapters title="Alcelaphus buselaphus caama" nbPages="8" author="Inger Hendrix"/>
+  </Book>
+  <Book title="Emerald green tree boa"/>
+  <Book title="Siskin, pine">
+    <chapters title="Bucephala clangula" nbPages="12" author="Cirstoforo Ibbison"/>
+    <chapters title="Falco peregrinus" nbPages="81" author="Carter Haukey"/>
+  </Book>
+  <Book title="Gila monster">
+    <chapters title="Coluber constrictor" nbPages="84" author="Frederic Elward"/>
+    <chapters title="Ramphastos tucanus" nbPages="16" author="Collen Fishly"/>
+  </Book>
+  <Book title="Water monitor">
+    <chapters title="Numida meleagris" nbPages="73" author="Melitta Isakov"/>
+    <chapters title="Pycnonotus nigricans" nbPages="40" author="Beale Carnock"/>
+  </Book>
+  <Book title="Rose-ringed parakeet"/>
+  <Book title="Bat, asian false vampire">
+    <chapters title="Felis concolor" nbPages="82" author="Eolande Bockin"/>
+  </Book>
+  <Book title="Asian lion">
+    <chapters title="Felis silvestris lybica" nbPages="46" author="Brade Grayland"/>
+  </Book>
+  <Book title="Flicker, campo">
+    <chapters title="Bubalus arnee" nbPages="33" author="Nanine Gawthorpe"/>
+    <chapters title="Lemur catta" nbPages="56" author="Marje Harmes"/>
+    <chapters title="Tockus erythrorhyncus" nbPages="55" author="Sophronia Lemin"/>
+    <chapters title="Anastomus oscitans" nbPages="54" author="Bing Cayette"/>
+  </Book>
+  <Book title="Large-eared bushbaby">
+    <chapters title="Macropus eugenii" nbPages="51" author="Leanora Wassell"/>
+  </Book>
+  <Book title="Neotropic cormorant">
+    <chapters title="Crocuta crocuta" nbPages="45" author="Kliment Sills"/>
+    <chapters title="Balearica pavonina" nbPages="96" author="Dulsea Deveril"/>
+  </Book>
+  <Book title="Snake (unidentified)">
+    <chapters title="Milvus migrans" nbPages="15" author="Bobbe Dooher"/>
+  </Book>
+</xmi:XMI>

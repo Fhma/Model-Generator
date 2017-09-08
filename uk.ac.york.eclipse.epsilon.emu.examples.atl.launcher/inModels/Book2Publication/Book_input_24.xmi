@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Butterfly (unidentified)">
+    <chapters title="Oxybelis fulgidus" nbPages="10" author="Dasya Torry"/>
+    <chapters title="Parus atricapillus" nbPages="68" author="Harmonia Dimitru"/>
+  </Book>
+  <Book title="Magnificent frigate bird">
+    <chapters title="Aegypius tracheliotus" nbPages="63" author="Nissie Bummfrey"/>
+  </Book>
+  <Book title="Four-horned antelope">
+    <chapters title="Phascogale calura" nbPages="91" author="Fernande Brinsden"/>
+  </Book>
+</xmi:XMI>

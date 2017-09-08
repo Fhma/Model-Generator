@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Cape clawless otter">
+    <chapters title="Bettongia penicillata" nbPages="91" author="Luise Flear"/>
+    <chapters title="Cathartes aura" nbPages="46" author="Quintilla Petrushkevich"/>
+    <chapters title="Eudromia elegans" nbPages="58" author="Doralynne Walford"/>
+  </Book>
+  <Book title="Arctic hare">
+    <chapters title="Felis silvestris lybica" nbPages="6" author="Elyssa Penson"/>
+  </Book>
+  <Book title="Paca">
+    <chapters title="Zosterops pallidus" nbPages="60" author="Nessi Basil"/>
+    <chapters title="Castor canadensis" nbPages="48" author="Sholom Arthurs"/>
+    <chapters title="Globicephala melas" nbPages="10" author="Corny McLauchlin"/>
+  </Book>
+  <Book title="Tokay gecko">
+    <chapters title="Melanerpes erythrocephalus" nbPages="80" author="Alric Stripp"/>
+    <chapters title="Pelecans onocratalus" nbPages="72" author="Albertina Knightsbridge"/>
+  </Book>
+  <Book title="Common duiker">
+    <chapters title="Redunca redunca" nbPages="77" author="Brynna Jobbins"/>
+    <chapters title="Spermophilus tridecemlineatus" nbPages="11" author="Derril Gazzard"/>
+  </Book>
+  <Book title="Woodcock, american"/>
+  <Book title="Eurasian hoopoe"/>
+  <Book title="Blue and yellow macaw"/>
+  <Book title="Savannah deer (unidentified)"/>
+  <Book title="Raven, cape">
+    <chapters title="Psittacula krameri" nbPages="54" author="Nikolia Marl"/>
+  </Book>
+  <Book title="Goose, snow">
+    <chapters title="Cyrtodactylus louisiadensis" nbPages="11" author="Mignonne Westerman"/>
+    <chapters title="Haematopus ater" nbPages="3" author="Kath Pennetti"/>
+  </Book>
+  <Book title="Fringe-eared oryx">
+    <chapters title="Boa caninus" nbPages="24" author="Beale Carnock"/>
+    <chapters title="Lamprotornis chalybaeus" nbPages="11" author="Elise Ruskin"/>
+  </Book>
+  <Book title="Oryx, beisa"/>
+  <Book title="Southern lapwing">
+    <chapters title="Ara ararauna" nbPages="21" author="Sancho Le Sarr"/>
+  </Book>
+  <Book title="Badger, european"/>
+  <Book title="Blue peacock">
+    <chapters title="Phalacrocorax brasilianus" nbPages="70" author="Jessie Capponer"/>
+  </Book>
+  <Book title="Arctic fox">
+    <chapters title="Gekko gecko" nbPages="88" author="Derick Kibbey"/>
+    <chapters title="Cervus duvauceli" nbPages="65" author="Hart Hartzenberg"/>
+  </Book>
+  <Book title="Antechinus, brown">
+    <chapters title="Phacochoerus aethiopus" nbPages="46" author="Staford Caunt"/>
+    <chapters title="Macropus eugenii" nbPages="78" author="Jude Housam"/>
+  </Book>
+  <Book title="Dolphin, striped">
+    <chapters title="Potamochoerus porcus" nbPages="62" author="Joly Matisse"/>
+    <chapters title="Uraeginthus granatina" nbPages="33" author="Ly Loude"/>
+  </Book>
+  <Book title="Phalarope, northern">
+    <chapters title="Larus fuliginosus" nbPages="92" author="Mureil Marusyak"/>
+    <chapters title="Gekko gecko" nbPages="71" author="Denise Vossgen"/>
+  </Book>
+  <Book title="Pale-throated three-toed sloth">
+    <chapters title="Galictis vittata" nbPages="84" author="Sydney Shaxby"/>
+    <chapters title="Manouria emys" nbPages="6" author="Linette Haggarty"/>
+    <chapters title="Taurotagus oryx" nbPages="75" author="Marwin Beatson"/>
+    <chapters title="Ninox superciliaris" nbPages="70" author="Arv Eymor"/>
+    <chapters title="Pelecans onocratalus" nbPages="28" author="Babette Birtonshaw"/>
+  </Book>
+  <Book title="Red-billed toucan">
+    <chapters title="Ovibos moschatus" nbPages="73" author="Cesya Arnaut"/>
+    <chapters title="Plegadis falcinellus" nbPages="7" author="Allis Ost"/>
+  </Book>
+  <Book title="Field flicker"/>
+  <Book title="Dingo">
+    <chapters title="Pelecans onocratalus" nbPages="58" author="Darius Meece"/>
+  </Book>
+  <Book title="Lion, australian sea">
+    <chapters title="Bettongia penicillata" nbPages="70" author="Brigitte Gyles"/>
+  </Book>
+  <Book title="Leopard">
+    <chapters title="Papio ursinus" nbPages="9" author="Lulita Losselyong"/>
+    <chapters title="Corythornis cristata" nbPages="98" author="Dulcy Cockrill"/>
+  </Book>
+  <Book title="Tenrec, tailless">
+    <chapters title="Meleagris gallopavo" nbPages="70" author="Georgeanna Sussams"/>
+    <chapters title="Taurotagus oryx" nbPages="92" author="Theadora McClory"/>
+    <chapters title="Paraxerus cepapi" nbPages="39" author="Brittney Beavers"/>
+  </Book>
+</xmi:XMI>

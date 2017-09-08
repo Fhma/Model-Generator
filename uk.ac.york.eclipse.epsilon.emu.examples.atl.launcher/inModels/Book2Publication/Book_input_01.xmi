@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Sea birds (unidentified)"/>
+  <Book title="Kinkajou">
+    <chapters title="Marmota caligata" nbPages="72" author="Yves Freckelton"/>
+  </Book>
+  <Book title="Southern lapwing">
+    <chapters title="Pseudoleistes virescens" nbPages="97" author="Hill Reburn"/>
+  </Book>
+  <Book title="Wildebeest, blue">
+    <chapters title="unavailable" nbPages="41" author="Tadd Loveland"/>
+  </Book>
+  <Book title="Common eland">
+    <chapters title="Oryx gazella callotis" nbPages="86" author="Indira Earwaker"/>
+    <chapters title="Merops bullockoides" nbPages="18" author="Idaline Shafier"/>
+  </Book>
+  <Book title="Bettong, brush-tailed">
+    <chapters title="Sauromalus obesus" nbPages="65" author="Benni Pietrusiak"/>
+    <chapters title="Cervus unicolor" nbPages="59" author="Roz Thickett"/>
+  </Book>
+  <Book title="Falcon, peregrine">
+    <chapters title="Merops sp." nbPages="14" author="Erasmus Gogie"/>
+  </Book>
+  <Book title="Desert kangaroo rat">
+    <chapters title="Helogale undulata" nbPages="77" author="Charlene Ianizzi"/>
+    <chapters title="Limnocorax flavirostra" nbPages="76" author="Monica Ivashov"/>
+    <chapters title="Agouti paca" nbPages="67" author="Charmion Dilnot"/>
+    <chapters title="Uraeginthus granatina" nbPages="49" author="Janina Icom"/>
+  </Book>
+</xmi:XMI>

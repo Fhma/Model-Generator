@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Marmot, hoary"/>
+  <Book title="Dolphin, striped"/>
+  <Book title="Cuis">
+    <chapters title="Pelecanus occidentalis" nbPages="96" author="Darius Meece"/>
+    <chapters title="Dicrurus adsimilis" nbPages="79" author="Binnie Scurlock"/>
+  </Book>
+  <Book title="Gila monster">
+    <chapters title="Trichoglossus haematodus moluccanus" nbPages="58" author="Ermina Scammonden"/>
+  </Book>
+  <Book title="Wallaby, euro">
+    <chapters title="Mirounga leonina" nbPages="85" author="Erasmus Gogie"/>
+    <chapters title="Bradypus tridactylus" nbPages="99" author="Thayne Streetfield"/>
+    <chapters title="Paroaria gularis" nbPages="19" author="Concordia Miles"/>
+  </Book>
+  <Book title="African jacana"/>
+  <Book title="Mississippi alligator"/>
+  <Book title="Roseat flamingo"/>
+  <Book title="Catfish, blue">
+    <chapters title="Butorides striatus" nbPages="48" author="Hana Rubinsky"/>
+    <chapters title="Salvadora hexalepis" nbPages="20" author="Caressa Thorneywork"/>
+    <chapters title="Canis aureus" nbPages="47" author="Boony Halson"/>
+    <chapters title="Myrmecobius fasciatus" nbPages="86" author="Sigismondo Mortell"/>
+    <chapters title="Ovibos moschatus" nbPages="94" author="Reece L' Estrange"/>
+  </Book>
+  <Book title="Black kite"/>
+  <Book title="Albatross, waved">
+    <chapters title="Columba livia" nbPages="59" author="Karena Dax"/>
+    <chapters title="Dolichitus patagonum" nbPages="67" author="Vasilis Keeler"/>
+    <chapters title="Ploceus intermedius" nbPages="77" author="Janina Icom"/>
+    <chapters title="Coendou prehensilis" nbPages="83" author="Elora Holleran"/>
+    <chapters title="Macropus giganteus" nbPages="42" author="Shoshana Gullick"/>
+  </Book>
+  <Book title="Bleu, blue-breasted cordon"/>
+  <Book title="Possum, western pygmy">
+    <chapters title="Lemur catta" nbPages="6" author="Harmonia Dimitru"/>
+    <chapters title="Isoodon obesulus" nbPages="64" author="Mirabella Debow"/>
+  </Book>
+  <Book title="Waved albatross">
+    <chapters title="Paroaria gularis" nbPages="97" author="Peterus Fogden"/>
+  </Book>
+  <Book title="Rat, arboral spiny"/>
+  <Book title="Racer snake">
+    <chapters title="Dicrurus adsimilis" nbPages="69" author="Trude Ginsie"/>
+    <chapters title="Terrapene carolina" nbPages="11" author="Pall Piesold"/>
+    <chapters title="Varanus sp." nbPages="4" author="Raffarty Elington"/>
+  </Book>
+  <Book title="Stork, woolly-necked"/>
+  <Book title="Wild water buffalo"/>
+  <Book title="Rat, arboral spiny"/>
+  <Book title="Sage grouse">
+    <chapters title="Grus canadensis" nbPages="98" author="Desdemona Dunseith"/>
+    <chapters title="Bradypus tridactylus" nbPages="77" author="Orsola Streeter"/>
+    <chapters title="Hyaena hyaena" nbPages="32" author="Sigfrid Lulham"/>
+  </Book>
+  <Book title="Brush-tailed phascogale">
+    <chapters title="Pycnonotus nigricans" nbPages="13" author="Diane Claige"/>
+    <chapters title="Vicugna vicugna" nbPages="91" author="Nikolia Marl"/>
+    <chapters title="Alouatta seniculus" nbPages="6" author="Bing Cayette"/>
+    <chapters title="Marmota caligata" nbPages="65" author="Lacee Kintzel"/>
+  </Book>
+  <Book title="Hottentot teal">
+    <chapters title="Megaderma spasma" nbPages="83" author="Aluino Yukhnini"/>
+  </Book>
+  <Book title="Curve-billed thrasher">
+    <chapters title="Sylvicapra grimma" nbPages="89" author="Glenn Dami"/>
+  </Book>
+  <Book title="Hawk-headed parrot">
+    <chapters title="Choloepus hoffmani" nbPages="66" author="Aleda Fishwick"/>
+    <chapters title="Spizaetus coronatus" nbPages="74" author="Guss Minget"/>
+  </Book>
+  <Book title="Crab-eating raccoon">
+    <chapters title="Gorilla gorilla" nbPages="1" author="Thayne Streetfield"/>
+    <chapters title="Echimys chrysurus" nbPages="72" author="Winslow Gunther"/>
+  </Book>
+  <Book title="Grizzly bear">
+    <chapters title="Agkistrodon piscivorus" nbPages="5" author="Christoper Sharpling"/>
+    <chapters title="Balearica pavonina" nbPages="51" author="Isidor Duckinfield"/>
+  </Book>
+  <Book title="Paradoxure">
+    <chapters title="Callipepla gambelii" nbPages="86" author="Halsey Bjerkan"/>
+  </Book>
+  <Book title="Thirteen-lined squirrel">
+    <chapters title="Platalea leucordia" nbPages="83" author="Jackie Toppin"/>
+    <chapters title="Delphinus delphis" nbPages="80" author="Felipe Keppin"/>
+  </Book>
+  <Book title="Groundhog">
+    <chapters title="Streptopelia senegalensis" nbPages="68" author="Sigismondo Mortell"/>
+    <chapters title="Plegadis ridgwayi" nbPages="58" author="Corabel Tytherton"/>
+  </Book>
+  <Book title="Magnificent frigate bird">
+    <chapters title="Ciconia episcopus" nbPages="10" author="Freda Diable"/>
+  </Book>
+  <Book title="Heron, yellow-crowned night">
+    <chapters title="Papio ursinus" nbPages="5" author="Brietta De Gogay"/>
+  </Book>
+  <Book title="Eastern box turtle">
+    <chapters title="Bison bison" nbPages="93" author="Gasper MacTeggart"/>
+    <chapters title="Trichoglossus chlorolepidotus" nbPages="31" author="Marty Phripp"/>
+    <chapters title="Varanus salvator" nbPages="64" author="Mag Walewicz"/>
+  </Book>
+  <Book title="Tammar wallaby">
+    <chapters title="Turtur chalcospilos" nbPages="38" author="Melitta Danev"/>
+    <chapters title="Crotalus cerastes" nbPages="40" author="Gauthier Duerden"/>
+  </Book>
+  <Book title="Penguin, little blue">
+    <chapters title="Taurotagus oryx" nbPages="75" author="Gnni Haddleston"/>
+    <chapters title="Canis lupus lycaon" nbPages="33" author="Eal Gosden"/>
+  </Book>
+</xmi:XMI>

@@ -48,7 +48,7 @@ public class TransformationLauncher {
 		}
 
 		String inModelsFolder = "inModels/";
-		String outModelsFolder = "outModels/";
+		String outModelsFolder = "expectedModels/";
 		TransformationLauncher exe;
 		Class<?> clazz;
 		Method method;

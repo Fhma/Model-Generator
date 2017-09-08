@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Tammar wallaby">
+    <chapters title="Mungos mungo" nbPages="27" author="Flory Mullen"/>
+    <chapters title="Castor fiber" nbPages="79" author="Prince Champken"/>
+    <chapters title="Canis aureus" nbPages="94" author="Cammi Worster"/>
+  </Book>
+  <Book title="Bonnet macaque">
+    <chapters title="Diomedea irrorata" nbPages="66" author="Joellyn Gouldthorpe"/>
+    <chapters title="Amphibolurus barbatus" nbPages="35" author="Milzie Tapton"/>
+    <chapters title="Galago crassicaudataus" nbPages="69" author="Ashby Jeannesson"/>
+  </Book>
+  <Book title="Malay squirrel (unidentified)">
+    <chapters title="Colaptes campestroides" nbPages="93" author="Lu Gabala"/>
+  </Book>
+  <Book title="Bare-faced go away bird"/>
+  <Book title="Eurasian hoopoe"/>
+  <Book title="Raccoon dog"/>
+  <Book title="Chuckwalla">
+    <chapters title="Tamiasciurus hudsonicus" nbPages="4" author="Matty Powton"/>
+  </Book>
+  <Book title="Red-tailed hawk">
+    <chapters title="Haematopus ater" nbPages="18" author="Allard Vasilic"/>
+    <chapters title="Tockus flavirostris" nbPages="2" author="Flory Mullen"/>
+  </Book>
+  <Book title="American buffalo">
+    <chapters title="Mycteria ibis" nbPages="28" author="Jeniffer Vanderplas"/>
+    <chapters title="Tadorna tadorna" nbPages="81" author="Knox Cicutto"/>
+    <chapters title="Phylurus milli" nbPages="57" author="Rhett Anlay"/>
+  </Book>
+  <Book title="Chickadee, black-capped">
+    <chapters title="unavailable" nbPages="67" author="Jdavie Headrick"/>
+  </Book>
+  <Book title="Lion, galapagos sea">
+    <chapters title="Balearica pavonina" nbPages="30" author="Lulita Losselyong"/>
+    <chapters title="Bettongia penicillata" nbPages="9" author="Norris Durbyn"/>
+    <chapters title="Phasianus colchicus" nbPages="39" author="Hughie Edworthy"/>
+  </Book>
+  <Book title="Penguin, galapagos">
+    <chapters title="Choriotis kori" nbPages="93" author="Matty Powton"/>
+    <chapters title="Lamprotornis nitens" nbPages="98" author="Coralyn Liveley"/>
+    <chapters title="Passer domesticus" nbPages="62" author="Maggy Kovacs"/>
+    <chapters title="Eolophus roseicapillus" nbPages="99" author="Cassy Traylen"/>
+  </Book>
+  <Book title="Rat, arboral spiny">
+    <chapters title="Perameles nasuta" nbPages="14" author="Emmalynne Cherrie"/>
+    <chapters title="Gazella granti" nbPages="35" author="Urbano Meys"/>
+  </Book>
+  <Book title="Cardinal, black-throated">
+    <chapters title="Stercorarius longicausus" nbPages="22" author="Drucie Richmont"/>
+  </Book>
+  <Book title="Fairy penguin">
+    <chapters title="Gekko gecko" nbPages="61" author="Kendrick Fearneley"/>
+    <chapters title="Crocuta crocuta" nbPages="63" author="Kimmy Danson"/>
+    <chapters title="Butorides striatus" nbPages="26" author="Lanni Reckhouse"/>
+  </Book>
+  <Book title="Rat, arboral spiny">
+    <chapters title="Larus dominicanus" nbPages="32" author="Ninette Noller"/>
+    <chapters title="Zenaida asiatica" nbPages="80" author="Hamid Duny"/>
+    <chapters title="Aegypius tracheliotus" nbPages="29" author="Magdalen Akister"/>
+  </Book>
+  <Book title="Tammar wallaby">
+    <chapters title="Capra ibex" nbPages="69" author="Rayna Lowdham"/>
+    <chapters title="Tursiops truncatus" nbPages="31" author="Percy Wardale"/>
+  </Book>
+  <Book title="Ibex">
+    <chapters title="Falco peregrinus" nbPages="61" author="Bunny Fife"/>
+  </Book>
+  <Book title="Blue duck"/>
+  <Book title="Pale-throated three-toed sloth">
+    <chapters title="Colaptes campestroides" nbPages="21" author="Douglas Favela"/>
+    <chapters title="Propithecus verreauxi" nbPages="76" author="Kimberly Matteotti"/>
+  </Book>
+  <Book title="Magnificent frigate bird"/>
+  <Book title="Radiated tortoise">
+    <chapters title="Centrocercus urophasianus" nbPages="90" author="Lindon Owthwaite"/>
+    <chapters title="Threskionis aethiopicus" nbPages="83" author="Lacee Kintzel"/>
+    <chapters title="Damaliscus lunatus" nbPages="48" author="Boigie Ashborn"/>
+    <chapters title="Lybius torquatus" nbPages="50" author="Jamie Espley"/>
+    <chapters title="Dipodomys deserti" nbPages="40" author="Darline Jaukovic"/>
+  </Book>
+  <Book title="Fringe-eared oryx"/>
+  <Book title="Puna ibis">
+    <chapters title="Passer domesticus" nbPages="62" author="Worthy Westbury"/>
+  </Book>
+  <Book title="Red brocket"/>
+  <Book title="Red-billed buffalo weaver"/>
+  <Book title="Whale, long-finned pilot">
+    <chapters title="Paraxerus cepapi" nbPages="80" author="Germayne Panyer"/>
+  </Book>
+  <Book title="Japanese macaque">
+    <chapters title="Anser anser" nbPages="55" author="Bryant Sutter"/>
+  </Book>
+  <Book title="Beaver, eurasian">
+    <chapters title="Spermophilus parryii" nbPages="66" author="Kirsten Pawel"/>
+    <chapters title="Zalophus californicus" nbPages="17" author="Winny Dronsfield"/>
+    <chapters title="Tamiasciurus hudsonicus" nbPages="12" author="Janina Icom"/>
+    <chapters title="Butorides striatus" nbPages="66" author="Frederica Sally"/>
+  </Book>
+  <Book title="Polar bear"/>
+  <Book title="Bison, american"/>
+  <Book title="Pine snake (unidentified)"/>
+  <Book title="Helmeted guinea fowl">
+    <chapters title="Neophoca cinerea" nbPages="14" author="Allard Vasilic"/>
+    <chapters title="unavailable" nbPages="11" author="Delly Nurse"/>
+    <chapters title="Canis aureus" nbPages="66" author="Tiffie Gullivent"/>
+  </Book>
+  <Book title="Raccoon dog">
+    <chapters title="unavailable" nbPages="46" author="Manuel Heineken"/>
+    <chapters title="Sylvicapra grimma" nbPages="66" author="Pamelina Bolmann"/>
+  </Book>
+  <Book title="Kaffir cat">
+    <chapters title="Bubulcus ibis" nbPages="57" author="Aleksandr Creamer"/>
+    <chapters title="Cebus apella" nbPages="58" author="Margy MacFadden"/>
+    <chapters title="Ara macao" nbPages="96" author="Frederick Rushsorth"/>
+  </Book>
+  <Book title="Long-tailed spotted cat">
+    <chapters title="Morelia spilotes variegata" nbPages="18" author="Meriel Dudill"/>
+    <chapters title="Taurotagus oryx" nbPages="55" author="Moselle Vinas"/>
+  </Book>
+  <Book title="Polecat, african"/>
+  <Book title="Rhea, common"/>
+</xmi:XMI>

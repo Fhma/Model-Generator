@@ -1,0 +1,22 @@
+pre {
+	var b_num:Integer = (0.4 * total).round();
+	var c_num :Integer = total-b_num;
+}
+
+$instances b_num
+@list books_list
+operation Book create()
+{
+	self.title = StringDB!Row.all.at(nextInteger(2,999)).animal_common;
+}
+
+$instances c_num
+@list chapters_list
+operation Chapter create()
+{
+	self.title = StringDB!Row.all.at(nextInteger(2,999)).animal_name;
+	self.nbPages = nextInteger(1,100);
+	var index = nextInteger(2,999);
+	self.author = StringDB!Row.all.at(index).first_name + " " + StringDB!Row.all.at(index).last_name;
+	self.book = nextFromList("books_list");
+}

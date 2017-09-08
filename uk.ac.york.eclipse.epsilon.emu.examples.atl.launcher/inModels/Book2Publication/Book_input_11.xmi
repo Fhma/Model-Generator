@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Stanley bustard"/>
+  <Book title="Grouse, greater sage">
+    <chapters title="Anser caerulescens" nbPages="19" author="Yehudi Gallahar"/>
+    <chapters title="unavailable" nbPages="30" author="Morten Simkovich"/>
+    <chapters title="Alopex lagopus" nbPages="76" author="Burlie Dyball"/>
+    <chapters title="Lemur catta" nbPages="64" author="Karena Dax"/>
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="26" author="Meriel Dudill"/>
+  </Book>
+  <Book title="Lemming, arctic"/>
+  <Book title="Yak">
+    <chapters title="Ciconia episcopus" nbPages="16" author="Robina Hannon"/>
+  </Book>
+  <Book title="Boar, wild">
+    <chapters title="Drymarchon corias couperi" nbPages="52" author="Frederica Sally"/>
+    <chapters title="Eudyptula minor" nbPages="78" author="Phyllis Janko"/>
+  </Book>
+  <Book title="Common waterbuck"/>
+  <Book title="American beaver">
+    <chapters title="Bubalus arnee" nbPages="97" author="Jae O'Rafferty"/>
+    <chapters title="Pycnonotus nigricans" nbPages="71" author="Jaclyn Agar"/>
+  </Book>
+  <Book title="Raven, cape">
+    <chapters title="Elephas maximus bengalensis" nbPages="22" author="Constantino Lineen"/>
+    <chapters title="Callipepla gambelii" nbPages="35" author="Glennis Renshall"/>
+  </Book>
+  <Book title="Bobcat"/>
+  <Book title="Jackal, golden"/>
+  <Book title="Helmeted guinea fowl">
+    <chapters title="Myrmecobius fasciatus" nbPages="24" author="Thekla Huffey"/>
+  </Book>
+  <Book title="Striped hyena">
+    <chapters title="Macropus fuliginosus" nbPages="29" author="Royce Foucard"/>
+    <chapters title="Spermophilus tridecemlineatus" nbPages="94" author="Mallissa Klaesson"/>
+    <chapters title="Falco peregrinus" nbPages="78" author="Joly Matisse"/>
+    <chapters title="Tauraco porphyrelophus" nbPages="83" author="Chalmers Evershed"/>
+  </Book>
+  <Book title="Macaw, scarlet">
+    <chapters title="Felis silvestris lybica" nbPages="59" author="Samuel Bigglestone"/>
+  </Book>
+  <Book title="Barbet, levaillant's">
+    <chapters title="Upupa epops" nbPages="87" author="Louis Grigolon"/>
+  </Book>
+  <Book title="Mississippi alligator">
+    <chapters title="Petaurus norfolcensis" nbPages="16" author="Rod Crewe"/>
+    <chapters title="Dicrostonyx groenlandicus" nbPages="65" author="Germayne Panyer"/>
+    <chapters title="Callorhinus ursinus" nbPages="8" author="Mirabella Debow"/>
+  </Book>
+  <Book title="Egyptian viper"/>
+  <Book title="African porcupine"/>
+  <Book title="Butterfly (unidentified)">
+    <chapters title="Eremophila alpestris" nbPages="56" author="Lacee Kintzel"/>
+  </Book>
+  <Book title="Vulture, lappet-faced">
+    <chapters title="Alligator mississippiensis" nbPages="26" author="Dickie Bindley"/>
+    <chapters title="Laniarius ferrugineus" nbPages="92" author="Helaine Landrean"/>
+    <chapters title="Psittacula krameri" nbPages="32" author="Maureene Philipet"/>
+  </Book>
+  <Book title="Ring dove">
+    <chapters title="Lasiorhinus latifrons" nbPages="85" author="Niko Arnull"/>
+    <chapters title="Felis concolor" nbPages="5" author="Stephan Rutherford"/>
+    <chapters title="Bradypus tridactylus" nbPages="4" author="Aubrette Kearsley"/>
+  </Book>
+  <Book title="Crown of thorns starfish">
+    <chapters title="Pelecanus occidentalis" nbPages="19" author="Terry Mecco"/>
+    <chapters title="Alcelaphus buselaphus caama" nbPages="65" author="Christiane Pagin"/>
+  </Book>
+  <Book title="Trumpeter, green-winged">
+    <chapters title="Panthera pardus" nbPages="80" author="Curran Draye"/>
+  </Book>
+  <Book title="Boa, mexican">
+    <chapters title="Procyon cancrivorus" nbPages="48" author="Laurent Dumpleton"/>
+  </Book>
+  <Book title="Greylag goose"/>
+  <Book title="Klipspringer"/>
+  <Book title="Stork, openbill"/>
+  <Book title="Rose-ringed parakeet">
+    <chapters title="Acrobates pygmaeus" nbPages="54" author="Cynthea Sprake"/>
+    <chapters title="Hippotragus niger" nbPages="29" author="Beale Carnock"/>
+    <chapters title="Varanus komodensis" nbPages="89" author="Frederick Rushsorth"/>
+  </Book>
+  <Book title="Komodo dragon">
+    <chapters title="Eudromia elegans" nbPages="33" author="Anitra Gerrelt"/>
+  </Book>
+  <Book title="Red-billed tropic bird">
+    <chapters title="Panthera pardus" nbPages="20" author="Shela Jacobovitz"/>
+    <chapters title="Pelecans onocratalus" nbPages="76" author="Mildrid Loghan"/>
+  </Book>
+  <Book title="Raccoon dog"/>
+  <Book title="Stork, painted">
+    <chapters title="Sylvilagus floridanus" nbPages="29" author="Burlie Dyball"/>
+    <chapters title="Francolinus coqui" nbPages="96" author="Vite Carass"/>
+    <chapters title="Lorythaixoides concolor" nbPages="5" author="Oralia Maxworthy"/>
+  </Book>
+  <Book title="Chuckwalla">
+    <chapters title="Elephas maximus bengalensis" nbPages="59" author="Pietra Jinks"/>
+  </Book>
+  <Book title="Lizard, blue-tongued"/>
+  <Book title="Stork, greater adjutant"/>
+  <Book title="Hyena, striped">
+    <chapters title="Macropus giganteus" nbPages="67" author="Alexandro Coverdale"/>
+  </Book>
+  <Book title="Desert kangaroo rat">
+    <chapters title="Certotrichas paena" nbPages="20" author="Sloan Foister"/>
+  </Book>
+  <Book title="Gerbil (unidentified)">
+    <chapters title="Anas bahamensis" nbPages="47" author="Bondy Conquer"/>
+    <chapters title="Merops nubicus" nbPages="69" author="Ardith Todarello"/>
+    <chapters title="Felis concolor" nbPages="48" author="Jacinthe Franceschi"/>
+  </Book>
+  <Book title="Antelope, four-horned">
+    <chapters title="Eudromia elegans" nbPages="85" author="Janelle Oakey"/>
+  </Book>
+  <Book title="Shrike, common boubou">
+    <chapters title="Felis caracal" nbPages="75" author="Deidre Coulton"/>
+    <chapters title="Larus fuliginosus" nbPages="16" author="Kliment Mangion"/>
+  </Book>
+  <Book title="Dingo">
+    <chapters title="Ciconia episcopus" nbPages="79" author="Aguie Cambridge"/>
+  </Book>
+  <Book title="Magpie, australian">
+    <chapters title="Threskionis aethiopicus" nbPages="91" author="Jackie Toppin"/>
+    <chapters title="Perameles nasuta" nbPages="89" author="Janelle Oakey"/>
+  </Book>
+  <Book title="Musk ox">
+    <chapters title="Anastomus oscitans" nbPages="41" author="Silvain Le feaver"/>
+    <chapters title="Columba palumbus" nbPages="90" author="Ivette Vanezis"/>
+  </Book>
+  <Book title="Kelp gull">
+    <chapters title="Tamiasciurus hudsonicus" nbPages="57" author="Celeste Murkitt"/>
+    <chapters title="Bubo virginianus" nbPages="42" author="Timmy Campany"/>
+  </Book>
+  <Book title="Golden jackal">
+    <chapters title="Lutra canadensis" nbPages="41" author="Bobina McTrustie"/>
+    <chapters title="Lama pacos" nbPages="91" author="Lanny Cawker"/>
+    <chapters title="Zenaida galapagoensis" nbPages="55" author="Bobina Lambrook"/>
+    <chapters title="Ramphastos tucanus" nbPages="12" author="Maxie Brearley"/>
+  </Book>
+  <Book title="Mongoose, javan gold-spotted">
+    <chapters title="Gymnorhina tibicen" nbPages="35" author="Dorrie Heimann"/>
+    <chapters title="Castor fiber" nbPages="57" author="Stirling Tomas"/>
+  </Book>
+  <Book title="Bettong, brush-tailed">
+    <chapters title="Parus atricapillus" nbPages="29" author="Galvan Biner"/>
+  </Book>
+  <Book title="Rat, arboral spiny">
+    <chapters title="Morelia spilotes variegata" nbPages="15" author="Theobald Leal"/>
+  </Book>
+  <Book title="Canadian river otter">
+    <chapters title="Pseudocheirus peregrinus" nbPages="37" author="Michelina Pavelka"/>
+    <chapters title="Suricata suricatta" nbPages="35" author="Lacee Kintzel"/>
+  </Book>
+  <Book title="Boa, malagasy ground"/>
+  <Book title="Vulture, white-rumped">
+    <chapters title="Macropus eugenii" nbPages="43" author="Sharon Arsnell"/>
+    <chapters title="Conolophus subcristatus" nbPages="31" author="Allina Robjents"/>
+  </Book>
+  <Book title="Aardwolf">
+    <chapters title="Castor fiber" nbPages="87" author="Douglas Favela"/>
+    <chapters title="Cervus duvauceli" nbPages="99" author="Delly Nurse"/>
+    <chapters title="Ramphastos tucanus" nbPages="69" author="Marietta Kullmann"/>
+    <chapters title="Felis silvestris lybica" nbPages="26" author="Dyan Tull"/>
+    <chapters title="Connochaetus taurinus" nbPages="54" author="Pall MacBrearty"/>
+  </Book>
+  <Book title="Lourie, grey"/>
+  <Book title="Long-billed corella"/>
+  <Book title="Malachite kingfisher">
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="28" author="Elyssa Penson"/>
+    <chapters title="Dipodomys deserti" nbPages="74" author="Ezmeralda Rubert"/>
+  </Book>
+  <Book title="Gecko, bent-toed">
+    <chapters title="Nucifraga columbiana" nbPages="8" author="Frieda Standley"/>
+    <chapters title="Merops bullockoides" nbPages="20" author="Ivette Vanezis"/>
+  </Book>
+  <Book title="Cape clawless otter"/>
+  <Book title="Armadillo, common long-nosed">
+    <chapters title="Streptopelia senegalensis" nbPages="29" author="Adrian Shickle"/>
+  </Book>
+  <Book title="Savannah deer (unidentified)">
+    <chapters title="Larus dominicanus" nbPages="24" author="Ezmeralda Rubert"/>
+    <chapters title="Mycteria ibis" nbPages="19" author="Urbano Meys"/>
+  </Book>
+  <Book title="Magnificent frigate bird">
+    <chapters title="Aonyx capensis" nbPages="60" author="Jackie Toppin"/>
+  </Book>
+  <Book title="Heron, yellow-crowned night">
+    <chapters title="Salvadora hexalepis" nbPages="30" author="Xerxes Fleckney"/>
+    <chapters title="unavailable" nbPages="43" author="Mela Aspray"/>
+    <chapters title="Passer domesticus" nbPages="93" author="Georgena Yelding"/>
+  </Book>
+  <Book title="Red-winged hawk (unidentified)">
+    <chapters title="Spermophilus richardsonii" nbPages="1" author="Debee Romaynes"/>
+    <chapters title="Cervus duvauceli" nbPages="65" author="Anette Norcott"/>
+    <chapters title="Macropus eugenii" nbPages="14" author="Silvain Le feaver"/>
+    <chapters title="Pelecanus occidentalis" nbPages="49" author="Kelsy Oggers"/>
+    <chapters title="Merops bullockoides" nbPages="12" author="Goldie Huntley"/>
+  </Book>
+  <Book title="Lion, galapagos sea">
+    <chapters title="Stenella coeruleoalba" nbPages="86" author="Simone Beldam"/>
+    <chapters title="Ovis dalli stonei" nbPages="61" author="Gasper MacTeggart"/>
+    <chapters title="Galictis vittata" nbPages="41" author="Flss Danilov"/>
+    <chapters title="Lemur catta" nbPages="20" author="Marietta Kullmann"/>
+    <chapters title="Meles meles" nbPages="74" author="Shawnee Dollard"/>
+  </Book>
+  <Book title="Dama wallaby"/>
+  <Book title="Barking gecko"/>
+  <Book title="Genet, common">
+    <chapters title="Spermophilus armatus" nbPages="29" author="Cecelia Pirri"/>
+  </Book>
+</xmi:XMI>

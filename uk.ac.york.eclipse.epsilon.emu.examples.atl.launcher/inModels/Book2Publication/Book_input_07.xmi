@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Stork, painted">
+    <chapters title="Grus canadensis" nbPages="82" author="Doralynne Walford"/>
+    <chapters title="Diomedea irrorata" nbPages="52" author="Ashby Jeannesson"/>
+  </Book>
+  <Book title="Capuchin, brown">
+    <chapters title="Herpestes javanicus" nbPages="100" author="Cher Fricker"/>
+    <chapters title="Panthera leo persica" nbPages="73" author="Kathy Deniskevich"/>
+  </Book>
+  <Book title="Cormorant, great">
+    <chapters title="Columba palumbus" nbPages="61" author="Olia Bernard"/>
+    <chapters title="Macropus robustus" nbPages="93" author="Alexandro Howbrook"/>
+  </Book>
+  <Book title="Black-necked stork">
+    <chapters title="Pseudocheirus peregrinus" nbPages="75" author="Lydie Losty"/>
+    <chapters title="Potorous tridactylus" nbPages="71" author="Clerissa Fairfoot"/>
+  </Book>
+  <Book title="Insect, stick"/>
+  <Book title="African black crake">
+    <chapters title="Petaurus norfolcensis" nbPages="75" author="Baudoin Walshaw"/>
+    <chapters title="Eubalaena australis" nbPages="65" author="Woodman Kynan"/>
+  </Book>
+  <Book title="Goldeneye, barrows"/>
+  <Book title="Little blue penguin">
+    <chapters title="Heloderma horridum" nbPages="73" author="Darius Bennetts"/>
+    <chapters title="Macropus agilis" nbPages="72" author="Silvano Ewings"/>
+  </Book>
+  <Book title="Tyrant flycatcher"/>
+  <Book title="Hottentot teal">
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="24" author="Lewie Quodling"/>
+  </Book>
+  <Book title="Ring-tailed possum">
+    <chapters title="Tursiops truncatus" nbPages="19" author="Lombard Stoner"/>
+  </Book>
+  <Book title="Hottentot teal">
+    <chapters title="Loris tardigratus" nbPages="88" author="Dell Mepsted"/>
+    <chapters title="Anas bahamensis" nbPages="37" author="Lane Wakeling"/>
+    <chapters title="Antilocapra americana" nbPages="48" author="Gasper MacTeggart"/>
+  </Book>
+  <Book title="Baboon, chacma">
+    <chapters title="Spermophilus richardsonii" nbPages="94" author="Georgianna Lammerich"/>
+    <chapters title="Sarkidornis melanotos" nbPages="8" author="Elisabetta Hek"/>
+  </Book>
+  <Book title="Armadillo, common long-nosed">
+    <chapters title="Cervus duvauceli" nbPages="42" author="Pattie Sexti"/>
+    <chapters title="Ploceus intermedius" nbPages="37" author="Kamila Brookton"/>
+    <chapters title="Ploceus intermedius" nbPages="56" author="Odo Brugmann"/>
+  </Book>
+  <Book title="Capybara">
+    <chapters title="Ephippiorhynchus mycteria" nbPages="22" author="Maxie Brearley"/>
+  </Book>
+  <Book title="Monkey, bleeding heart">
+    <chapters title="unavailable" nbPages="33" author="Allina Robjents"/>
+  </Book>
+  <Book title="Goose, snow">
+    <chapters title="Stercorarius longicausus" nbPages="33" author="Jeddy Thewys"/>
+    <chapters title="Gekko gecko" nbPages="100" author="Doralynn Huff"/>
+    <chapters title="Canis aureus" nbPages="47" author="Percy Wardale"/>
+    <chapters title="Felis caracal" nbPages="50" author="Fifine Crayk"/>
+  </Book>
+  <Book title="Warthog">
+    <chapters title="Felis chaus" nbPages="55" author="Sallyanne Weber"/>
+  </Book>
+  <Book title="Jackrabbit, white-tailed">
+    <chapters title="Corvus brachyrhynchos" nbPages="61" author="Pincus Atherley"/>
+  </Book>
+  <Book title="White spoonbill">
+    <chapters title="Phalacrocorax brasilianus" nbPages="79" author="Desdemona Dunseith"/>
+  </Book>
+  <Book title="Thrasher, curve-billed">
+    <chapters title="Pedetes capensis" nbPages="27" author="Karol Jindacek"/>
+  </Book>
+</xmi:XMI>
