@@ -29,7 +29,7 @@ public class ModelGenerator {
 	 * Use the Serial Version ID as seed
 	 */
 	private static final long serialVersionUID = 4449535323017681626L;
-	private static final int MAX_MODELS = 30;
+	private static final int MAX_MODELS = 5;
 
 	@SuppressWarnings({ "unchecked", "resource" })
 	public static void main(String[] args) {
@@ -61,16 +61,22 @@ public class ModelGenerator {
 				method = clazz.getMethod("properties");
 				config = (Map<String, Object>) method.invoke(clazz);
 
-				// create all models
-				for (int j = 1; j <= MAX_MODELS; j++) {
-					String model_path = (String) config.get("MODEL_BASE_NAME");
-					model_path += (j / 10 == 0) ? "0" + j : j;
-					model_path += ".xmi";
-					int model_size = rnd.nextInt((int) config.get("MIN_MODEL_SIZE"),
-							(int) config.get("MAX_MODEL_SIZE"));
-					executeGeneration(engine, config.get("EMG_FILE"), config.get("METAMODEL"), model_path, model_size,
-							rnd.nextLong(0, Long.MAX_VALUE));
-				}
+				int model_size = (int) config.get("MIN_MODEL_SIZE");
+				int max_iteration = model_size * 125;
+				do {
+					// create all models
+					for (int j = 1; j <= MAX_MODELS; j++) {
+						String model_path = (String) config.get("MODEL_BASE_NAME");
+						model_path += (model_size / 10 == 0) ? "0" + model_size : model_size;
+						model_path += "_";
+						model_path += (j / 10 == 0) ? "0" + j : j;
+						model_path += ".xmi";
+						executeGeneration(engine, config.get("EMG_FILE"), config.get("METAMODEL"), model_path,
+								model_size, rnd.nextLong(0, Long.MAX_VALUE));
+					}
+					model_size *= 5;
+				} while (model_size <= max_iteration);
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

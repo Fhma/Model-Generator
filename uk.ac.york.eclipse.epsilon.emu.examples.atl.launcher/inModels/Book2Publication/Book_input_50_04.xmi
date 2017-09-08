@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Boubou, southern">
+    <chapters title="Bettongia penicillata" nbPages="1" author="Stace McDougall"/>
+    <chapters title="Centrocercus urophasianus" nbPages="5" author="Stanwood Milillo"/>
+    <chapters title="Ceratotherium simum" nbPages="1" author="Staford Caunt"/>
+  </Book>
+  <Book title="Turaco, violet-crested">
+    <chapters title="Hippotragus niger" nbPages="5" author="Concordia Miles"/>
+    <chapters title="Ictalurus furcatus" nbPages="5" author="Lombard Stoner"/>
+    <chapters title="Ephippiorhynchus mycteria" nbPages="3" author="Aggy Sedgeworth"/>
+  </Book>
+  <Book title="Tammar wallaby">
+    <chapters title="Pelecanus occidentalis" nbPages="7" author="Gilli Attwater"/>
+    <chapters title="Limnocorax flavirostra" nbPages="2" author="Tabbatha Housaman"/>
+    <chapters title="Eudromia elegans" nbPages="7" author="Brigitte Gyles"/>
+  </Book>
+  <Book title="Eurasian badger">
+    <chapters title="Marmota caligata" nbPages="8" author="Margie Flatt"/>
+    <chapters title="Heloderma horridum" nbPages="7" author="Bellina Grzesiak"/>
+    <chapters title="Vulpes vulpes" nbPages="6" author="Douglas Favela"/>
+  </Book>
+  <Book title="Capuchin, black-capped"/>
+  <Book title="Badger, honey">
+    <chapters title="Philetairus socius" nbPages="6" author="Diane Claige"/>
+    <chapters title="Corvus albicollis" nbPages="9" author="Westley Elgee"/>
+  </Book>
+  <Book title="African snake (unidentified)">
+    <chapters title="Gekko gecko" nbPages="2" author="Bryna Grant"/>
+    <chapters title="Streptopelia senegalensis" nbPages="4" author="Melodie Botly"/>
+  </Book>
+  <Book title="Horned rattlesnake">
+    <chapters title="Heloderma horridum" nbPages="1" author="Reinhold Reay"/>
+  </Book>
+  <Book title="Lizard, goanna">
+    <chapters title="Ephippiorhynchus mycteria" nbPages="3" author="Nathaniel Bullingham"/>
+  </Book>
+  <Book title="Cape wild cat">
+    <chapters title="Parus atricapillus" nbPages="8" author="Walsh McVity"/>
+  </Book>
+  <Book title="Heron, black-crowned night">
+    <chapters title="Capra ibex" nbPages="9" author="Masha Barnwille"/>
+  </Book>
+  <Book title="Ibis, glossy">
+    <chapters title="Phoenicopterus ruber" nbPages="10" author="Jessee Ughini"/>
+    <chapters title="Nycticorax nycticorax" nbPages="3" author="Aurelia Willcock"/>
+  </Book>
+  <Book title="Black-crowned night heron">
+    <chapters title="Merops bullockoides" nbPages="10" author="Annadiana Guidi"/>
+  </Book>
+  <Book title="Deer, spotted">
+    <chapters title="Papio ursinus" nbPages="2" author="Hedvige Nickoles"/>
+    <chapters title="Coluber constrictor" nbPages="6" author="Sloan Foister"/>
+  </Book>
+  <Book title="Dingo">
+    <chapters title="Mellivora capensis" nbPages="6" author="Rosalia McGonagle"/>
+  </Book>
+  <Book title="Darter, african"/>
+  <Book title="Lava gull"/>
+  <Book title="Western patch-nosed snake">
+    <chapters title="unavailable" nbPages="10" author="Lawton Bernardoni"/>
+  </Book>
+  <Book title="Rose-ringed parakeet">
+    <chapters title="Mungos mungo" nbPages="2" author="Ceciley Stiles"/>
+    <chapters title="Trichoglossus haematodus moluccanus" nbPages="5" author="Mirabella Debow"/>
+  </Book>
+  <Book title="Wood pigeon">
+    <chapters title="Uraeginthus angolensis" nbPages="4" author="Alena Betun"/>
+  </Book>
+</xmi:XMI>

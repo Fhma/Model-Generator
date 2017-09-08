@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Topi">
+    <chapters title="Bubo virginianus" nbPages="9" author="Agneta Schreurs"/>
+  </Book>
+  <Book title="Chameleon (unidentified)">
+    <chapters title="Damaliscus dorcas" nbPages="1" author="Cathie MacKall"/>
+    <chapters title="Phascogale tapoatafa" nbPages="9" author="Bernadine Ferneley"/>
+  </Book>
+  <Book title="Gray langur">
+    <chapters title="Odocoileus hemionus" nbPages="8" author="Gae Carefull"/>
+  </Book>
+  <Book title="Blue-breasted cordon bleu">
+    <chapters title="Chlidonias leucopterus" nbPages="3" author="Roland Gowdridge"/>
+    <chapters title="Merops bullockoides" nbPages="9" author="Douglas Favela"/>
+  </Book>
+  <Book title="Lion, steller's sea">
+    <chapters title="Scolopax minor" nbPages="6" author="Bobby Senten"/>
+  </Book>
+  <Book title="Dove, white-winged">
+    <chapters title="Ammospermophilus nelsoni" nbPages="5" author="Pia Madgwich"/>
+  </Book>
+  <Book title="Common eland"/>
+  <Book title="Stork, white">
+    <chapters title="Sus scrofa" nbPages="8" author="Mag Walewicz"/>
+  </Book>
+  <Book title="Mongoose, javan gold-spotted">
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="5" author="Cher Huntriss"/>
+    <chapters title="Uraeginthus angolensis" nbPages="6" author="Sheilakathryn Orta"/>
+  </Book>
+  <Book title="Capuchin, black-capped">
+    <chapters title="Pavo cristatus" nbPages="5" author="Darsie Nehls"/>
+    <chapters title="Rhea americana" nbPages="5" author="Nissie Bummfrey"/>
+  </Book>
+  <Book title="Capuchin, black-capped"/>
+  <Book title="Stork, openbill">
+    <chapters title="Semnopithecus entellus" nbPages="6" author="Drona Teaz"/>
+    <chapters title="Leptoptilos crumeniferus" nbPages="2" author="Raffarty Elington"/>
+  </Book>
+  <Book title="Stork, marabou">
+    <chapters title="Himantopus himantopus" nbPages="6" author="Issiah Linturn"/>
+    <chapters title="Zenaida galapagoensis" nbPages="8" author="Cheri Asker"/>
+  </Book>
+  <Book title="Red howler monkey">
+    <chapters title="Microcebus murinus" nbPages="8" author="Meier Pinches"/>
+  </Book>
+  <Book title="Mongoose, javan gold-spotted">
+    <chapters title="Cervus duvauceli" nbPages="8" author="Burlie Dyball"/>
+    <chapters title="Ovibos moschatus" nbPages="2" author="Pascale Truin"/>
+    <chapters title="Castor canadensis" nbPages="6" author="Micheline Sidry"/>
+    <chapters title="Chlamydosaurus kingii" nbPages="5" author="Lavina Lewzey"/>
+  </Book>
+  <Book title="Deer, spotted">
+    <chapters title="Actophilornis africanus" nbPages="5" author="Zorah Laffranconi"/>
+  </Book>
+  <Book title="Egyptian viper">
+    <chapters title="Dipodomys deserti" nbPages="5" author="Ramon Lyons"/>
+    <chapters title="Heloderma horridum" nbPages="2" author="Goldie Huntley"/>
+    <chapters title="Uraeginthus angolensis" nbPages="9" author="Amelie Estrella"/>
+  </Book>
+  <Book title="Gull, swallow-tail">
+    <chapters title="Platalea leucordia" nbPages="5" author="Sheilakathryn Orta"/>
+    <chapters title="Castor fiber" nbPages="6" author="Lissi Mould"/>
+  </Book>
+  <Book title="Gray langur"/>
+  <Book title="Bettong, brush-tailed">
+    <chapters title="Choriotis kori" nbPages="4" author="Myrtle Beever"/>
+    <chapters title="Pteropus rufus" nbPages="7" author="Knox Cicutto"/>
+  </Book>
+</xmi:XMI>
