@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Egyptian vulture">
+    <chapters title="Oreamnos americanus" nbPages="6" author="Odell Cripin"/>
+  </Book>
+  <Book title="Turkey, common">
+    <chapters title="Herpestes javanicus" nbPages="3" author="Grant O'Hengerty"/>
+    <chapters title="Cervus unicolor" nbPages="9" author="Earlie Spolton"/>
+  </Book>
+  <Book title="Tortoise, asian foreset">
+    <chapters title="unavailable" nbPages="6" author="Cam Lasselle"/>
+    <chapters title="Ciconia episcopus" nbPages="1" author="Hugo Drohane"/>
+  </Book>
+  <Book title="Beaver, north american">
+    <chapters title="Papio ursinus" nbPages="8" author="Reinald Pickworth"/>
+    <chapters title="Ara chloroptera" nbPages="3" author="Gerri Lithgow"/>
+  </Book>
+  <Book title="Rose-ringed parakeet">
+    <chapters title="Pavo cristatus" nbPages="10" author="Cly MacKowle"/>
+    <chapters title="Anser caerulescens" nbPages="3" author="Jerad MacCambridge"/>
+  </Book>
+  <Book title="Red hartebeest">
+    <chapters title="Philetairus socius" nbPages="6" author="Genia Castagneri"/>
+  </Book>
+  <Book title="Heron, yellow-crowned night">
+    <chapters title="Redunca redunca" nbPages="8" author="Fonz Smiz"/>
+    <chapters title="Hyaena hyaena" nbPages="8" author="Timmy Flanagan"/>
+  </Book>
+  <Book title="Ring-tailed lemur">
+    <chapters title="Meles meles" nbPages="1" author="Urbano Meys"/>
+    <chapters title="Acridotheres tristis" nbPages="6" author="Lombard Stoner"/>
+    <chapters title="Perameles nasuta" nbPages="9" author="Barri Bohden"/>
+  </Book>
+  <Book title="Cormorant, flightless">
+    <chapters title="Parus atricapillus" nbPages="8" author="Catharine Allett"/>
+  </Book>
+  <Book title="Crested screamer">
+    <chapters title="Tachyglossus aculeatus" nbPages="10" author="Ricky Willcott"/>
+    <chapters title="Dusicyon thous" nbPages="5" author="Pietrek Ivashov"/>
+  </Book>
+  <Book title="Stilt, black-winged">
+    <chapters title="Alcelaphus buselaphus caama" nbPages="3" author="Dexter Amort"/>
+  </Book>
+  <Book title="Mexican beaded lizard">
+    <chapters title="Canis aureus" nbPages="8" author="Kimmy Danson"/>
+  </Book>
+  <Book title="Yellow-billed hornbill">
+    <chapters title="Phascogale calura" nbPages="10" author="Sallyanne Weber"/>
+    <chapters title="Eudyptula minor" nbPages="2" author="Freda Diable"/>
+  </Book>
+  <Book title="Greater roadrunner">
+    <chapters title="Ciconia ciconia" nbPages="8" author="Mitch MacKeller"/>
+  </Book>
+  <Book title="Genet, common">
+    <chapters title="Bubalornis niger" nbPages="6" author="Marika Merigon"/>
+    <chapters title="unavailable" nbPages="5" author="Dawn Balint"/>
+    <chapters title="unavailable" nbPages="9" author="Hart Hartzenberg"/>
+  </Book>
+  <Book title="Wild boar">
+    <chapters title="Dasypus novemcinctus" nbPages="1" author="Case Ervine"/>
+  </Book>
+  <Book title="Azara's zorro"/>
+  <Book title="Eland, common"/>
+  <Book title="Bear, sloth">
+    <chapters title="Dicrostonyx groenlandicus" nbPages="8" author="Arv Eymor"/>
+    <chapters title="Semnopithecus entellus" nbPages="8" author="Margie Flatt"/>
+    <chapters title="Phasianus colchicus" nbPages="6" author="Cassy Traylen"/>
+  </Book>
+  <Book title="Fringe-eared oryx"/>
+</xmi:XMI>

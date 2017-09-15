@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Crab (unidentified)">
+    <chapters title="Meles meles" nbPages="8" author="Chalmers Evershed"/>
+  </Book>
+  <Book title="House sparrow">
+    <chapters title="Tauraco porphyrelophus" nbPages="2" author="Pierson Carlton"/>
+  </Book>
+  <Book title="Long-finned pilot whale">
+    <chapters title="Meleagris gallopavo" nbPages="9" author="Creighton Scuse"/>
+    <chapters title="Ephippiorhynchus mycteria" nbPages="6" author="Mag Walewicz"/>
+  </Book>
+  <Book title="Cobra, egyptian"/>
+  <Book title="White-winged black tern">
+    <chapters title="Epicrates cenchria maurus" nbPages="9" author="Derril Gazzard"/>
+    <chapters title="Loxodonta africana" nbPages="10" author="Brigitte Gyles"/>
+    <chapters title="Bettongia penicillata" nbPages="10" author="Florian Preist"/>
+  </Book>
+  <Book title="Stork, white-necked">
+    <chapters title="Butorides striatus" nbPages="8" author="Hill Reburn"/>
+  </Book>
+  <Book title="Cottonmouth">
+    <chapters title="Semnopithecus entellus" nbPages="10" author="Lu Gabala"/>
+    <chapters title="Corvus albicollis" nbPages="2" author="Bent Girton"/>
+    <chapters title="Spermophilus richardsonii" nbPages="6" author="Fanechka McBryde"/>
+    <chapters title="Hippotragus niger" nbPages="7" author="Clerissa Fairfoot"/>
+  </Book>
+  <Book title="Southern black-backed gull">
+    <chapters title="Graspus graspus" nbPages="3" author="Jerrylee Orringe"/>
+    <chapters title="Propithecus verreauxi" nbPages="8" author="Beverlee Behne"/>
+  </Book>
+  <Book title="Common duiker">
+    <chapters title="Butorides striatus" nbPages="7" author="Phyllis Janko"/>
+  </Book>
+  <Book title="Spotted hyena">
+    <chapters title="Chlamydosaurus kingii" nbPages="9" author="Genia Castagneri"/>
+    <chapters title="Pelecans onocratalus" nbPages="9" author="Amalle Barkworth"/>
+  </Book>
+  <Book title="Egyptian vulture">
+    <chapters title="Eudromia elegans" nbPages="3" author="Fidole Kment"/>
+    <chapters title="Chelodina longicollis" nbPages="2" author="Melitta Danev"/>
+    <chapters title="Stenella coeruleoalba" nbPages="8" author="Glenn Dami"/>
+    <chapters title="Actophilornis africanus" nbPages="10" author="Adham Longford"/>
+  </Book>
+  <Book title="Turkey, common"/>
+  <Book title="Red-shouldered glossy starling">
+    <chapters title="Myrmecobius fasciatus" nbPages="1" author="Alric Stripp"/>
+  </Book>
+  <Book title="Reindeer"/>
+  <Book title="Lava gull">
+    <chapters title="Uraeginthus angolensis" nbPages="6" author="Alexandrina Mundell"/>
+  </Book>
+  <Book title="Scarlet macaw"/>
+  <Book title="Yak">
+    <chapters title="Buteo galapagoensis" nbPages="3" author="Lishe Newbegin"/>
+  </Book>
+  <Book title="Red-shouldered glossy starling">
+    <chapters title="Didelphis virginiana" nbPages="3" author="Nikolia Marl"/>
+    <chapters title="Hippotragus niger" nbPages="1" author="Dagmar Torrie"/>
+    <chapters title="Columba livia" nbPages="10" author="Karena Dax"/>
+  </Book>
+  <Book title="Chital">
+    <chapters title="Cathartes aura" nbPages="4" author="Lynsey Footitt"/>
+    <chapters title="Anas bahamensis" nbPages="7" author="Suzy Maven"/>
+  </Book>
+  <Book title="Topi">
+    <chapters title="Tetracerus quadricornis" nbPages="10" author="Padriac Pikett"/>
+  </Book>
+</xmi:XMI>

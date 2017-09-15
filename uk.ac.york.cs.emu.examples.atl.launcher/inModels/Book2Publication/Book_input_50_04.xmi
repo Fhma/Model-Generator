@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Red squirrel">
+    <chapters title="Columba palumbus" nbPages="5" author="Dyan Tull"/>
+  </Book>
+  <Book title="Crowned hawk-eagle">
+    <chapters title="Ictalurus furcatus" nbPages="3" author="Glenn Dami"/>
+  </Book>
+  <Book title="Short-nosed bandicoot">
+    <chapters title="Ploceus intermedius" nbPages="3" author="Allis Ost"/>
+  </Book>
+  <Book title="Antelope, four-horned">
+    <chapters title="Anas bahamensis" nbPages="7" author="Jori Swyndley"/>
+  </Book>
+  <Book title="Gray duiker"/>
+  <Book title="Crested bunting">
+    <chapters title="Columba palumbus" nbPages="6" author="Aeriela Gillio"/>
+    <chapters title="Dacelo novaeguineae" nbPages="8" author="Jacquie Doone"/>
+    <chapters title="Perameles nasuta" nbPages="5" author="Alwyn Conring"/>
+    <chapters title="Loxodonta africana" nbPages="8" author="Meade McCrory"/>
+  </Book>
+  <Book title="Eagle, pallas's fish"/>
+  <Book title="African snake (unidentified)">
+    <chapters title="Toxostoma curvirostre" nbPages="8" author="Codie Irvine"/>
+  </Book>
+  <Book title="Greylag goose">
+    <chapters title="Cynomys ludovicianus" nbPages="7" author="Flossy Buten"/>
+    <chapters title="Tockus flavirostris" nbPages="10" author="Gasparo Vidloc"/>
+  </Book>
+  <Book title="Drongo, fork-tailed">
+    <chapters title="Taurotagus oryx" nbPages="4" author="Beatrisa Benesevich"/>
+    <chapters title="Sterna paradisaea" nbPages="10" author="Opalina Spurrior"/>
+  </Book>
+  <Book title="Grant's gazelle"/>
+  <Book title="Malachite kingfisher">
+    <chapters title="Salvadora hexalepis" nbPages="8" author="Hillary Pashenkov"/>
+  </Book>
+  <Book title="Bat, asian false vampire">
+    <chapters title="Phoeniconaias minor" nbPages="10" author="Natalie Davydenko"/>
+    <chapters title="Sylvicapra grimma" nbPages="2" author="Alwyn Conring"/>
+  </Book>
+  <Book title="Red-tailed phascogale">
+    <chapters title="Pycnonotus barbatus" nbPages="2" author="Jilly Ingliby"/>
+    <chapters title="Hymenolaimus malacorhynchus" nbPages="1" author="Meriel Dudill"/>
+    <chapters title="Cordylus giganteus" nbPages="8" author="Karol Jindacek"/>
+    <chapters title="Lepus arcticus" nbPages="5" author="Laird Jendrys"/>
+  </Book>
+  <Book title="Black-crowned night heron">
+    <chapters title="Psophia viridis" nbPages="2" author="Karisa Glitherow"/>
+  </Book>
+  <Book title="Bandicoot, long-nosed">
+    <chapters title="Megaderma spasma" nbPages="9" author="Philipa Shilling"/>
+  </Book>
+  <Book title="Common genet">
+    <chapters title="Ovis ammon" nbPages="1" author="Pamelina Bolmann"/>
+    <chapters title="Ciconia episcopus" nbPages="8" author="Hewie Seward"/>
+    <chapters title="Tachyglossus aculeatus" nbPages="8" author="Pietra Ashington"/>
+  </Book>
+  <Book title="Green-backed heron">
+    <chapters title="Ninox superciliaris" nbPages="10" author="Bogey Yankov"/>
+  </Book>
+  <Book title="Stork, white">
+    <chapters title="Bubalornis niger" nbPages="6" author="Ceciley Stiles"/>
+    <chapters title="unavailable" nbPages="3" author="Celisse Mitchel"/>
+    <chapters title="Suricata suricatta" nbPages="5" author="Wenda Courvert"/>
+  </Book>
+  <Book title="Carpet python">
+    <chapters title="Alcelaphus buselaphus caama" nbPages="1" author="Marcel Carlisle"/>
+  </Book>
+</xmi:XMI>

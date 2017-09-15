@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Tammar wallaby">
+    <chapters title="Bison bison" nbPages="2" author="Cornie Poller"/>
+    <chapters title="Echimys chrysurus" nbPages="6" author="Royce Foucard"/>
+    <chapters title="Macropus eugenii" nbPages="3" author="Radcliffe Langrick"/>
+    <chapters title="Fregata magnificans" nbPages="5" author="Celka Cloake"/>
+  </Book>
+  <Book title="Bonnet macaque">
+    <chapters title="Upupa epops" nbPages="7" author="Lacey Cowen"/>
+  </Book>
+  <Book title="Malay squirrel (unidentified)"/>
+  <Book title="Bare-faced go away bird">
+    <chapters title="Mazama americana" nbPages="2" author="Manuel Licquorish"/>
+  </Book>
+</xmi:XMI>

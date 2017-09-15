@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Book" xsi:schemaLocation="Book file:/Users/AFADF_F/Git/Fhma/runtime-EclipseApplication/uk.ac.york.epsilon.emg.model.generator/bin/uk/ac/york/epsilon/emg/model/generator/resources/Book/Book.ecore">
+  <Book title="Red deer">
+    <chapters title="Redunca redunca" nbPages="2" author="Mile Attwoull"/>
+  </Book>
+  <Book title="Red squirrel">
+    <chapters title="Globicephala melas" nbPages="2" author="Amelie Estrella"/>
+  </Book>
+  <Book title="Boa, malagasy ground">
+    <chapters title="Spizaetus coronatus" nbPages="6" author="Vasilis Keeler"/>
+    <chapters title="Streptopelia senegalensis" nbPages="5" author="Roslyn Dorkens"/>
+  </Book>
+  <Book title="European stork">
+    <chapters title="Parus atricapillus" nbPages="6" author="Dusty Zelner"/>
+    <chapters title="Terrapene carolina" nbPages="2" author="Lindon Pedican"/>
+  </Book>
+</xmi:XMI>
