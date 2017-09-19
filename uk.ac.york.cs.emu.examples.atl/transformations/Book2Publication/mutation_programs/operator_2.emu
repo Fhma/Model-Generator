@@ -1,0 +1,24 @@
+//2) MatchedRule name replacement:
+-- Case 1: changing the name of a rule to a new name
+-- This generates an equivalant mutation because the ATL transformation engine execute all rules regardless of their names
+@action replace
+@feature name
+pattern mutation_operator_2_case_1
+rule:ModuleElement from: ModuleElement.all.select(e|e.isTypeOf(MatchedRule))
+{
+	do {
+		rule.name = rule.name + "_extra_name";
+	}
+}
+
+-- Case 2: changing the name of a rule to an invalid mutant
+-- Status: not allowed
+@action replace
+@feature name
+pattern mutation_operator_2_case_2
+instance:MatchedRule
+{
+	do {
+	 	instance.name = "";
+	}
+}

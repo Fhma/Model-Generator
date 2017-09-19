@@ -29,7 +29,7 @@ guard:instance.name = "TD"
 
 -- Case 3: changing the name of inherited rule to a name copied from another rule name
 -- Status: allowed by the EMU engine
--- This will generate a stillborn mutant because rules must have unique names
+-- This will generate a invalid mutant because rules must have unique names
 @action replace
 @feature name
 pattern mutation_3

@@ -1,0 +1,12 @@
+//5) InPatternElement Name Change: OCL.VariableDeclaration_varName_replacement
+@action replace
+@feature varName
+@type SimpleInPatternElement
+pattern mutation_operator_5
+target_instance:SimpleInPatternElement,
+possible_name:VariableDeclaration from: VariableDeclaration.all.select(e| e.varName <> target_instance.varName )->asSet()
+{
+	do {
+		target_instance.varName = possible_name.varName;
+	}
+}

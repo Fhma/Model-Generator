@@ -1,0 +1,15 @@
+//4) InPatternElement Class Change: OCL.VariableDeclaration_type_replacement
+@action replace
+@feature type
+@type SimpleInPatternElement
+pattern mutation_operator_4
+target_instance:SimpleInPatternElement,
+possible_type:OclModelElement from: OclModelElement.all.select(e| e.name <> target_instance.type.name )
+{
+	do {
+		var new_type = OclModelElement.createInstance();
+		new_type.`model` = possible_type.`model`;
+		new_type.name = possible_type.name;
+		target_instance.type = new_type;
+	}
+}

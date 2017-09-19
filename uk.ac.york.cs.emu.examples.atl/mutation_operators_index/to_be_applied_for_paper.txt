@@ -1,0 +1,13 @@
+1) MatchedRule element deletion: Module_elements_deletion
+2) MatchedRule element replacement: Module_elements_replacement
+3) InPatternElement deletion: Inpattern_elements_deletion
+4) InPatternElement Class Change: OCL.VariableDeclaration_type_replacement
+5) InPatternElement Name Change: OCL.VariableDeclaration_varName_replacement
+6) OutPatternElement deletion: Outpattern_elements_deletion
+7) OutPatternElement Class Change: OCL.VariableDeclaration_type_replacement
+8) OutPatternElement Name Change: OCL.VariableDeclaration_varName_replacement
+9) Filter Deletion: Inpattern_filter_deletion
+10) Filter Condition Change: inPattern_filter_replacement
+11) Binding Deletion: OutPatternElement_bindings_deletion
+12) Binding Value Change: Binding_value_replacement
+13) Binding Feature Change: Binding_propertyName_change

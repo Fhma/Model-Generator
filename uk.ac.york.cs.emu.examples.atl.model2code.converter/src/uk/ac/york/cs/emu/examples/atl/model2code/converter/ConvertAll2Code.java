@@ -7,7 +7,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.epsilon.eol.models.IModel;
 
 import uk.ac.york.cs.m2m.atl.model2code.converter.AtlModel2Code;
 
@@ -35,11 +34,8 @@ public class ConvertAll2Code {
 		Class<?> clazz;
 		String _package = ConvertAll2Code.class.getPackage().getName() + ".files";
 		Method method;
-		String metamodel = ConvertAll2Code.class.getResource("files/ATL.ecore").getPath();
-		String model = null;
 		File mutations_dir = null;
 		Map<String, String> config = null;
-		IModel emfModel = null;
 
 		for (int i = 0; i < transformations.size(); i++)
 		{
@@ -48,7 +44,6 @@ public class ConvertAll2Code {
 				clazz = Class.forName(_package + "." + transformations.get(i));
 				method = clazz.getMethod("properties");
 				config = (Map<String, String>) method.invoke(clazz);
-				model = config.get("TRANSFORMATION_DIR") + config.get("TRANSFORMATION_MODULE") + ".xmi";
 				mutations_dir = new File(config.get("TRANSFORMATION_DIR") + "/mutation_programs/");
 			} catch (Exception e)
 			{
@@ -64,6 +59,7 @@ public class ConvertAll2Code {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private static void convertAll(final File entry) {
 		if (!entry.isDirectory() && entry.getAbsolutePath().endsWith(".xmi"))
 		{

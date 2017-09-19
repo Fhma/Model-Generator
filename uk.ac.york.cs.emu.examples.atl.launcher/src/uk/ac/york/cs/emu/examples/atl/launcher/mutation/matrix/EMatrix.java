@@ -1,4 +1,4 @@
-package uk.ac.york.cs.emu.examples.atl.launcher.qmatrix;
+package uk.ac.york.cs.emu.examples.atl.launcher.mutation.matrix;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 import uk.ac.york.cs.emu.examples.atl.launcher.Oracle;
 
-public class QMatrix implements Serializable {
+public class EMatrix implements Serializable {
 
 	private static final long serialVersionUID = -1029244743792316979L;
 	private String path;
@@ -23,14 +23,11 @@ public class QMatrix implements Serializable {
 	private HashMap<String, List<Oracle>> killedMutantsCache;
 	private HashMap<String, List<Oracle>> liveMutantsCache;
 
-	public QMatrix(String path) {
+	public EMatrix(String path) {
 		this.path = path;
 	}
 
-	private QMatrix() {
-	}
-
-	public boolean saveQMatrix() throws IOException {
+	public boolean saveMatrix() throws IOException {
 		try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(path)))
 		{
 			os.writeObject(content);
@@ -39,7 +36,7 @@ public class QMatrix implements Serializable {
 	}
 
 	@SuppressWarnings("unchecked")
-	public boolean loadQMatrix() throws ClassNotFoundException, IOException {
+	public boolean loadMatrix() throws ClassNotFoundException, IOException {
 		try (ObjectInputStream is = new ObjectInputStream(new FileInputStream(path)))
 		{
 			content = (HashMap<String, List<Oracle>>) is.readObject();
@@ -75,7 +72,6 @@ public class QMatrix implements Serializable {
 					if (oracle.getResult() == 1)
 						liveMutantsCache.put((String) pair.getKey(), (List<Oracle>) pair.getValue());
 				}
-				it.remove();
 			}
 		}
 		return liveMutantsCache;
@@ -95,7 +91,6 @@ public class QMatrix implements Serializable {
 					if (oracle.getResult() == 0)
 						killedMutantsCache.put((String) pair.getKey(), (List<Oracle>) pair.getValue());
 				}
-				it.remove();
 			}
 		}
 		return killedMutantsCache;
@@ -119,7 +114,6 @@ public class QMatrix implements Serializable {
 					System.out.println("------> Result: live mutant");
 				System.out.println();
 			}
-			it.remove();
 		}
 	}
 }

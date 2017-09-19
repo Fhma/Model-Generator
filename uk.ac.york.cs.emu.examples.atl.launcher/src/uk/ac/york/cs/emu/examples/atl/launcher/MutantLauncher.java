@@ -18,7 +18,7 @@ import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
 import org.eclipse.epsilon.eunit.dt.cmp.emf.v3.EMFModelComparator;
 import uk.ac.york.cs.emu.examples.atl.launcher.Oracle;
-import uk.ac.york.cs.emu.examples.atl.launcher.qmatrix.QMatrix;
+import uk.ac.york.cs.emu.examples.atl.launcher.mutation.matrix.EMatrix;
 
 public class MutantLauncher {
 
@@ -80,8 +80,8 @@ public class MutantLauncher {
 			// used for comparing between actual and expected outputs of mutant execution
 			String metamodel = config.get("OUT_METAMODEL");
 
-			// Initialise quality matrix
-			QMatrix matrix = new QMatrix(actualOutModelsFolder + config.get("TRANSFORMATION_MODULE") + ".qmtr");
+			// Initialise execution matrix
+			EMatrix matrix = new EMatrix(actualOutModelsFolder + config.get("TRANSFORMATION_MODULE") + ".emtr");
 
 			File input_folder = new File(inModelsFolder + config.get("TRANSFORMATION_MODULE"));
 			for (File entry : main_mutants_folder.listFiles())
@@ -136,7 +136,7 @@ public class MutantLauncher {
 									}
 								} catch (IOException e)
 								{
-									e.printStackTrace();
+									// e.printStackTrace();
 								} catch (EolModelLoadingException e)
 								{
 									e.printStackTrace();
@@ -155,12 +155,12 @@ public class MutantLauncher {
 			}
 			try
 			{
-				matrix.saveQMatrix();
+				matrix.saveMatrix();
 			} catch (IOException e)
 			{
 				e.printStackTrace();
 			}
-			matrix.printToConsole();
+			// matrix.printToConsole();
 			System.out.println("   - - - - - - - - - - - - - -");
 		}
 		System.out.println("End of Mutants Transformation Launcher.");

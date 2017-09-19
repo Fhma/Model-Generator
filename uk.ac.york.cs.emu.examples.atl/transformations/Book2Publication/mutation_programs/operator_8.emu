@@ -1,0 +1,12 @@
+//8) OutPatternElement Name Change: OCL.VariableDeclaration_varName_replacement
+@action replace
+@feature varName
+@type SimpleOutPatternElement
+pattern mutation_operator_8
+instance:SimpleOutPatternElement,
+possible_name:VariableDeclaration from: VariableDeclaration.all.select(e| e.varName <> instance.varName )->asSet()
+{
+	do {
+		instance.varName = possible_name.varName;
+	}
+}
