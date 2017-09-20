@@ -2,6 +2,7 @@ package uk.ac.york.cs.emu.examples.atl.launcher.mutation.matrix;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -11,24 +12,23 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import uk.ac.york.cs.emu.examples.atl.launcher.Oracle;
 
 public class EMatrix implements Serializable {
 
-	private static final long serialVersionUID = -1029244743792316979L;
+	private static final long serialVersionUID = 1L;
 	private String path;
 	private HashMap<String, List<Oracle>> content = new HashMap<String, List<Oracle>>();
-
-	private HashMap<String, List<Oracle>> killedMutantsCache;
-	private HashMap<String, List<Oracle>> liveMutantsCache;
 
 	public EMatrix(String path) {
 		this.path = path;
 	}
 
 	public boolean saveMatrix() throws IOException {
-		try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(path)))
+		try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(path + getFileExtension())))
 		{
 			os.writeObject(content);
 			return true;
@@ -37,7 +37,7 @@ public class EMatrix implements Serializable {
 
 	@SuppressWarnings("unchecked")
 	public boolean loadMatrix() throws ClassNotFoundException, IOException {
-		try (ObjectInputStream is = new ObjectInputStream(new FileInputStream(path)))
+		try (ObjectInputStream is = new ObjectInputStream(new FileInputStream(path + getFileExtension())))
 		{
 			content = (HashMap<String, List<Oracle>>) is.readObject();
 			return true;
@@ -58,62 +58,27 @@ public class EMatrix implements Serializable {
 		this.path = path;
 	}
 
-	public HashMap<String, List<Oracle>> getLiveMutants() {
-		if (liveMutantsCache == null)
-		{
-			liveMutantsCache = new HashMap<String, List<Oracle>>();
-			Iterator it = content.entrySet().iterator();
-			while (it.hasNext())
-			{
-				Map.Entry pair = (Map.Entry) it.next();
-				List<Oracle> values = (List<Oracle>) pair.getValue();
-				for (Oracle oracle : values)
-				{
-					if (oracle.getResult() == 1)
-						liveMutantsCache.put((String) pair.getKey(), (List<Oracle>) pair.getValue());
-				}
-			}
-		}
-		return liveMutantsCache;
+	private String getFileExtension() {
+		return ".emtr";
 	}
 
-	public HashMap<String, List<Oracle>> getKilledMutants() {
-		if (killedMutantsCache == null)
-		{
-			killedMutantsCache = new HashMap<String, List<Oracle>>();
-			Iterator it = content.entrySet().iterator();
-			while (it.hasNext())
-			{
-				Map.Entry pair = (Map.Entry) it.next();
-				List<Oracle> values = (List<Oracle>) pair.getValue();
-				for (Oracle oracle : values)
-				{
-					if (oracle.getResult() == 0)
-						killedMutantsCache.put((String) pair.getKey(), (List<Oracle>) pair.getValue());
-				}
-			}
-		}
-		return killedMutantsCache;
-	}
-
-	public void printToConsole() {
-		Iterator it = content.entrySet().iterator();
+	public void toJson() throws IOException {
+		if (content == null)
+			return;
+		JSONObject json = new JSONObject();
+		Iterator<Map.Entry<String, List<Oracle>>> it = content.entrySet().iterator();
 		while (it.hasNext())
 		{
-			Map.Entry pair = (Map.Entry) it.next();
-			System.out.println("Mutant: " + pair.getKey());
-			List<Oracle> values = (List<Oracle>) pair.getValue();
-			for (Oracle oracle : values)
-			{
-				System.out.println("------> expected output: " + oracle.getExpectedModel());
-				System.out.println("------> actual output: " + oracle.getActualModel());
-
-				if (oracle.getResult() == 0)
-					System.out.println("------> Result: killed mutant");
-				if (oracle.getResult() == 1)
-					System.out.println("------> Result: live mutant");
-				System.out.println();
-			}
+			Map.Entry<String, List<Oracle>> pair = it.next();
+			List<Oracle> values = pair.getValue();
+			JSONArray list = new JSONArray();
+			list.put(values);
+			json.put(pair.getKey(), list);
+		}
+		
+		try (FileWriter file = new FileWriter(path + ".json"))
+		{
+			file.write(json.toString(3));
 		}
 	}
 }

@@ -62,6 +62,10 @@ public class MutantLauncher {
 
 		for (int i = 0; i < transformations.size(); i++)
 		{
+			int mutants_counter = 0;
+			int killed_mutants_counter = 0;
+			int not_killed_mutants_counter = 0;
+			int invalid_mutants_counter = 0;
 			try
 			{
 				clazz = Class.forName(_package + "." + transformations.get(i));
@@ -81,7 +85,7 @@ public class MutantLauncher {
 			String metamodel = config.get("OUT_METAMODEL");
 
 			// Initialise execution matrix
-			EMatrix matrix = new EMatrix(actualOutModelsFolder + config.get("TRANSFORMATION_MODULE") + ".emtr");
+			EMatrix matrix = new EMatrix(actualOutModelsFolder + config.get("TRANSFORMATION_MODULE"));
 
 			File input_folder = new File(inModelsFolder + config.get("TRANSFORMATION_MODULE"));
 			for (File entry : main_mutants_folder.listFiles())
@@ -106,12 +110,14 @@ public class MutantLauncher {
 								actual_model_path = actualOutModelsFolder + transformations.get(i) + "/" + mutant.getName() + "/" + actual_model_path + "_result2"
 										+ config.get("OUT_METAMODEL_NAME") + ".xmi";
 
+								mutants_counter++;
 								Atllauncher = new LauncherImpl();
 								try
 								{
 									// run mutant
 									Atllauncher.run(config.get("IN_METAMODEL"), config.get("IN_METAMODEL_NAME"), input_model.getPath(), config.get("OUT_METAMODEL"),
 											config.get("OUT_METAMODEL_NAME"), actual_model_path, mutant.getPath(), config.get("TRANSFORMATION_HELPERS"));
+									
 									// valid mutant compare actual and expected outputs
 									IModel lhs_model = createEmfModel("lhs Model", expected_model_path, metamodel, true, false);
 									IModel rhs_model = createEmfModel("rhs Model", actual_model_path, metamodel, true, false);
@@ -124,11 +130,11 @@ public class MutantLauncher {
 										if (result != null)
 										{
 											// killed mutant
-											matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, actual_model_path, 0));
+											matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, actual_model_path, true));
 										} else
 										{
-											// live mutant
-											matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, actual_model_path, 1));
+											// not killed mutant
+											matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, actual_model_path, false));
 										}
 									} else
 									{
@@ -146,7 +152,7 @@ public class MutantLauncher {
 								} catch (Exception e)
 								{
 									// killed mutant
-									matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, null, 0));
+									matrix.getValue(mutant.getName()).add(new Oracle(expected_model_path, null, true));
 								}
 							}
 						}
@@ -155,7 +161,8 @@ public class MutantLauncher {
 			}
 			try
 			{
-				matrix.saveMatrix();
+				// matrix.saveMatrix();
+				matrix.toJson();
 			} catch (IOException e)
 			{
 				e.printStackTrace();

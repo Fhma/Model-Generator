@@ -6,20 +6,12 @@ public class Oracle implements Serializable {
 	private static final long serialVersionUID = -1739347007332109476L;
 	private String expectedModel;
 	private String actualModel;
-	private int result;
+	private boolean killed;
 
-	public Oracle(String expected_output, String actual_output, int _result) {
+	public Oracle(String expected_output, String actual_output, boolean _killed) {
 		expectedModel = expected_output;
 		actualModel = actual_output;
-		result = _result;
-	}
-
-	public boolean isExpectedModelDefined() {
-		return expectedModel == null;
-	}
-
-	public boolean isActualModelDefined() {
-		return actualModel == null;
+		killed = _killed;
 	}
 
 	public String getExpectedModel() {
@@ -30,11 +22,7 @@ public class Oracle implements Serializable {
 		return actualModel;
 	}
 
-	public String getOracle() {
-		return "<" + expectedModel + "," + actualModel + ">";
-	}
-
-	public int getResult() {
-		return result;
+	public boolean isKilled() {
+		return killed;
 	}
 }
