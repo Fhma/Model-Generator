@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Chrysothemis"/>
+  <book:Book title="Pitkin Marsh Lily">
+    <chapters title="Teloschistes Lichen" nbPages="1" author="Arabel Turfes"/>
+  </book:Book>
+  <book:Book title="Yellow Archangel">
+    <chapters title="Lethariicola Lichen" nbPages="5" author="Nerti Biaggiotti"/>
+  </book:Book>
+  <book:Book title="American Long-leaved Bamboo"/>
+  <book:Book title="Palmer's Mock Orange">
+    <chapters title="Early Saxifrage" nbPages="10" author="Melany Garside"/>
+    <chapters title="Bearded Milkvetch" nbPages="3" author="Curran Steggles"/>
+    <chapters title="Zion Buckwheat" nbPages="5" author="Arvie Micheli"/>
+    <chapters title="Polysporina Lichen" nbPages="7" author="Normie Fearenside"/>
+  </book:Book>
+  <book:Book title="Big Bend Bluebonnet">
+    <chapters title="Silverleaf Milkvetch" nbPages="5" author="Jocelyn Saker"/>
+    <chapters title="Showy Goldeneye" nbPages="8" author="Eliot Mation"/>
+  </book:Book>
+  <book:Book title="Polysporina Lichen">
+    <chapters title="Sinningia" nbPages="4" author="Sam Cornbill"/>
+  </book:Book>
+</xmi:XMI>

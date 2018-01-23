@@ -2,7 +2,6 @@ package uk.ac.york.epsilon.emg.model.generator.engine;
 
 import org.apache.commons.math3.random.RandomDataGenerator;
 import org.eclipse.epsilon.emg.EmgModule;
-import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
 import org.eclipse.epsilon.erl.IErlModule;
 
 public class EmgEngine extends EpsilonStandaloneEngine {

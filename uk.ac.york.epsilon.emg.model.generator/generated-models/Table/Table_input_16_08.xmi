@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="La Playa Springs Tansyaster"/>
+    </rows>
+    <rows>
+      <cells content="-52"/>
+    </rows>
+    <rows>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="71"/>
+    </rows>
+    <rows>
+      <cells content="-83"/>
+    </rows>
+    <rows>
+      <cells content="-45"/>
+    </rows>
+    <rows>
+      <cells content="-79"/>
+    </rows>
+    <rows>
+      <cells content="4"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Hawkweed"/>
+      <cells content="Italian Gladiolus"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+      <cells content="7"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="-84"/>
+    </rows>
+    <rows>
+      <cells content="-24"/>
+      <cells content="7"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

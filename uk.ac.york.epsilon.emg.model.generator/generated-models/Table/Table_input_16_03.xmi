@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Lindenleaf Rosemallow"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+    </rows>
+    <rows>
+      <cells content="-85"/>
+    </rows>
+    <rows>
+      <cells content="36"/>
+    </rows>
+    <rows>
+      <cells content="47"/>
+    </rows>
+    <rows>
+      <cells content="51"/>
+    </rows>
+    <rows>
+      <cells content="-2"/>
+    </rows>
+    <rows>
+      <cells content="88"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Blindia Moss"/>
+    </rows>
+    <rows>
+      <cells content="-68"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

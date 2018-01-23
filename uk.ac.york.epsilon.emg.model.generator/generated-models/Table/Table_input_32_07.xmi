@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Lespedeza"/>
+    </rows>
+    <rows>
+      <cells content="65"/>
+    </rows>
+    <rows>
+      <cells content="65"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+    </rows>
+    <rows>
+      <cells content="-45"/>
+    </rows>
+    <rows>
+      <cells content="93"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Winter's Bark"/>
+      <cells content="Bridges' Pincushionplant"/>
+    </rows>
+    <rows>
+      <cells content="-71"/>
+      <cells content="58"/>
+    </rows>
+    <rows>
+      <cells content="-48"/>
+      <cells content="17"/>
+    </rows>
+    <rows>
+      <cells content="-87"/>
+      <cells content="62"/>
+    </rows>
+    <rows>
+      <cells content="70"/>
+      <cells content="-6"/>
+    </rows>
+    <rows>
+      <cells content="-98"/>
+      <cells content="-39"/>
+    </rows>
+    <rows>
+      <cells content="50"/>
+      <cells content="38"/>
+    </rows>
+    <rows>
+      <cells content="19"/>
+      <cells content="-98"/>
+    </rows>
+    <rows>
+      <cells content="-65"/>
+      <cells content="-82"/>
+    </rows>
+    <rows>
+      <cells content="79"/>
+      <cells content="-57"/>
+    </rows>
+    <rows>
+      <cells content="-57"/>
+      <cells content="-57"/>
+    </rows>
+    <rows>
+      <cells content="20"/>
+      <cells content="-52"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Shining Rose"/>
+    </rows>
+    <rows>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="71"/>
+    </rows>
+    <rows>
+      <cells content="31"/>
+    </rows>
+    <rows>
+      <cells content="-2"/>
+    </rows>
+    <rows>
+      <cells content="-80"/>
+    </rows>
+    <rows>
+      <cells content="-36"/>
+    </rows>
+    <rows>
+      <cells content="-1"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Merrill's Beard Lichen"/>
+      <cells content="Mendez's Sandmat"/>
+    </rows>
+    <rows>
+      <cells content="-62"/>
+      <cells content="92"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

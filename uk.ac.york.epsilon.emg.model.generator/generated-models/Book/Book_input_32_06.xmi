@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Chrysothemis">
+    <chapters title="Intermediate Pepperweed" nbPages="3" author="Gerald Peschka"/>
+  </book:Book>
+  <book:Book title="Grecian Foxglove"/>
+  <book:Book title="Ridged Yellow Flax"/>
+  <book:Book title="St. Marks Yelloweyed Grass">
+    <chapters title="Goldenthread" nbPages="7" author="Casar Beaument"/>
+    <chapters title="Bristly Hawkbit" nbPages="4" author="Carmella Doche"/>
+  </book:Book>
+  <book:Book title="New England Quillwort">
+    <chapters title="Hilograss" nbPages="5" author="Welch Stonehewer"/>
+    <chapters title="Frost Grass" nbPages="10" author="Corabelle Kubera"/>
+    <chapters title="Bosnian Pine" nbPages="1" author="Hermann Glennon"/>
+  </book:Book>
+  <book:Book title="Woodreed">
+    <chapters title="Leafy Desertdandelion" nbPages="3" author="Sheila Thaxter"/>
+    <chapters title="California Gilia" nbPages="9" author="Stanley Anfossi"/>
+  </book:Book>
+  <book:Book title="Purpus' Buckwheat"/>
+  <book:Book title="California Gilia">
+    <chapters title="American Alumroot" nbPages="3" author="Grantley MacParland"/>
+  </book:Book>
+  <book:Book title="Chapped Mallee"/>
+  <book:Book title="Gray Bushmallow">
+    <chapters title="Umbel Clerodendrum" nbPages="1" author="Daffy Fiddyment"/>
+  </book:Book>
+  <book:Book title="Lacebark">
+    <chapters title="Clypeococcum Lichen" nbPages="6" author="Gerald Peschka"/>
+    <chapters title="Orcutt's Lupine" nbPages="1" author="Colas Charnock"/>
+    <chapters title="Saptree" nbPages="9" author="Peggi Aliberti"/>
+  </book:Book>
+  <book:Book title="Buffalo Hawthorn">
+    <chapters title="Tarweed" nbPages="6" author="Jaymee Minto"/>
+    <chapters title="Desert Starvine" nbPages="3" author="Madella Renneke"/>
+    <chapters title="Hairy Navel Lichen" nbPages="5" author="Perice Mannie"/>
+  </book:Book>
+  <book:Book title="Wallrue">
+    <chapters title="Heartleaf Suncup" nbPages="2" author="Ange Underhill"/>
+    <chapters title="Dotted Duckmeat" nbPages="7" author="Cassi Shannahan"/>
+    <chapters title="Roundleaf Buffaloberry" nbPages="3" author="Roley Craister"/>
+  </book:Book>
+</xmi:XMI>

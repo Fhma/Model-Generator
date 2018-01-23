@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <rows>
+    <cells content="Skyflower"/>
+  </rows>
+  <rows>
+    <cells content="7"/>
+  </rows>
+</table:Table>

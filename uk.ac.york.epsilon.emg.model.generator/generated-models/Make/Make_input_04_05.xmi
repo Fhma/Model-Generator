@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Sears' Goatgrass">
+  <comment text="Grecian Foxglove"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="22 May 2001" name="Perplexed Rim Lichen"/>
+    <shellLines command="lsof"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Evermann's Lupine"/>
+</make:Makefile>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Evermann's Lupine">
+    <chapters title="ahakea" nbPages="9" author="Gearalt Sedgmond"/>
+    <chapters title="Narrow-leaf Wattle" nbPages="7" author="Annie Duester"/>
+    <chapters title="Ware's Hairsedge" nbPages="4" author="Rina Arr"/>
+  </book:Book>
+  <book:Book title="Pale Desert-thorn"/>
+  <book:Book title="Weak Saxifrage">
+    <chapters title="Broom Silverbush" nbPages="8" author="Caleb Nortcliffe"/>
+  </book:Book>
+  <book:Book title="Rocky Mountain Woodsia">
+    <chapters title="Oneflower Vetch" nbPages="9" author="Tuckie Husk"/>
+  </book:Book>
+  <book:Book title="Dense Logwood">
+    <chapters title="Roundleaf Snowberry" nbPages="10" author="Bessie Franscioni"/>
+    <chapters title="Sandloving Penstemon" nbPages="6" author="Rafferty Sangwine"/>
+  </book:Book>
+  <book:Book title="Victory Onion">
+    <chapters title="Modoc Hawksbeard" nbPages="2" author="Rick Eaton"/>
+    <chapters title="Undergreen Willow" nbPages="5" author="Ingar Meehan"/>
+  </book:Book>
+  <book:Book title="Orcutt's Bristleweed"/>
+</xmi:XMI>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Needleleaf Rosette Grass">
+    <comment text="Bosnian Pine"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="4 June 2008" name="Orcutt's Bristleweed"/>
+      <dependencies xsi:type="make:FileDep" date="26 August 2006" name="Candletree"/>
+      <shellLines command="gcc"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Yellow Archangel"/>
+  </make:Makefile>
+  <make:Makefile name="Saptree">
+    <comment text="Eastern Bottlebrush Grass"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="14 February 2010" name="Texas Milkweed"/>
+      <shellLines command="accept" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="9 August 2003" name="White Panicle Aster"/>
+      <shellLines command="lipo" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Setose Blackberry"/>
+    <elements xsi:type="make:Macro" value="Little Heartleaf"/>
+  </make:Makefile>
+</xmi:XMI>

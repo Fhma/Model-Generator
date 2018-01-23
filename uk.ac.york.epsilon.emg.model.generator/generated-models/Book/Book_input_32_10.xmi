@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Ridged Yellow Flax">
+    <chapters title="Giantchickweed" nbPages="10" author="Alanah Cumbers"/>
+    <chapters title="Lanai Colicwood" nbPages="10" author="Ernie McIlreavy"/>
+    <chapters title="Ware's Hairsedge" nbPages="10" author="Pegeen Huster"/>
+  </book:Book>
+  <book:Book title="Mountain Lupine">
+    <chapters title="Bugloss" nbPages="9" author="Kerrill Limeburner"/>
+    <chapters title="Carpet Phlox" nbPages="10" author="Anne Bickerdyke"/>
+    <chapters title="Madam Gorgon" nbPages="10" author="Sherye Phillcock"/>
+  </book:Book>
+  <book:Book title="Ithaca Blackberry">
+    <chapters title="Fourleaf Maidenhair" nbPages="4" author="Hallsy Olenchikov"/>
+    <chapters title="Tennessee Starwort" nbPages="5" author="Emelyne Botcherby"/>
+  </book:Book>
+  <book:Book title="Big Bend Bluegrass"/>
+  <book:Book title="Smallflower Thoroughwort"/>
+  <book:Book title="Lanai Colicwood"/>
+  <book:Book title="Wright's Amaranth">
+    <chapters title="Longleaf Rush" nbPages="3" author="Ernie McIlreavy"/>
+  </book:Book>
+  <book:Book title="Weak Rush">
+    <chapters title="Longleaf Pondweed" nbPages="4" author="Ernest Fawcitt"/>
+    <chapters title="Yellow Bluestem" nbPages="1" author="Hartley Castagneto"/>
+    <chapters title="Desert Starvine" nbPages="2" author="Sherye Phillcock"/>
+  </book:Book>
+  <book:Book title="Thoroughwort">
+    <chapters title="Merrill's Beard Lichen" nbPages="2" author="Kathye Purdie"/>
+    <chapters title="Rocky Mountain Woodsia" nbPages="4" author="Zelig Audry"/>
+    <chapters title="Bog Bulrush" nbPages="3" author="Jeniffer Arunowicz"/>
+  </book:Book>
+  <book:Book title="Dense Logwood">
+    <chapters title="Humboldt Bedstraw" nbPages="2" author="Victoria Betty"/>
+  </book:Book>
+  <book:Book title="Leafy Desertdandelion">
+    <chapters title="Talh" nbPages="2" author="Micaela O'Hoolahan"/>
+    <chapters title="Bridges' Pincushionplant" nbPages="5" author="Karlie Lisciandri"/>
+  </book:Book>
+  <book:Book title="Yukon Podistera">
+    <chapters title="Pitkin Marsh Lily" nbPages="7" author="Fawnia Haydn"/>
+  </book:Book>
+  <book:Book title="Narrowleaf Rhombopod"/>
+</xmi:XMI>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Liverwort">
+    <comment text="European Searocket"/>
+    <elements xsi:type="make:Rule">
+      <shellLines command="dvipdfmx"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Rinodina Lichen"/>
+    <elements xsi:type="make:Macro" value="Giant Checkerbloom"/>
+  </make:Makefile>
+  <make:Makefile name="Sinningia">
+    <comment text="Seaside Sandplant"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="19 February 2016" name="Sulphur-flower Buckwheat"/>
+      <dependencies xsi:type="make:FileDep" date="15 October 2001" name="Brake Fern"/>
+      <shellLines command="lzdiff"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="18 May 2017" name="Sandberg's Biscuitroot"/>
+      <dependencies xsi:type="make:FileDep" date="21 August 2002" name="American Long-leaved Bamboo"/>
+      <shellLines command="listbib" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Carolina False Vervain"/>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Oklahoma Plum">
+    <chapters title="Kirschsteiniothelia Lichen" nbPages="5" author="Corabelle Kubera"/>
+  </book:Book>
+  <book:Book title="Sessileleaf Cyanea">
+    <chapters title="Needle Stonecrop" nbPages="1" author="Nalani Hesser"/>
+    <chapters title="American Ipecac" nbPages="7" author="Damiano Janacek"/>
+  </book:Book>
+  <book:Book title="Pitkin Marsh Lily">
+    <chapters title="Morton's Alpine Oatgrass" nbPages="7" author="Maxy End"/>
+  </book:Book>
+  <book:Book title="Toothed Spurge">
+    <chapters title="Woodland False Buttonweed" nbPages="4" author="Tiffi Janaszewski"/>
+  </book:Book>
+  <book:Book title="Carolina Ponysfoot">
+    <chapters title="Fernleaf Yarrow" nbPages="10" author="Lela Ferry"/>
+  </book:Book>
+  <book:Book title="Little Heartleaf">
+    <chapters title="Threeleaf Indigo" nbPages="3" author="Rickie Ferneyhough"/>
+  </book:Book>
+  <book:Book title="Willow Ragwort">
+    <chapters title="Juniper Globemallow" nbPages="6" author="Rina Arr"/>
+    <chapters title="Goldenthread" nbPages="1" author="Gabie Skelhorne"/>
+  </book:Book>
+</xmi:XMI>

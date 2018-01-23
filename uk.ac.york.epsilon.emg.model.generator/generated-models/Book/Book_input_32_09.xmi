@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Lecidea Lichen">
+    <chapters title="Western Sweetvetch" nbPages="9" author="Betty Lewing"/>
+    <chapters title="Asian Watergrass" nbPages="4" author="Catherina Mirralls"/>
+  </book:Book>
+  <book:Book title="Hairy Sandspurry"/>
+  <book:Book title="Lacebark"/>
+  <book:Book title="Hall's Tarweed"/>
+  <book:Book title="Royal Fringedfern">
+    <chapters title="Winter's Bark" nbPages="1" author="Quinn Greenwell"/>
+    <chapters title="Sandloving Penstemon" nbPages="6" author="Delano Stirtle"/>
+    <chapters title="Rudge's Waterlily" nbPages="9" author="Shawna Brookshaw"/>
+    <chapters title="Howe's Hedgehog Cactus" nbPages="10" author="Deane Ives"/>
+  </book:Book>
+  <book:Book title="Hairy Sandspurry">
+    <chapters title="Shortstalk False Bindweed" nbPages="2" author="Kittie Jewell"/>
+    <chapters title="Willow Ragwort" nbPages="2" author="Delano Stirtle"/>
+  </book:Book>
+  <book:Book title="Defect Barnacle Lichen"/>
+  <book:Book title="Romulea">
+    <chapters title="Braun's Rockcress" nbPages="7" author="Jocelyn Saker"/>
+    <chapters title="Giantchickweed" nbPages="3" author="Winfield Wastling"/>
+  </book:Book>
+  <book:Book title="Woodreed"/>
+  <book:Book title="Coastal Blacksnakeroot">
+    <chapters title="Protoparmelia Lichen" nbPages="2" author="Madeline Cracker"/>
+  </book:Book>
+  <book:Book title="Goldencarpet Buckwheat">
+    <chapters title="Blistered Navel Lichen" nbPages="7" author="Theda Neligan"/>
+    <chapters title="Arctic Catchfly" nbPages="3" author="Shandie Speere"/>
+    <chapters title="Hilograss" nbPages="9" author="Gael Blasiak"/>
+  </book:Book>
+  <book:Book title="Sycamore Maple">
+    <chapters title="Bosnian Pine" nbPages="6" author="Lauryn Gawn"/>
+    <chapters title="Spiny Logwood" nbPages="5" author="Riki Littleproud"/>
+  </book:Book>
+  <book:Book title="Narrowleaf Airplant">
+    <chapters title="Plateilema" nbPages="5" author="Matthiew Terbruggen"/>
+    <chapters title="Running Rockcress" nbPages="7" author="Neile Stiff"/>
+    <chapters title="Sticky Cinquefoil" nbPages="3" author="Windy Semrad"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Roundleaf Snowberry">
+    <chapters title="Drummond's Leaf-flower" nbPages="4" author="Clarette Conrad"/>
+    <chapters title="Scrub Plum" nbPages="6" author="Valma Burge"/>
+  </book:Book>
+  <book:Book title="La Playa Springs Tansyaster">
+    <chapters title="Candletree" nbPages="2" author="Ingar Meehan"/>
+  </book:Book>
+  <book:Book title="Largeflower Speargrass">
+    <chapters title="Dwarf Red Blackberry" nbPages="1" author="Ailyn Rigts"/>
+    <chapters title="Hypotrachyna Lichen" nbPages="9" author="Gage Sendall"/>
+    <chapters title="Kauai Phyllostegia" nbPages="7" author="Emelina Maudett"/>
+  </book:Book>
+  <book:Book title="Strawberryleaf Cinquefoil">
+    <chapters title="Manyflower Onion" nbPages="4" author="Emilie O'Kynsillaghe"/>
+  </book:Book>
+  <book:Book title="Yankee Blackberry">
+    <chapters title="Braun's Rockcress" nbPages="4" author="Esme Babber"/>
+    <chapters title="Priva" nbPages="6" author="Greta Skuce"/>
+  </book:Book>
+  <book:Book title="Wild Foxglove">
+    <chapters title="Grecian Foxglove" nbPages="8" author="Phoebe MacRedmond"/>
+  </book:Book>
+  <book:Book title="Reverchon's Bristlegrass">
+    <chapters title="Rudge's Waterlily" nbPages="4" author="Lian Strover"/>
+    <chapters title="Narrowleaf Wildparsley" nbPages="1" author="Casar Beaument"/>
+  </book:Book>
+  <book:Book title="Orcutt's Bristleweed">
+    <chapters title="Roundleaf Oxytheca" nbPages="10" author="Flossie Wayvill"/>
+    <chapters title="Weak Rush" nbPages="2" author="Alberta Sharvill"/>
+  </book:Book>
+  <book:Book title="Sedge">
+    <chapters title="Asian Watergrass" nbPages="10" author="Aidan McEttigen"/>
+  </book:Book>
+  <book:Book title="Hairy White Oldfield Aster"/>
+  <book:Book title="Bog Willow">
+    <chapters title="Woodland Poppymallow" nbPages="8" author="Tamas Guilford"/>
+    <chapters title="Solano False Bindweed" nbPages="6" author="Clywd Olyunin"/>
+  </book:Book>
+  <book:Book title="Hilo Murainagrass"/>
+  <book:Book title="Yellow Archangel">
+    <chapters title="Thinfruit Sedge" nbPages="9" author="Christy Tessier"/>
+    <chapters title="Sanddune Spurge" nbPages="5" author="Helge Maciocia"/>
+  </book:Book>
+</xmi:XMI>

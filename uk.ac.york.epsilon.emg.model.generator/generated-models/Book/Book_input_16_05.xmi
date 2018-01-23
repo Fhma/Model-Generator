@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Wallrue"/>
+  <book:Book title="Western Azalea">
+    <chapters title="Cuban Maiden Fern" nbPages="10" author="Aime Gallgher"/>
+    <chapters title="Wallrue" nbPages="7" author="Rubi Lightfoot"/>
+  </book:Book>
+  <book:Book title="Hirsute Raspberry">
+    <chapters title="Cutleaf Island Spleenwort" nbPages="4" author="Alida Mathan"/>
+    <chapters title="Deceptive Marbleseed" nbPages="4" author="Norah Demaine"/>
+    <chapters title="Arrowhead Vine" nbPages="6" author="Bettye Walkden"/>
+  </book:Book>
+  <book:Book title="Lollipop Mimosa">
+    <chapters title="Desert Starvine" nbPages="8" author="Tod Hudspeth"/>
+    <chapters title="Hawkweed" nbPages="1" author="Corrie Imos"/>
+  </book:Book>
+  <book:Book title="Pale Indian Plantain">
+    <chapters title="Soft-hair Marbleseed" nbPages="6" author="Sidney Aimer"/>
+  </book:Book>
+  <book:Book title="Sessileleaf Cyanea">
+    <chapters title="Island Mallow" nbPages="10" author="Claudina Huikerby"/>
+  </book:Book>
+  <book:Book title="Grecian Foxglove"/>
+</xmi:XMI>

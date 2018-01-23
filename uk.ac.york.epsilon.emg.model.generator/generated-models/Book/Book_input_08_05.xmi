@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Largeflower Speargrass">
+    <chapters title="Big Bend Bluebonnet" nbPages="2" author="Lucais Comford"/>
+    <chapters title="Coastal Sage Scrub Oak" nbPages="9" author="Damiano Janacek"/>
+  </book:Book>
+  <book:Book title="Pyrenopsis Lichen"/>
+  <book:Book title="Pongame Oiltree">
+    <chapters title="Parrotfeather Treefern" nbPages="2" author="Fredi Risdale"/>
+  </book:Book>
+  <book:Book title="Mexican Blazingstar">
+    <chapters title="Northern Dewberry" nbPages="3" author="Sigismund Gayden"/>
+  </book:Book>
+</xmi:XMI>

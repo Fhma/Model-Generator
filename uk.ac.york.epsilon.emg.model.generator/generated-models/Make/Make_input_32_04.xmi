@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Sierra Currant">
+    <comment text="Jacanillo"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="15 December 2001" name="Coulter's Wrinklefruit"/>
+      <shellLines command="cupsfilter" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Red-flower Woodsorrel"/>
+  </make:Makefile>
+  <make:Makefile name="Ridged Yellow Flax">
+    <comment text="Sticky Drymary"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="24 March 2001" name="Boreal Locoweed"/>
+      <dependencies xsi:type="make:FileDep" date="10 March 2001" name="Long-tubercle Beehive Cactus"/>
+      <shellLines command="dsconfigldap" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <shellLines command="dot" display="true"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="California Gilia">
+    <comment text="Modoc Hawksbeard"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="12 November 2008" name="Appendage Orchid"/>
+      <shellLines command="domainname"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="17 September 2002" name="Scarlet Bottlebrush"/>
+      <shellLines command="ldapurl"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="White Leadtree"/>
+    <elements xsi:type="make:Macro" value="Sycamore Maple"/>
+    <elements xsi:type="make:Macro" value="Perplexed Rim Lichen"/>
+  </make:Makefile>
+  <make:Makefile name="Hawaiian Nadvornikia">
+    <comment text="Lethariicola Lichen"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="17 September 2002" name="Creeping Thyme"/>
+      <dependencies xsi:type="make:FileDep" date="17 September 2013" name="Cascade Aster"/>
+      <dependencies xsi:type="make:FileDep" date="12 October 2005" name="Naio"/>
+      <shellLines command="arlatex"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Williams' Miterwort"/>
+    <elements xsi:type="make:Macro" value="Scaldweed"/>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Wiegand's Sedge"/>
+      <cells content="Dwarf Red Blackberry"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="54"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Long-tubercle Beehive Cactus"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+    </rows>
+    <rows>
+      <cells content="-80"/>
+    </rows>
+    <rows>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="-98"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+    </rows>
+    <rows>
+      <cells content="-30"/>
+    </rows>
+    <rows>
+      <cells content="-93"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

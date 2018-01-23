@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Tall False Foxglove">
+    <chapters title="Western Azalea" nbPages="7" author="Johny Hartill"/>
+  </book:Book>
+  <book:Book title="Jeweled Tonguefern">
+    <chapters title="Bridges' Pincushionplant" nbPages="2" author="Riki Littleproud"/>
+  </book:Book>
+  <book:Book title="Oneflower Vetch">
+    <chapters title="Serrate Ephemerum Moss" nbPages="1" author="Britt Pincott"/>
+    <chapters title="Chamisso Bush Lupine" nbPages="5" author="Danny Hess"/>
+    <chapters title="Sanddune Spurge" nbPages="7" author="Shelden McMurty"/>
+  </book:Book>
+  <book:Book title="Perplexed Rim Lichen"/>
+  <book:Book title="California Fescue"/>
+  <book:Book title="Lanceleaf Rattlebox">
+    <chapters title="Clubmoss" nbPages="5" author="Egor Manshaw"/>
+    <chapters title="Pongame Oiltree" nbPages="8" author="Emmy Cleveley"/>
+    <chapters title="Rinodina Lichen" nbPages="1" author="Konstantine Penk"/>
+  </book:Book>
+  <book:Book title="Arnoseris">
+    <chapters title="Howell's Buckwheat" nbPages="6" author="Yolanda Hart"/>
+  </book:Book>
+  <book:Book title="Scaldweed">
+    <chapters title="Homalocladium" nbPages="7" author="Joannes Kelsey"/>
+  </book:Book>
+  <book:Book title="Red-flower Woodsorrel">
+    <chapters title="Shell Lichen" nbPages="3" author="Darelle Daelman"/>
+    <chapters title="Cutleaf Island Spleenwort" nbPages="8" author="Dennie Le Maitre"/>
+  </book:Book>
+  <book:Book title="Canadian Hawkweed">
+    <chapters title="Ibapah Tickweed" nbPages="9" author="Stephannie Taggett"/>
+    <chapters title="Woodland Poppymallow" nbPages="9" author="Monique Persence"/>
+    <chapters title="Cusick's Primrose" nbPages="1" author="Corrie Imos"/>
+  </book:Book>
+  <book:Book title="Bartramia Moss">
+    <chapters title="Map Lichen" nbPages="5" author="Flossie Wayvill"/>
+    <chapters title="Oakleaf Carica" nbPages="8" author="Westley Blaise"/>
+  </book:Book>
+  <book:Book title="Boreal Locoweed">
+    <chapters title="Dense Logwood" nbPages="5" author="Seana Tesseyman"/>
+  </book:Book>
+  <book:Book title="Pale Desert-thorn">
+    <chapters title="Whitehair Rosette Grass" nbPages="3" author="Vincent Braundt"/>
+  </book:Book>
+</xmi:XMI>

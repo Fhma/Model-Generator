@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Dense Logwood">
+    <chapters title="Hilograss" nbPages="7" author="Rebeka Lutty"/>
+    <chapters title="Low Beardtongue" nbPages="1" author="Quinta Brooker"/>
+  </book:Book>
+  <book:Book title="Mendez's Sandmat"/>
+  <book:Book title="Great Basin Woollystar">
+    <chapters title="Sonoma Penstemon" nbPages="6" author="Hallsy Olenchikov"/>
+  </book:Book>
+  <book:Book title="Congo Coffee">
+    <chapters title="Goldenthread" nbPages="10" author="Erma Stetson"/>
+  </book:Book>
+</xmi:XMI>

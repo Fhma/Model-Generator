@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Fringeleaf Tickseed">
+  <comment text="Dicranum Moss"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="14 March 2001" name="Dwarf Red Blackberry"/>
+    <shellLines command="libnetcfg"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="22 January 2008" name="Needle Stonecrop"/>
+    <shellLines command="db_codegen"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Texas Sandmint"/>
+  <elements xsi:type="make:Macro" value="Priva"/>
+</make:Makefile>

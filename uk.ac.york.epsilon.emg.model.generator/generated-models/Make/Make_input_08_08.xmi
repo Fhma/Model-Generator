@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Coastal Eryngo">
+  <comment text="Anthracothecium Lichen"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="29 November 2006" name="Sierra Woodrush"/>
+    <shellLines command="lsof" display="true"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="18 October 2003" name="Hitchcock's Smooth Woodrush"/>
+    <shellLines command="appres"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Appendage Orchid"/>
+  <elements xsi:type="make:Macro" value="Sierra Woodrush"/>
+</make:Makefile>

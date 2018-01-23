@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Hirsute Raspberry">
+    <chapters title="Breutel's Notothylas" nbPages="5" author="Shawna Brookshaw"/>
+  </book:Book>
+  <book:Book title="Hybrid Violet"/>
+  <book:Book title="Scrub Plum">
+    <chapters title="Yukon Podistera" nbPages="5" author="Allissa Morais"/>
+  </book:Book>
+  <book:Book title="Pentadesma">
+    <chapters title="Red-flower Woodsorrel" nbPages="5" author="Clarette Conrad"/>
+  </book:Book>
+  <book:Book title="Zion Buckwheat">
+    <chapters title="Purpus' Buckwheat" nbPages="4" author="Dunstan Gallally"/>
+  </book:Book>
+  <book:Book title="Pseudovina">
+    <chapters title="Diablo Hareleaf" nbPages="5" author="Grenville Demanche"/>
+    <chapters title="Downy Paintedcup" nbPages="9" author="Madella Renneke"/>
+    <chapters title="Naio" nbPages="4" author="Robina Carbine"/>
+    <chapters title="Jeweled Tonguefern" nbPages="9" author="Pepillo Leisman"/>
+  </book:Book>
+  <book:Book title="Venus' Pride">
+    <chapters title="Whitehair Rosette Grass" nbPages="3" author="Birdie Janks"/>
+  </book:Book>
+</xmi:XMI>

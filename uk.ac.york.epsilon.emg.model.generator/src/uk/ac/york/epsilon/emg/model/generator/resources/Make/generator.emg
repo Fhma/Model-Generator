@@ -1,0 +1,72 @@
+pre {
+	var m_num:Integer = (0.1 * total).ceiling();
+	var r_num:Integer = ((total-m_num)*0.2).ceiling();
+	var mr_num:Integer = ((total-m_num)*0.2).ceiling();
+	var s_numb:Integer = 0;
+	s_numb = ((total-r_num) * 0.2).ceiling();
+	
+	var f_de_num:Integer = ((total-s_numb)*0.3).ceiling();
+	var r_de_num:Integer = ((total-s_numb)*0.2).ceiling();
+}
+
+$instances m_num
+@list make_files
+operation Makefile create()
+{
+	self.name = StringDB!Row.all.random().string;
+	var com = Comment.createInstance();
+	com.text = StringDB!Row.all.random().string;
+	self.comment = com;
+}
+
+$instances r_num
+@list rules_list
+operation Rule create()
+{
+	var makefiles = Makefile.all.select(e|e.elements.size=0);
+	if(makefiles.size>0)
+		self.makefile = makefiles.random();
+	else
+		self.makefile = nextFromList("make_files");
+}
+
+$instances mr_num
+@list macros_list
+operation Macro create()
+{
+	var makefiles = Makefile.all.select(e|e.elements.size=0);
+	if(makefiles.size>0)
+		self.makefile = makefiles.random();
+	else
+		self.makefile = nextFromList("make_files");
+	self.value = StringDB!Row.all.random().string;
+}
+
+$instances s_numb
+@list shell_line_list
+operation ShellLine create()
+{
+	self.command = StringDB!Row.all.random().command;
+	self.display = nextBoolean();
+	var rules = Rule.all.select(e|e.shellLines.size=0);
+	if(rules.size>0)
+		self.ruleShellLine = rules.random();
+	else
+		self.ruleShellLine = nextFromList("rules_list");
+}
+
+$instances f_de_num
+operation RuleDep create()
+{
+	self.belog_to_rule = nextFromList("rules_list");
+	self.ruledep = nextFromList("rules_list");
+}
+
+$instances f_de_num
+operation FileDep create()
+{
+	self.belog_to_rule = nextFromList("rules_list");
+	self.date = StringDB!Row.all.random().date;
+	self.name = StringDB!Row.all.random().string;
+}
+

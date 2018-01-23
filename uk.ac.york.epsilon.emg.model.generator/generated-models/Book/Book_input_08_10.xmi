@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Dense Logwood">
+    <chapters title="Perplexed Rim Lichen" nbPages="5" author="Raymund Sabey"/>
+  </book:Book>
+  <book:Book title="Hairy Goldenrod">
+    <chapters title="Sierra Woodrush" nbPages="7" author="Greta Skuce"/>
+    <chapters title="Ensete" nbPages="8" author="Vinnie Lycett"/>
+    <chapters title="Hybrid Violet" nbPages="3" author="Wilbert Mellish"/>
+  </book:Book>
+  <book:Book title="Hawaiian Nadvornikia"/>
+  <book:Book title="Hilograss"/>
+</xmi:XMI>

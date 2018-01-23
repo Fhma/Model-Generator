@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Willow Ragwort">
+  <comment text="Wallrue"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="23 March 2002" name="Tolmie's Owl's-clover"/>
+    <shellLines command="ar" display="true"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Smooth Spreading Four O'clock"/>
+</make:Makefile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Bog Willow">
+    <chapters title="Setose Blackberry" nbPages="1" author="Linc Kimbury"/>
+  </book:Book>
+  <book:Book title="Giantchickweed">
+    <chapters title="Royal Fringedfern" nbPages="10" author="Kipp Denyer"/>
+  </book:Book>
+</xmi:XMI>

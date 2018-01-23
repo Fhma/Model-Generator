@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Pipsissewa">
+    <chapters title="Solano False Bindweed" nbPages="5" author="Rick Eaton"/>
+  </book:Book>
+  <book:Book title="Italian Gladiolus">
+    <chapters title="Parrotweed" nbPages="8" author="Traver Tilliard"/>
+  </book:Book>
+</xmi:XMI>

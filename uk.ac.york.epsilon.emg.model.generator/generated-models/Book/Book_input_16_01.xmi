@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Lindheimer's Hoarypea">
+    <chapters title="Weill's Lichenochora Lichen" nbPages="2" author="Callida Witty"/>
+    <chapters title="Defect Barnacle Lichen" nbPages="7" author="Valma Burge"/>
+    <chapters title="Hempvine" nbPages="8" author="Alyssa Pallister"/>
+  </book:Book>
+  <book:Book title="Anthracothecium Lichen">
+    <chapters title="Maui Tetramolopium" nbPages="5" author="Kitti Pervoe"/>
+    <chapters title="Brittle Bladderfern" nbPages="5" author="Ive Roberti"/>
+  </book:Book>
+  <book:Book title="Lindheimer's Hoarypea">
+    <chapters title="Merrill's Beard Lichen" nbPages="7" author="Pegeen Huster"/>
+    <chapters title="San Bernardino Bluegrass" nbPages="3" author="Sidney Aimer"/>
+  </book:Book>
+  <book:Book title="Parrotfeather Treefern">
+    <chapters title="Ridged Yellow Flax" nbPages="7" author="Saunder Synan"/>
+  </book:Book>
+  <book:Book title="Serrate Ephemerum Moss">
+    <chapters title="Pyrenopsis Lichen" nbPages="8" author="Rea Kneeland"/>
+  </book:Book>
+  <book:Book title="Smallflower Thoroughwort"/>
+  <book:Book title="Slender Milkvetch"/>
+</xmi:XMI>

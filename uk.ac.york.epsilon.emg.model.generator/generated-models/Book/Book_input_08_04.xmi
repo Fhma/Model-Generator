@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Hilograss">
+    <chapters title="Largeflower Speargrass" nbPages="10" author="Gery Wolford"/>
+    <chapters title="Yankee Blackberry" nbPages="6" author="Cosimo Dakers"/>
+  </book:Book>
+  <book:Book title="King Protea"/>
+  <book:Book title="Cusick's Draba">
+    <chapters title="Wild Foxglove" nbPages="2" author="Ax Creaney"/>
+  </book:Book>
+  <book:Book title="New Mexico Lupine">
+    <chapters title="Frost Grass" nbPages="10" author="Desdemona Arends"/>
+  </book:Book>
+</xmi:XMI>

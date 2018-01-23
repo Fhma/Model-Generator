@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Western Swordfern"/>
+  <book:Book title="Thicket Sedge"/>
+  <book:Book title="Drummond's Rush"/>
+  <book:Book title="Carolina Ponysfoot"/>
+  <book:Book title="Hausknecht's Buckwheat">
+    <chapters title="Gold-of-pleasure" nbPages="7" author="Albertina McGrirl"/>
+    <chapters title="Bartramia Moss" nbPages="5" author="Christy Tessier"/>
+  </book:Book>
+  <book:Book title="Cutleaf Island Spleenwort">
+    <chapters title="Sticky Tofieldia" nbPages="10" author="Betty Lewing"/>
+    <chapters title="Shell Lichen" nbPages="6" author="Frans Ashcroft"/>
+    <chapters title="Canby's Lousewort" nbPages="3" author="Eustace Gianetti"/>
+    <chapters title="Shell Lichen" nbPages="4" author="Jeffrey Blaxeland"/>
+    <chapters title="Saltwood" nbPages="2" author="Callida Witty"/>
+  </book:Book>
+  <book:Book title="Oneflower Vetch"/>
+  <book:Book title="Mexican Blazingstar"/>
+  <book:Book title="Chamissoa">
+    <chapters title="Roundleaf Oxytheca" nbPages="10" author="Avictor Carles"/>
+    <chapters title="Parasol Sedge" nbPages="10" author="Welch Stonehewer"/>
+    <chapters title="Hempvine" nbPages="3" author="Jere Howselee"/>
+    <chapters title="Devilshead" nbPages="10" author="Thorin Bodycombe"/>
+    <chapters title="Merrill's Beard Lichen" nbPages="4" author="Clywd Olyunin"/>
+    <chapters title="Big Bend Bluegrass" nbPages="7" author="Helge Felderer"/>
+  </book:Book>
+  <book:Book title="Orangeberry Nightshade">
+    <chapters title="Peltate Dutchman's Pipe" nbPages="3" author="Mano Norfolk"/>
+    <chapters title="Widecalyx Monkeyflower" nbPages="3" author="Seana Tesseyman"/>
+  </book:Book>
+  <book:Book title="Dense Logwood">
+    <chapters title="Edwards Plateau Yellow Stingbush" nbPages="10" author="Birdie Janks"/>
+    <chapters title="Rudge's Waterlily" nbPages="4" author="Kelley Sankey"/>
+  </book:Book>
+  <book:Book title="Tufted Bulrush">
+    <chapters title="Roundleaf Snowberry" nbPages="10" author="Suzann Keirl"/>
+  </book:Book>
+  <book:Book title="Western Azalea">
+    <chapters title="Devilshead" nbPages="3" author="Rinaldo Pocklington"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Nihoa Pritchardia"/>
+      <cells content="Sycamore Fig"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+      <cells content="37"/>
+    </rows>
+    <rows>
+      <cells content="95"/>
+      <cells content="69"/>
+    </rows>
+    <rows>
+      <cells content="96"/>
+      <cells content="-26"/>
+    </rows>
+    <rows>
+      <cells content="39"/>
+      <cells content="-74"/>
+    </rows>
+    <rows>
+      <cells content="-22"/>
+      <cells content="93"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Roundleaf Snowberry"/>
+    </rows>
+    <rows>
+      <cells content="-62"/>
+    </rows>
+    <rows>
+      <cells content="18"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+    </rows>
+    <rows>
+      <cells content="78"/>
+    </rows>
+    <rows>
+      <cells content="51"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

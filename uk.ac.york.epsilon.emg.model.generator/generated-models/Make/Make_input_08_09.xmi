@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Downy Paintedcup">
+  <comment text="Brittle Bladderfern"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="14 March 2001" name="Saltwood"/>
+    <shellLines command="checkgid" display="true"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="6 December 2002" name="Tansy Rosinweed"/>
+    <shellLines command="config_data5.18"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Barbasco"/>
+  <elements xsi:type="make:Macro" value="Trelease's Beavertail Pricklypear"/>
+</make:Makefile>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Chinese Magnolia">
+    <comment text="Pale Desert-thorn"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="2 November 2010" name="Lecidea Lichen"/>
+      <shellLines command="c89" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="23 February 2012" name="Chaparral Pea"/>
+      <shellLines command="column"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Thicket Sedge"/>
+  </make:Makefile>
+  <make:Makefile name="Narrowleaf Airplant">
+    <comment text="Valley Oak"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="17 May 2005" name="Bouchea"/>
+      <dependencies xsi:type="make:FileDep" date="1 December 2000" name="Carpet Phlox"/>
+      <shellLines command="ldapwhoami" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Coast Range Mariposa Lily"/>
+    <elements xsi:type="make:Macro" value="Carr's Rattlesnakeroot"/>
+  </make:Makefile>
+</xmi:XMI>

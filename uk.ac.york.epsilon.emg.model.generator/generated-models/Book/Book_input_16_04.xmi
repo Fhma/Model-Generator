@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Gray Bushmallow"/>
+  <book:Book title="Lathberry"/>
+  <book:Book title="Lethariicola Lichen">
+    <chapters title="Widecalyx Monkeyflower" nbPages="1" author="Paquito Caygill"/>
+  </book:Book>
+  <book:Book title="Bartramia Moss">
+    <chapters title="Bosnian Pine" nbPages="10" author="Dennie Le Maitre"/>
+    <chapters title="Low Beardtongue" nbPages="3" author="Torr Bownas"/>
+  </book:Book>
+  <book:Book title="Judas-tree">
+    <chapters title="Pseudovina" nbPages="3" author="Roth Flasby"/>
+    <chapters title="Juniper Globemallow" nbPages="8" author="Lesley Coopland"/>
+  </book:Book>
+  <book:Book title="Tender Green">
+    <chapters title="Shortspike Windmill Grass" nbPages="5" author="Vickie Retchford"/>
+  </book:Book>
+  <book:Book title="Tolmin's Orange Lichen">
+    <chapters title="White Lady's Slipper" nbPages="5" author="Zitella Ruoss"/>
+    <chapters title="Blindia Moss" nbPages="2" author="Ailyn Rigts"/>
+    <chapters title="Margarett's Hawthorn" nbPages="2" author="Jocelyn Saker"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Winged Milkvetch">
+    <chapters title="Reverchon's Blazingstar" nbPages="10" author="Arliene Brumpton"/>
+  </book:Book>
+  <book:Book title="Congo Coffee">
+    <chapters title="ahakea" nbPages="9" author="Thorn Poone"/>
+  </book:Book>
+</xmi:XMI>

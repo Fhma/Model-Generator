@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="California Fescue"/>
+  <book:Book title="Low Beardtongue">
+    <chapters title="Cutleaf Island Spleenwort" nbPages="1" author="Pietro Booij"/>
+    <chapters title="Gold-of-pleasure" nbPages="10" author="Thia Hammersley"/>
+    <chapters title="Carolina Ponysfoot" nbPages="3" author="Diane Coneybeare"/>
+  </book:Book>
+  <book:Book title="La Playa Springs Tansyaster">
+    <chapters title="Pod Mahogany" nbPages="4" author="Tarah McVanamy"/>
+  </book:Book>
+  <book:Book title="Hybrid Oak"/>
+</xmi:XMI>
