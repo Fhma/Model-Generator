@@ -57,16 +57,16 @@ public class ModelGenerator {
 				config = (Map<String, Object>) method.invoke(clazz);
 
 				int model_size = (int) config.get("MIN_MODEL_SIZE");
+				int numbering = 1;
 				int max_iteration = model_size * 16; // model_size * 2^3
 				do {
 					// create all models
 					for (int j = 1; j <= MAX_MODELS; j++) {
 						String model_path = (String) config.get("MODEL_BASE_NAME");
-						model_path += (model_size / 10 == 0) ? "0" + model_size : model_size;
-						model_path += "_";
-						model_path += (j / 10 == 0) ? "0" + j : j;
+						model_path += (numbering / 10 == 0) ? "0" + numbering : numbering;
 						model_path += ".xmi";
 						executeGeneration(engine, config.get("EMG_FILE"), (String) config.get("METAMODEL"), (String) config.get("MODEL_NAME"), (String) model_path, model_size, rnd.nextLong(0, Long.MAX_VALUE));
+						numbering++;
 					}
 					model_size *= 2;
 				} while (model_size <= max_iteration);

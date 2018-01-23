@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Drops-of-gold">
+    <chapters title="Needle Stonecrop" nbPages="10" author="Steward Ashingden"/>
+    <chapters title="Hawkweed" nbPages="6" author="Lucho Petters"/>
+  </book:Book>
+  <book:Book title="Sedge"/>
+  <book:Book title="Yukon Podistera">
+    <chapters title="Common Hoptree" nbPages="2" author="Peggi Aliberti"/>
+  </book:Book>
+  <book:Book title="Blindia Moss">
+    <chapters title="Deam's Clearweed" nbPages="10" author="Jessalin Petera"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Sticky Drymary"/>
+  <book:Book title="Salac Palm">
+    <chapters title="Sears' Goatgrass" nbPages="10" author="Ernest Fawcitt"/>
+    <chapters title="Texas Sandmint" nbPages="7" author="Hartley Castagneto"/>
+  </book:Book>
+  <book:Book title="Big-spore Quillwort">
+    <chapters title="Howell's Buckwheat" nbPages="4" author="Barn Aymer"/>
+    <chapters title="Grecian Foxglove" nbPages="4" author="Flynn Keri"/>
+    <chapters title="ahakea" nbPages="6" author="Edeline Hindsberg"/>
+  </book:Book>
+  <book:Book title="Wright's Amaranth">
+    <chapters title="Chrysothemis" nbPages="8" author="Brooke Charge"/>
+    <chapters title="Maui Tetramolopium" nbPages="1" author="Tarah McVanamy"/>
+  </book:Book>
+  <book:Book title="Roundleaf Oxytheca">
+    <chapters title="Italian Gladiolus" nbPages="6" author="Sinclair Artiss"/>
+  </book:Book>
+  <book:Book title="Disjunct Coenogonium Lichen">
+    <chapters title="Deam's Clearweed" nbPages="10" author="Christy Tessier"/>
+  </book:Book>
+  <book:Book title="White Edge Sedge"/>
+</xmi:XMI>

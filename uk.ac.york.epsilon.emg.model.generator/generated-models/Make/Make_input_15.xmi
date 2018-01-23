@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Sticky Drymary">
+  <comment text="Whitehair Rosette Grass"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="6 August 2003" name="Hairy White Oldfield Aster"/>
+    <shellLines command="last"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="4 September 2002" name="European Plum"/>
+    <shellLines command="aclocal"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Yukon Podistera"/>
+  <elements xsi:type="make:Macro" value="California Gilia"/>
+</make:Makefile>

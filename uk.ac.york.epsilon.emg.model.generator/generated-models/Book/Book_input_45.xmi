@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Grecian Foxglove"/>
+  <book:Book title="Mendez's Sandmat"/>
+  <book:Book title="Protoparmelia Lichen"/>
+  <book:Book title="Carolina Orange Lichen"/>
+  <book:Book title="Sierra Woodrush">
+    <chapters title="Pseudovina" nbPages="7" author="Saunder Synan"/>
+    <chapters title="Dense Logwood" nbPages="5" author="Korey Grundy"/>
+  </book:Book>
+  <book:Book title="Plateilema">
+    <chapters title="Tennessee Starwort" nbPages="10" author="Sinclair Artiss"/>
+    <chapters title="Mouse-ear Chickweed" nbPages="6" author="Ram Crellin"/>
+    <chapters title="Tender Green" nbPages="3" author="Richy Tomlins"/>
+    <chapters title="Great Basin Woollystar" nbPages="4" author="Roselin Klejin"/>
+    <chapters title="Osmund Fissidens Moss" nbPages="2" author="Collen Gooms"/>
+  </book:Book>
+  <book:Book title="Palmer's Mock Orange"/>
+  <book:Book title="Strawberryleaf Cinquefoil"/>
+  <book:Book title="Threeleaf Indigo">
+    <chapters title="Serpentine Phacelia" nbPages="10" author="Staci Pinney"/>
+    <chapters title="Oneseed Juniper" nbPages="10" author="Zelig Audry"/>
+    <chapters title="Kilau" nbPages="3" author="Gerald Peschka"/>
+    <chapters title="Dicranum Moss" nbPages="10" author="Ange Underhill"/>
+    <chapters title="Priva" nbPages="4" author="Georgeanna Pease"/>
+    <chapters title="La Playa Springs Tansyaster" nbPages="7" author="Gayle Lytlle"/>
+  </book:Book>
+  <book:Book title="Orangeberry Nightshade">
+    <chapters title="Slender Scratchdaisy" nbPages="3" author="Aldwin Hawkslee"/>
+    <chapters title="Barbasco" nbPages="3" author="Emmy Cleveley"/>
+  </book:Book>
+  <book:Book title="Rusby's Hawkweed">
+    <chapters title="Arrowhead Vine" nbPages="10" author="Genni Roney"/>
+    <chapters title="Wright's Goldenrod" nbPages="4" author="Cort Luckhurst"/>
+  </book:Book>
+  <book:Book title="Mallee Saltbush">
+    <chapters title="Theobroma" nbPages="10" author="Monique Persence"/>
+  </book:Book>
+  <book:Book title="Hawaiian Nadvornikia">
+    <chapters title="Narrowleaf Airplant" nbPages="3" author="Amelita Kinloch"/>
+  </book:Book>
+</xmi:XMI>

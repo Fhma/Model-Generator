@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Chrysothemis">
+    <chapters title="Edwards Plateau Milkvetch" nbPages="10" author="Cort Luckhurst"/>
+  </book:Book>
+  <book:Book title="Hitchcock's Smooth Woodrush">
+    <chapters title="Lonomea" nbPages="10" author="Alika Volleth"/>
+    <chapters title="Sulphur-flower Buckwheat" nbPages="6" author="Cassi Shannahan"/>
+  </book:Book>
+  <book:Book title="Dense Logwood"/>
+  <book:Book title="Juniper Leaf">
+    <chapters title="Bog Willow" nbPages="8" author="Sonnnie Huitson"/>
+  </book:Book>
+</xmi:XMI>

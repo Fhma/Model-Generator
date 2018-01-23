@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Coastal Eryngo"/>
+      <cells content="Western Swordfern"/>
+      <cells content="Lindheimer's Hoarypea"/>
+      <cells content="Hedwig's Weissia Moss"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+      <cells content="-35"/>
+      <cells content="-7"/>
+      <cells content="-61"/>
+    </rows>
+    <rows>
+      <cells content="18"/>
+      <cells content="-69"/>
+      <cells content="96"/>
+      <cells content="96"/>
+    </rows>
+    <rows>
+      <cells content="-65"/>
+      <cells content="-59"/>
+      <cells content="-26"/>
+      <cells content="-51"/>
+    </rows>
+    <rows>
+      <cells content="-98"/>
+      <cells content="-34"/>
+      <cells content="-19"/>
+      <cells content="37"/>
+    </rows>
+    <rows>
+      <cells content="-6"/>
+      <cells content="-31"/>
+      <cells content="-30"/>
+      <cells content="15"/>
+    </rows>
+    <rows>
+      <cells content="-92"/>
+      <cells content="-91"/>
+      <cells content="92"/>
+      <cells content="-59"/>
+    </rows>
+    <rows>
+      <cells content="-24"/>
+      <cells content="-33"/>
+      <cells content="67"/>
+      <cells content="-7"/>
+    </rows>
+    <rows>
+      <cells content="67"/>
+      <cells content="96"/>
+      <cells content="-10"/>
+      <cells content="61"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+      <cells content="61"/>
+      <cells content="-82"/>
+      <cells content="-84"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="South African Hoarypea"/>
+    </rows>
+    <rows>
+      <cells content="38"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+    </rows>
+    <rows>
+      <cells content="-21"/>
+    </rows>
+    <rows>
+      <cells content="71"/>
+    </rows>
+    <rows>
+      <cells content="-37"/>
+    </rows>
+    <rows>
+      <cells content="59"/>
+    </rows>
+    <rows>
+      <cells content="-3"/>
+    </rows>
+    <rows>
+      <cells content="-42"/>
+    </rows>
+    <rows>
+      <cells content="71"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="St. Marks Yelloweyed Grass"/>
+      <cells content="Clypeococcum Lichen"/>
+      <cells content="Parrotfeather Treefern"/>
+      <cells content="Bog Willow"/>
+    </rows>
+    <rows>
+      <cells content="0"/>
+      <cells content="90"/>
+      <cells content="-85"/>
+      <cells content="99"/>
+    </rows>
+    <rows>
+      <cells content="18"/>
+      <cells content="83"/>
+      <cells content="19"/>
+      <cells content="36"/>
+    </rows>
+    <rows>
+      <cells content="-37"/>
+      <cells content="94"/>
+      <cells content="51"/>
+      <cells content="-79"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+      <cells content="65"/>
+      <cells content="-71"/>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="61"/>
+      <cells content="67"/>
+      <cells content="15"/>
+      <cells content="-92"/>
+    </rows>
+    <rows>
+      <cells content="66"/>
+      <cells content="97"/>
+      <cells content="60"/>
+      <cells content="-43"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+      <cells content="-50"/>
+      <cells content="-68"/>
+      <cells content="69"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Coville's Groundsmoke"/>
+    </rows>
+    <rows>
+      <cells content="81"/>
+    </rows>
+    <rows>
+      <cells content="18"/>
+    </rows>
+    <rows>
+      <cells content="89"/>
+    </rows>
+    <rows>
+      <cells content="39"/>
+    </rows>
+    <rows>
+      <cells content="-64"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

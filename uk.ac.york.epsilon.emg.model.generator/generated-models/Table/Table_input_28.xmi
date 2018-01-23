@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Saltwater Bush"/>
+    </rows>
+    <rows>
+      <cells content="-74"/>
+    </rows>
+    <rows>
+      <cells content="-80"/>
+    </rows>
+    <rows>
+      <cells content="-54"/>
+    </rows>
+    <rows>
+      <cells content="-42"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+    </rows>
+    <rows>
+      <cells content="95"/>
+    </rows>
+    <rows>
+      <cells content="-88"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Slender Scratchdaisy"/>
+      <cells content="Pine Valley Milkvetch"/>
+    </rows>
+    <rows>
+      <cells content="29"/>
+      <cells content="89"/>
+    </rows>
+    <rows>
+      <cells content="-33"/>
+      <cells content="37"/>
+    </rows>
+    <rows>
+      <cells content="-7"/>
+      <cells content="88"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

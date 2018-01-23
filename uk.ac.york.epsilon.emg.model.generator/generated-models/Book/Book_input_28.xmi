@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="European Plum">
+    <chapters title="Manyflower Onion" nbPages="3" author="Catharine Willmore"/>
+    <chapters title="Hypotrachyna Lichen" nbPages="5" author="Shandie Speere"/>
+  </book:Book>
+  <book:Book title="Fringed Dodder">
+    <chapters title="Nodding Wakerobin" nbPages="7" author="Betteanne Tuckie"/>
+  </book:Book>
+  <book:Book title="Coastal Blacksnakeroot"/>
+  <book:Book title="Wart Lichen">
+    <chapters title="Longleaf Rush" nbPages="10" author="Ernst Szymanzyk"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Kilau"/>
+  <book:Book title="Tridens"/>
+  <book:Book title="Ridgetop Guavaberry">
+    <chapters title="Evermann's Lupine" nbPages="1" author="Damiano Janacek"/>
+  </book:Book>
+  <book:Book title="Madam Gorgon">
+    <chapters title="Texas Sandmint" nbPages="10" author="Betty Lewing"/>
+    <chapters title="Yellow Troutlily" nbPages="3" author="Maybelle Gwalter"/>
+  </book:Book>
+  <book:Book title="Pseudovina">
+    <chapters title="Downy Paintedcup" nbPages="3" author="Tootsie Jolley"/>
+    <chapters title="Tender Green" nbPages="8" author="Zebulon Danher"/>
+  </book:Book>
+  <book:Book title="Arapaho Sedge">
+    <chapters title="Western Sweetvetch" nbPages="5" author="Enrico Marchand"/>
+  </book:Book>
+  <book:Book title="Manyspike Flatsedge">
+    <chapters title="Common Hoptree" nbPages="5" author="Traver Tilliard"/>
+    <chapters title="Hygroamblystegium Moss" nbPages="2" author="Randolf McTrusty"/>
+    <chapters title="Chaparral Pea" nbPages="2" author="Aime Pettett"/>
+  </book:Book>
+</xmi:XMI>

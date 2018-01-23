@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Hilograss">
+    <chapters title="Hempvine" nbPages="7" author="Becca Loncaster"/>
+  </book:Book>
+  <book:Book title="Red-flower Woodsorrel">
+    <chapters title="Widecalyx Monkeyflower" nbPages="3" author="Yanaton Titterell"/>
+    <chapters title="Salinas Valley Popcornflower" nbPages="6" author="Sinclair Artiss"/>
+  </book:Book>
+  <book:Book title="Downy Paintedcup">
+    <chapters title="Asian Mustard" nbPages="5" author="Alfi Crab"/>
+  </book:Book>
+  <book:Book title="Needle Lichen">
+    <chapters title="Pyrenopsis Lichen" nbPages="6" author="Corrie Imos"/>
+  </book:Book>
+  <book:Book title="Hairy White Oldfield Aster">
+    <chapters title="Eastern Bottlebrush Grass" nbPages="4" author="Alon Darell"/>
+  </book:Book>
+  <book:Book title="Gmelin's Sedge">
+    <chapters title="Bouchea" nbPages="5" author="Barron Verheyden"/>
+    <chapters title="Lespedeza" nbPages="8" author="Robina Carbine"/>
+  </book:Book>
+  <book:Book title="Cuban Maiden Fern"/>
+  <book:Book title="Chinese Magnolia">
+    <chapters title="Victory Onion" nbPages="5" author="Emilie O'Kynsillaghe"/>
+  </book:Book>
+  <book:Book title="Needleleaf Rosette Grass">
+    <chapters title="Stillman's Needlegrass" nbPages="9" author="Marcelle Littler"/>
+    <chapters title="Mountain Grass Of Parnassus" nbPages="10" author="Quinta Brooker"/>
+    <chapters title="San Bernardino Bluegrass" nbPages="6" author="Becca Loncaster"/>
+    <chapters title="Long-tubercle Beehive Cactus" nbPages="9" author="Glenn Cairney"/>
+  </book:Book>
+  <book:Book title="New Mexico Lupine">
+    <chapters title="Purple Smallreed" nbPages="9" author="Alyssa Pallister"/>
+    <chapters title="White Panicle Aster" nbPages="5" author="Emelyne Botcherby"/>
+  </book:Book>
+  <book:Book title="Needle-bark Stringybark"/>
+  <book:Book title="Wart Lichen">
+    <chapters title="Council Tree" nbPages="2" author="Madel Arnholz"/>
+    <chapters title="Great Basin Woollystar" nbPages="8" author="Elsie Van Leeuwen"/>
+    <chapters title="Tickletongue" nbPages="1" author="Kelley Sankey"/>
+  </book:Book>
+  <book:Book title="Sticky Drymary">
+    <chapters title="Orcutt's Lupine" nbPages="3" author="Emmy Cleveley"/>
+  </book:Book>
+</xmi:XMI>

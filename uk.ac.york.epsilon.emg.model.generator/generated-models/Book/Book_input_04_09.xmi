@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
-  <book:Book title="Peltate Dutchman's Pipe">
-    <chapters title="Cattail Grass" nbPages="1" author="Loreen Swiffan"/>
-  </book:Book>
-  <book:Book title="Deceptive Marbleseed">
-    <chapters title="Smooth Spreading Four O'clock" nbPages="4" author="Arnuad Jollie"/>
-  </book:Book>
-</xmi:XMI>

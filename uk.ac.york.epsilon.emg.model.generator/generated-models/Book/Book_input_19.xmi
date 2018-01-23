@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Western Azalea">
+    <chapters title="Perplexed Rim Lichen" nbPages="1" author="Pancho Collingham"/>
+  </book:Book>
+  <book:Book title="Threadleaf Glowwort">
+    <chapters title="San Bruno Mountain Manzanita" nbPages="4" author="Casar Beaument"/>
+  </book:Book>
+</xmi:XMI>

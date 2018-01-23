@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Spotted Water Hemlock">
+    <chapters title="Needle Lichen" nbPages="3" author="Dot Ginner"/>
+    <chapters title="Drummond's Leaf-flower" nbPages="3" author="Mano Norfolk"/>
+    <chapters title="Osmund Fissidens Moss" nbPages="2" author="Colas Charnock"/>
+  </book:Book>
+  <book:Book title="Forest Peperomia"/>
+  <book:Book title="Sticky Drymary">
+    <chapters title="Polysporina Lichen" nbPages="1" author="Carmella Doche"/>
+    <chapters title="Gmelin's Sedge" nbPages="3" author="Merle Steanson"/>
+    <chapters title="Deceptive Marbleseed" nbPages="3" author="Rick Eaton"/>
+  </book:Book>
+  <book:Book title="Valley Oak">
+    <chapters title="Berlandier's Wolfberry" nbPages="4" author="Victoria Betty"/>
+  </book:Book>
+  <book:Book title="Shasta Panicgrass">
+    <chapters title="Western Azalea" nbPages="2" author="Crissie Ilyukhov"/>
+  </book:Book>
+  <book:Book title="Beautiful Fleabane">
+    <chapters title="Arizona Alumroot" nbPages="3" author="Sibby Garrett"/>
+  </book:Book>
+  <book:Book title="Undergreen Willow"/>
+</xmi:XMI>

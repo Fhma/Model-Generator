@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Cusick's Draba"/>
+      <cells content="Humboldt Bedstraw"/>
+    </rows>
+    <rows>
+      <cells content="-21"/>
+      <cells content="35"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Coville's Groundsmoke"/>
+    </rows>
+    <rows>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+    </rows>
+    <rows>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="60"/>
+    </rows>
+    <rows>
+      <cells content="-50"/>
+    </rows>
+    <rows>
+      <cells content="-21"/>
+    </rows>
+    <rows>
+      <cells content="-58"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

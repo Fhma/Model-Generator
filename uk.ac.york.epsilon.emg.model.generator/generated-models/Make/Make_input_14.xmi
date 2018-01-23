@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Ridged Yellow Flax">
+  <comment text="New Mexico Lupine"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <shellLines command="a2ping"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="12 October 2005" name="Dotted Lichen"/>
+    <dependencies xsi:type="make:FileDep" date="17 December 2010" name="Tamarisk"/>
+    <shellLines command="dviselect "/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Western Fringed Catchfly"/>
+  <elements xsi:type="make:Macro" value="Desert Starvine"/>
+</make:Makefile>

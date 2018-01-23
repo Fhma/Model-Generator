@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
-  <book:Book title="Arapaho Sedge"/>
-  <book:Book title="Arapaho Sedge">
-    <chapters title="Dense Logwood" nbPages="10" author="Kin Tinker"/>
-    <chapters title="Defect Barnacle Lichen" nbPages="3" author="Sonnnie Huitson"/>
-  </book:Book>
-</xmi:XMI>

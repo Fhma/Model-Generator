@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Desert Poppy"/>
+  <book:Book title="Spreading Groundsmoke">
+    <chapters title="Bosnian Pine" nbPages="2" author="Brooke Charge"/>
+  </book:Book>
+  <book:Book title="Scrub Plum">
+    <chapters title="Bog Bulrush" nbPages="5" author="Catherina Mirralls"/>
+    <chapters title="Rusty Foxglove" nbPages="3" author="Lela Ferry"/>
+  </book:Book>
+  <book:Book title="White Edge Sedge">
+    <chapters title="Parish's Catchfly" nbPages="1" author="Edin Chirm"/>
+    <chapters title="California Dutchman's Pipe" nbPages="9" author="Ange Underhill"/>
+    <chapters title="Theobroma" nbPages="8" author="Flossie Wayvill"/>
+    <chapters title="New England Quillwort" nbPages="4" author="Shea Phipps"/>
+  </book:Book>
+  <book:Book title="White Meadowsweet">
+    <chapters title="Northern Dewberry" nbPages="2" author="Yolanda Hart"/>
+  </book:Book>
+  <book:Book title="Showy Goldeneye"/>
+  <book:Book title="Indian Cucumber">
+    <chapters title="ahakea" nbPages="8" author="Maxi Shimmin"/>
+    <chapters title="Carolina False Vervain" nbPages="2" author="Shelley Blenkharn"/>
+  </book:Book>
+  <book:Book title="Narrow-leaf Wattle">
+    <chapters title="King Protea" nbPages="6" author="Valma Burge"/>
+    <chapters title="Sulphur-flower Buckwheat" nbPages="7" author="Pegeen Huster"/>
+  </book:Book>
+  <book:Book title="Sanddune Spurge">
+    <chapters title="Sonoma Penstemon" nbPages="8" author="Rodolph Deedes"/>
+    <chapters title="Brake Fern" nbPages="2" author="Hartley Castagneto"/>
+  </book:Book>
+  <book:Book title="Everniicola Lichen">
+    <chapters title="Slender Scratchdaisy" nbPages="10" author="Rhianon Ragg"/>
+    <chapters title="Serpentine Phacelia" nbPages="10" author="Diane Coneybeare"/>
+    <chapters title="Lady Bird's Centaury" nbPages="6" author="Kerby Harbert"/>
+  </book:Book>
+  <book:Book title="Mallee Saltbush"/>
+  <book:Book title="Drops-of-gold">
+    <chapters title="Lanceleaf Rattlebox" nbPages="5" author="Georgeanna Medina"/>
+  </book:Book>
+  <book:Book title="Stillman's Needlegrass">
+    <chapters title="Sonoma Penstemon" nbPages="8" author="Jamesy Schimmang"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Modoc Hawksbeard">
+    <chapters title="Hybrid Violet" nbPages="4" author="Stanton Swadling"/>
+    <chapters title="Coastal Plain Panicgrass" nbPages="8" author="Sinclair Artiss"/>
+    <chapters title="Lady Bird's Centaury" nbPages="10" author="Thia Hammersley"/>
+  </book:Book>
+  <book:Book title="Bearded Milkvetch">
+    <chapters title="Compact Prairie Clover" nbPages="8" author="Roma Jenno"/>
+    <chapters title="Yellow Foxglove" nbPages="6" author="Zitella Ruoss"/>
+    <chapters title="Chamissoa" nbPages="2" author="Edin Chirm"/>
+  </book:Book>
+  <book:Book title="Pentas">
+    <chapters title="Juniper Globemallow" nbPages="4" author="Curtice Relph"/>
+    <chapters title="Oklahoma Plum" nbPages="9" author="Laraine Raselles"/>
+  </book:Book>
+  <book:Book title="Serrate Ephemerum Moss">
+    <chapters title="Wright's Amaranth" nbPages="8" author="Welch Stonehewer"/>
+  </book:Book>
+  <book:Book title="Parrotfeather Treefern">
+    <chapters title="Rusby's Hawkweed" nbPages="9" author="Desmund Bresnahan"/>
+    <chapters title="Sulphur-flower Buckwheat" nbPages="4" author="Eliot Mation"/>
+  </book:Book>
+  <book:Book title="Manfern"/>
+  <book:Book title="Liverwort">
+    <chapters title="Grecian Foxglove" nbPages="7" author="Linc Kimbury"/>
+    <chapters title="Protoparmelia Lichen" nbPages="9" author="Bernard Talks"/>
+  </book:Book>
+  <book:Book title="Lanceleaf Fogfruit">
+    <chapters title="California Fescue" nbPages="2" author="Rea Kneeland"/>
+    <chapters title="Anthracothecium Lichen" nbPages="9" author="Sibby Garrett"/>
+  </book:Book>
+  <book:Book title="Creeping Liriope"/>
+  <book:Book title="Long-tubercle Beehive Cactus">
+    <chapters title="Mid Bladderpod" nbPages="4" author="Edwin Rodell"/>
+    <chapters title="Candletree" nbPages="1" author="Maxi Shimmin"/>
+    <chapters title="Siskiyou False Hellebore" nbPages="2" author="Kitti Pervoe"/>
+  </book:Book>
+  <book:Book title="Thicket Sedge"/>
+  <book:Book title="Anthracothecium Lichen">
+    <chapters title="Hilograss" nbPages="8" author="Carlin Noah"/>
+  </book:Book>
+  <book:Book title="Coastal Pricklypear"/>
+</xmi:XMI>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <rows>
+    <cells content="Coastal Eryngo"/>
+  </rows>
+  <rows>
+    <cells content="57"/>
+  </rows>
+  <rows>
+    <cells content="-19"/>
+  </rows>
+  <rows>
+    <cells content="-60"/>
+  </rows>
+</table:Table>

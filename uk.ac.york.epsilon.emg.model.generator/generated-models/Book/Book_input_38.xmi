@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Appendage Orchid"/>
+  <book:Book title="Broom Silverbush">
+    <chapters title="Leafy Desertdandelion" nbPages="1" author="Kittie Jewell"/>
+  </book:Book>
+  <book:Book title="Western Azalea">
+    <chapters title="Chinese Magnolia" nbPages="5" author="Loralee Randleson"/>
+  </book:Book>
+  <book:Book title="Weak Saxifrage"/>
+  <book:Book title="Romulea">
+    <chapters title="Hippomane" nbPages="10" author="Ollie Purdey"/>
+    <chapters title="Defect Barnacle Lichen" nbPages="3" author="Frans Ashcroft"/>
+    <chapters title="Lollipop Mimosa" nbPages="5" author="Courtnay Phuprate"/>
+    <chapters title="Chapped Mallee" nbPages="7" author="Jessalin Petera"/>
+  </book:Book>
+  <book:Book title="Frost Grass">
+    <chapters title="Creeping Liriope" nbPages="5" author="Aldwin Hawkslee"/>
+    <chapters title="Pale Desert-thorn" nbPages="8" author="Maxy End"/>
+  </book:Book>
+  <book:Book title="White Panicle Aster">
+    <chapters title="La Playa Springs Tansyaster" nbPages="4" author="Valma Burge"/>
+  </book:Book>
+</xmi:XMI>

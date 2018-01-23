@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Dwarf Netvein Hollyfern">
+    <chapters title="Dense Logwood" nbPages="6" author="Kitti Pervoe"/>
+  </book:Book>
+  <book:Book title="Sugar Maple">
+    <chapters title="Parish's Catchfly" nbPages="4" author="Helge Maciocia"/>
+  </book:Book>
+</xmi:XMI>

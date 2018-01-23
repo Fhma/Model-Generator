@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Napa Cryptantha">
+    <chapters title="Manyflower Onion" nbPages="2" author="Charlie Mallord"/>
+    <chapters title="Narrowleaf Airplant" nbPages="9" author="Lutero Redwin"/>
+  </book:Book>
+  <book:Book title="Spiny Logwood"/>
+  <book:Book title="Howell's Buckwheat">
+    <chapters title="Narrowleaf Wildparsley" nbPages="2" author="Guinna Episcopi"/>
+  </book:Book>
+  <book:Book title="Oakleaf Carica">
+    <chapters title="Scaldweed" nbPages="3" author="Jamesy Schimmang"/>
+  </book:Book>
+</xmi:XMI>

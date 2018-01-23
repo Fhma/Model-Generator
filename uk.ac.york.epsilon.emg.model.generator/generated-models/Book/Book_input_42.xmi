@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Setose Blackberry"/>
+  <book:Book title="Arizona Alumroot">
+    <chapters title="Edwards Plateau Milkvetch" nbPages="8" author="Hallsy Olenchikov"/>
+  </book:Book>
+  <book:Book title="Roundleaf Oxytheca">
+    <chapters title="Desert Poppy" nbPages="9" author="Wilfred Tommasuzzi"/>
+    <chapters title="Drummond's Rush" nbPages="3" author="Roze Crace"/>
+    <chapters title="Showy Goldeneye" nbPages="9" author="Emlynn Dungee"/>
+  </book:Book>
+  <book:Book title="Margarett's Hawthorn">
+    <chapters title="Western Azalea" nbPages="8" author="Elsie Van Leeuwen"/>
+    <chapters title="Oneflower Honeycombhead" nbPages="9" author="Hallsy Olenchikov"/>
+  </book:Book>
+  <book:Book title="Ibapah Tickweed">
+    <chapters title="Common Yarrow" nbPages="9" author="Mano Norfolk"/>
+  </book:Book>
+  <book:Book title="Protoparmelia Lichen">
+    <chapters title="Hawkweed" nbPages="5" author="Kerrill Limeburner"/>
+    <chapters title="Saptree" nbPages="8" author="Rafferty Sangwine"/>
+  </book:Book>
+  <book:Book title="Desert Starvine">
+    <chapters title="Isopterygiopsis Moss" nbPages="4" author="Theo Scanes"/>
+    <chapters title="Northern Dewberry" nbPages="4" author="Crissie Ilyukhov"/>
+  </book:Book>
+  <book:Book title="Judas-tree">
+    <chapters title="California Fescue" nbPages="9" author="Kylie Grellier"/>
+  </book:Book>
+  <book:Book title="Prairie Straw Sedge">
+    <chapters title="Arrowhead Vine" nbPages="7" author="Gael Blasiak"/>
+    <chapters title="Blindia Moss" nbPages="6" author="Aurea Rodgers"/>
+  </book:Book>
+  <book:Book title="Juniper Leaf">
+    <chapters title="Seashore Vervain" nbPages="7" author="Callida Witty"/>
+  </book:Book>
+  <book:Book title="Hyparrhenia">
+    <chapters title="White Edge Sedge" nbPages="4" author="Shelden McMurty"/>
+    <chapters title="Scarlet Bottlebrush" nbPages="9" author="Ebenezer Coldbreath"/>
+  </book:Book>
+  <book:Book title="Pseudovina"/>
+  <book:Book title="Homalocladium">
+    <chapters title="Tufted Bulrush" nbPages="10" author="Tootsie Jolley"/>
+    <chapters title="Reeves' Meadowsweet" nbPages="1" author="Kitti Pervoe"/>
+  </book:Book>
+</xmi:XMI>

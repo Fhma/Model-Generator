@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Skyflower"/>
+    </rows>
+    <rows>
+      <cells content="-90"/>
+    </rows>
+    <rows>
+      <cells content="-57"/>
+    </rows>
+    <rows>
+      <cells content="-60"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Dense Logwood"/>
+      <cells content="Arrowhead Vine"/>
+      <cells content="Narrowleaf Airplant"/>
+    </rows>
+    <rows>
+      <cells content="-4"/>
+      <cells content="-9"/>
+      <cells content="-7"/>
+    </rows>
+    <rows>
+      <cells content="72"/>
+      <cells content="77"/>
+      <cells content="-48"/>
+    </rows>
+    <rows>
+      <cells content="-90"/>
+      <cells content="23"/>
+      <cells content="-14"/>
+    </rows>
+    <rows>
+      <cells content="61"/>
+      <cells content="-91"/>
+      <cells content="7"/>
+    </rows>
+    <rows>
+      <cells content="-50"/>
+      <cells content="-80"/>
+      <cells content="-12"/>
+    </rows>
+    <rows>
+      <cells content="-26"/>
+      <cells content="-98"/>
+      <cells content="-37"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="-33"/>
+      <cells content="64"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="-80"/>
+      <cells content="-98"/>
+    </rows>
+    <rows>
+      <cells content="-60"/>
+      <cells content="69"/>
+      <cells content="-74"/>
+    </rows>
+    <rows>
+      <cells content="29"/>
+      <cells content="-96"/>
+      <cells content="-32"/>
+    </rows>
+    <rows>
+      <cells content="-49"/>
+      <cells content="-57"/>
+      <cells content="-7"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+      <cells content="-87"/>
+      <cells content="60"/>
+    </rows>
+    <rows>
+      <cells content="2"/>
+      <cells content="-38"/>
+      <cells content="-12"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Broadleaf Sedge"/>
+      <cells content="Dwarf Red Blackberry"/>
+      <cells content="Sanddune Spurge"/>
+      <cells content="San Bruno Mountain Manzanita"/>
+    </rows>
+    <rows>
+      <cells content="89"/>
+      <cells content="35"/>
+      <cells content="43"/>
+      <cells content="-72"/>
+    </rows>
+    <rows>
+      <cells content="59"/>
+      <cells content="-68"/>
+      <cells content="40"/>
+      <cells content="-58"/>
+    </rows>
+    <rows>
+      <cells content="91"/>
+      <cells content="-64"/>
+      <cells content="83"/>
+      <cells content="91"/>
+    </rows>
+    <rows>
+      <cells content="-38"/>
+      <cells content="-32"/>
+      <cells content="29"/>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="-93"/>
+      <cells content="54"/>
+      <cells content="63"/>
+      <cells content="71"/>
+    </rows>
+    <rows>
+      <cells content="-43"/>
+      <cells content="91"/>
+      <cells content="-38"/>
+      <cells content="26"/>
+    </rows>
+    <rows>
+      <cells content="-32"/>
+      <cells content="7"/>
+      <cells content="-55"/>
+      <cells content="93"/>
+    </rows>
+    <rows>
+      <cells content="88"/>
+      <cells content="-52"/>
+      <cells content="-20"/>
+      <cells content="-79"/>
+    </rows>
+    <rows>
+      <cells content="-13"/>
+      <cells content="-80"/>
+      <cells content="-71"/>
+      <cells content="54"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="38"/>
+      <cells content="27"/>
+      <cells content="-65"/>
+    </rows>
+    <rows>
+      <cells content="-98"/>
+      <cells content="-86"/>
+      <cells content="-33"/>
+      <cells content="40"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Hairy White Oldfield Aster"/>
+    </rows>
+    <rows>
+      <cells content="41"/>
+    </rows>
+    <rows>
+      <cells content="95"/>
+    </rows>
+    <rows>
+      <cells content="47"/>
+    </rows>
+    <rows>
+      <cells content="-25"/>
+    </rows>
+    <rows>
+      <cells content="-43"/>
+    </rows>
+    <rows>
+      <cells content="91"/>
+    </rows>
+    <rows>
+      <cells content="-14"/>
+    </rows>
+    <rows>
+      <cells content="9"/>
+    </rows>
+    <rows>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="-52"/>
+    </rows>
+    <rows>
+      <cells content="96"/>
+    </rows>
+    <rows>
+      <cells content="47"/>
+    </rows>
+    <rows>
+      <cells content="93"/>
+    </rows>
+    <rows>
+      <cells content="41"/>
+    </rows>
+    <rows>
+      <cells content="92"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

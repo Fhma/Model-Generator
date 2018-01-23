@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="New Mexico Rockdaisy">
+    <chapters title="Kauai Phyllostegia" nbPages="6" author="Aime Pettett"/>
+    <chapters title="Lindheimer's Hoarypea" nbPages="1" author="Pepe Gowthrop"/>
+  </book:Book>
+  <book:Book title="Goatgrass"/>
+</xmi:XMI>

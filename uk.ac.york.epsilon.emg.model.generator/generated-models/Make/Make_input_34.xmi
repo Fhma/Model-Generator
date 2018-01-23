@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Grecian Foxglove">
+    <comment text="Skyflower"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="26 January 2006" name="Oneflower Honeycombhead"/>
+      <dependencies xsi:type="make:FileDep" date="18 June 2008" name="Common Yarrow"/>
+      <dependencies xsi:type="make:FileDep" date="15 August 2016" name="Silver Vine"/>
+      <shellLines command="cat" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Hypotrachyna Lichen"/>
+  </make:Makefile>
+  <make:Makefile name="White Edge Sedge">
+    <comment text="Morton's Alpine Oatgrass"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="17 December 2010" name="Spiny Logwood"/>
+      <shellLines command="diskutil" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <shellLines command="coreaudiod" display="true"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="Greenland Primrose">
+    <comment text="Chaparral Pea"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="16 August 2014" name="Plateilema"/>
+      <shellLines command="afinfo"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="19 February 2014" name="Scaldweed"/>
+      <shellLines command="dvipdfm"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Sears' Goatgrass"/>
+    <elements xsi:type="make:Macro" value="Wood Vetch"/>
+    <elements xsi:type="make:Macro" value="Pale Desert-thorn"/>
+  </make:Makefile>
+  <make:Makefile name="Venus' Pride">
+    <comment text="Fringed Black Bindweed"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="31 July 2007" name="White Meadowsweet"/>
+      <dependencies xsi:type="make:FileDep" date="6 June 2012" name="Red-flower Woodsorrel"/>
+      <shellLines command="lsmp"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Juniper Leaf"/>
+    <elements xsi:type="make:Macro" value="Juniper Globemallow"/>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Setose Blackberry">
+    <chapters title="Chamisso Bush Lupine" nbPages="1" author="Edeline Hindsberg"/>
+    <chapters title="Pod Mahogany" nbPages="8" author="Ravid Picknett"/>
+  </book:Book>
+  <book:Book title="California Fescue"/>
+  <book:Book title="Spotted St. Johnswort">
+    <chapters title="Low Beardtongue" nbPages="6" author="Winfield Wastling"/>
+  </book:Book>
+  <book:Book title="Orangeberry Nightshade">
+    <chapters title="Tarweed" nbPages="7" author="Raynell Varey"/>
+  </book:Book>
+</xmi:XMI>

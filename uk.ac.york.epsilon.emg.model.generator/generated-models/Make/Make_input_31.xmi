@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Anomodon Moss">
+    <comment text="Pitkin Marsh Lily"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.2"/>
+      <dependencies xsi:type="make:FileDep" date="8 February 2003" name="Williams' Miterwort"/>
+      <dependencies xsi:type="make:FileDep" date="24 November 2002" name="Big Bend Bluebonnet"/>
+      <shellLines command="lsappinfo"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="Lindheimer's Hoarypea">
+    <comment text="Slender Fleabane"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="3 November 2013" name="Mountain Lupine"/>
+      <dependencies xsi:type="make:FileDep" date="26 August 2006" name="New Mexico Rockdaisy"/>
+      <shellLines command="cfftot1" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Victory Onion"/>
+    <elements xsi:type="make:Macro" value="Wattapama"/>
+  </make:Makefile>
+  <make:Makefile name="Lanceleaf Schlotheimia Moss">
+    <comment text="Running Rockcress"/>
+    <elements xsi:type="make:Rule">
+      <shellLines command="lsdlualatex"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Island Mallow"/>
+    <elements xsi:type="make:Macro" value="Lathberry"/>
+    <elements xsi:type="make:Macro" value="Isopterygiopsis Moss"/>
+  </make:Makefile>
+  <make:Makefile name="Thistle">
+    <comment text="Judas-tree"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="22 October 2003" name="Orcutt's Bristleweed"/>
+      <shellLines command="cpan" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.2"/>
+      <dependencies xsi:type="make:FileDep" date="7 June 2001" name="Rhytidiopsis Moss"/>
+      <dependencies xsi:type="make:FileDep" date="13 February 2012" name="Weak Rush"/>
+      <shellLines command="afinfo" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="6 June 2012" name="Big Bend Bluebonnet"/>
+      <shellLines command="atq"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Hausknecht's Buckwheat"/>
+  </make:Makefile>
+</xmi:XMI>

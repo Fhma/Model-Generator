@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Narrowleaf Saw-wort">
+    <chapters title="Western Fringed Catchfly" nbPages="4" author="Jeana Rymell"/>
+  </book:Book>
+  <book:Book title="Serpentine Phacelia"/>
+  <book:Book title="Hilograss">
+    <chapters title="Needleleaf Rosette Grass" nbPages="8" author="Randolf McTrusty"/>
+  </book:Book>
+  <book:Book title="Hausknecht's Buckwheat">
+    <chapters title="Polysporina Lichen" nbPages="9" author="Saba Brosini"/>
+    <chapters title="Goatsbeard" nbPages="8" author="Clarey Glenwright"/>
+  </book:Book>
+</xmi:XMI>

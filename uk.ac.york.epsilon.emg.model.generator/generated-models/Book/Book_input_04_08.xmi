@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
-  <book:Book title="Leafy Desertdandelion">
-    <chapters title="Timber Milkvetch" nbPages="9" author="Cecilio McElmurray"/>
-    <chapters title="Orcutt's Lupine" nbPages="8" author="Patrizius Cluatt"/>
-  </book:Book>
-  <book:Book title="Canadian White Violet"/>
-</xmi:XMI>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Palmer's Mock Orange">
+  <comment text="Woodreed"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="18 June 2008" name="Napa Cryptantha"/>
+    <shellLines command="curl" display="true"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="White Lady's Slipper"/>
+</make:Makefile>

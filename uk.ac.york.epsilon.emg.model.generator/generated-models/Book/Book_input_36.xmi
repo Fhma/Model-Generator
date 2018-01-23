@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Hall's Tarweed">
+    <chapters title="Map Lichen" nbPages="9" author="Carr Fraine"/>
+    <chapters title="ahakea" nbPages="7" author="Raynell Varey"/>
+    <chapters title="Willow Ragwort" nbPages="4" author="Dave Leroy"/>
+  </book:Book>
+  <book:Book title="Lanceleaf Fogfruit"/>
+  <book:Book title="Godfrey's Spiderlily">
+    <chapters title="Evermann's Lupine" nbPages="8" author="Raynard Dancer"/>
+  </book:Book>
+  <book:Book title="Grecian Foxglove">
+    <chapters title="Big Bend Bluegrass" nbPages="9" author="Rikki Dawltrey"/>
+  </book:Book>
+  <book:Book title="Mendez's Sandmat">
+    <chapters title="Hall's Tarweed" nbPages="10" author="Corabelle Kubera"/>
+    <chapters title="Delicate Muhly" nbPages="6" author="Chrissie Puckring"/>
+  </book:Book>
+  <book:Book title="Ware's Hairsedge">
+    <chapters title="Williams' Miterwort" nbPages="2" author="Callida Witty"/>
+    <chapters title="Hawkweed" nbPages="5" author="Robina Carbine"/>
+  </book:Book>
+  <book:Book title="Howe's Hedgehog Cactus"/>
+</xmi:XMI>

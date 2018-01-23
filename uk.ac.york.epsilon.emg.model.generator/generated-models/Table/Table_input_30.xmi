@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Bog Bulrush"/>
+      <cells content="Tidestrom's Lupine"/>
+    </rows>
+    <rows>
+      <cells content="-88"/>
+      <cells content="88"/>
+    </rows>
+    <rows>
+      <cells content="57"/>
+      <cells content="96"/>
+    </rows>
+    <rows>
+      <cells content="7"/>
+      <cells content="-69"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+      <cells content="-65"/>
+    </rows>
+    <rows>
+      <cells content="91"/>
+      <cells content="99"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Thicket Sedge"/>
+    </rows>
+    <rows>
+      <cells content="14"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+    </rows>
+    <rows>
+      <cells content="66"/>
+    </rows>
+    <rows>
+      <cells content="19"/>
+    </rows>
+    <rows>
+      <cells content="-59"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

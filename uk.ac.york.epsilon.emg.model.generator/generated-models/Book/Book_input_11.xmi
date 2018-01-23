@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Tickletongue"/>
+  <book:Book title="Pipsissewa">
+    <chapters title="Thoroughwort" nbPages="10" author="Cassi Shannahan"/>
+    <chapters title="White Meadowsweet" nbPages="3" author="Jolene Ranfield"/>
+  </book:Book>
+</xmi:XMI>

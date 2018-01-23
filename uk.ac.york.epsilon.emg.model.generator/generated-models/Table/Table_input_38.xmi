@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Winter's Bark"/>
+      <cells content="Pale Desert-thorn"/>
+      <cells content="Candletree"/>
+    </rows>
+    <rows>
+      <cells content="44"/>
+      <cells content="20"/>
+      <cells content="-27"/>
+    </rows>
+    <rows>
+      <cells content="-92"/>
+      <cells content="63"/>
+      <cells content="69"/>
+    </rows>
+    <rows>
+      <cells content="84"/>
+      <cells content="58"/>
+      <cells content="14"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Rough Desertparsley"/>
+      <cells content="Napa Cryptantha"/>
+    </rows>
+    <rows>
+      <cells content="-4"/>
+      <cells content="96"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+      <cells content="-37"/>
+    </rows>
+    <rows>
+      <cells content="98"/>
+      <cells content="-69"/>
+    </rows>
+    <rows>
+      <cells content="96"/>
+      <cells content="-92"/>
+    </rows>
+    <rows>
+      <cells content="50"/>
+      <cells content="-10"/>
+    </rows>
+    <rows>
+      <cells content="-24"/>
+      <cells content="-83"/>
+    </rows>
+    <rows>
+      <cells content="-83"/>
+      <cells content="-1"/>
+    </rows>
+    <rows>
+      <cells content="-2"/>
+      <cells content="-6"/>
+    </rows>
+    <rows>
+      <cells content="-85"/>
+      <cells content="-38"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Palmer's Mock Orange"/>
+      <cells content="Bigelow's Thoroughwort"/>
+    </rows>
+    <rows>
+      <cells content="-6"/>
+      <cells content="83"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Rhytidiopsis Moss"/>
+      <cells content="Bengal Coffee"/>
+      <cells content="Shell Lichen"/>
+      <cells content="Hawkweed"/>
+    </rows>
+    <rows>
+      <cells content="-74"/>
+      <cells content="81"/>
+      <cells content="-69"/>
+      <cells content="-79"/>
+    </rows>
+    <rows>
+      <cells content="93"/>
+      <cells content="68"/>
+      <cells content="-22"/>
+      <cells content="-20"/>
+    </rows>
+    <rows>
+      <cells content="-88"/>
+      <cells content="-22"/>
+      <cells content="91"/>
+      <cells content="11"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Leafy Desertdandelion">
+    <comment text="African Milkweed"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="26 January 2006" name="Fourleaf Maidenhair"/>
+      <dependencies xsi:type="make:FileDep" date="20 May 2005" name="Widecalyx Monkeyflower"/>
+      <dependencies xsi:type="make:FileDep" date="12 November 2015" name="Northern Dewberry"/>
+      <shellLines command="ctanupload" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="15 October 2016" name="Slender Threeseed Mercury"/>
+      <shellLines command="lkbib"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Hempvine"/>
+  </make:Makefile>
+  <make:Makefile name="Deam's Clearweed">
+    <comment text="Wallrue"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="14 May 2008" name="Evermann's Lupine"/>
+      <dependencies xsi:type="make:FileDep" date="5 May 2003" name="Salinas Valley Popcornflower"/>
+      <shellLines command="cupsaccept" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="18 September 2011" name="Naked Mariposa Lily"/>
+      <dependencies xsi:type="make:FileDep" date="20 October 2013" name="Mid Bladderpod"/>
+      <shellLines command="dsexport"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Chrysothemis"/>
+    <elements xsi:type="make:Macro" value="Buffalo Hawthorn"/>
+  </make:Makefile>
+  <make:Makefile name="Sulphur-flower Buckwheat">
+    <comment text="Tridens"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <shellLines command="dirname"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="Woodland False Buttonweed">
+    <comment text="Needle-bark Stringybark"/>
+    <elements xsi:type="make:Rule">
+      <shellLines command="db_dump"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Cusick's Primrose"/>
+    <elements xsi:type="make:Macro" value="Jointed Spikesedge"/>
+    <elements xsi:type="make:Macro" value="Thoroughwort"/>
+  </make:Makefile>
+</xmi:XMI>

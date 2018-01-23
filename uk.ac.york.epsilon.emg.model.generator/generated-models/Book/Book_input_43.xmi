@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="African Milkweed">
+    <chapters title="Rocky Mountain Woodsia" nbPages="7" author="Lebbie Evison"/>
+  </book:Book>
+  <book:Book title="Horrid Herrickia">
+    <chapters title="Canadian White Violet" nbPages="2" author="Melony Petrichat"/>
+  </book:Book>
+  <book:Book title="Gmelin's Sedge">
+    <chapters title="Ridgetop Guavaberry" nbPages="1" author="Evelyn Cockshott"/>
+    <chapters title="Appendage Orchid" nbPages="5" author="Holly Dewitt"/>
+    <chapters title="Romulea" nbPages="7" author="Hilary O'Lehane"/>
+  </book:Book>
+  <book:Book title="Needle Lichen"/>
+  <book:Book title="Shining Rose"/>
+  <book:Book title="Trelease's Beavertail Pricklypear">
+    <chapters title="Pseudovina" nbPages="5" author="Erma Stetson"/>
+    <chapters title="Waianae Range Papala" nbPages="8" author="Danny Hess"/>
+    <chapters title="Threadleaf Glowwort" nbPages="1" author="Merl Gianolini"/>
+  </book:Book>
+  <book:Book title="Annual Yellow Sweetclover">
+    <chapters title="Leadwood" nbPages="6" author="Emlynn Dungee"/>
+  </book:Book>
+  <book:Book title="Yellow Troutlily">
+    <chapters title="Sulphur-flower Buckwheat" nbPages="7" author="Lian Strover"/>
+  </book:Book>
+  <book:Book title="Hausknecht's Buckwheat">
+    <chapters title="Devil's Grandmother" nbPages="3" author="Trenna Skaif"/>
+    <chapters title="Widecalyx Monkeyflower" nbPages="8" author="Normie Fearenside"/>
+  </book:Book>
+  <book:Book title="Godfrey's Spiderlily">
+    <chapters title="Toothed Spurge" nbPages="9" author="Ernie McIlreavy"/>
+    <chapters title="Hygroamblystegium Moss" nbPages="9" author="Vincent Braundt"/>
+    <chapters title="Drooping Forkedfern" nbPages="1" author="Emlynn Dungee"/>
+  </book:Book>
+  <book:Book title="Hybrid Violet">
+    <chapters title="Parish's Catchfly" nbPages="5" author="Whitney McTrustam"/>
+    <chapters title="Canadian White Violet" nbPages="8" author="Ravid Picknett"/>
+  </book:Book>
+  <book:Book title="Tropical Chinchweed">
+    <chapters title="Sanddune Spurge" nbPages="5" author="Kaitlyn Yurchenko"/>
+  </book:Book>
+  <book:Book title="Sanddune Spurge">
+    <chapters title="Arrowhead Vine" nbPages="3" author="Holly Byles"/>
+  </book:Book>
+</xmi:XMI>

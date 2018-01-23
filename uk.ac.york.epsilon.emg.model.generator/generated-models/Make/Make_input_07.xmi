@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Sanddune Spurge">
+  <comment text="Fernleaf Yarrow"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="18 June 2016" name="Hall's Tarweed"/>
+    <shellLines command="cpp"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Asian Watergrass"/>
+</make:Makefile>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Devilshead"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+    </rows>
+    <rows>
+      <cells content="-54"/>
+    </rows>
+    <rows>
+      <cells content="-74"/>
+    </rows>
+    <rows>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="-46"/>
+    </rows>
+    <rows>
+      <cells content="-20"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Onesided Galenia"/>
+    </rows>
+    <rows>
+      <cells content="-75"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Chamisso Bush Lupine">
+    <chapters title="Orangeberry Nightshade" nbPages="4" author="Sigismund Gayden"/>
+    <chapters title="Welsh's Cryptantha" nbPages="6" author="Rianon Sommerland"/>
+  </book:Book>
+  <book:Book title="Slender Fleabane">
+    <chapters title="Sticky Drymary" nbPages="2" author="Lazare Emeny"/>
+  </book:Book>
+  <book:Book title="Orangeberry Nightshade">
+    <chapters title="Rocky Mountain Woodsia" nbPages="1" author="Steward Ashingden"/>
+    <chapters title="Mountain Lupine" nbPages="9" author="Bessie Franscioni"/>
+    <chapters title="Western Sweetvetch" nbPages="7" author="Hartley Castagneto"/>
+  </book:Book>
+  <book:Book title="Largeflower Speargrass">
+    <chapters title="Narrowleaf Saw-wort" nbPages="4" author="Alanah Cumbers"/>
+  </book:Book>
+  <book:Book title="Sears' Goatgrass">
+    <chapters title="Fourleaf Maidenhair" nbPages="4" author="Stan Pury"/>
+    <chapters title="Lanceleaf Schlotheimia Moss" nbPages="6" author="Winnah Smart"/>
+  </book:Book>
+  <book:Book title="Broom Silverbush">
+    <chapters title="Pentas" nbPages="8" author="Dulcie Flaunders"/>
+  </book:Book>
+  <book:Book title="Edwards Plateau Milkvetch">
+    <chapters title="Wild Foxglove" nbPages="4" author="Sinclair Artiss"/>
+    <chapters title="Sonoma Penstemon" nbPages="1" author="Liane Cattanach"/>
+  </book:Book>
+  <book:Book title="Manyspike Flatsedge">
+    <chapters title="Texas Sandmint" nbPages="10" author="Leann Scopyn"/>
+    <chapters title="Mixed Jointfir" nbPages="2" author="Ilise Stych"/>
+  </book:Book>
+  <book:Book title="Sonoma Penstemon">
+    <chapters title="Mexican Blazingstar" nbPages="10" author="Nalani Hesser"/>
+  </book:Book>
+  <book:Book title="Texas Sandmint"/>
+  <book:Book title="Indian Cucumber">
+    <chapters title="Fernleaf Yarrow" nbPages="8" author="Hube Penchen"/>
+    <chapters title="Scarlet Bottlebrush" nbPages="6" author="Aime Gallgher"/>
+  </book:Book>
+  <book:Book title="Solano False Bindweed"/>
+  <book:Book title="Modoc Hawksbeard">
+    <chapters title="Canyon Mock Orange" nbPages="9" author="Ellie Folcarelli"/>
+    <chapters title="Hawkweed" nbPages="5" author="Flynn Keri"/>
+  </book:Book>
+</xmi:XMI>

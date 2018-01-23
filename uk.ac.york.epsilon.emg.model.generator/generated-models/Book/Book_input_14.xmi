@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Oneflower Honeycombhead">
+    <chapters title="Rudge's Waterlily" nbPages="10" author="Grace Jakubovsky"/>
+  </book:Book>
+  <book:Book title="Chrysothemis">
+    <chapters title="Arrowhead Vine" nbPages="9" author="Rinaldo Pocklington"/>
+  </book:Book>
+</xmi:XMI>

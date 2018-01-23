@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Narrowleaf Wildparsley"/>
+      <cells content="Manfern"/>
+    </rows>
+    <rows>
+      <cells content="26"/>
+      <cells content="-15"/>
+    </rows>
+    <rows>
+      <cells content="40"/>
+      <cells content="-80"/>
+    </rows>
+    <rows>
+      <cells content="-64"/>
+      <cells content="59"/>
+    </rows>
+    <rows>
+      <cells content="61"/>
+      <cells content="52"/>
+    </rows>
+    <rows>
+      <cells content="38"/>
+      <cells content="-84"/>
+    </rows>
+    <rows>
+      <cells content="-84"/>
+      <cells content="-32"/>
+    </rows>
+    <rows>
+      <cells content="7"/>
+      <cells content="-92"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Lecidea Lichen"/>
+      <cells content="Tickletongue"/>
+      <cells content="Woodreed"/>
+    </rows>
+    <rows>
+      <cells content="76"/>
+      <cells content="14"/>
+      <cells content="35"/>
+    </rows>
+    <rows>
+      <cells content="-11"/>
+      <cells content="-13"/>
+      <cells content="97"/>
+    </rows>
+    <rows>
+      <cells content="-52"/>
+      <cells content="-49"/>
+      <cells content="-98"/>
+    </rows>
+    <rows>
+      <cells content="54"/>
+      <cells content="-84"/>
+      <cells content="-32"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+      <cells content="59"/>
+      <cells content="-32"/>
+    </rows>
+    <rows>
+      <cells content="31"/>
+      <cells content="2"/>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="-32"/>
+      <cells content="-93"/>
+      <cells content="7"/>
+    </rows>
+    <rows>
+      <cells content="50"/>
+      <cells content="4"/>
+      <cells content="-85"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+      <cells content="-8"/>
+      <cells content="93"/>
+    </rows>
+    <rows>
+      <cells content="-86"/>
+      <cells content="-73"/>
+      <cells content="-75"/>
+    </rows>
+    <rows>
+      <cells content="96"/>
+      <cells content="34"/>
+      <cells content="-34"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Shrubby Dillenia"/>
+      <cells content="Williams' Miterwort"/>
+    </rows>
+    <rows>
+      <cells content="-80"/>
+      <cells content="-7"/>
+    </rows>
+    <rows>
+      <cells content="-43"/>
+      <cells content="-50"/>
+    </rows>
+    <rows>
+      <cells content="-15"/>
+      <cells content="76"/>
+    </rows>
+    <rows>
+      <cells content="10"/>
+      <cells content="22"/>
+    </rows>
+    <rows>
+      <cells content="59"/>
+      <cells content="43"/>
+    </rows>
+    <rows>
+      <cells content="-33"/>
+      <cells content="36"/>
+    </rows>
+    <rows>
+      <cells content="-74"/>
+      <cells content="-69"/>
+    </rows>
+    <rows>
+      <cells content="21"/>
+      <cells content="99"/>
+    </rows>
+    <rows>
+      <cells content="26"/>
+      <cells content="-64"/>
+    </rows>
+    <rows>
+      <cells content="31"/>
+      <cells content="68"/>
+    </rows>
+    <rows>
+      <cells content="34"/>
+      <cells content="-30"/>
+    </rows>
+    <rows>
+      <cells content="19"/>
+      <cells content="31"/>
+    </rows>
+    <rows>
+      <cells content="76"/>
+      <cells content="-38"/>
+    </rows>
+    <rows>
+      <cells content="-96"/>
+      <cells content="88"/>
+    </rows>
+    <rows>
+      <cells content="99"/>
+      <cells content="-49"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Smallflower Thoroughwort"/>
+      <cells content="Humboldt Bedstraw"/>
+      <cells content="Yellowdot Saxifrage"/>
+    </rows>
+    <rows>
+      <cells content="-58"/>
+      <cells content="-64"/>
+      <cells content="-24"/>
+    </rows>
+    <rows>
+      <cells content="67"/>
+      <cells content="-20"/>
+      <cells content="38"/>
+    </rows>
+    <rows>
+      <cells content="21"/>
+      <cells content="-56"/>
+      <cells content="42"/>
+    </rows>
+    <rows>
+      <cells content="-36"/>
+      <cells content="83"/>
+      <cells content="-98"/>
+    </rows>
+    <rows>
+      <cells content="-10"/>
+      <cells content="-29"/>
+      <cells content="7"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

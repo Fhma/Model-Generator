@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Lollipop Mimosa">
+    <comment text="Asian Mustard"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="1 October 2016" name="Chrysothemis"/>
+      <dependencies xsi:type="make:FileDep" date="24 November 2002" name="Running Rockcress"/>
+      <shellLines command="load_rvm_scripts" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Manketti"/>
+    <elements xsi:type="make:Macro" value="Protoparmelia Lichen"/>
+  </make:Makefile>
+  <make:Makefile name="Low Beardtongue">
+    <comment text="Cutleaf Island Spleenwort"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <shellLines command="dbicadmin5.18" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="18 May 2017" name="Hitchcock's Smooth Woodrush"/>
+      <dependencies xsi:type="make:FileDep" date="1 December 2000" name="European Plum"/>
+      <shellLines command="atrm" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Desert Snowberry"/>
+  </make:Makefile>
+</xmi:XMI>

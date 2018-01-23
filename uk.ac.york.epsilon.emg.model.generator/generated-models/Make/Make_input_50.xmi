@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Cutleaf Cinquefoil">
+    <comment text="Shrubby Dillenia"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="6 January 2008" name="Tufted Bulrush"/>
+      <shellLines command="afmtodit"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="8 May 2017" name="Western Azalea"/>
+      <shellLines command="autodiskmount" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Sedge"/>
+    <elements xsi:type="make:Macro" value="South African Hoarypea"/>
+    <elements xsi:type="make:Macro" value="Whorled Plectranthus"/>
+  </make:Makefile>
+  <make:Makefile name="Smooth Spreading Four O'clock">
+    <comment text="New Mexico Lupine"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="4 November 2007" name="Devilshead"/>
+      <shellLines command="audit"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="17 February 2002" name="Frost Grass"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Western Blue Virginsbower"/>
+    <elements xsi:type="make:Macro" value="Compact Prairie Clover"/>
+    <elements xsi:type="make:Macro" value="San Bruno Mountain Manzanita"/>
+  </make:Makefile>
+  <make:Makefile name="Weill's Lichenochora Lichen">
+    <comment text="Manfern"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="12 May 2010" name="Lathberry"/>
+      <dependencies xsi:type="make:FileDep" date="26 August 2006" name="Judas-tree"/>
+      <dependencies xsi:type="make:FileDep" date="17 October 2005" name="Long-tubercle Beehive Cactus"/>
+      <shellLines command="libnetcfg"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Leadwood"/>
+  </make:Makefile>
+  <make:Makefile name="Serrate Ephemerum Moss">
+    <comment text="Talh"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <shellLines command="cupsreject"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.1"/>
+      <shellLines command="dwebp"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Longleaf Rush"/>
+  </make:Makefile>
+  <make:Makefile name="Sandloving Penstemon">
+    <comment text="Longleaf Pondweed"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="22 June 2010" name="Desert Poppy"/>
+      <dependencies xsi:type="make:FileDep" date="27 August 2012" name="Naked Mariposa Lily"/>
+      <dependencies xsi:type="make:FileDep" date="26 January 2006" name="Drummond's Rush"/>
+      <dependencies xsi:type="make:FileDep" date="16 October 2002" name="Leafy Desertdandelion"/>
+      <dependencies xsi:type="make:FileDep" date="15 August 2016" name="Devil's Grandmother"/>
+      <shellLines command="ldapwhoami"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Manyflower Onion"/>
+  </make:Makefile>
+  <make:Makefile name="Drooping Forkedfern">
+    <comment text="Sierra Woodrush"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.2"/>
+      <dependencies xsi:type="make:FileDep" date="6 October 2009" name="Rocky Mountain Blazing Star"/>
+      <shellLines command="cpanp-run-perl5.18" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Forest Peperomia"/>
+  </make:Makefile>
+  <make:Makefile name="Drummond's Leaf-flower">
+    <comment text="Spreading Groundsmoke"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="11 August 2009" name="Modoc Hawksbeard"/>
+      <dependencies xsi:type="make:FileDep" date="5 March 2003" name="Grecian Foxglove"/>
+      <shellLines command="automator"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="22 January 2015" name="Hawkweed"/>
+      <shellLines command="diffstat" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <shellLines command="df" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Serrate Ephemerum Moss"/>
+    <elements xsi:type="make:Macro" value="Ridged Yellow Flax"/>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Eastern Bottlebrush Grass">
+    <chapters title="Scaldweed" nbPages="5" author="Peirce Culbert"/>
+  </book:Book>
+  <book:Book title="Brake Fern"/>
+  <book:Book title="Leafy Desertdandelion">
+    <chapters title="Pseudovina" nbPages="5" author="Dot Ginner"/>
+  </book:Book>
+  <book:Book title="Roundleaf Snowberry">
+    <chapters title="Pore Lichen" nbPages="5" author="Kin Tinker"/>
+  </book:Book>
+  <book:Book title="Sierra Currant">
+    <chapters title="Buffalo Hawthorn" nbPages="4" author="Ninnette Friatt"/>
+  </book:Book>
+  <book:Book title="Mixed Jointfir">
+    <chapters title="Bridges' Pincushionplant" nbPages="5" author="Vera Patten"/>
+    <chapters title="California Fescue" nbPages="9" author="Cosimo Dakers"/>
+    <chapters title="Macrocoma Moss" nbPages="4" author="Calhoun Briand"/>
+    <chapters title="Needleleaf Rosette Grass" nbPages="9" author="Enrico Marchand"/>
+  </book:Book>
+  <book:Book title="Roundleaf Snowberry">
+    <chapters title="Bridges' Pincushionplant" nbPages="3" author="Cecilio McElmurray"/>
+  </book:Book>
+</xmi:XMI>

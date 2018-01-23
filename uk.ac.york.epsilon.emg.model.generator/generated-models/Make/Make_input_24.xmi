@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Diablo Hareleaf">
+    <comment text="Weak Rush"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="28 October 2008" name="Lanceleaf Rattlebox"/>
+      <dependencies xsi:type="make:FileDep" date="15 December 2005" name="Northern Dewberry"/>
+      <shellLines command="libnetcfg5.16"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Disjunct Coenogonium Lichen"/>
+    <elements xsi:type="make:Macro" value="Manyflower Onion"/>
+  </make:Makefile>
+  <make:Makefile name="Sierra Woodrush">
+    <comment text="Strawberryleaf Cinquefoil"/>
+    <elements xsi:type="make:Rule">
+      <shellLines command="avmetareadwrite"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="9 March 2016" name="Yellow Foxglove"/>
+      <dependencies xsi:type="make:FileDep" date="6 October 2004" name="Romulea"/>
+      <shellLines command="allec" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Reverchon's Bristlegrass"/>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Devilshead"/>
+  <book:Book title="Lanceleaf Fogfruit">
+    <chapters title="Arizona Alumroot" nbPages="1" author="Lucho Petters"/>
+    <chapters title="Kodomillet" nbPages="10" author="Rinaldo Pocklington"/>
+    <chapters title="Canadian Hawkweed" nbPages="3" author="Dot Ginner"/>
+  </book:Book>
+  <book:Book title="Rough Desertparsley">
+    <chapters title="Fernleaf Yarrow" nbPages="4" author="Georgeanna Medina"/>
+  </book:Book>
+  <book:Book title="Early Saxifrage"/>
+</xmi:XMI>

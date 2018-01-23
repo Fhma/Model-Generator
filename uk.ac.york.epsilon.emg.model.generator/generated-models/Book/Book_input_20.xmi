@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Creeping Thyme">
+    <chapters title="Puerto Rico Hempvine" nbPages="1" author="Gayle Lytlle"/>
+  </book:Book>
+  <book:Book title="Italian Gladiolus">
+    <chapters title="Romulea" nbPages="10" author="Daffy Fiddyment"/>
+  </book:Book>
+</xmi:XMI>

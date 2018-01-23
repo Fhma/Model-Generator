@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Map Lichen">
+    <chapters title="Gmelin's Sedge" nbPages="7" author="Ebenezer Coldbreath"/>
+    <chapters title="Lanceleaf Rattlebox" nbPages="1" author="Selie Arkell"/>
+  </book:Book>
+  <book:Book title="Edwards Plateau Yellow Stingbush"/>
+  <book:Book title="Ridgetop Guavaberry">
+    <chapters title="Lanceleaf Fogfruit" nbPages="6" author="Robina Carbine"/>
+  </book:Book>
+  <book:Book title="Shining Rose">
+    <chapters title="Coastal Sage Scrub Oak" nbPages="10" author="Trenna Skaif"/>
+  </book:Book>
+</xmi:XMI>

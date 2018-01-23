@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Early Saxifrage">
+    <chapters title="Tenpetal Blazingstar" nbPages="5" author="Thorn Poone"/>
+    <chapters title="Plumeseed" nbPages="3" author="Dulcie Flaunders"/>
+    <chapters title="Canyon Mock Orange" nbPages="5" author="Jeana Rymell"/>
+  </book:Book>
+  <book:Book title="Fringeleaf Tickseed"/>
+  <book:Book title="Godfrey's Spiderlily">
+    <chapters title="Pyrenopsis Lichen" nbPages="10" author="Jeffry O'Connel"/>
+  </book:Book>
+  <book:Book title="Onesided Galenia">
+    <chapters title="Coastal Eryngo" nbPages="3" author="Alon Darell"/>
+    <chapters title="Rudge's Waterlily" nbPages="8" author="Flossie Wayvill"/>
+    <chapters title="Woodland False Buttonweed" nbPages="9" author="Whitney McTrustam"/>
+  </book:Book>
+  <book:Book title="California Dutchman's Pipe"/>
+  <book:Book title="Trelease's Beavertail Pricklypear">
+    <chapters title="Setose Blackberry" nbPages="2" author="Lazar Hardi"/>
+  </book:Book>
+  <book:Book title="Osmund Fissidens Moss">
+    <chapters title="Canadian Hawkweed" nbPages="5" author="Erma Stetson"/>
+  </book:Book>
+</xmi:XMI>

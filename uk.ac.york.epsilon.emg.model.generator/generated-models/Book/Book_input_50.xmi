@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Woodland False Buttonweed">
+    <chapters title="Canadian White Violet" nbPages="10" author="Adam MacKnockiter"/>
+    <chapters title="Soft-hair Marbleseed" nbPages="10" author="Meredithe Chisholm"/>
+    <chapters title="Rocky Mountain Woodsia" nbPages="10" author="Thia Hammersley"/>
+  </book:Book>
+  <book:Book title="Fewseeded Bog Sedge">
+    <chapters title="White Meadowsweet" nbPages="9" author="Cortie Martinek"/>
+    <chapters title="Coastal Sage Scrub Oak" nbPages="10" author="Zelig Audry"/>
+    <chapters title="Wart Lichen" nbPages="10" author="Chrissie Puckring"/>
+  </book:Book>
+  <book:Book title="Sandloving Penstemon">
+    <chapters title="Arnoseris" nbPages="4" author="Shaylynn Solano"/>
+    <chapters title="Valley Oak" nbPages="5" author="Trstram Blockwell"/>
+  </book:Book>
+  <book:Book title="Western Azalea"/>
+  <book:Book title="Slender Scratchdaisy"/>
+  <book:Book title="Humboldt Bedstraw"/>
+  <book:Book title="Glandular Phacelia">
+    <chapters title="Talh" nbPages="3" author="Vincent Braundt"/>
+  </book:Book>
+  <book:Book title="Dotted Lichen">
+    <chapters title="Roundleaf Oxytheca" nbPages="4" author="Dulcie Flaunders"/>
+    <chapters title="Sycamore Fig" nbPages="1" author="Barron Verheyden"/>
+    <chapters title="Solano False Bindweed" nbPages="2" author="Ive Roberti"/>
+  </book:Book>
+  <book:Book title="Brittle Bladderfern">
+    <chapters title="American Black Nightshade" nbPages="2" author="Welby Pughsley"/>
+    <chapters title="Delicate Muhly" nbPages="4" author="Cecil Phebey"/>
+    <chapters title="Romulea" nbPages="3" author="Andrey Killner"/>
+  </book:Book>
+  <book:Book title="Rocky Mountain Woodsia">
+    <chapters title="Parasol Sedge" nbPages="2" author="Sherm Clynmans"/>
+  </book:Book>
+  <book:Book title="Broadleaf Sedge">
+    <chapters title="Asian Watergrass" nbPages="2" author="Nilson Collar"/>
+    <chapters title="Edwards Plateau Yellow Stingbush" nbPages="5" author="Karlie Lisciandri"/>
+  </book:Book>
+  <book:Book title="Judas-tree">
+    <chapters title="Nihoa Pritchardia" nbPages="7" author="Carmella Doche"/>
+  </book:Book>
+  <book:Book title="Cutleaf Island Spleenwort"/>
+</xmi:XMI>

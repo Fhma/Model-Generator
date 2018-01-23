@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Needle-bark Stringybark">
+    <comment text="Macrocoma Moss"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="24 February 2013" name="Cup Lichen"/>
+      <shellLines command="log"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Edwards Plateau Milkvetch"/>
+    <elements xsi:type="make:Macro" value="Widecalyx Monkeyflower"/>
+    <elements xsi:type="make:Macro" value="Saltwater Bush"/>
+    <elements xsi:type="make:Macro" value="Goose Tongue"/>
+  </make:Makefile>
+  <make:Makefile name="Hedwig's Weissia Moss">
+    <comment text="Ithaca Blackberry"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.2"/>
+      <shellLines command="dvipos" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <shellLines command="latexmk"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Narrowleaf Saw-wort"/>
+    <elements xsi:type="make:Macro" value="Lanceleaf Rattlebox"/>
+  </make:Makefile>
+  <make:Makefile name="Fringed Dodder">
+    <comment text="Cusick's Draba"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="8 May 2017" name="Scarlet Bottlebrush"/>
+      <shellLines command="agentxtrap" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="15 October 2016" name="Parrotweed"/>
+      <shellLines command="conjure" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Giant Checkerbloom"/>
+    <elements xsi:type="make:Macro" value="Hilograss"/>
+    <elements xsi:type="make:Macro" value="Godfrey's Spiderlily"/>
+  </make:Makefile>
+  <make:Makefile name="Lescuraea Moss">
+    <comment text="Timber Milkvetch"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <shellLines command="lpoptions"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Tansy Rosinweed"/>
+  </make:Makefile>
+  <make:Makefile name="Gmelin's Sedge">
+    <comment text="Scarlet Bottlebrush"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="19 February 2016" name="Hausknecht's Buckwheat"/>
+      <dependencies xsi:type="make:FileDep" date="19 February 2016" name="Oakleaf Carica"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.0"/>
+      <shellLines command="lpdlsbom"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="1 December 2000" name="Bitter Cherry"/>
+      <dependencies xsi:type="make:FileDep" date="23 May 2004" name="Theobroma"/>
+      <dependencies xsi:type="make:FileDep" date="2 November 2010" name="Liverwort"/>
+      <shellLines command="dijkstra"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="Chamisso Bush Lupine">
+    <comment text="Annual Yellow Sweetclover"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="28 January 2011" name="Deam's Clearweed"/>
+      <dependencies xsi:type="make:FileDep" date="19 August 2016" name="Rocky Mountain Woodsia"/>
+      <dependencies xsi:type="make:FileDep" date="18 March 2007" name="Madam Gorgon"/>
+      <dependencies xsi:type="make:FileDep" date="16 December 2000" name="Greenland Primrose"/>
+      <shellLines command="asa" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.0"/>
+      <shellLines command="cupstestdsc"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Coastal Blacksnakeroot"/>
+    <elements xsi:type="make:Macro" value="New Mexico Rockdaisy"/>
+  </make:Makefile>
+  <make:Makefile name="Saltwater Bush">
+    <comment text="Sessileflower False Goldenaster"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="25 December 2005" name="Devil's Grandmother"/>
+      <dependencies xsi:type="make:FileDep" date="21 October 2003" name="Bog Clermontia"/>
+      <dependencies xsi:type="make:FileDep" date="7 September 2004" name="Red-flower Woodsorrel"/>
+      <dependencies xsi:type="make:FileDep" date="3 October 2015" name="Hypotrachyna Lichen"/>
+      <shellLines command="afida"/>
+    </elements>
+  </make:Makefile>
+</xmi:XMI>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Common Hoptree">
+    <comment text="Saltwood"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="20 October 2013" name="Theobroma"/>
+      <dependencies xsi:type="make:FileDep" date="6 October 2004" name="Lollipop Mimosa"/>
+      <dependencies xsi:type="make:FileDep" date="22 May 2013" name="Siskiyou False Hellebore"/>
+      <shellLines command="cslatex"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="22 October 2012" name="Smallflower Thoroughwort"/>
+      <shellLines command="dbiproxy5.18d"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Coulter's Wrinklefruit"/>
+  </make:Makefile>
+  <make:Makefile name="Horrid Herrickia">
+    <comment text="Carolina Ponysfoot"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <shellLines command="gcov"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Parish's Reinkella Lichen"/>
+    <elements xsi:type="make:Macro" value="Western Swordfern"/>
+  </make:Makefile>
+</xmi:XMI>

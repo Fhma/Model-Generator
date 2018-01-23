@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Pentadesma">
+    <chapters title="Pseudovina" nbPages="5" author="Sharona Prestie"/>
+  </book:Book>
+  <book:Book title="Godfrey's Spiderlily">
+    <chapters title="Scarlet Bottlebrush" nbPages="7" author="Grenville Demanche"/>
+    <chapters title="Lindheimer's Hoarypea" nbPages="8" author="Jaquenette Wakefield"/>
+    <chapters title="Soft-hair Marbleseed" nbPages="3" author="Kipp Denyer"/>
+  </book:Book>
+  <book:Book title="Lady Bird's Centaury"/>
+  <book:Book title="Timber Milkvetch"/>
+</xmi:XMI>

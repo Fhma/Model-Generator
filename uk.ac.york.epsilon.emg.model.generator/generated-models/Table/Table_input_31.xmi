@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Royal Fringedfern"/>
+      <cells content="Delicate Muhly"/>
+    </rows>
+    <rows>
+      <cells content="68"/>
+      <cells content="-11"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Clypeococcum Lichen"/>
+      <cells content="Mountain Grass Of Parnassus"/>
+      <cells content="Island Mallow"/>
+    </rows>
+    <rows>
+      <cells content="40"/>
+      <cells content="-29"/>
+      <cells content="-51"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Shortstalk False Bindweed"/>
+      <cells content="Cuban Maiden Fern"/>
+      <cells content="Arctic Catchfly"/>
+    </rows>
+    <rows>
+      <cells content="19"/>
+      <cells content="21"/>
+      <cells content="38"/>
+    </rows>
+    <rows>
+      <cells content="59"/>
+      <cells content="41"/>
+      <cells content="83"/>
+    </rows>
+    <rows>
+      <cells content="-11"/>
+      <cells content="96"/>
+      <cells content="-7"/>
+    </rows>
+    <rows>
+      <cells content="44"/>
+      <cells content="-91"/>
+      <cells content="-85"/>
+    </rows>
+    <rows>
+      <cells content="-12"/>
+      <cells content="-44"/>
+      <cells content="-6"/>
+    </rows>
+    <rows>
+      <cells content="-22"/>
+      <cells content="64"/>
+      <cells content="-42"/>
+    </rows>
+    <rows>
+      <cells content="31"/>
+      <cells content="-52"/>
+      <cells content="35"/>
+    </rows>
+    <rows>
+      <cells content="-43"/>
+      <cells content="68"/>
+      <cells content="-46"/>
+    </rows>
+    <rows>
+      <cells content="-92"/>
+      <cells content="16"/>
+      <cells content="52"/>
+    </rows>
+    <rows>
+      <cells content="21"/>
+      <cells content="7"/>
+      <cells content="28"/>
+    </rows>
+    <rows>
+      <cells content="-19"/>
+      <cells content="0"/>
+      <cells content="-95"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Manyspike Flatsedge"/>
+      <cells content="Rocky Mountain Blazing Star"/>
+      <cells content="Sycamore Fig"/>
+      <cells content="Giant Checkerbloom"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+      <cells content="-26"/>
+      <cells content="96"/>
+      <cells content="41"/>
+    </rows>
+    <rows>
+      <cells content="18"/>
+      <cells content="-91"/>
+      <cells content="-87"/>
+      <cells content="69"/>
+    </rows>
+    <rows>
+      <cells content="84"/>
+      <cells content="-85"/>
+      <cells content="54"/>
+      <cells content="-38"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

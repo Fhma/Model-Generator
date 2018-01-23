@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Candletree"/>
+      <cells content="Narrowleaf Rhombopod"/>
+      <cells content="Narrowleaf Rhombopod"/>
+      <cells content="Canyon Mock Orange"/>
+    </rows>
+    <rows>
+      <cells content="-80"/>
+      <cells content="-32"/>
+      <cells content="57"/>
+      <cells content="-70"/>
+    </rows>
+    <rows>
+      <cells content="51"/>
+      <cells content="-44"/>
+      <cells content="-54"/>
+      <cells content="33"/>
+    </rows>
+    <rows>
+      <cells content="14"/>
+      <cells content="4"/>
+      <cells content="40"/>
+      <cells content="40"/>
+    </rows>
+    <rows>
+      <cells content="-29"/>
+      <cells content="-57"/>
+      <cells content="-15"/>
+      <cells content="0"/>
+    </rows>
+    <rows>
+      <cells content="69"/>
+      <cells content="38"/>
+      <cells content="-69"/>
+      <cells content="-44"/>
+    </rows>
+    <rows>
+      <cells content="95"/>
+      <cells content="-46"/>
+      <cells content="36"/>
+      <cells content="-27"/>
+    </rows>
+    <rows>
+      <cells content="71"/>
+      <cells content="97"/>
+      <cells content="59"/>
+      <cells content="47"/>
+    </rows>
+    <rows>
+      <cells content="52"/>
+      <cells content="-35"/>
+      <cells content="-13"/>
+      <cells content="-4"/>
+    </rows>
+    <rows>
+      <cells content="63"/>
+      <cells content="38"/>
+      <cells content="52"/>
+      <cells content="-57"/>
+    </rows>
+    <rows>
+      <cells content="46"/>
+      <cells content="94"/>
+      <cells content="15"/>
+      <cells content="6"/>
+    </rows>
+    <rows>
+      <cells content="-7"/>
+      <cells content="-86"/>
+      <cells content="-27"/>
+      <cells content="-49"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Bog Bulrush"/>
+      <cells content="Clubmoss"/>
+      <cells content="Naked Mariposa Lily"/>
+      <cells content="Bearded Milkvetch"/>
+    </rows>
+    <rows>
+      <cells content="-19"/>
+      <cells content="83"/>
+      <cells content="96"/>
+      <cells content="-34"/>
+    </rows>
+    <rows>
+      <cells content="-84"/>
+      <cells content="-30"/>
+      <cells content="44"/>
+      <cells content="-56"/>
+    </rows>
+    <rows>
+      <cells content="15"/>
+      <cells content="96"/>
+      <cells content="-1"/>
+      <cells content="-56"/>
+    </rows>
+    <rows>
+      <cells content="-37"/>
+      <cells content="-25"/>
+      <cells content="54"/>
+      <cells content="-59"/>
+    </rows>
+    <rows>
+      <cells content="21"/>
+      <cells content="-1"/>
+      <cells content="92"/>
+      <cells content="10"/>
+    </rows>
+    <rows>
+      <cells content="-73"/>
+      <cells content="-7"/>
+      <cells content="71"/>
+      <cells content="-29"/>
+    </rows>
+    <rows>
+      <cells content="-85"/>
+      <cells content="-38"/>
+      <cells content="-59"/>
+      <cells content="-86"/>
+    </rows>
+    <rows>
+      <cells content="-48"/>
+      <cells content="95"/>
+      <cells content="26"/>
+      <cells content="14"/>
+    </rows>
+    <rows>
+      <cells content="-7"/>
+      <cells content="49"/>
+      <cells content="52"/>
+      <cells content="-14"/>
+    </rows>
+    <rows>
+      <cells content="61"/>
+      <cells content="95"/>
+      <cells content="-96"/>
+      <cells content="-85"/>
+    </rows>
+    <rows>
+      <cells content="-74"/>
+      <cells content="-95"/>
+      <cells content="-60"/>
+      <cells content="95"/>
+    </rows>
+    <rows>
+      <cells content="-20"/>
+      <cells content="-98"/>
+      <cells content="-37"/>
+      <cells content="-14"/>
+    </rows>
+    <rows>
+      <cells content="-46"/>
+      <cells content="31"/>
+      <cells content="21"/>
+      <cells content="19"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Sinningia"/>
+    </rows>
+    <rows>
+      <cells content="-54"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Tolmin's Orange Lichen"/>
+      <cells content="Barbasco"/>
+    </rows>
+    <rows>
+      <cells content="-58"/>
+      <cells content="5"/>
+    </rows>
+    <rows>
+      <cells content="-64"/>
+      <cells content="21"/>
+    </rows>
+    <rows>
+      <cells content="24"/>
+      <cells content="39"/>
+    </rows>
+    <rows>
+      <cells content="67"/>
+      <cells content="36"/>
+    </rows>
+    <rows>
+      <cells content="-33"/>
+      <cells content="-44"/>
+    </rows>
+    <rows>
+      <cells content="37"/>
+      <cells content="66"/>
+    </rows>
+    <rows>
+      <cells content="45"/>
+      <cells content="-31"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

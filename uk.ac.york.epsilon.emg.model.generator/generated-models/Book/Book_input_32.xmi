@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Bouchea">
+    <chapters title="Soft-hair Marbleseed" nbPages="5" author="Bebe Mugford"/>
+  </book:Book>
+  <book:Book title="Council Tree">
+    <chapters title="Kauai Phyllostegia" nbPages="1" author="Ninnette Friatt"/>
+    <chapters title="Grecian Foxglove" nbPages="7" author="Denna Rigney"/>
+  </book:Book>
+  <book:Book title="Coastal Plain Panicgrass">
+    <chapters title="Barbasco" nbPages="7" author="Birdie Janks"/>
+  </book:Book>
+  <book:Book title="Coulter's Wrinklefruit">
+    <chapters title="Peltate Dutchman's Pipe" nbPages="4" author="Anneliese McGuinness"/>
+  </book:Book>
+  <book:Book title="Weak Rush">
+    <chapters title="Hausknecht's Buckwheat" nbPages="10" author="Percival Semmence"/>
+  </book:Book>
+  <book:Book title="Liverwort">
+    <chapters title="Common Yarrow" nbPages="3" author="Clarey Glenwright"/>
+  </book:Book>
+  <book:Book title="Pale Desert-thorn">
+    <chapters title="Pyrenopsis Lichen" nbPages="6" author="Ernie McIlreavy"/>
+    <chapters title="California Dutchman's Pipe" nbPages="1" author="Judon Filson"/>
+  </book:Book>
+</xmi:XMI>

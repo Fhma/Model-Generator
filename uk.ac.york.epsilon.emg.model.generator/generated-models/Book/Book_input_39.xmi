@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Sessileleaf Cyanea">
+    <chapters title="Skyflower" nbPages="10" author="Grace Jakubovsky"/>
+    <chapters title="Smallflower Thoroughwort" nbPages="2" author="Cort Luckhurst"/>
+    <chapters title="Lanceleaf Rattlebox" nbPages="8" author="Jared Cordeux"/>
+    <chapters title="Groundplum Milkvetch" nbPages="5" author="Gage Sendall"/>
+  </book:Book>
+  <book:Book title="Grecian Foxglove">
+    <chapters title="Narrowleaf Rhombopod" nbPages="8" author="Barron Verheyden"/>
+  </book:Book>
+  <book:Book title="Mendez's Sandmat">
+    <chapters title="Oneflower Honeycombhead" nbPages="4" author="Holly Dewitt"/>
+  </book:Book>
+  <book:Book title="Pine Valley Milkvetch">
+    <chapters title="Hairy Goldenrod" nbPages="3" author="Egor Manshaw"/>
+  </book:Book>
+  <book:Book title="Leadwood">
+    <chapters title="ahakea" nbPages="2" author="Eugenie Dominiak"/>
+  </book:Book>
+  <book:Book title="Coast Range Mariposa Lily">
+    <chapters title="Modoc Hawksbeard" nbPages="5" author="Ernst Szymanzyk"/>
+  </book:Book>
+  <book:Book title="Shining Rose"/>
+</xmi:XMI>

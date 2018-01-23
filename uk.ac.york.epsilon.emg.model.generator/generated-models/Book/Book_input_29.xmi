@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Early Saxifrage">
+    <chapters title="Carolina Orange Lichen" nbPages="4" author="Riki Littleproud"/>
+    <chapters title="Lacebark" nbPages="7" author="Rhodie Newlands"/>
+    <chapters title="Carpet Phlox" nbPages="3" author="Arnuad Jollie"/>
+  </book:Book>
+  <book:Book title="Goldenthread"/>
+  <book:Book title="Pride-of-barbados"/>
+  <book:Book title="Mid Bladderpod">
+    <chapters title="Orcutt's Bristleweed" nbPages="3" author="Liane Cattanach"/>
+  </book:Book>
+</xmi:XMI>

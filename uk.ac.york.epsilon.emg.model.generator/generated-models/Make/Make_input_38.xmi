@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Plateilema">
+    <comment text="Hippomane"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="9 January 2003" name="King Protea"/>
+      <shellLines command="aclocal" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Bristly Hawkbit"/>
+    <elements xsi:type="make:Macro" value="Humboldt Bedstraw"/>
+    <elements xsi:type="make:Macro" value="Plateilema"/>
+  </make:Makefile>
+  <make:Makefile name="Pore Lichen">
+    <comment text="Parrotweed"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="15 February 2010" name="Annual Yellow Sweetclover"/>
+      <dependencies xsi:type="make:FileDep" date="9 April 2012" name="California Gilia"/>
+      <dependencies xsi:type="make:FileDep" date="17 September 2013" name="Rinodina Lichen"/>
+      <shellLines command="avbdeviced" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Williams' Miterwort"/>
+  </make:Makefile>
+  <make:Makefile name="Bengal Coffee">
+    <comment text="Wiegand's Sedge"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="14 February 2010" name="Edwards Plateau Milkvetch"/>
+      <dependencies xsi:type="make:FileDep" date="16 August 2014" name="Valley Oak"/>
+      <shellLines command="latexpand"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="4 January 2011" name="Manyflower Onion"/>
+      <shellLines command="afhash" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Modoc Hawksbeard"/>
+    <elements xsi:type="make:Macro" value="Hawkweed"/>
+  </make:Makefile>
+  <make:Makefile name="Bugloss">
+    <comment text="Valley Oak"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="5 June 2004" name="Mixed Jointfir"/>
+      <shellLines command="listings-ext.sh"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <shellLines command="dtruss"/>
+    </elements>
+  </make:Makefile>
+</xmi:XMI>

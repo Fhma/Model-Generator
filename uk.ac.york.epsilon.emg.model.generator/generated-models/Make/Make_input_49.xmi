@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Mid Bladderpod">
+    <comment text="Dotted Duckmeat"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <shellLines command="createhomedir"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="15 August 2016" name="Sticky Cinquefoil"/>
+      <dependencies xsi:type="make:FileDep" date="23 February 2013" name="African Milkweed"/>
+      <shellLines command="dseditgroup" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Dotted Duckmeat"/>
+    <elements xsi:type="make:Macro" value="Wild Foxglove"/>
+    <elements xsi:type="make:Macro" value="Theobroma"/>
+    <elements xsi:type="make:Macro" value="Manfern"/>
+    <elements xsi:type="make:Macro" value="Roundleaf Oxytheca"/>
+  </make:Makefile>
+  <make:Makefile name="Devilshead">
+    <comment text="South African Hoarypea"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="1 June 2009" name="Pride-of-barbados"/>
+      <shellLines command="compress" display="true"/>
+    </elements>
+  </make:Makefile>
+  <make:Makefile name="Kirschsteiniothelia Lichen">
+    <comment text="Spreading Groundsmoke"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/5/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="4 November 2008" name="Mescal Bean"/>
+      <shellLines command="autom4te"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="22 January 2008" name="Saltwater Bush"/>
+      <dependencies xsi:type="make:FileDep" date="9 July 2002" name="Tarweed"/>
+      <dependencies xsi:type="make:FileDep" date="4 April 2006" name="Pride-of-barbados"/>
+      <dependencies xsi:type="make:FileDep" date="16 August 2014" name="Clypeococcum Lichen"/>
+      <shellLines command="crc325.16" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Kauai Phyllostegia"/>
+  </make:Makefile>
+  <make:Makefile name="Mescal Bean">
+    <comment text="Dicranum Moss"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/4/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/5/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="14 March 2001" name="Toothed Spurge"/>
+      <dependencies xsi:type="make:FileDep" date="17 September 2013" name="Pyrenopsis Lichen"/>
+      <shellLines command="lndlogname"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Polysporina Lichen"/>
+    <elements xsi:type="make:Macro" value="Western Blue Virginsbower"/>
+  </make:Makefile>
+  <make:Makefile name="Hairy White Oldfield Aster">
+    <comment text="Canyon Mock Orange"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="9 July 2012" name="Wild Coco"/>
+      <shellLines command="cp"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Common Yarrow"/>
+  </make:Makefile>
+  <make:Makefile name="Madam Gorgon">
+    <comment text="Hairy Navel Lichen"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="23 February 2013" name="Protoparmelia Lichen"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="8 November 2001" name="Pitkin Marsh Lily"/>
+      <shellLines command="db_verify"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Threadleaf Glowwort"/>
+  </make:Makefile>
+  <make:Makefile name="Red-flower Woodsorrel">
+    <comment text="Pipsissewa"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <shellLines command="compress" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="14 March 2001" name="Juniper Globemallow"/>
+      <shellLines command="cpan"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/6/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="18 June 2005" name="Pyrenopsis Lichen"/>
+      <dependencies xsi:type="make:FileDep" date="15 August 2016" name="Clementine Suncup"/>
+      <shellLines command="coreaudiod" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="American Ipecac"/>
+    <elements xsi:type="make:Macro" value="Trelease's Beavertail Pricklypear"/>
+  </make:Makefile>
+</xmi:XMI>

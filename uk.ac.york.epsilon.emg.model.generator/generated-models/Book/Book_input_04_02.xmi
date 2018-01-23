@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
-  <book:Book title="Delicate Muhly">
-    <chapters title="Seashore Vervain" nbPages="3" author="Lucho Petters"/>
-  </book:Book>
-  <book:Book title="White Panicle Aster">
-    <chapters title="Yukon Podistera" nbPages="3" author="Ernst Szymanzyk"/>
-  </book:Book>
-</xmi:XMI>

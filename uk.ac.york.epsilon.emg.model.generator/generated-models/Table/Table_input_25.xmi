@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Fewseeded Bog Sedge"/>
+      <cells content="Oneseed Juniper"/>
+    </rows>
+    <rows>
+      <cells content="-8"/>
+      <cells content="-86"/>
+    </rows>
+    <rows>
+      <cells content="41"/>
+      <cells content="26"/>
+    </rows>
+    <rows>
+      <cells content="2"/>
+      <cells content="6"/>
+    </rows>
+    <rows>
+      <cells content="-7"/>
+      <cells content="66"/>
+    </rows>
+    <rows>
+      <cells content="-54"/>
+      <cells content="-72"/>
+    </rows>
+    <rows>
+      <cells content="38"/>
+      <cells content="-67"/>
+    </rows>
+    <rows>
+      <cells content="76"/>
+      <cells content="92"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Lollipop Mimosa"/>
+    </rows>
+    <rows>
+      <cells content="-58"/>
+    </rows>
+    <rows>
+      <cells content="-37"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

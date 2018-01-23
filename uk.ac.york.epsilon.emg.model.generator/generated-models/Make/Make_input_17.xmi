@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Winged Milkvetch">
+  <comment text="Manfern"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="29 June 2007" name="Yellow Bluestem"/>
+    <shellLines command="dot_clean" display="true"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="17 February 2002" name="Hairy Navel Lichen"/>
+    <shellLines command="automake-1.15" display="true"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Kirschsteiniothelia Lichen"/>
+  <elements xsi:type="make:Macro" value="Needle-bark Stringybark"/>
+</make:Makefile>

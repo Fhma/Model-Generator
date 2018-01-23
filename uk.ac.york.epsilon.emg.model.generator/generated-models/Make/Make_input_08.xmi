@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="New England Quillwort">
+  <comment text="Scarlet Bottlebrush"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="13 February 2012" name="Phascum Moss"/>
+    <shellLines command="dirname"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Bitter Cherry"/>
+</make:Makefile>

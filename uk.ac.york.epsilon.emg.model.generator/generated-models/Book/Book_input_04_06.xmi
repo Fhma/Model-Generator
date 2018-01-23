@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
-  <book:Book title="Smooth Spreading Four O'clock">
-    <chapters title="Arnoseris" nbPages="6" author="Melany Garside"/>
-    <chapters title="Lathberry" nbPages="1" author="Bettye Walkden"/>
-  </book:Book>
-  <book:Book title="Winged Milkvetch"/>
-</xmi:XMI>

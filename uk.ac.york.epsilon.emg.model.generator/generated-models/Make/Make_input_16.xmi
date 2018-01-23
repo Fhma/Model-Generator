@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Map Lichen">
+  <comment text="High Northern Buttercup"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <shellLines command="latexpand"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="3 January 2003" name="Arizona Alumroot"/>
+    <dependencies xsi:type="make:FileDep" date="4 April 2006" name="Cattail Grass"/>
+    <shellLines command="cefconv"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Deceptive Marbleseed"/>
+  <elements xsi:type="make:Macro" value="Hempvine"/>
+</make:Makefile>

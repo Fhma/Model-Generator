@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Hall's Tarweed">
+  <comment text="Spreading Groundsmoke"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="2 December 2001" name="Largeflower Speargrass"/>
+    <shellLines command="leaks32" display="true"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:FileDep" date="26 January 2006" name="Coastal Sage Scrub Oak"/>
+    <shellLines command="javac"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Romulea"/>
+  <elements xsi:type="make:Macro" value="Deceptive Marbleseed"/>
+</make:Makefile>

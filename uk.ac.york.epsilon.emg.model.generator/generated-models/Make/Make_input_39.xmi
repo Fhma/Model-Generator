@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Canadian White Violet">
+    <comment text="Liverwort"/>
+    <elements xsi:type="make:Rule">
+      <shellLines command="lzmadec" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <shellLines command="ltximg"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="New Mexico Lupine"/>
+  </make:Makefile>
+  <make:Makefile name="Wallrue">
+    <comment text="Willow Ragwort"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/1/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:FileDep" date="7 September 2004" name="Aleutian Bog Orchid"/>
+      <shellLines command="cvdbset"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Yellow Troutlily"/>
+    <elements xsi:type="make:Macro" value="Chapped Mallee"/>
+  </make:Makefile>
+  <make:Makefile name="Royal Fringedfern">
+    <comment text="Winged Milkvetch"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="1 April 2003" name="White Panicle Aster"/>
+      <dependencies xsi:type="make:FileDep" date="3 April 2017" name="Cutleaf Cinquefoil"/>
+      <dependencies xsi:type="make:FileDep" date="7 November 2008" name="Thicket Sedge"/>
+      <dependencies xsi:type="make:FileDep" date="7 September 2004" name="Purpus' Buckwheat"/>
+      <dependencies xsi:type="make:FileDep" date="2 November 2010" name="Victory Onion"/>
+      <dependencies xsi:type="make:FileDep" date="6 June 2012" name="Bugloss"/>
+      <shellLines command="arch"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Sierra Currant"/>
+    <elements xsi:type="make:Macro" value="Timber Milkvetch"/>
+    <elements xsi:type="make:Macro" value="Pore Lichen"/>
+  </make:Makefile>
+  <make:Makefile name="Polysporina Lichen">
+    <comment text="Scarlet Bottlebrush"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="22 May 2013" name="European Plum"/>
+      <shellLines command="cupstestdsc" display="true"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <shellLines command="ltximg"/>
+    </elements>
+  </make:Makefile>
+</xmi:XMI>

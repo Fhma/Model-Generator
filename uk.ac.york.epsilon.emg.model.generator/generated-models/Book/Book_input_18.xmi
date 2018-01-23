@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Pentadesma">
+    <chapters title="Tropical Chinchweed" nbPages="9" author="Whitaker Pennycuick"/>
+    <chapters title="Sandberg's Biscuitroot" nbPages="8" author="Melisa Cromie"/>
+  </book:Book>
+  <book:Book title="Toothed Spurge"/>
+</xmi:XMI>

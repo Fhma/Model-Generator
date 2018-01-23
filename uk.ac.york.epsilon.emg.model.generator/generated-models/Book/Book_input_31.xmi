@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Teloschistes Lichen">
+    <chapters title="Deam's Clearweed" nbPages="2" author="Korey Grundy"/>
+    <chapters title="Longleaf Rush" nbPages="7" author="Winfield Wastling"/>
+    <chapters title="Priva" nbPages="8" author="Loralee Randleson"/>
+  </book:Book>
+  <book:Book title="Sedge">
+    <chapters title="Chinese Magnolia" nbPages="5" author="Lela Ferry"/>
+    <chapters title="Leucodon Moss" nbPages="5" author="Fredi Risdale"/>
+  </book:Book>
+  <book:Book title="Desert Starvine">
+    <chapters title="Oeder's Lousewort" nbPages="7" author="Burg Latan"/>
+    <chapters title="Devilshead" nbPages="3" author="Earl Sollner"/>
+  </book:Book>
+  <book:Book title="Apalachicola False Rosemary">
+    <chapters title="White Lady's Slipper" nbPages="7" author="Falkner Petz"/>
+  </book:Book>
+  <book:Book title="Pentadesma">
+    <chapters title="ahakea" nbPages="8" author="Kendrick Binton"/>
+  </book:Book>
+  <book:Book title="Shrubby Dillenia"/>
+  <book:Book title="Tenpetal Blazingstar"/>
+</xmi:XMI>

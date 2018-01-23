@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Willow Ragwort">
+    <chapters title="Piedmont Meadow-rue" nbPages="3" author="Rouvin Nasey"/>
+  </book:Book>
+  <book:Book title="Sticky Cinquefoil"/>
+  <book:Book title="Mixed Jointfir"/>
+  <book:Book title="Carr's Rattlesnakeroot">
+    <chapters title="Palmer's Mock Orange" nbPages="7" author="Richy Tomlins"/>
+    <chapters title="Howe's Hedgehog Cactus" nbPages="4" author="Dun Goodredge"/>
+  </book:Book>
+  <book:Book title="Pitkin Marsh Lily">
+    <chapters title="Heartleaf Suncup" nbPages="5" author="Othilie Giacomini"/>
+    <chapters title="Sedge" nbPages="10" author="Nanon Cursey"/>
+    <chapters title="Hyparrhenia" nbPages="1" author="Shaylynn Solano"/>
+  </book:Book>
+  <book:Book title="Bristly Hawkbit">
+    <chapters title="Lanceleaf Fogfruit" nbPages="3" author="Clarette Waterhowse"/>
+    <chapters title="Parrotweed" nbPages="9" author="Rurik Carde"/>
+  </book:Book>
+  <book:Book title="Osmund Fissidens Moss"/>
+  <book:Book title="Manfern">
+    <chapters title="Dicranum Moss" nbPages="3" author="Phoebe MacRedmond"/>
+  </book:Book>
+  <book:Book title="Creeping Thyme"/>
+  <book:Book title="Creeping Liriope">
+    <chapters title="Zion Buckwheat" nbPages="1" author="Mano Norfolk"/>
+  </book:Book>
+  <book:Book title="Lethariicola Lichen">
+    <chapters title="Reverchon's Blazingstar" nbPages="6" author="Madeline Cracker"/>
+    <chapters title="Tender Green" nbPages="1" author="Skip McKeady"/>
+    <chapters title="Onesided Galenia" nbPages="9" author="Deanna Whiterod"/>
+  </book:Book>
+  <book:Book title="Tropical Widelip Orchid">
+    <chapters title="Anthracothecium Lichen" nbPages="6" author="Cort Luckhurst"/>
+    <chapters title="Parrotweed" nbPages="3" author="Stan Pury"/>
+    <chapters title="Wild Foxglove" nbPages="5" author="Anissa Gile"/>
+  </book:Book>
+  <book:Book title="Goatgrass">
+    <chapters title="Desert Poppy" nbPages="2" author="Hussein Boxhall"/>
+    <chapters title="Ware's Hairsedge" nbPages="7" author="Roley Craister"/>
+    <chapters title="Coast Range Mariposa Lily" nbPages="3" author="Averyl Pescud"/>
+  </book:Book>
+</xmi:XMI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make">
+  <make:Makefile name="Western Azalea">
+    <comment text="Downy Paintedcup"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:FileDep" date="24 January 2003" name="Leucodon Moss"/>
+      <shellLines command="autoconf" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Kauai Phyllostegia"/>
+    <elements xsi:type="make:Macro" value="Carpet Phlox"/>
+    <elements xsi:type="make:Macro" value="Sugar Maple"/>
+  </make:Makefile>
+  <make:Makefile name="Wild Foxglove">
+    <comment text="Chapped Mallee"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.0"/>
+      <shellLines command="a2p5.16" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Hawkweed"/>
+    <elements xsi:type="make:Macro" value="Roemer's Spurge"/>
+  </make:Makefile>
+  <make:Makefile name="Rocky Mountain Woodsia">
+    <comment text="Arizona Alumroot"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/0/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="6 June 2012" name="New England Quillwort"/>
+      <shellLines command="convertgls2bib" display="true"/>
+    </elements>
+    <elements xsi:type="make:Macro" value="Oneflower Honeycombhead"/>
+  </make:Makefile>
+  <make:Makefile name="Gilman's Evening Primrose">
+    <comment text="Wart Lichen"/>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="23 November 2017" name="Lindenleaf Rosemallow"/>
+      <dependencies xsi:type="make:FileDep" date="15 August 2016" name="Whitehair Rosette Grass"/>
+      <shellLines command="lookbib"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.1"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/2/@elements.0"/>
+      <dependencies xsi:type="make:FileDep" date="22 January 2008" name="Polysporina Lichen"/>
+      <shellLines command="display"/>
+    </elements>
+    <elements xsi:type="make:Rule">
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.2"/>
+      <dependencies xsi:type="make:RuleDep" ruledep="/3/@elements.2"/>
+      <dependencies xsi:type="make:FileDep" date="13 March 2015" name="California Gilia"/>
+      <dependencies xsi:type="make:FileDep" date="9 January 2003" name="Gilman's Evening Primrose"/>
+      <dependencies xsi:type="make:FileDep" date="8 November 2001" name="Prostrate Knotweed"/>
+      <shellLines command="gc"/>
+    </elements>
+  </make:Makefile>
+</xmi:XMI>

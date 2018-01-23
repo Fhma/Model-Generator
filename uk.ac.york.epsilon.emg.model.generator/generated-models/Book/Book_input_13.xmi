@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Silverleaf Milkvetch">
+    <chapters title="Strawberryleaf Cinquefoil" nbPages="3" author="Lory Rubinivitz"/>
+  </book:Book>
+  <book:Book title="Ridged Yellow Flax">
+    <chapters title="Pentas" nbPages="1" author="Frans Ashcroft"/>
+  </book:Book>
+</xmi:XMI>

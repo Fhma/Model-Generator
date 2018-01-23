@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<make:Makefile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:make="Make" name="Longleaf Primrose-willow">
+  <comment text="Asian Mustard"/>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:FileDep" date="3 April 2017" name="Wart Lichen"/>
+    <shellLines command="libtool" display="true"/>
+  </elements>
+  <elements xsi:type="make:Rule">
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.1"/>
+    <dependencies xsi:type="make:RuleDep" ruledep="//@elements.0"/>
+    <dependencies xsi:type="make:FileDep" date="2 November 2010" name="Ware's Hairsedge"/>
+    <shellLines command="dbiproxy5.18d" display="true"/>
+  </elements>
+  <elements xsi:type="make:Macro" value="Prairie Straw Sedge"/>
+  <elements xsi:type="make:Macro" value="Western Springbeauty"/>
+</make:Makefile>

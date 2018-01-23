@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:table="Table">
+  <table:Table>
+    <rows>
+      <cells content="Coastal Pricklypear"/>
+      <cells content="Barbasco"/>
+    </rows>
+    <rows>
+      <cells content="-27"/>
+      <cells content="-48"/>
+    </rows>
+  </table:Table>
+  <table:Table>
+    <rows>
+      <cells content="Clypeococcum Lichen"/>
+    </rows>
+    <rows>
+      <cells content="-21"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+    </rows>
+    <rows>
+      <cells content="17"/>
+    </rows>
+  </table:Table>
+</xmi:XMI>

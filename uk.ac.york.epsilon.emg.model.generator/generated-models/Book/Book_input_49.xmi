@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:book="Book">
+  <book:Book title="Leptodonium Moss">
+    <chapters title="Council Tree" nbPages="9" author="Jamesy Schimmang"/>
+    <chapters title="Modoc Hawksbeard" nbPages="4" author="Melany Garside"/>
+  </book:Book>
+  <book:Book title="Bog Bulrush"/>
+  <book:Book title="Giantchickweed"/>
+  <book:Book title="Priva"/>
+  <book:Book title="Purple Smallreed">
+    <chapters title="Dicranum Moss" nbPages="1" author="Alanah Cumbers"/>
+    <chapters title="Clypeococcum Lichen" nbPages="6" author="Deane Ives"/>
+    <chapters title="Mendez's Sandmat" nbPages="9" author="Traver Tilliard"/>
+    <chapters title="Heartleaf Suncup" nbPages="10" author="Vickie Retchford"/>
+  </book:Book>
+  <book:Book title="Scaldweed">
+    <chapters title="Little Heartleaf" nbPages="2" author="Rina Arr"/>
+    <chapters title="Indian Cucumber" nbPages="2" author="Stanton Swadling"/>
+  </book:Book>
+  <book:Book title="Salac Palm"/>
+  <book:Book title="Dotted Duckmeat">
+    <chapters title="Smallflower Thoroughwort" nbPages="7" author="Birdie Janks"/>
+    <chapters title="Manketti" nbPages="3" author="Birdie Janks"/>
+  </book:Book>
+  <book:Book title="Macrocoma Moss"/>
+  <book:Book title="Appendage Orchid">
+    <chapters title="Yukon Podistera" nbPages="2" author="Hilary Blackman"/>
+  </book:Book>
+  <book:Book title="Priva">
+    <chapters title="Desert Poppy" nbPages="7" author="Judon Hannay"/>
+    <chapters title="Palmer's Mock Orange" nbPages="3" author="Gladys Dufty"/>
+    <chapters title="Wild Coco" nbPages="9" author="Perice Mannie"/>
+  </book:Book>
+  <book:Book title="Barbasco">
+    <chapters title="Wright's Amaranth" nbPages="6" author="Jenine Hayhurst"/>
+    <chapters title="Rocky Mountain Blazing Star" nbPages="5" author="Tamarah Cammidge"/>
+  </book:Book>
+  <book:Book title="Indian Cucumber">
+    <chapters title="Bog Willow" nbPages="5" author="Lindsy Loverock"/>
+    <chapters title="American Black Nightshade" nbPages="7" author="Desdemona Arends"/>
+    <chapters title="Tall False Foxglove" nbPages="3" author="Deane Ives"/>
+  </book:Book>
+</xmi:XMI>
