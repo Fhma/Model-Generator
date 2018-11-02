@@ -1,0 +1,238 @@
+pre {
+	var n_f = (0.05 * total).ceiling();
+	var n_e = (0.60 * total).ceiling();
+	var n_c = (0.35 * total).ceiling();
+	var b_elements = Sequence {"BR","BF","BO","BP"};
+	var a_elements = Sequence {"AF","AC","AS","DO"};
+	var t_elements = Sequence {"CN","SS","TS"};
+	var m_elements = Sequence {"P"};
+	var r_elements = Sequence {"RR","AggR","SR"};
+	
+	var names = StringDB!Row.all.collect(e|e.first_name.toLowerCase());
+	var elements = ArchimateElement.all;
+	var relations = ArchimateRelationship.all;
+	var diagram_objects = DiagramModelArchimateObject.all;
+	var connections = DiagramModelConnection.all;
+}
+
+$instances 60/15
+operation BusinessRole create(){
+	self.name = nextFromCollection(names);
+	self.id = "b" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation BusinessFunction create(){
+	self.name = nextFromCollection(names);
+	self.id = "b" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation BusinessObject create(){
+	self.name = nextFromCollection(names);
+	self.id = "b" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation BusinessProcess create(){
+	self.name = nextFromCollection(names);
+	self.id = "b" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation ApplicationFunction create(){
+	self.name = nextFromCollection(names);
+	self.id = "a" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation BusinessActor create(){
+	self.name = nextFromCollection(names);
+	self.id = "a" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation ApplicationComponent create(){
+	self.name = nextFromCollection(names);
+	self.id = "a" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation DataObject create(){
+	self.name = nextFromCollection(names);
+	self.id = "a" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation CommunicationNetwork create(){
+	self.name = nextFromCollection(names);
+	self.id = "t" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation SystemSoftware create(){
+	self.name = nextFromCollection(names);
+	self.id = "t" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation TechnologyService create(){
+	self.name = nextFromCollection(names);
+	self.id = "t" + nextInteger(0, 999999999).toString();
+}
+
+$instances 60/15
+operation Principle create(){
+	self.name = nextFromCollection(names);
+	self.id = "m" + nextInteger(0, 999999999).toString();
+}
+
+operation update_elements(){
+	elements = ArchimateElement.all;
+}
+
+$instances 60/15
+operation RealizationRelationship create(){
+	update_elements();
+	self.name = nextFromCollection(names);
+	self.id = "r" + nextInteger(0, 999999999).toString();
+	self.source = nextFromCollection(elements);
+	self.target = nextFromCollection(elements);
+}
+
+$instances 60/15
+operation AggregationRelationship create(){
+	update_elements();
+	self.name = nextFromCollection(names);
+	self.id = "r" + nextInteger(0, 999999999).toString();
+	self.source = nextFromCollection(elements);
+	self.target = nextFromCollection(elements);
+}
+
+$instances 60/15
+operation ServingRelationship create(){
+	update_elements();
+	self.name = nextFromCollection(names);
+	self.id = "r" + nextInteger(0, 999999999).toString();
+	self.source = nextFromCollection(elements);
+	self.target = nextFromCollection(elements);
+}
+
+pattern updating_relations
+instance:ArchimateRelationship {
+	do {
+		update_relations();
+	}
+}
+
+operation update_relations(){
+	relations = ArchimateRelationship.all;
+}
+
+$instances n_c
+operation ArchimateDiagramModel create(){
+	update_relations();
+	self.id = "model" + nextInteger(0, 999999999).toString();
+	self.name = nextFromCollection(names);
+	self.viewpoint = nextInteger(0,10000).toString();
+	
+	// there are three types of children (DiagramModelReference, DiagramModelGroup, DiagramModelArchimateObject)
+	// here we only consider one type DiagramModelArchimateObject
+	var child_count = nextInteger(0,ArchimateRelationship.all.size()/2);
+	var counter:Integer = 0;
+	while(counter<=child_count){
+		var child = DiagramModelArchimateObject.createInstance();
+		child.id = "DMAObject" + nextInteger(0, 999999999).toString();
+		child.archimateElement = nextFromCollection(elements);
+		
+		//var b = Bounds.createInstance();
+		//b.x = nextInteger(1,1000);
+		//b.y = nextInteger(1,1000);
+		//b.width = nextInteger(1,1000);
+		//b.height = nextInteger(1,1000);
+		//child.bounds.add(b);
+		
+		update_diagram_objects();
+		var connect_no = nextInteger(1, 3);
+		while(connect_no>=1) {
+			var connect = DiagramModelArchimateConnection.createInstance();
+			connect.id = "connect" + nextInteger(0, 999999999).toString();
+			connect.archimateRelationship = nextFromCollection(relations);
+			connect.source = child;
+			//connect.target = nextFromCollection(diagram_objects);
+			
+			var bp = DiagramModelBendpoint.createInstance();
+			bp.startX = nextInteger(0);
+			bp.startY = nextInteger(0);
+			bp.endX = nextInteger(0);
+			bp.endY = nextInteger(0);
+			connect.bendpoints.add(bp);
+			child.sourceConnections.add(connect);
+			connect_no = connect_no - 1;
+		}
+		update_connections();
+		self.children.add(child);
+		counter = counter + 1;
+	}
+}
+
+operation update_connections(){
+	connections = DiagramModelConnection.all;
+}
+
+operation update_diagram_objects(){
+	diagram_objects = DiagramModelArchimateObject.all;
+}
+
+post{
+	// add all elements to folders
+	// we have 6 folders (b,a,t,m,r,v)
+	var b_folder = new Folder();
+	b_folder.name = "Business"; 
+	b_folder.elements.addAll(ArchimateElement.all.select(e|e.isKindOf(BusinessElement)));
+	var a_folder = new Folder();
+	a_folder.name = "Application";
+	a_folder.elements.addAll(ArchimateElement.all.select(e|e.isKindOf(ApplicationElement)));
+	var t_folder = new Folder();
+	t_folder.name = "Technology";
+	t_folder.elements.addAll(ArchimateElement.all.select(e|e.isKindOf(TechnologyElement)));
+	var m_folder = new Folder();
+	m_folder.name = "Motivation";
+	m_folder.elements.addAll(ArchimateElement.all.select(e|e.isKindOf(MotivationElement)));
+	var r_folder = new Folder();
+	r_folder.name = "Relations";
+	r_folder.elements.addAll(ArchimateRelationship.all);
+	var v_folder = new Folder();
+	v_folder.name = "Views";
+	v_folder.elements.addAll(ArchimateDiagramModel.all);
+	
+	// fix targets of connections
+	for(connect in DiagramModelArchimateConnection) {
+		var targets = DiagramModelArchimateObject.all.select(e | e <> connect.source);
+		connect.target = nextFromCollection(targets);
+	}
+	
+	// at least one Business Object should be named 'Car Insurance Policy'
+	BusinessObject.all.first().name = "Car Insurance Policy";
+	var car = ArchimateElement.all.select(e|e.name = "Car Insurance Policy").first();
+	
+	
+	// a relation where car is source
+	var r_as_source = nextFromCollection(relations);
+	r_as_source.source = car;
+	// a relation where car is target
+	var r_as_target = nextFromCollection(relations);
+	r_as_target.target = car;
+	
+	var dia_object = nextFromCollection(diagram_objects);	
+	dia_object.archimateElement = car;
+	var connect_s = nextFromCollection(dia_object.sourceConnections);
+	connect_s.archimateRelationship = r_as_source;
+	var connect_t = nextFromCollection(nextFromCollection(DiagramModelArchimateObject.all.select(e| e <> dia_object)).sourceConnections);
+	connect_t.archimateRelationship = r_as_target;
+	connect_t.target = connect_s;
+	
+	
+	
+	
+}

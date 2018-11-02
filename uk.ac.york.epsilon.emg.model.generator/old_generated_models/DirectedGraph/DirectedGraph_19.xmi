@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DirectedGraph="DirectedGraph">
+  <DirectedGraph:Node label="iosep" outgoing="/10 /15"/>
+  <DirectedGraph:Node label="ulla" outgoing="/14"/>
+  <DirectedGraph:Node label="quint" incoming="/15"/>
+  <DirectedGraph:Node label="corenda" outgoing="/12" incoming="/11 /13 /14"/>
+  <DirectedGraph:Node label="dorey" outgoing="/8" incoming="/10 /12"/>
+  <DirectedGraph:Node label="jessalyn" outgoing="/9" incoming="/8"/>
+  <DirectedGraph:Node label="florencia" outgoing="/11"/>
+  <DirectedGraph:Node label="ebony" outgoing="/13" incoming="/9"/>
+  <DirectedGraph:Edge weight="76" source="/4" target="/5"/>
+  <DirectedGraph:Edge weight="90" source="/5" target="/7"/>
+  <DirectedGraph:Edge weight="181" source="/0" target="/4"/>
+  <DirectedGraph:Edge weight="187" source="/6" target="/3"/>
+  <DirectedGraph:Edge weight="136" source="/3" target="/4"/>
+  <DirectedGraph:Edge weight="75" source="/7" target="/3"/>
+  <DirectedGraph:Edge weight="114" source="/1" target="/3"/>
+  <DirectedGraph:Edge weight="179" source="/0" target="/2"/>
+</xmi:XMI>

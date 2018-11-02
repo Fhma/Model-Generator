@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DirectedGraph="DirectedGraph">
+  <DirectedGraph:Node label="iosep" outgoing="/37 /40"/>
+  <DirectedGraph:Node label="ulla" outgoing="/62" incoming="/33 /37"/>
+  <DirectedGraph:Node label="quint" incoming="/62"/>
+  <DirectedGraph:Node label="corenda" outgoing="/55 /61" incoming="/32 /47 /56"/>
+  <DirectedGraph:Node label="dorey" outgoing="/48" incoming="/40"/>
+  <DirectedGraph:Node label="jessalyn" outgoing="/59" incoming="/53"/>
+  <DirectedGraph:Node label="florencia" outgoing="/39"/>
+  <DirectedGraph:Node label="ebony" outgoing="/46 /47"/>
+  <DirectedGraph:Node label="guy" outgoing="/32 /34 /41"/>
+  <DirectedGraph:Node label="lyon" incoming="/36 /52"/>
+  <DirectedGraph:Node label="ryley" outgoing="/60" incoming="/34"/>
+  <DirectedGraph:Node label="iosep" outgoing="/53" incoming="/42 /61"/>
+  <DirectedGraph:Node label="alleen" incoming="/49"/>
+  <DirectedGraph:Node label="mariska" outgoing="/51 /56"/>
+  <DirectedGraph:Node label="trixie" outgoing="/38 /43 /50" incoming="/45 /48"/>
+  <DirectedGraph:Node label="lucita" outgoing="/49"/>
+  <DirectedGraph:Node label="storm" outgoing="/44" incoming="/46"/>
+  <DirectedGraph:Node label="morna" incoming="/54 /58"/>
+  <DirectedGraph:Node label="norry" outgoing="/58" incoming="/59"/>
+  <DirectedGraph:Node label="tommie" outgoing="/45" incoming="/57"/>
+  <DirectedGraph:Node label="rodolphe" incoming="/41"/>
+  <DirectedGraph:Node label="vinita" incoming="/60"/>
+  <DirectedGraph:Node label="foss" incoming="/43"/>
+  <DirectedGraph:Node label="annabela" outgoing="/35"/>
+  <DirectedGraph:Node label="glennie" outgoing="/42" incoming="/38"/>
+  <DirectedGraph:Node label="lucille" outgoing="/36 /54" incoming="/35 /55"/>
+  <DirectedGraph:Node label="tamqrah" outgoing="/57"/>
+  <DirectedGraph:Node label="bennett" incoming="/51"/>
+  <DirectedGraph:Node label="hale" incoming="/44"/>
+  <DirectedGraph:Node label="seward" outgoing="/63"/>
+  <DirectedGraph:Node label="forester" outgoing="/52" incoming="/39"/>
+  <DirectedGraph:Node label="marcus" outgoing="/33" incoming="/50 /63"/>
+  <DirectedGraph:Edge weight="142" source="/8" target="/3"/>
+  <DirectedGraph:Edge weight="20" source="/31" target="/1"/>
+  <DirectedGraph:Edge weight="172" source="/8" target="/10"/>
+  <DirectedGraph:Edge weight="148" source="/23" target="/25"/>
+  <DirectedGraph:Edge weight="133" source="/25" target="/9"/>
+  <DirectedGraph:Edge weight="177" source="/0" target="/1"/>
+  <DirectedGraph:Edge weight="11" source="/14" target="/24"/>
+  <DirectedGraph:Edge weight="154" source="/6" target="/30"/>
+  <DirectedGraph:Edge weight="178" source="/0" target="/4"/>
+  <DirectedGraph:Edge weight="194" source="/8" target="/20"/>
+  <DirectedGraph:Edge weight="30" source="/24" target="/11"/>
+  <DirectedGraph:Edge weight="70" source="/14" target="/22"/>
+  <DirectedGraph:Edge weight="82" source="/16" target="/28"/>
+  <DirectedGraph:Edge weight="61" source="/19" target="/14"/>
+  <DirectedGraph:Edge weight="144" source="/7" target="/16"/>
+  <DirectedGraph:Edge weight="144" source="/7" target="/3"/>
+  <DirectedGraph:Edge weight="77" source="/4" target="/14"/>
+  <DirectedGraph:Edge weight="108" source="/15" target="/12"/>
+  <DirectedGraph:Edge weight="62" source="/14" target="/31"/>
+  <DirectedGraph:Edge weight="67" source="/13" target="/27"/>
+  <DirectedGraph:Edge weight="193" source="/30" target="/9"/>
+  <DirectedGraph:Edge weight="137" source="/11" target="/5"/>
+  <DirectedGraph:Edge weight="164" source="/25" target="/17"/>
+  <DirectedGraph:Edge weight="197" source="/3" target="/25"/>
+  <DirectedGraph:Edge weight="53" source="/13" target="/3"/>
+  <DirectedGraph:Edge weight="192" source="/26" target="/19"/>
+  <DirectedGraph:Edge weight="51" source="/18" target="/17"/>
+  <DirectedGraph:Edge weight="118" source="/5" target="/18"/>
+  <DirectedGraph:Edge weight="51" source="/10" target="/21"/>
+  <DirectedGraph:Edge weight="98" source="/3" target="/11"/>
+  <DirectedGraph:Edge weight="187" source="/1" target="/2"/>
+  <DirectedGraph:Edge weight="45" source="/29" target="/31"/>
+</xmi:XMI>
