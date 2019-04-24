@@ -1,6 +1,6 @@
 pre {
 	var b_num:Integer = (0.4 * total).ceiling();
-	var c_num:Integer = total-b_num;
+	var c_num:Integer = (0.6 * total).ceiling();
 }
 
 $instances b_num

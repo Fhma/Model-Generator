@@ -1,28 +1,35 @@
 package uk.ac.york.epsilon.emg.model.generator.resources.Book;
 
-import java.io.File;
 import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
+import org.eclipse.epsilon.emc.emf.EmfMetaModel;
+import uk.ac.york.epsilon.emg.model.generator.PropertyKey;
 
 public class Book {
-	static private Map<String, Object> properties;
+	static private Map<Short, Object> properties;
 
-	public static Map<String, Object> properties() throws URISyntaxException {
-		properties = new HashMap<String, Object>();
+	public static Map<Short, Object> properties() throws URISyntaxException {
+		properties = new HashMap<Short, Object>();
 
 		// meta-variables
-		String metamodel_name = "Book";
-		String destination = "generated-models";
-		
-		properties.put("METAMODEL_NAME", metamodel_name);
-		properties.put("METAMODEL", Book.class.getResource(metamodel_name + ".ecore").getPath());
-		properties.put("EMG_FILE", Book.class.getResource("generator.emg"));
-		properties.put("MODEL_BASE_NAME", destination + File.separatorChar + metamodel_name + File.separatorChar + metamodel_name + "_input_");
-		properties.put("MODEL_NAME", metamodel_name);
+		properties.put(PropertyKey.METAMODEL_ALIASE, "Book");
+		properties.put(PropertyKey.MAIN_METAMODEL_URI, "Book");
+		properties.put(PropertyKey.MAIN_METAMODEL_FILE, Book.class.getResource("Book.ecore").getPath());
 
-		// Model size (min number of instances)
-		properties.put("MIN_MODEL_SIZE", 2);
+		EmfMetaModel h_metamodels[] = null;
+		String h_metamodels_path[] = null;
+		String h_models_path[] = null;
+
+		properties.put(PropertyKey.HELP_METAMODELS, h_metamodels);
+		properties.put(PropertyKey.HELP_METAMODELS_PATH, h_metamodels_path);
+		properties.put(PropertyKey.HELP_MODELS_PATH, h_models_path);
+		properties.put(PropertyKey.EMG_FILE, Book.class.getResource("generator.emg"));
+		properties.put(PropertyKey.OUT_MODEL_FOLDER, "Book");
+		properties.put(PropertyKey.OUT_MODEL_FILE, "Book");
+
+		// Model size (number of instances)
+		properties.put(PropertyKey.MIN_MODEL_SIZE, 2);
 
 		return properties;
 	}

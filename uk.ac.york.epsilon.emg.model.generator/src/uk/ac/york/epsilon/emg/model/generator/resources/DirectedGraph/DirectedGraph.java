@@ -1,12 +1,9 @@
 package uk.ac.york.epsilon.emg.model.generator.resources.DirectedGraph;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import org.eclipse.epsilon.emc.emf.EmfMetaModel;
-
 import uk.ac.york.epsilon.emg.model.generator.PropertyKey;
-import uk.ac.york.epsilon.emg.model.generator.resources.Ecore2.Ecore2;
 
 public class DirectedGraph {
 	static private Map<Short, Object> properties;
